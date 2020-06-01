@@ -1,9 +1,16 @@
 package interfaz;
 
 import dominio.Sistema;
+
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import javax.imageio.ImageIO;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
@@ -469,14 +476,20 @@ layout.setHorizontalGroup(
 
     private void btnIngresarFotoPerfilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarFotoPerfilActionPerformed
         JFileChooser fileChooser = new JFileChooser();
-        FileNameExtensionFilter file = new FileNameExtensionFilter("PNG", "png");
+        FileNameExtensionFilter file = new FileNameExtensionFilter("Imagenes", "png", "jpg");
         fileChooser.setFileFilter(file);
         fileChooser.setAcceptAllFileFilterUsed(false);
         int imagen = fileChooser.showOpenDialog(this);
         if (imagen == JFileChooser.APPROVE_OPTION) {
-            ImageIcon iconoPerfil = new ImageIcon(fileChooser.getSelectedFile().getAbsolutePath());
-            this.btnIngresarFotoPerfil.setIcon(iconoPerfil);
-            this.fotoDePerfilActual = iconoPerfil;
+            try{
+                BufferedImage img = ImageIO.read(new File(fileChooser.getSelectedFile().getAbsolutePath()));
+                ImageIcon iconoPerfil = new ImageIcon(img.getScaledInstance(btnIngresarFotoPerfil.getWidth(), btnIngresarFotoPerfil.getHeight(), Image.SCALE_SMOOTH));
+                this.btnIngresarFotoPerfil.setIcon(iconoPerfil);
+                this.fotoDePerfilActual = iconoPerfil;
+            }
+            catch(IOException e){
+                e.printStackTrace();
+            }
         }
     }//GEN-LAST:event_btnIngresarFotoPerfilActionPerformed
 

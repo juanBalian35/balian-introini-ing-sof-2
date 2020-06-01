@@ -67,8 +67,11 @@ public final class PlanAlimentacion implements Serializable {
     }
 
     public void setNombreDelPlan(String unNombreDelPlan) {
-        nombreDelPlan = unNombreDelPlan;
-       
+        if(unNombreDelPlan == null || unNombreDelPlan.isEmpty()){
+            nombreDelPlan = "Plan de alimentación";
+        } else {
+            nombreDelPlan = unNombreDelPlan;
+        }
     }
 
     @Override
@@ -78,10 +81,18 @@ public final class PlanAlimentacion implements Serializable {
 
     @Override
     public boolean equals(Object obj) {
+        if(obj == null || this.getClass() != obj.getClass()){
+            return false;
+        }
+
         PlanAlimentacion otroPlanAlimentacion = (PlanAlimentacion) obj;
-        return (this.getNombreDelPlan().equals(otroPlanAlimentacion.getNombreDelPlan())
-                && this.getUsuario().equals(otroPlanAlimentacion.getUsuario())
-                && this.getProfesional().equals(otroPlanAlimentacion.getProfesional()));
+        boolean mismoNombre = this.getNombreDelPlan().equals(otroPlanAlimentacion.getNombreDelPlan());
+        boolean mismoUsuario = (this.getUsuario() == null && otroPlanAlimentacion.getUsuario() == null) ||
+                this.getUsuario().equals(otroPlanAlimentacion.getUsuario());
+        boolean mismoProfesional = (this.getProfesional() == null && otroPlanAlimentacion.getProfesional() == null) ||
+                this.getProfesional().equals(otroPlanAlimentacion.getProfesional());
+
+        return mismoNombre && mismoUsuario && mismoProfesional;
     }
 
 }

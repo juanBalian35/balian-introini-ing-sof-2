@@ -1,0 +1,6 @@
+projectKey=obligatorio-alimentacion
+serverUrl=http://localhost:9000
+serverVersion=8.2.0.32929
+dashboardUrl=http://localhost:9000/dashboard?id=obligatorio-alimentacion
+ceTaskId=AXJxX9l7Ga_4FiCjAqRA
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXJxX9l7Ga_4FiCjAqRA

@@ -1,0 +1,62 @@
+
+¡
+java:S1319n"…The type of the "unaListaPlanesAlimentacion" object should be an interface such as "List" rather than the implementation "ArrayList".(í›ÇÄøÿÿÿÿ
+–
+java:S1319"{The type of the "unaListaUsuarios" object should be an interface such as "List" rather than the implementation "ArrayList".(Ç‘˜¸ıÿÿÿÿ
+‘
+java:S1319J"{The type of the "unaListaUsuarios" object should be an interface such as "List" rather than the implementation "ArrayList".(’¢Ÿß
+
+java:S1319£"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÊÌÍ8Š„ş¦.
+“
+java:S1319®"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(´Òœ†ùÿÿÿÿ8Šş¦.
+‘
+java:S1488Ó"nImmediately return this expression instead of assigning it to the temporary variable "fueAgregadoProfesional".(×—È¥şÿÿÿÿ8Ì°Šş¦.
+˜
+java:S1319"The type of the "unaListaConversaciones" object should be an interface such as "List" rather than the implementation "ArrayList".(‘²äÌ
+†
+java:S1319j"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(“êİ
+—
+java:S1319"€The type of the "unaListaProfesionales" object should be an interface such as "List" rather than the implementation "ArrayList".(ĞØö±
+œ
+java:S1319"…The type of the "unaListaPlanesAlimentacion" object should be an interface such as "List" rather than the implementation "ArrayList".(’åê¿
+“
+java:S1319É"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ç…˜§ùÿÿÿÿ8Ì°Šş¦.
+ˆ
+java:S1488Ã"jImmediately return this expression instead of assigning it to the temporary variable "fueAgregadoUsuario".(Ê ²²8Ì°Šş¦.
+G
+java:S1125¶")Remove the literal "false" boolean value.(˜ÿÍ8ˆğŠ„§.
+R
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8‚»÷ï¦.
+‰
+java:S1488â"kImmediately return this expression instead of assigning it to the temporary variable "fueAgregadoAlimento".(ğ‚8Ì°Šş¦.
+¦
+java:S1319ß"‡The type of the "listaNutrientesConProporcion" object should be an interface such as "List" rather than the implementation "ArrayList".(õµ¥8Ì°Šş¦.
+F
+java:S1148¾"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ì°Šş¦.
+‹
+java:S1319F"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÿæŒéşÿÿÿÿ
+[
+java:S1128"9Remove this unused import 'java.io.BufferedOutputStream'.(«èÍôıÿÿÿÿ8õÂüï¦.
+’
+java:S1319"|The type of the "unaListaAlimentos" object should be an interface such as "List" rather than the implementation "ArrayList".(ÙŸüï
+–
+java:S1319V"€The type of the "unaListaProfesionales" object should be an interface such as "List" rather than the implementation "ArrayList".(å›ò
+G
+java:S1125ã")Remove the literal "false" boolean value.(È¶â8ˆğŠ„§.
+†
+java:S1319^"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Î¤ÔË
+“
+java:S1319˜"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ğãÏÿÿÿÿÿ8Š„ş¦.
+¡
+java:S1319İ"‚The type of the "listaIngestasDelUsuario" object should be an interface such as "List" rather than the implementation "ArrayList".(éÔÛ8Ì°Šş¦.
+†
+java:S1319R"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÛÃÜ¨
+—
+java:S1319>"The type of the "unaListaConversaciones" object should be an interface such as "List" rather than the implementation "ArrayList".(«Äœ^
+J
+java:S1128
+"/Remove this unused import 'java.util.Currency'.(·®õãÿÿÿÿÿ
+—
+java:S1319b"|The type of the "unaListaAlimentos" object should be an interface such as "List" rather than the implementation "ArrayList".(Ò©Âúÿÿÿÿ
+†
+java:S1319:"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¨Şæ¾

@@ -1,0 +1,245 @@
+
+D
+java:S1604­"(Make this anonymous inner class a lambda(áèÉşÿÿÿÿ
+D
+java:S1604÷"(Make this anonymous inner class a lambda(ùñÓıÿÿÿÿ
+s
+java:S1450â"\Remove the "jScrollPane35" field and declare it as a local variable in the relevant methods.(óüÚ
+A
+java:S1172ö
+"*Remove this unused method parameter "evt".(–¼
+F
+java:S1172Ò	"*Remove this unused method parameter "evt".(½ì³Èşÿÿÿÿ
+}
+java:S1450û"fRemove the "lblCambiarPreferencias5" field and declare it as a local variable in the relevant methods.(ÕÁáŠ
+€
+java:S1450Î"dRemove the "btnEditarPreferencias" field and declare it as a local variable in the relevant methods.(Òâ·Øüÿÿÿÿ
+?
+java:S1604‚"(Make this anonymous inner class a lambda(—úô‹
+@
+java:S1172¡"*Remove this unused method parameter "evt".(“ãÿ9
+F
+java:S1172Á
+"*Remove this unused method parameter "evt".(ÁİÃôúÿÿÿÿ
+|
+java:S1450”"`Remove the "lblPlanPropuesto2" field and declare it as a local variable in the relevant methods.(ÆªŠ¢ùÿÿÿÿ
+D
+java:S1604½"(Make this anonymous inner class a lambda(çœç¢ÿÿÿÿÿ
+|
+java:S1450•"`Remove the "lblPlanSolicitado" field and declare it as a local variable in the relevant methods.(Ô°ö–üÿÿÿÿ
+‘
+java:S4144—"uUpdate this method so that its implementation is not identical to "btnNuevaConversacionActionPerformed" on line 1270.(ÆÜÀõşÿÿÿÿ
+V
+java:S1161·":Add the "@Override" annotation above this method signature(¦³±ÿÿÿÿÿ
+w
+java:S1450‡"`Remove the "lblNohayConsultas" field and declare it as a local variable in the relevant methods.(ÌÕ¿¿
+>
+java:S1604ñ"(Make this anonymous inner class a lambda(»ÉÍJ
+z
+java:S1450ë"cRemove the "lblAlimentoIngerido2" field and declare it as a local variable in the relevant methods.(¾é×
+{
+java:S1450’"dRemove the "lblPlanDeAlimentacion" field and declare it as a local variable in the relevant methods.(Àİ¬
+x
+java:S1450ã"\Remove the "jScrollPane36" field and declare it as a local variable in the relevant methods.(ô‚Õ²úÿÿÿÿ
+@
+java:S1172È
+"*Remove this unused method parameter "evt".(³à¿h
+F
+java:S1172Ó
+"*Remove this unused method parameter "evt".(ÀéÜ‹úÿÿÿÿ
+w
+java:S1450ß"[Remove the "jScrollPane2" field and declare it as a local variable in the relevant methods.(ŠÌ«·şÿÿÿÿ
+F
+java:S1172¨	"*Remove this unused method parameter "evt".(Ó¼ñøøÿÿÿÿ
+A
+java:S1172î	"*Remove this unused method parameter "evt".(Ëå×ö
+?
+java:S1604ş"(Make this anonymous inner class a lambda(¡¡Ù
+…
+java:S1450ò"oRemove the "lblAlimentoIngeridoSeleccionado5" field and declare it as a local variable in the relevant methods.(ó¯Ì
+‡
+java:S1450š"kRemove the "lblSolicitarPlanAlimentacion" field and declare it as a local variable in the relevant methods.(ö Æÿÿÿÿÿ
+ƒ
+java:S1450–"mRemove the "lblPlanSolicitadoCorrectamente" field and declare it as a local variable in the relevant methods.(ŸÉè:
+A
+java:S1172ö	"*Remove this unused method parameter "evt".(¨¢–°
+s
+java:S1450æ"\Remove the "jScrollPane39" field and declare it as a local variable in the relevant methods.(ß’şá
+?
+java:S1604à"(Make this anonymous inner class a lambda(Á’Ê‚
+D
+java:S1604§"(Make this anonymous inner class a lambda(ĞÅõ¨úÿÿÿÿ
+x
+java:S1450è"\Remove the "jScrollPane40" field and declare it as a local variable in the relevant methods.(Ö–úùúÿÿÿÿ
+‚
+java:S1450ù"fRemove the "lblCambiarPreferencias3" field and declare it as a local variable in the relevant methods.(Îòúşúÿÿÿÿ
+…
+java:S1450õ"oRemove the "lblAlimentoIngeridoSeleccionado8" field and declare it as a local variable in the relevant methods.(ŸÂÎ"
+r
+java:S1450ç"[Remove the "jScrollPane4" field and declare it as a local variable in the relevant methods.(À“•¹
+Z
+java:S1155Õ	">Use isEmpty() to check whether the collection is empty or not.(¶½¡ãûÿÿÿÿ
+ƒ
+java:S1450"gRemove the "lblNuevoAlimentoIngerido" field and declare it as a local variable in the relevant methods.(Î€Ÿùÿÿÿÿ
+U
+java:S1155š">Use isEmpty() to check whether the collection is empty or not.(Ç¤¥‡
+y
+java:S1450ê"bRemove the "lblAlimentoIngerido" field and declare it as a local variable in the relevant methods.(Çç¼
+w
+java:S1450à"[Remove the "jScrollPane3" field and declare it as a local variable in the relevant methods.(Ò‰êêùÿÿÿÿ
+
+java:S1450‰"eRemove the "lblNohayConsultasTexto" field and declare it as a local variable in the relevant methods.(‘ô¾Öıÿÿÿÿ
+D
+java:S1604ê"(Make this anonymous inner class a lambda(Œı‚Àûÿÿÿÿ
+z
+java:S1450Ó"cRemove the "btnNuevaConversacion" field and declare it as a local variable in the relevant methods.(»Ë¦ç
+A
+java:S1172é
+"*Remove this unused method parameter "evt".(¢ìÜÛ
+Q
+java:S1161Ç":Add the "@Override" annotation above this method signature(ñ—Ú–
+F
+java:S1172€
+"*Remove this unused method parameter "evt".(·–Ñ“úÿÿÿÿ
+|
+java:S1450“"`Remove the "lblPlanPropuesto1" field and declare it as a local variable in the relevant methods.(æä Äùÿÿÿÿ
+‡
+java:S1450ï"pRemove the "lblAlimentoIngeridoSeleccionado14" field and declare it as a local variable in the relevant methods.(‰¬†
+D
+java:S1604¾"(Make this anonymous inner class a lambda(õ¸¢’ıÿÿÿÿ
+}
+java:S1450ú"fRemove the "lblCambiarPreferencias4" field and declare it as a local variable in the relevant methods.(º°­§
+x
+java:S1450á"\Remove the "jScrollPane34" field and declare it as a local variable in the relevant methods.(¬óäÑûÿÿÿÿ
+q
+java:S1450¥"[Remove the "panelDerecho" field and declare it as a local variable in the relevant methods.(˜Œû}
+‚
+java:S1450ü"fRemove the "lblCambiarPreferencias6" field and declare it as a local variable in the relevant methods.(šÙìÜúÿÿÿÿ
+y
+java:S1450…"]Remove the "lblNoHayPlanes" field and declare it as a local variable in the relevant methods.(–¤ŞÅüÿÿÿÿ
+‚
+java:S1450Š"fRemove the "lblNohayConsultasTexto1" field and declare it as a local variable in the relevant methods.(Ìãçüÿÿÿÿ
+l
+java:S1450Ñ"VRemove the "btnHome" field and declare it as a local variable in the relevant methods.(†¹ª?
+s
+java:S1450Ì"WRemove the "btnAyuda" field and declare it as a local variable in the relevant methods.(É³œ÷ûÿÿÿÿ
+F
+java:S1172å
+"*Remove this unused method parameter "evt".(ùØÜ—üÿÿÿÿ
+†
+java:S1450ó"oRemove the "lblAlimentoIngeridoSeleccionado6" field and declare it as a local variable in the relevant methods.(ªÎ‡œ
+
+java:S1450ı"hRemove the "lblConsultaConProfesional" field and declare it as a local variable in the relevant methods.(„¢ÊÕ
+D
+java:S1604ê"(Make this anonymous inner class a lambda(Š—“‚ûÿÿÿÿ
+z
+java:S1192‡"cDefine a constant instead of duplicating this literal "/Imagenes/iconoCampoIncorrecto.png" 5 times.(¬û‹Ü
+„
+java:S1450˜"hRemove the "lblSeleccioneProfesional1" field and declare it as a local variable in the relevant methods.(Óà²ÿøÿÿÿÿ
+F
+java:S1172‰
+"*Remove this unused method parameter "evt".(²øÿ›øÿÿÿÿ
+U
+java:S1155«	">Use isEmpty() to check whether the collection is empty or not.(‰Ÿßã
+D
+java:S1604Ó"(Make this anonymous inner class a lambda(¸Ú—úÿÿÿÿ
+D
+java:S1604 "(Make this anonymous inner class a lambda(·İéşÿÿÿÿ
+A
+java:S1172å	"*Remove this unused method parameter "evt".(Û½¼Ù
+D
+java:S1604ï"(Make this anonymous inner class a lambda(ÑãÆáıÿÿÿÿ
+A
+java:S1172£
+"*Remove this unused method parameter "evt".(ªÜ ı
+‚
+java:S1450ø"fRemove the "lblCambiarPreferencias2" field and declare it as a local variable in the relevant methods.(ş‰×öşÿÿÿÿ
+?
+java:S1604›"(Make this anonymous inner class a lambda(Ùşˆ
+x
+java:S1450å"\Remove the "jScrollPane38" field and declare it as a local variable in the relevant methods.(åÖŞ™ÿÿÿÿÿ
+e
+java:S1192î"NDefine a constant instead of duplicating this literal "Seleccione..." 8 times.(®İ
+?
+java:S1604Ç"(Make this anonymous inner class a lambda(Ùã‘
+D
+java:S1604ã"(Make this anonymous inner class a lambda(ˆÌ…åùÿÿÿÿ
+€
+java:S1450„"jRemove the "lblIngresarAlimentoIngerido" field and declare it as a local variable in the relevant methods.(”«í`
+V	java:S110"<This class has 6 parents which is greater than 5 authorized.(²Á×úÿÿÿÿ
+U
+java:S1155ù	">Use isEmpty() to check whether the collection is empty or not.(Ç¤¥‡
+…
+java:S1450—"nRemove the "lblPlanSolicitadoCorrectamente1" field and declare it as a local variable in the relevant methods.(±šø
+F
+java:S1172Ì
+"*Remove this unused method parameter "evt".(Ã›¸“úÿÿÿÿ
+A
+java:S1172¢	"*Remove this unused method parameter "evt".(™öáá
+
+java:S1450Ï"eRemove the "btnEditarRestricciones" field and declare it as a local variable in the relevant methods.(åĞÔüÿÿÿÿ
+‡
+java:S1450î"pRemove the "lblAlimentoIngeridoSeleccionado11" field and declare it as a local variable in the relevant methods.(ÑæÆö
+r
+java:S1450Ü"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ
+@
+java:S1172±
+"*Remove this unused method parameter "evt".(ŸÀÄ_
+‹
+java:S1450ô"oRemove the "lblAlimentoIngeridoSeleccionado7" field and declare it as a local variable in the relevant methods.(çî°Ãúÿÿÿÿ
+r
+java:S1450İ"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ
+…
+java:S1450ì"nRemove the "lblAlimentoIngeridoSeleccionado" field and declare it as a local variable in the relevant methods.(«ˆ›
+‹
+java:S1450ğ"oRemove the "lblAlimentoIngeridoSeleccionado2" field and declare it as a local variable in the relevant methods.(Õó’Úûÿÿÿÿ
+
+java:S1450Ë"rRemove the "btnAceptarSolicitudPlanAlimentacion" field and declare it as a local variable in the relevant methods.(Å‡ÚÑşÿÿÿÿ
+v
+java:S1450Ğ"_Remove the "btnEnviarMensaje" field and declare it as a local variable in the relevant methods.(ííŞ¿
+|
+java:S1450÷"eRemove the "lblCambiarPreferencias" field and declare it as a local variable in the relevant methods.(â„ßÀ
+u
+java:S1192¾"^Define a constant instead of duplicating this literal "/Imagenes/iconoCaraTriste.png" 3 times.(ô•ß÷
+
+java:S1450™"hRemove the "lblSeleccioneProfesional2" field and declare it as a local variable in the relevant methods.(Æ«ü
+?
+java:S1604‹"(Make this anonymous inner class a lambda(–æİ
+†
+java:S1450ö"oRemove the "lblAlimentoIngeridoSeleccionado9" field and declare it as a local variable in the relevant methods.(ÿœºá
+w
+java:S1450Ş"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ
+F
+java:S1172ˆ"*Remove this unused method parameter "evt".(Î¡“íûÿÿÿÿ
+u
+java:S1450†"^Remove the "lblNoHayPlanes1" field and declare it as a local variable in the relevant methods.(‚ÁÅ×
+w
+java:S1450é"[Remove the "jScrollPane7" field and declare it as a local variable in the relevant methods.(Ü­€ÿÿÿÿÿ
+t
+java:S1450¨"XRemove the "panelMenu" field and declare it as a local variable in the relevant methods.(à÷ §øÿÿÿÿ
+x
+java:S1450ˆ"aRemove the "lblNohayConsultas1" field and declare it as a local variable in the relevant methods.(ÏÏ¥ı
+g
+java:S1192‘"KDefine a constant instead of duplicating this literal "Levenim MT" 5 times.(•°¥ƒüÿÿÿÿ
+ƒ
+java:S1450‚"gRemove the "lblFechaAlimentoIngerido" field and declare it as a local variable in the relevant methods.(Ü•ü÷ùÿÿÿÿ
+F
+java:S1172—"*Remove this unused method parameter "evt".(ÆÜÀõşÿÿÿÿ
+A
+java:S1172Á	"*Remove this unused method parameter "evt".(’üÂ
+Œ
+java:S1450í"pRemove the "lblAlimentoIngeridoSeleccionado10" field and declare it as a local variable in the relevant methods.(ö“š’úÿÿÿÿ
+?
+java:S1604â"(Make this anonymous inner class a lambda(ôĞ–‘
+‹
+java:S1450ñ"oRemove the "lblAlimentoIngeridoSeleccionado4" field and declare it as a local variable in the relevant methods.(Ö‹–Çûÿÿÿÿ
+x
+java:S1450ä"\Remove the "jScrollPane37" field and declare it as a local variable in the relevant methods.(Óù·ûÿÿÿÿÿ
+u
+java:S1450Õ"^Remove the "btnNuevaIngesta" field and declare it as a local variable in the relevant methods.(¡·Ÿ½
+U
+java:S1155Ä	">Use isEmpty() to check whether the collection is empty or not.(‰Ÿßã
+f
+java:S1192¿"ODefine a constant instead of duplicating this literal "No planificado" 3 times.(—í³­
+g
+java:S1192Ù"PDefine a constant instead of duplicating this literal "Century Gothic" 54 times.(ç×ƒœ

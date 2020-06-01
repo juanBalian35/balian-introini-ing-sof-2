@@ -1,0 +1,22 @@
+
+v
+java:S1450Î"_Remove the "lblRestricciones" field and declare it as a local variable in the relevant methods.(“Ù°
+w
+java:S1450È"[Remove the "jScrollPane3" field and declare it as a local variable in the relevant methods.(Ò‰êêùÿÿÿÿ
+}
+java:S1450É"aRemove the "lblFechaNacimiento" field and declare it as a local variable in the relevant methods.(ƒëÏûøÿÿÿÿ
+t
+java:S1450Í"^Remove the "lblPreferencias" field and declare it as a local variable in the relevant methods.(›Îe
+V	java:S110	"<This class has 6 parents which is greater than 5 authorized.(‹Æß˜ıÿÿÿÿ
+w
+java:S1450Ç"[Remove the "jScrollPane2" field and declare it as a local variable in the relevant methods.(ŠÌ«·şÿÿÿÿ
+w
+java:S1450Æ"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ
+y
+java:S1450Ï"]Remove the "lblTxtIngestas" field and declare it as a local variable in the relevant methods.(·ÁÔ½üÿÿÿÿ
+r
+java:S1450Å"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ
+E
+java:S1905"*Remove this unnecessary cast to "Usuario".(¥Òˆ°ıÿÿÿÿ
+d
+java:S1192`"ODefine a constant instead of duplicating this literal "Century Gothic" 5 times.(Ç…óh

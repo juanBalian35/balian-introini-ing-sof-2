@@ -2,32 +2,28 @@ package dominio;
 
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
-import java.io.File;
 
 public final class Usuario extends Persona {
 
     private String nacionalidad;
     private ArrayList<String> preferencias;
     private ArrayList<String> restricciones;
-    public ArrayList<Ingesta> alimentosIngeridos;
+    private ArrayList<Ingesta> alimentosIngeridos;
 
     public Usuario(String unNombre,
             String unApellido,
             String unaFechaNacimiento,
             ImageIcon unaFotoDePerfil,
-            String unaNacionalidad,
-            ArrayList<String> listaPreferencias,
-            ArrayList<String> listaRestricciones,
-            ArrayList<Ingesta> listaAlimentos) {
+            String unaNacionalidad) {
 
         this.setNombre(unNombre);
         this.setApellido(unApellido);
         this.setFechaNacimiento(unaFechaNacimiento);
         this.setFotoDePerfil(unaFotoDePerfil);
         this.setNacionalidad(unaNacionalidad);
-        this.setPreferencias(listaPreferencias);
-        this.setRestricciones(listaRestricciones);
-        this.setAlimentosIngeridos(listaAlimentos);
+        this.setPreferencias(null);
+        this.setRestricciones(null);
+        this.setAlimentosIngeridos(null);
     }
 
     public String getNacionalidad() {
@@ -35,9 +31,12 @@ public final class Usuario extends Persona {
     }
 
     public void setNacionalidad(String unaNacionalidad) {
-       
-        nacionalidad = unaNacionalidad;
-       
+       if(unaNacionalidad == null || unaNacionalidad.isEmpty()){
+           nacionalidad = "Nacionalidad no ingresada";
+       }
+       else{
+           nacionalidad = unaNacionalidad;
+       }
     }
 
     public ArrayList<String> getPreferencias() {

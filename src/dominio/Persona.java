@@ -1,6 +1,5 @@
 package dominio;
 
-import java.util.Objects;
 import java.io.Serializable;
 import javax.swing.ImageIcon;
 
@@ -11,12 +10,21 @@ public abstract class Persona implements Serializable {
     private String fechaNacimiento;
     public ImageIcon fotoDePerfil;
 
+    private final static String ERROR_FECHA = "Fecha no ingresada";
+    private final static String ERROR_APELLIDO = "Apellido no ingresado";
+    private final static String ERROR_NOMBRE = "Nombre no ingresado";
+
     public String getNombre() {
         return this.nombre;
     }
 
     public void setNombre(String unNombre) {
-        this.nombre = unNombre;
+        if(unNombre == null || unNombre.isEmpty()){
+            this.nombre = ERROR_NOMBRE;
+        }
+        else {
+            this.nombre = unNombre;
+        }
     }
 
     public String getApellido() {
@@ -25,7 +33,7 @@ public abstract class Persona implements Serializable {
 
     public void setApellido(String unApellido) {
         if (unApellido == null || unApellido.isEmpty()) {
-            this.apellido = "Apellido no ingresado";
+            this.apellido = ERROR_APELLIDO;
         } else {
             this.apellido = unApellido;
         }
@@ -37,7 +45,7 @@ public abstract class Persona implements Serializable {
 
     public void setFechaNacimiento(String unaFecha) {
         if (unaFecha == null || unaFecha.isEmpty()) {
-            this.fechaNacimiento = "Fecha no ingresada";
+            this.fechaNacimiento = ERROR_FECHA;
         } else {
             this.fechaNacimiento = unaFecha;
         }
@@ -57,11 +65,11 @@ public abstract class Persona implements Serializable {
 
     public String getNombreCompleto() {
         String retorno;
-        if (getNombre().equals("Nombre no ingresado") && getApellido().equals("Apellido no ingresado")) {
-            retorno = "Nombre no ingresado";
-        } else if (getNombre().equals("Nombre no ingresado")) {
+        if (getNombre().equals(ERROR_NOMBRE) && getApellido().equals(ERROR_APELLIDO)) {
+            retorno = ERROR_NOMBRE;
+        } else if (getNombre().equals(ERROR_NOMBRE)) {
             retorno = getApellido();
-        } else if (getApellido().equals("Apellido no ingresado")) {
+        } else if (getApellido().equals(ERROR_APELLIDO)) {
             retorno = getNombre();
         } else {
             retorno = getNombre() + " " + getApellido();
@@ -76,6 +84,10 @@ public abstract class Persona implements Serializable {
 
     @Override
     public boolean equals(Object obj) {
+        if(obj == null || this.getClass() != obj.getClass()){
+            return false;
+        }
+
         Persona otraPersona = (Persona) obj;
         return this.getNombreCompleto().equals(otraPersona.getNombreCompleto());
     }

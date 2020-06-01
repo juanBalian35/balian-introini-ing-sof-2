@@ -20,7 +20,11 @@ public final class Ingesta implements Serializable {
     }
 
     public void setFechaDeIngesta(String unaFecha) {
-        this.fechaDeIngesta = unaFecha;
+        if(unaFecha == null || unaFecha.isEmpty()){
+            this.fechaDeIngesta = "No disponible";
+        } else{
+            this.fechaDeIngesta = unaFecha;
+        }
     }
 
     public ArrayList<Alimento> getListaAlimentosPorFecha() {
@@ -50,6 +54,10 @@ public final class Ingesta implements Serializable {
 
     @Override
     public boolean equals(Object obj) {
+        if(obj == null || this.getClass() != obj.getClass()){
+            return false;
+        }
+
         Ingesta otraIngesta = (Ingesta) obj;
         boolean sonIguales = this.getFechaDeIngesta().equals(otraIngesta.getFechaDeIngesta());
         sonIguales = sonIguales && this.getListaAlimentosPorFecha().equals(otraIngesta.getListaAlimentosPorFecha());

@@ -44,7 +44,7 @@ public final class Conversacion implements Serializable {
 
     public void setUsuario(Persona unUsuario) {
         if (unUsuario == null) {
-            this.usuario = new Usuario(null, null, null, null, null, null, null, null);
+            this.usuario = new Usuario(null, null, null, null, null);
         } else {
             this.usuario = unUsuario;
         }
@@ -74,6 +74,10 @@ public final class Conversacion implements Serializable {
 
     @Override
     public boolean equals(Object obj) {
+        if(obj == null || this.getClass() != obj.getClass()){
+            return false;
+        }
+
         final Conversacion conversacionParametro = (Conversacion) obj;
         return getProfesional().equals(conversacionParametro.getProfesional())
                 && getUsuario().equals(conversacionParametro.getUsuario());

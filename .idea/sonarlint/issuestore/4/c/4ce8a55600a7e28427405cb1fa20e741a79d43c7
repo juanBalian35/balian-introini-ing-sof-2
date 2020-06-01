@@ -1,0 +1,42 @@
+
+V	java:S110"<This class has 6 parents which is greater than 5 authorized.(Ã»üÿÿÿÿ
+F
+java:S1172Ó"*Remove this unused method parameter "evt".(ÁİÃôúÿÿÿÿ
+j
+java:S1192E"ODefine a constant instead of duplicating this literal "Century Gothic" 7 times.(÷¡ÃÅøÿÿÿÿ
+A
+java:S1172ß"*Remove this unused method parameter "evt".(³İÌ
+n
+java:S1450ö"XRemove the "lblEditar" field and declare it as a local variable in the relevant methods.(ñÈ¤f
+N
+java:S1135Ì"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+?
+java:S1604•"(Make this anonymous inner class a lambda(ôƒúÁ
+@
+java:S1172Û"*Remove this unused method parameter "evt".(³à¿h
+D
+java:S1604‚"(Make this anonymous inner class a lambda(¿šŠÛúÿÿÿÿ
+}
+java:S1450ú"aRemove the "lblTxtPreferencias" field and declare it as a local variable in the relevant methods.(¨¤¡İüÿÿÿÿ
+A
+java:S1172Ë"*Remove this unused method parameter "evt".(­Ïİ
+€
+java:S1450÷"dRemove the "lblEditarPreferencias" field and declare it as a local variable in the relevant methods.(ø³³²øÿÿÿÿ
+x
+java:S1450ø"\Remove the "lblIconoListo" field and declare it as a local variable in the relevant methods.(È½òúøÿÿÿÿ
+n
+java:S1450ù"WRemove the "lblListo" field and declare it as a local variable in the relevant methods.(ô¥´“
+N
+java:S1135à"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+F
+java:S1172Ï"*Remove this unused method parameter "evt".(·ÜÈ¯üÿÿÿÿ
+U
+java:S1161<":Add the "@Override" annotation above this method signature(¦³±ÿÿÿÿÿ
+D
+java:S1604§"(Make this anonymous inner class a lambda(·İéşÿÿÿÿ
+C
+java:S1604v"(Make this anonymous inner class a lambda(şÕşÁÿÿÿÿÿ
+N
+java:S1135Ğ"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+€
+java:S1450õ"dRemove the "btnEditarPreferencias" field and declare it as a local variable in the relevant methods.(Òâ·Øüÿÿÿÿ

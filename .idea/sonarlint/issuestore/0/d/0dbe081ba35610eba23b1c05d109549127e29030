@@ -1,0 +1,117 @@
+
+=	Web:S1827"(Remove this deprecated "NAME" attribute.(ã½¸Ä
+E	Web:S1827!"+Remove this deprecated "BGCOLOR" attribute.(¹ïùœıÿÿÿÿ
+VWeb:UnsupportedTagsInHtml5Check+"&Remove this deprecated "FONT" element.(’’½Æúÿÿÿÿ
+VWeb:UnsupportedTagsInHtml5Check9"&Remove this deprecated "FONT" element.(‡ÙÔ…üÿÿÿÿ
+HWeb:BoldAndItalicTagsCheck‡"!Replace this <B> tag by <strong>.(ÜñÂŒ
+GWeb:BoldAndItalicTagsCheck8"!Replace this <B> tag by <strong>.(·ê½
+C	Web:S18270")Remove this deprecated "ALIGN" attribute.(áƒµŞøÿÿÿÿ
+F	Web:S1827”"+Remove this deprecated "BGCOLOR" attribute.(‡ÙÔ…üÿÿÿÿ
+GWeb:BoldAndItalicTagsCheckq"!Replace this <B> tag by <strong>.(ÀÏà
+D	Web:S1827‹")Remove this deprecated "ALIGN" attribute.(áƒµŞøÿÿÿÿ
+C	Web:S1827z"/Remove this deprecated "CELLSPACING" attribute.(ÔñÄ~
+:	Web:S5256~"%Add "<th>" headers to this "<table>".(—­È
+LWeb:BoldAndItalicTagsCheck&"!Replace this <B> tag by <strong>.(¥ŒÉ§ùÿÿÿÿ
+C	Web:S1827"/Remove this deprecated "CELLPADDING" attribute.(ÔñÄ~
+F	Web:S1827"+Remove this deprecated "BGCOLOR" attribute.(¥ŒÉ§ùÿÿÿÿ
+E	Web:S18279"+Remove this deprecated "BGCOLOR" attribute.(‡ÙÔ…üÿÿÿÿ
+A	Web:S1827…"+Remove this deprecated "BGCOLOR" attribute.(¯´üÂ
+MWeb:BoldAndItalicTagsCheckŸ"!Replace this <B> tag by <strong>.(…¹‚ûıÿÿÿÿ
+PWeb:UnsupportedTagsInHtml5Check%"&Remove this deprecated "FONT" element.(ˆæ‚
+I	Web:S1827Y"/Remove this deprecated "CELLSPACING" attribute.(Ú÷—©ûÿÿÿÿ
+GWeb:BoldAndItalicTagsCheck;"!Replace this <B> tag by <strong>.(´æÍ¿
+RWeb:UnsupportedTagsInHtml5Check‚"&Remove this deprecated "FONT" element.(‚±÷ú
+@	Web:S1827*"+Remove this deprecated "BGCOLOR" attribute.(¯´üÂ
+?	Web:S1827%"+Remove this deprecated "BGCOLOR" attribute.(ˆæ‚
+E	Web:S18276"+Remove this deprecated "BGCOLOR" attribute.(‡ÙÔ…üÿÿÿÿ
+>	Web:S1827")Remove this deprecated "ALIGN" attribute.(½ş°°
+WWeb:UnsupportedTagsInHtml5Check„"&Remove this deprecated "FONT" element.(‹Æ¹ßûÿÿÿÿ
+?	Web:S1827"*Remove this deprecated "VALIGN" attribute.(½ş°°
+A	Web:S1827‚"+Remove this deprecated "BGCOLOR" attribute.(‚±÷ú
+g Web:TableHeaderHasIdOrScopeCheck[";Add either an 'id' or a 'scope' attribute to this <TH> tag.(×á°Ô
+F	Web:S1827„"+Remove this deprecated "BGCOLOR" attribute.(‹Æ¹ßûÿÿÿÿ
+A	Web:S1827‡"+Remove this deprecated "BGCOLOR" attribute.(ÜñÂŒ
+QWeb:UnsupportedTagsInHtml5Check["&Remove this deprecated "FONT" element.(×á°Ô
+@	Web:S1827'"+Remove this deprecated "BGCOLOR" attribute.(‚±÷ú
+VWeb:UnsupportedTagsInHtml5Check6"&Remove this deprecated "FONT" element.(‡ÙÔ…üÿÿÿÿ
+MWeb:BoldAndItalicTagsCheck’"!Replace this <B> tag by <strong>.(Êµßûøÿÿÿÿ
+:	Web:S5256#"%Add "<th>" headers to this "<table>".(—­È
+F	Web:S1827ƒ"+Remove this deprecated "BGCOLOR" attribute.(†£«¬üÿÿÿÿ
+>	Web:S1827$")Remove this deprecated "ALIGN" attribute.(½ş°°
+LWeb:BoldAndItalicTagsCheck7"!Replace this <B> tag by <strong>.(Êµßûøÿÿÿÿ
+FWeb:BoldAndItalicTagsCheck%"!Replace this <B> tag by <strong>.(ˆæ‚
+=	Web:S1827")Remove this deprecated "WIDTH" attribute.(ÔñÄ~
+GWeb:BoldAndItalicTagsCheck*"!Replace this <B> tag by <strong>.(¯´üÂ
+F	Web:S1827†"+Remove this deprecated "BGCOLOR" attribute.(’’½Æúÿÿÿÿ
+MWeb:BoldAndItalicTagsCheck„"!Replace this <B> tag by <strong>.(‹Æ¹ßûÿÿÿÿ
+WWeb:UnsupportedTagsInHtml5Checkƒ"&Remove this deprecated "FONT" element.(†£«¬üÿÿÿÿ
+WWeb:UnsupportedTagsInHtml5Check"&Remove this deprecated "FONT" element.(¥ŒÉ§ùÿÿÿÿ
+C	Web:S1827"/Remove this deprecated "CELLSPACING" attribute.(ÔñÄ~
+@	Web:S1827"+Remove this deprecated "BGCOLOR" attribute.(Õ÷ú¦
+T	Web:S5254"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(¨äÑ>
+GWeb:BoldAndItalicTagsCheck€"!Replace this <B> tag by <strong>.(ˆæ‚
+C	Web:S1827Y")Remove this deprecated "WIDTH" attribute.(Ú÷—©ûÿÿÿÿ
+I	Web:S1827Y"/Remove this deprecated "CELLPADDING" attribute.(Ú÷—©ûÿÿÿÿ
+LWeb:BoldAndItalicTagsCheckV"!Replace this <B> tag by <strong>.(—ãÒıÿÿÿÿ
+@	Web:S1827,"+Remove this deprecated "BGCOLOR" attribute.(ÜñÂŒ
+@	Web:S1827€"+Remove this deprecated "BGCOLOR" attribute.(ˆæ‚
+HWeb:BoldAndItalicTagsCheck•"!Replace this <B> tag by <strong>.(å˜¤­
+?	Web:S1827"+Remove this deprecated "SUMMARY" attribute.(ÔñÄ~
+HWeb:BoldAndItalicTagsCheck…"!Replace this <B> tag by <strong>.(¯´üÂ
+RWeb:UnsupportedTagsInHtml5Check‡"&Remove this deprecated "FONT" element.(ÜñÂŒ
+WWeb:UnsupportedTagsInHtml5Check‘"&Remove this deprecated "FONT" element.(‡ÙÔ…üÿÿÿÿ
+B	Web:S1827}"(Remove this deprecated "NAME" attribute.(‹±·êûÿÿÿÿ
+VWeb:UnsupportedTagsInHtml5Check&"&Remove this deprecated "FONT" element.(¥ŒÉ§ùÿÿÿÿ
+B	Web:S1827f"(Remove this deprecated "NAME" attribute.(Ÿ‚Ûïúÿÿÿÿ
+WWeb:UnsupportedTagsInHtml5Check”"&Remove this deprecated "FONT" element.(‡ÙÔ…üÿÿÿÿ
+@	Web:S1827#"+Remove this deprecated "SUMMARY" attribute.(—­È
+E	Web:S1827|"+Remove this deprecated "BGCOLOR" attribute.(¹ïùœıÿÿÿÿ
+MWeb:BoldAndItalicTagsCheckƒ"!Replace this <B> tag by <strong>.(†£«¬üÿÿÿÿ
+9	Web:S5256"%Add "<th>" headers to this "<table>".(ÔñÄ~
+D	Web:S1827#"/Remove this deprecated "CELLSPACING" attribute.(—­È
+LWeb:BoldAndItalicTagsCheck("!Replace this <B> tag by <strong>.(†£«¬üÿÿÿÿ
+GWeb:BoldAndItalicTagsCheckT"!Replace this <B> tag by <strong>.(Îç©™
+?	Web:S1827z"+Remove this deprecated "SUMMARY" attribute.(ÔñÄ~
+MWeb:BoldAndItalicTagsCheck†"!Replace this <B> tag by <strong>.(’’½Æúÿÿÿÿ
+QWeb:UnsupportedTagsInHtml5Check€"&Remove this deprecated "FONT" element.(ˆæ‚
+VWeb:UnsupportedTagsInHtml5Check("&Remove this deprecated "FONT" element.(†£«¬üÿÿÿÿ
+C	Web:S1827_")Remove this deprecated "WIDTH" attribute.(®À×—üÿÿÿÿ
+D	Web:S1827~"/Remove this deprecated "CELLSPACING" attribute.(—­È
+GWeb:BoldAndItalicTagsCheck,"!Replace this <B> tag by <strong>.(ÜñÂŒ
+E	Web:S1827("+Remove this deprecated "BGCOLOR" attribute.(†£«¬üÿÿÿÿ
+E	Web:S1827^"+Remove this deprecated "BGCOLOR" attribute.(…¶ãàøÿÿÿÿ
+HWeb:BoldAndItalicTagsCheck–"!Replace this <B> tag by <strong>.(´æÍ¿
+E	Web:S1827Y"+Remove this deprecated "SUMMARY" attribute.(Ú÷—©ûÿÿÿÿ
+F	Web:S1827‘"+Remove this deprecated "BGCOLOR" attribute.(‡ÙÔ…üÿÿÿÿ
+QWeb:UnsupportedTagsInHtml5Check*"&Remove this deprecated "FONT" element.(¯´üÂ
+B	Web:S1827x"(Remove this deprecated "NAME" attribute.(·÷ËÕüÿÿÿÿ
+D	Web:S1827#"/Remove this deprecated "CELLPADDING" attribute.(—­È
+C	Web:S1827z"/Remove this deprecated "CELLPADDING" attribute.(ÔñÄ~
+QWeb:UnsupportedTagsInHtml5Check,"&Remove this deprecated "FONT" element.(ÜñÂŒ
+9	Web:S5256z"%Add "<th>" headers to this "<table>".(ÔñÄ~
+E	Web:S1827&"+Remove this deprecated "BGCOLOR" attribute.(¥ŒÉ§ùÿÿÿÿ
+E	Web:S1827)"+Remove this deprecated "BGCOLOR" attribute.(‹Æ¹ßûÿÿÿÿ
+D	Web:S18270"*Remove this deprecated "VALIGN" attribute.(áƒµŞøÿÿÿÿ
+E	Web:S1827+"+Remove this deprecated "BGCOLOR" attribute.(’’½Æúÿÿÿÿ
+GWeb:BoldAndItalicTagsCheck:"!Replace this <B> tag by <strong>.(å˜¤­
+GWeb:BoldAndItalicTagsCheck\"!Replace this <B> tag by <strong>.(Åê£
+LWeb:BoldAndItalicTagsCheckD"!Replace this <B> tag by <strong>.(…¹‚ûıÿÿÿÿ
+QWeb:UnsupportedTagsInHtml5Check'"&Remove this deprecated "FONT" element.(‚±÷ú
+MWeb:BoldAndItalicTagsCheck"!Replace this <B> tag by <strong>.(¥ŒÉ§ùÿÿÿÿ
+@	Web:S1827~"+Remove this deprecated "SUMMARY" attribute.(—­È
+VWeb:UnsupportedTagsInHtml5Check)"&Remove this deprecated "FONT" element.(‹Æ¹ßûÿÿÿÿ
+=	Web:S1827K"(Remove this deprecated "NAME" attribute.(·¹õ­
+LWeb:BoldAndItalicTagsCheck)"!Replace this <B> tag by <strong>.(‹Æ¹ßûÿÿÿÿ
+=	Web:S1827z")Remove this deprecated "WIDTH" attribute.(ÔñÄ~
+?	Web:S1827$"*Remove this deprecated "VALIGN" attribute.(½ş°°
+LWeb:BoldAndItalicTagsCheck+"!Replace this <B> tag by <strong>.(’’½Æúÿÿÿÿ
+LWeb:BoldAndItalicTagsCheck_"!Replace this <B> tag by <strong>.(®À×—üÿÿÿÿ
+HWeb:BoldAndItalicTagsCheck“"!Replace this <B> tag by <strong>.(·ê½
+E	Web:S1827‹"*Remove this deprecated "VALIGN" attribute.(áƒµŞøÿÿÿÿ
+=	Web:S1827""(Remove this deprecated "NAME" attribute.(‘Ñø
+D	Web:S1827~"/Remove this deprecated "CELLPADDING" attribute.(—­È
+E	Web:S1827Z"+Remove this deprecated "BGCOLOR" attribute.(°È›Ñşÿÿÿÿ
+WWeb:UnsupportedTagsInHtml5Check†"&Remove this deprecated "FONT" element.(’’½Æúÿÿÿÿ
+RWeb:UnsupportedTagsInHtml5Check…"&Remove this deprecated "FONT" element.(¯´üÂ
+>	Web:S1827¦"(Remove this deprecated "NAME" attribute.(Ğ·Äâ
+>	Web:S1827[")Remove this deprecated "ALIGN" attribute.(×á°Ô

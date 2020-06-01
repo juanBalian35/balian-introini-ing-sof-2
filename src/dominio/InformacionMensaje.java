@@ -28,8 +28,11 @@ public final class InformacionMensaje implements Serializable {
     }
 
     public void setDestinatario(String elDestinatario) {
-        destinatario = elDestinatario;
-
+        if(elDestinatario == null || elDestinatario.isEmpty()){
+            destinatario = "Destinatario no ingresado";
+        } else{
+            destinatario = elDestinatario;
+        }
     }
 
     public String getRemitente() {
@@ -37,7 +40,11 @@ public final class InformacionMensaje implements Serializable {
     }
 
     public void setRemitente(String elRemitente) {
-        this.remitente = elRemitente;
+        if(elRemitente == null || elRemitente.isEmpty()){
+            this.remitente = "Remitente no ingresado";
+        } else{
+            this.remitente = elRemitente;
+        }
     }
 
     public void intercambiarRemitente() {

@@ -2,12 +2,9 @@ package dominio;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Objects;
 import javax.swing.ImageIcon;
-import java.util.Currency;
 
 public final class Alimento implements Serializable {
-
     private String nombre;
     private String tipoAlimento;
     private ArrayList<ComposicionAlimento> listaNutrientesConProporcion;
@@ -41,8 +38,11 @@ public final class Alimento implements Serializable {
     }
 
     public void setTipoAlimento(String TA) {
-        tipoAlimento = TA;
-        
+        if(TA == null || TA.isEmpty()){
+            tipoAlimento = "No definido";
+        } else{
+            tipoAlimento = TA;
+        }
     }
 
     public ArrayList<ComposicionAlimento> getListaNutrientesConProporcion() {
@@ -80,6 +80,10 @@ public final class Alimento implements Serializable {
 
     @Override
     public boolean equals(Object obj) {
+        if(obj == null || this.getClass() != obj.getClass()){
+            return false;
+        }
+
         Alimento otroAlimento = (Alimento) obj;
         return (this.getNombre().equals(otroAlimento.getNombre()));
     }

@@ -1,0 +1,381 @@
+
+?
+java:S1604É"(Make this anonymous inner class a lambda(È¬İá
+e
+java:S1192ß	"NDefine a constant instead of duplicating this literal "Seleccione..." 4 times.(Ü–ê
+x
+java:S1450ö"aRemove the "btnEliminarDelPlan" field and declare it as a local variable in the relevant methods.(€Ëïß
+F
+java:S1172í"*Remove this unused method parameter "evt".(Ë˜ïşÿÿÿÿ
+F
+java:S1172Â"*Remove this unused method parameter "evt".(âÖèüÿÿÿÿÿ
+@
+java:S1172ï"*Remove this unused method parameter "evt".(“ãÿ9
+
+java:S1450¬"cRemove the "lblIngresarAlimento2" field and declare it as a local variable in the relevant methods.(ä¸éôüÿÿÿÿ
+s	java:S116É"XRename this field "lblProteÃ­nas" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½¥’­ûÿÿÿÿ
+D
+java:S1604»
+"(Make this anonymous inner class a lambda(Áà—ëıÿÿÿÿ
+v
+java:S1450–"ZRemove the "lblAlmuerzo" field and declare it as a local variable in the relevant methods.(…İ¦óıÿÿÿÿ
+Q
+java:S1161î":Add the "@Override" annotation above this method signature(±“‚Æ
+x
+java:S1192›"aDefine a constant instead of duplicating this literal "/Imagenes/iconoEnviarMensaje.png" 3 times.(ö™¨
+q
+java:S1450ª"ZRemove the "lblIngestas" field and declare it as a local variable in the relevant methods.(âœÓ–
+|
+java:S4144Û"eUpdate this method so that its implementation is not identical to "txtHidratosKeyTyped" on line 2215.(»õØ¹
+q
+java:S1450"ZRemove the "lblDesayuno" field and declare it as a local variable in the relevant methods.(¢İÓ
+~
+java:S1450Í"bRemove the "lblTxtRestricciones" field and declare it as a local variable in the relevant methods.(ÃœÅıÿÿÿÿÿ
+N
+java:S1135Ã"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+r
+java:S1450"[Remove the "jScrollPane4" field and declare it as a local variable in the relevant methods.(À“•¹
+F
+java:S1172£"*Remove this unused method parameter "evt".(Á‘€âûÿÿÿÿ
+z
+java:S1450ô"^Remove the "btnElaborarPlan" field and declare it as a local variable in the relevant methods.(€×’úûÿÿÿÿ
+A
+java:S1172ë"*Remove this unused method parameter "evt".(òéÏÑ
+Q
+java:S1161Ç	":Add the "@Override" annotation above this method signature(±“‚Æ
+m
+java:S1450—"VRemove the "lblCena" field and declare it as a local variable in the relevant methods.(é’Çş
+F
+java:S1172’"*Remove this unused method parameter "evt".(Œüªùÿÿÿÿ
+V
+java:S1161ƒ
+":Add the "@Override" annotation above this method signature(Õş°ıüÿÿÿÿ
+g
+java:S1192õ"PDefine a constant instead of duplicating this literal "Century Gothic" 68 times.(ˆìí
+D
+java:S1604Ö"(Make this anonymous inner class a lambda(Œı‚Àûÿÿÿÿ
+
+java:S4144å"eUpdate this method so that its implementation is not identical to "txtHidratosKeyTyped" on line 2215.(˜Ì–Úşÿÿÿÿ
+q
+java:S1450á"[Remove the "panelDerecho" field and declare it as a local variable in the relevant methods.(˜Œû}
+r
+java:S1450†"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ
+D
+java:S1604í	"(Make this anonymous inner class a lambda(¤Í¼²ÿÿÿÿÿ
+?
+java:S1604¥
+"(Make this anonymous inner class a lambda(ÌŸãŸ
+@
+java:S1172½"*Remove this unused method parameter "evt".(³à¿h
+{
+java:S1450ñ"_Remove the "btnAgregarAlPlan" field and declare it as a local variable in the relevant methods.(¤¤ÅÄşÿÿÿÿ
+w
+java:S1450“"[Remove the "jScrollPane7" field and declare it as a local variable in the relevant methods.(Ü­€ÿÿÿÿÿ
+A
+java:S1172Î"*Remove this unused method parameter "evt".(ñÇŠ
+N
+java:S1135—"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+}
+java:S1450¥"aRemove the "lblFotoProfesional" field and declare it as a local variable in the relevant methods.(†ô³îıÿÿÿÿ
+c
+java:S1192æ"LDefine a constant instead of duplicating this literal "Dato vacÃ­o" 3 times.(ÈŸ¼‡
+F
+java:S1172ƒ"*Remove this unused method parameter "evt".(Ääíšûÿÿÿÿ
+Q
+java:S1161£":Add the "@Override" annotation above this method signature(ñ—Ú–
+?
+java:S1604¶"(Make this anonymous inner class a lambda(ô•Ù«
+q
+java:S1192÷	"UDefine a constant instead of duplicating this literal "Hiidratos de carbono" 7 times.(àı¸äÿÿÿÿÿ
+D
+java:S1604«"(Make this anonymous inner class a lambda(ÄşØıúÿÿÿÿ
+?
+java:S1604
+"(Make this anonymous inner class a lambda(€²ºï
+w
+java:S1450±"[Remove the "lblNoPlanes2" field and declare it as a local variable in the relevant methods.(µƒ„øÿÿÿÿ
+w
+java:S1450½"`Remove the "lblNombreUsuario1" field and declare it as a local variable in the relevant methods.(Šø§«
+F
+java:S1172–"*Remove this unused method parameter "evt".(÷íü¨øÿÿÿÿ
+w
+java:S1450’"[Remove the "jScrollPane6" field and declare it as a local variable in the relevant methods.(­İÃñÿÿÿÿÿ
+r
+java:S1192"VDefine a constant instead of duplicating this literal "/Imagenes/iconoOK.png" 5 times.(ıÒß¨üÿÿÿÿ
+o
+java:S1450™"XRemove the "lblComida" field and declare it as a local variable in the relevant methods.(£¤Ù
+F
+java:S1172Á"*Remove this unused method parameter "evt".(üŸ€ıÿÿÿÿ
+i	java:S100÷"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†è¥ùüÿÿÿÿ
+?
+java:S1604Ñ"(Make this anonymous inner class a lambda(ÈÄê²
+y
+java:S1450Å"cRemove the "lblPlanesSolicitados" field and declare it as a local variable in the relevant methods.(á÷Ûw
+{
+java:S1450ş"dRemove the "btnVerPerfilDeUsuario" field and declare it as a local variable in the relevant methods.(å³ 
+r
+java:S1450ˆ"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ
+e
+java:S1192’"IDefine a constant instead of duplicating this literal "Desayuno" 3 times.(ëáÇëüÿÿÿÿ
+\
+java:S1192 "FDefine a constant instead of duplicating this literal "Lunes" 5 times.(ë Áµ
+D
+java:S1604"(Make this anonymous inner class a lambda(¥”‹úÿÿÿÿ
+t
+java:S1450Ç"^Remove the "lblPreferencias" field and declare it as a local variable in the relevant methods.(›Îe
+Q
+java:S1161Å":Add the "@Override" annotation above this method signature(±“‚Æ
+r
+java:S1450”"[Remove the "jScrollPane8" field and declare it as a local variable in the relevant methods.(ÿ‚á§
+|
+java:S4144±"eUpdate this method so that its implementation is not identical to "txtHidratosKeyTyped" on line 2215.(ê¶Çì
+p
+java:S1450Ã"YRemove the "lblOKTexto" field and declare it as a local variable in the relevant methods.(çö“Ã
+}
+java:S1192­"aDefine a constant instead of duplicating this literal "/Imagenes/iconoCampoCorrecto.png" 3 times.(‡È»ûÿÿÿÿ
+A
+java:S1172¦"*Remove this unused method parameter "evt".(‚ê‘
+n
+java:S1450˜"WRemove the "lblCena1" field and declare it as a local variable in the relevant methods.(„ê
+?
+java:S1604ˆ"(Make this anonymous inner class a lambda(¢ı‘ã
+D
+java:S1604ï"(Make this anonymous inner class a lambda(¸Ú—úÿÿÿÿ
+
+java:S4144Ç"eUpdate this method so that its implementation is not identical to "txtHidratosKeyTyped" on line 2215.(ŒÛšùÿÿÿÿ
+s
+java:S1450ò"WRemove the "btnAyuda" field and declare it as a local variable in the relevant methods.(É³œ÷ûÿÿÿÿ
+{
+java:S1450Ì"dRemove the "lblTxtFechaNacimiento" field and declare it as a local variable in the relevant methods.(âÙõ©
+w
+java:S1450²"`Remove the "lblNohayConsultas" field and declare it as a local variable in the relevant methods.(ÌÕ¿¿
+g
+java:S1192Î"KDefine a constant instead of duplicating this literal "Levenim MT" 5 times.(…´ƒ»şÿÿÿÿ
+z
+java:S1450Ê"^Remove the "lblTipoAlimento" field and declare it as a local variable in the relevant methods.(¿ÒÌÔûÿÿÿÿ
+?
+java:S1604 "(Make this anonymous inner class a lambda(Ùşˆ
+s
+java:S1450Œ"\Remove the "jScrollPane11" field and declare it as a local variable in the relevant methods.(„¼œ©
+y
+java:S1450¦"]Remove the "lblFotoUsuario" field and declare it as a local variable in the relevant methods.(Ù¼©şÿÿÿÿ
+s	java:S116ú"XRename this field "txtProteÃ­nas" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á«³àşÿÿÿÿ
+F
+java:S1905Ç"*Remove this unnecessary cast to "Usuario".(éßÆ¢øÿÿÿÿ
+F
+java:S1172µ"*Remove this unused method parameter "evt".(†Ä¿’ıÿÿÿÿ
+i
+java:S3776´"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(¾ÆæŞ
+V
+java:S1161å
+":Add the "@Override" annotation above this method signature(Õş°ıüÿÿÿÿ
+y
+java:S1450ä"]Remove the "panelIzquierdo" field and declare it as a local variable in the relevant methods.(´¯ˆŒüÿÿÿÿ
+F
+java:S1172š"*Remove this unused method parameter "evt".(ãˆ éûÿÿÿÿ
+w
+java:S1450"[Remove the "jScrollPane3" field and declare it as a local variable in the relevant methods.(Ò‰êêùÿÿÿÿ
+|
+java:S1450¡"`Remove the "lblElijaUnUsuario" field and declare it as a local variable in the relevant methods.(ãâ‰áşÿÿÿÿ
+
+java:S1450û"jRemove the "btnIngresarAlimentoASistema" field and declare it as a local variable in the relevant methods.(í‘Øû
+D
+java:S1604é"(Make this anonymous inner class a lambda(ùñÓıÿÿÿÿ
+V
+java:S1161Û
+":Add the "@Override" annotation above this method signature(Õş°ıüÿÿÿÿ
+F
+java:S1172³"*Remove this unused method parameter "evt".(´òéôúÿÿÿÿ
+€
+java:S1450Æ"dRemove the "lblPlanesSolicitados2" field and declare it as a local variable in the relevant methods.(˜Ê¶üÿÿÿÿ
+q
+java:S1450Ä"ZRemove the "lblOKTexto2" field and declare it as a local variable in the relevant methods.(•ç£³
+|
+java:S1450š"eRemove the "lblConsultasPendientes" field and declare it as a local variable in the relevant methods.(°Ü¢ş
+V
+java:S1161ù
+":Add the "@Override" annotation above this method signature(Õş°ıüÿÿÿÿ
+~
+java:S1450Ñ"bRemove the "lblVerPerfilUsuario" field and declare it as a local variable in the relevant methods.(é®°ğüÿÿÿÿ
+?
+java:S1604°
+"(Make this anonymous inner class a lambda(àâ™
+t
+java:S1450¸"XRemove the "lblNombre" field and declare it as a local variable in the relevant methods.(±ÍÇùÿÿÿÿ
+D
+java:S1604à	"(Make this anonymous inner class a lambda(ğïé•ÿÿÿÿÿ
+r
+java:S1450‡"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ
+r
+java:S1450•"[Remove the "lblAlimentos" field and declare it as a local variable in the relevant methods.(ì¿é»
+?
+java:S1604ò"(Make this anonymous inner class a lambda(¨ª·
+ƒ
+java:S1450È"gRemove the "lblPrincipalesNutrientes" field and declare it as a local variable in the relevant methods.(”ë—¨øÿÿÿÿ
+Q
+java:S1161²":Add the "@Override" annotation above this method signature(±“‚Æ
+Q
+java:S1161®":Add the "@Override" annotation above this method signature(ñ—Ú–
+F
+java:S1172©"*Remove this unused method parameter "evt".(ŠÚ¤ôÿÿÿÿÿ
+z
+java:S1192Ú"cDefine a constant instead of duplicating this literal "/Imagenes/iconoCampoIncorrecto.png" 8 times.(—Íúà
+?
+java:S1604¿"(Make this anonymous inner class a lambda(Ÿ±•±
+?
+java:S1604Ë	"(Make this anonymous inner class a lambda(ÚÆÇ
+V
+java:S1161ï
+":Add the "@Override" annotation above this method signature(Õş°ıüÿÿÿÿ
+F
+java:S1172¨"*Remove this unused method parameter "evt".(éÆÜ÷üÿÿÿÿ
+A
+java:S1172µ"*Remove this unused method parameter "evt".(ˆË“û
+F
+java:S1172±"*Remove this unused method parameter "evt".(ŸÉöşÿÿÿÿÿ
+F
+java:S1172"*Remove this unused method parameter "evt".(Œ¯âúÿÿÿÿ
+F
+java:S1905š"*Remove this unnecessary cast to "Usuario".(éßÆ¢øÿÿÿÿ
+v
+java:S1450À"_Remove the "lblNuevoAlimento" field and declare it as a local variable in the relevant methods.(†ğ®Î
+t
+java:S1450å"XRemove the "panelMenu" field and declare it as a local variable in the relevant methods.(à÷ §øÿÿÿÿ
+V
+java:S1161Ó":Add the "@Override" annotation above this method signature(¦³±ÿÿÿÿÿ
+D
+java:S1604¬"(Make this anonymous inner class a lambda(“‡ıÿÿÿÿ
+{
+java:S1450õ"_Remove the "btnElaborarPlan1" field and declare it as a local variable in the relevant methods.(öÙÆõüÿÿÿÿ
+
+java:S4144Ñ"eUpdate this method so that its implementation is not identical to "txtHidratosKeyTyped" on line 2215.(’Şãæşÿÿÿÿ
+F
+java:S1172÷"*Remove this unused method parameter "evt".(†è¥ùüÿÿÿÿ
+F
+java:S1172­"*Remove this unused method parameter "evt".(ÿµõ«şÿÿÿÿ
+x
+java:S1450‹"\Remove the "jScrollPane10" field and declare it as a local variable in the relevant methods.(…£ığùÿÿÿÿ
+l
+java:S1450Â"URemove the "lblOK2" field and declare it as a local variable in the relevant methods.(Ä¥¤…
+z
+java:S1450Ÿ"cRemove the "lblElaborarNuevoPlan" field and declare it as a local variable in the relevant methods.(ËÜ¶Æ
+U
+java:S1155Ô">Use isEmpty() to check whether the collection is empty or not.(—âÊü
+u	java:S116„"ZRename this field "checkProteÃ­nas" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Äÿ­ıÿÿÿÿ
+A
+java:S1172Ë"*Remove this unused method parameter "evt".(™öáá
+~
+java:S1450÷"bRemove the "btnEliminarDelPlan1" field and declare it as a local variable in the relevant methods.(€‰…°ùÿÿÿÿ
+D
+java:S1604š
+"(Make this anonymous inner class a lambda(¿Ù´Çúÿÿÿÿ
+A
+java:S1172"*Remove this unused method parameter "evt".(Õùí²
+>
+java:S1604Ø	"(Make this anonymous inner class a lambda(ÎÏø
+F
+java:S1172Æ"*Remove this unused method parameter "evt".(…æË¸şÿÿÿÿ
+D
+java:S1604‘"(Make this anonymous inner class a lambda(àÆ°Šûÿÿÿÿ
+
+java:S1450³"eRemove the "lblNohayConsultasTexto" field and declare it as a local variable in the relevant methods.(‘ô¾Öıÿÿÿÿ
+|
+java:S4144¼"eUpdate this method so that its implementation is not identical to "txtHidratosKeyTyped" on line 2215.(ÿÆÒ½
+x
+java:S1450«"bRemove the "lblIngresarAlimento" field and declare it as a local variable in the relevant methods.(™öùx
+?
+java:S1604¡"(Make this anonymous inner class a lambda(±ùúİ
+q
+java:S1450"URemove the "lblDia" field and declare it as a local variable in the relevant methods.(“ª¦âÿÿÿÿÿ
+z
+java:S1450 "^Remove the "lblElaborarPlan" field and declare it as a local variable in the relevant methods.(ßÓ†Áûÿÿÿÿ
+l
+java:S1450ù"VRemove the "btnHome" field and declare it as a local variable in the relevant methods.(†¹ª?
+D
+java:S1604ı"(Make this anonymous inner class a lambda(ç›½¸ûÿÿÿÿ
+D
+java:S1604ø	"(Make this anonymous inner class a lambda(Èµµıÿÿÿÿ
+F
+java:S1172û"*Remove this unused method parameter "evt".(·–Ñ“úÿÿÿÿ
+_
+java:S1192Ğ"HDefine a constant instead of duplicating this literal "Usuario" 3 times.(÷ÅôÒ
+A
+java:S1172ñ"*Remove this unused method parameter "evt".(Ëå×ö
+d	java:S100±"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê¶Çì
+_
+java:S1854î"CRemove this useless assignment to local variable "diaSeleccionado".(ıÔêµøÿÿÿÿ
+?
+java:S1604Æ
+"(Make this anonymous inner class a lambda(Å”‹ì
+F
+java:S1172Ñ"*Remove this unused method parameter "evt".(ôì¸Ùùÿÿÿÿ
+s
+java:S1450"\Remove the "jScrollPane12" field and declare it as a local variable in the relevant methods.(÷¹á 
+Q
+java:S1161¦":Add the "@Override" annotation above this method signature(±“‚Æ
+A
+java:S1172½"*Remove this unused method parameter "evt".(ó±ï›
+v
+java:S1450ø"_Remove the "btnEnviarMensaje" field and declare it as a local variable in the relevant methods.(ííŞ¿
+F
+java:S1172¡"*Remove this unused method parameter "evt".(ŸŒı®ÿÿÿÿÿ
+k
+java:S1450Á"TRemove the "lblOK" field and declare it as a local variable in the relevant methods.(šé÷”
+A
+java:S1172¥"*Remove this unused method parameter "evt".(ùÙ½
+V
+java:S1161Ñ
+":Add the "@Override" annotation above this method signature(Õş°ıüÿÿÿÿ
+F
+java:S1172ß"*Remove this unused method parameter "evt".(ş›óãøÿÿÿÿ
+?
+java:S1604ş"(Make this anonymous inner class a lambda(…àˆ
+D
+java:S1604Ó"(Make this anonymous inner class a lambda(Ó³—¨şÿÿÿÿ
+N
+java:S1135ª"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+w
+java:S1450Š"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ
+?
+java:S1604ã"(Make this anonymous inner class a lambda(›ªüš
+N
+java:S1135²"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+D
+java:S1604ˆ"(Make this anonymous inner class a lambda(€õö÷şÿÿÿÿ
+V
+java:S1161ƒ":Add the "@Override" annotation above this method signature(Õş°ıüÿÿÿÿ
+N
+java:S1135"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+A
+java:S1172å"*Remove this unused method parameter "evt".(¸ºÏ²
+w
+java:S1450"[Remove the "jScrollPane2" field and declare it as a local variable in the relevant methods.(ŠÌ«·şÿÿÿÿ
+A
+java:S1172œ"*Remove this unused method parameter "evt".(Å§ì
+A
+java:S1172ï"*Remove this unused method parameter "evt".(ûüÆ£
+`
+java:S1192˜"IDefine a constant instead of duplicating this literal "Almuerzo" 3 times.(²èú
+€
+java:S1450©"dRemove the "lblIconoNuevoAlimento" field and declare it as a local variable in the relevant methods.( ´èÛüÿÿÿÿ
+F
+java:S1172¹"*Remove this unused method parameter "evt".(ÌËÕÎÿÿÿÿÿ
+P
+java:S1481î"4Remove this unused "diaSeleccionado" local variable.(ıÔêµøÿÿÿÿ
+s
+java:S1450º"\Remove the "lblNombrePlan" field and declare it as a local variable in the relevant methods.( ş¡”
+Q	java:S110"<This class has 6 parents which is greater than 5 authorized.(Öñ¥Ò
+F
+java:S1172Ó"*Remove this unused method parameter "evt".(òÛ‚–øÿÿÿÿ
+F
+java:S1172Å"*Remove this unused method parameter "evt".(º´€Õøÿÿÿÿ
+N
+java:S1135Â"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+A
+java:S1172"*Remove this unused method parameter "evt".(ÔôØ
+
+java:S1450·"cRemove the "lblNohayPlanesTexto2" field and declare it as a local variable in the relevant methods.(¡êòÿÿÿÿÿ
+m
+java:S1450‰"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ã
+r
+java:S1450‘"[Remove the "jScrollPane5" field and declare it as a local variable in the relevant methods.(ÂŞàå
