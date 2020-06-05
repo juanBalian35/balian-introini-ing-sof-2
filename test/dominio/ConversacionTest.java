@@ -6,7 +6,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class ConversacionTest {
-
     public ConversacionTest() {
     }
 
@@ -48,7 +47,6 @@ public class ConversacionTest {
         assertEquals(conversacionATestear.toString(), "No hay mensajes para mostrar");
     }
 
-
     @Test
     public void testGetSetsDatosVaciosProfesional() {
         Persona usuario = new Usuario(null, null, null, null, null);
@@ -69,13 +67,69 @@ public class ConversacionTest {
     }
 
     @Test
-    public void testGetSetsDatosVaciosToString() {
-        Persona usuario = new Usuario(null, null, null, null, null);
-        Persona profesional = new Profesional(null, null, null, null, null, null, null);
-        ArrayList listaMensajes = new ArrayList<>();
-        Conversacion conversacionATestear = new Conversacion(usuario, profesional, listaMensajes);
-        assertEquals(conversacionATestear.toString(), "No hay mensajes para mostrar");
+    public void testGetsSetsFueAtendida() {
+        Persona usuario = new Usuario("Rodrigo","Perez", "03/03/2000", null, "Uruguaya");
+        Persona profesional = new Profesional("Federico", "Sanchez", "02/10/1990", null, "Licenciado en Nutrición", "03/03/2015", "Nicaragua");
+        Conversacion conversacionATestear = new Conversacion(usuario, profesional, null);
+        conversacionATestear.setFueAtendidaConsulta(true);
+
+        assertTrue(conversacionATestear.getFueAtendidaConsulta());
     }
 
+    @Test
+    public void testAgregarMensajeDeUsuario() {
+        Persona usuario = new Usuario("Rodrigo","Perez", "03/03/2000", null, "Uruguaya");
+        Persona profesional = new Profesional("Federico", "Sanchez", "02/10/1990", null, "Licenciado en Nutrición", "03/03/2015", "Nicaragua");
+        ArrayList listaMensajes = new ArrayList<>();
+        Conversacion conversacionATestear = new Conversacion(usuario, profesional, listaMensajes);
 
+        conversacionATestear.agregarMensaje("Un mensaje", false);
+
+        assertEquals(conversacionATestear.toString(), "\nRodrigo Perez\nUn mensaje\n");
+    }
+
+    @Test
+    public void testAgregarMensajeDeProfesional() {
+        Persona usuario = new Usuario("Rodrigo","Perez", "03/03/2000", null, "Uruguaya");
+        Persona profesional = new Profesional("Federico", "Sanchez", "02/10/1990", null, "Licenciado en Nutrición", "03/03/2015", "Nicaragua");
+        ArrayList listaMensajes = new ArrayList<>();
+        Conversacion conversacionATestear = new Conversacion(usuario, profesional, listaMensajes);
+
+        conversacionATestear.agregarMensaje("Un mensaje", true);
+
+        assertEquals(conversacionATestear.toString(), "\nFederico Sanchez\nUn mensaje\n");
+    }
+
+    @Test
+    public void testConversacionEquals() {
+        Persona usuario = new Usuario("Rodrigo","Perez", "03/03/2000", null, "Uruguaya");
+        Persona profesional = new Profesional("Federico", "Sanchez", "02/10/1990", null, "Licenciado en Nutrición", "03/03/2015", "Nicaragua");
+        Conversacion conversacionATestear = new Conversacion(usuario, profesional, null);
+
+        Conversacion conversacionIgual = new Conversacion(usuario, profesional, null);
+
+        assertEquals(conversacionATestear, conversacionIgual);
+    }
+
+    @Test
+    public void testConversacionEqualsConNUll() {
+        Persona usuario = new Usuario("Rodrigo","Perez", "03/03/2000", null, "Uruguaya");
+        Persona profesional = new Profesional("Federico", "Sanchez", "02/10/1990", null, "Licenciado en Nutrición", "03/03/2015", "Nicaragua");
+        Conversacion conversacionATestear = new Conversacion(usuario, profesional, null);
+
+        assertFalse(conversacionATestear.equals(null));
+    }
+
+    @Test
+    public void testSetsGetsListaMensajes(){
+        Persona usuario = new Usuario("Rodrigo","Perez", "03/03/2000", null, "Uruguaya");
+        Persona profesional = new Profesional("Federico", "Sanchez", "02/10/1990", null, "Licenciado en Nutrición", "03/03/2015", "Nicaragua");
+        Conversacion conversacionATestear = new Conversacion(usuario, profesional, null);
+
+        ArrayList<InformacionMensaje> listaMensajes = new ArrayList();
+        listaMensajes.add(new InformacionMensaje("Rodrigo Perez", "Federico Sanchez", "Un mensaje"));
+        conversacionATestear.setListaMensajes(listaMensajes);
+
+        assertEquals(listaMensajes, conversacionATestear.getListaMensajes());
+    }
 }

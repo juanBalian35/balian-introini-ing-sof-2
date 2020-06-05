@@ -63,5 +63,22 @@ public class IngestaTest {
         assertFalse(resultadoEquals);
     }
 
+    @Test
+    public void testEqualsConNull() {
+        String fechaDeIngesta = "11/02/17";
+        ArrayList<ComposicionAlimento> listaComposicion = new ArrayList<>();
+        listaComposicion.add(new ComposicionAlimento("Lipidos", 2));
+        Alimento alimento1 = new Alimento("Papa", "Verdura", listaComposicion, null);
+        ArrayList<Alimento> listaAlimentosPorFecha = new ArrayList<>();
+        listaAlimentosPorFecha.add(alimento1);
+        Ingesta ingestaATestear = new Ingesta(fechaDeIngesta, listaAlimentosPorFecha);
+        assertNotEquals(ingestaATestear, null);
+    }
 
+    @Test
+    public void testToStringListaAlimentosPorFechaVacia(){
+        String fechaDeIngesta = "11/02/17";
+        Ingesta ingestaATestear = new Ingesta(fechaDeIngesta, null);
+        assertEquals(ingestaATestear.toString(), "No hay alimentos ingeridos");
+    }
 }

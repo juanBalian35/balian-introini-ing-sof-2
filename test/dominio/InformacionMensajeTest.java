@@ -73,4 +73,13 @@ public class InformacionMensajeTest {
         assertEquals(info.toString(), esperadoToString);
     }
 
+    @Test
+    public void testIntercambiarRemitente() {
+        String remitente = "unRemitente";
+        String destinatario = "unDestinatario";
+        String mensaje = "unMensaje";
+        InformacionMensaje info = new InformacionMensaje(remitente, destinatario, mensaje);
+        info.intercambiarRemitente();
+        assertEquals(remitente, info.destinatario);
+    }
 }

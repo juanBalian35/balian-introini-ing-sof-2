@@ -81,6 +81,7 @@ public class ProfesionalTest {
         assertEquals(prof.toString(), toStringEperado);
     }
 
+    @Test
     public void testToStringDatosVacios() {
         String nombre = "";
         String apellido = "";
@@ -92,6 +93,21 @@ public class ProfesionalTest {
         Profesional prof = new Profesional(nombre, apellido, fechaNacimiento, fotoPerfil,
                 tituloProf, fechaGrad, paisGraduacion);
         String toStringEperado = "Nombre no ingresado";
+        assertEquals(prof.toString(), toStringEperado);
+    }
+
+    @Test
+    public void testToStringNombreVacio() {
+        String nombre = "";
+        String apellido = "Perez";
+        String fechaNacimiento = "";
+        ImageIcon fotoPerfil = null;
+        String tituloProf = "";
+        String fechaGrad = "";
+        String paisGraduacion = "";
+        Profesional prof = new Profesional(nombre, apellido, fechaNacimiento, fotoPerfil,
+                tituloProf, fechaGrad, paisGraduacion);
+        String toStringEperado = "Perez";
         assertEquals(prof.toString(), toStringEperado);
     }
 }

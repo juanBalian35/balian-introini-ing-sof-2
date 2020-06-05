@@ -1,17 +1,17 @@
 
-Š
-java:S1319&"oThe type of the "list" object should be an interface such as "List" rather than the implementation "ArrayList".(æúŠùÿÿÿÿ
-ˆ
-java:S1319"mThe type of the "LA" object should be an interface such as "List" rather than the implementation "ArrayList".(ú‰¯âÿÿÿÿÿ
-†
-java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¼Øı³
-f
-java:S12068"PThis class overrides "equals()" and should therefore also override "hashCode()".(ÜÑã
 p
 java:S1104
 "ZMake fechaDeIngesta a static final constant or non-public and provide accessors if needed.(‹‹É¢
-H
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ
+†
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¼Øı³
+ˆ
+java:S1319"mThe type of the "LA" object should be an interface such as "List" rather than the implementation "ArrayList".(ú‰¯âÿÿÿÿÿ
 k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú‰¯âÿÿÿÿÿ
 D
 java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›
+Š
+java:S1319&"oThe type of the "list" object should be an interface such as "List" rather than the implementation "ArrayList".(æúŠùÿÿÿÿ
+f
+java:S12068"PThis class overrides "equals()" and should therefore also override "hashCode()".(ÜÑã
+H
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ

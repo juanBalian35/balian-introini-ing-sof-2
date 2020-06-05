@@ -93,10 +93,6 @@ Y
 )test/dominio/ComposicionAlimentoTest.java,2/6/2665ba8cbac65c3b2b527f49d5ecb842b596ed8b
 @
 test/desktop.ini,d/6/d65ba80ef12c659f4bde901fa3859b02b7a5cfb4
-5
-a.txt,c/f/cfc7b4885384957ae445bc14914d4588f607651c
-5
-b.txt,a/c/aceba96ffdf13ce4cd4171c0248420cc03108ef0
 V
 &build/test/classes/dominio/desktop.ini,c/a/ca787ae8e4660c195d4ec528081347abec20d37b
 N
