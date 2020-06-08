@@ -87,15 +87,19 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         btnNuevaConversacion = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         listaConversaciones = new javax.swing.JList<>();
-        jLabel1 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         btnEnviarMensaje = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         txtMostrarConversacion = new javax.swing.JTextPane();
-        lblFotoProfesional = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtMensajeNuevo = new javax.swing.JTextArea();
         lblNombreProfesional = new javax.swing.JLabel();
+        lblFotoProfesional = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        lblIconoInicioSesion = new javax.swing.JLabel();
+        lblInicioSesion = new javax.swing.JLabel();
+        btnCerrarSistema = new javax.swing.JButton();
         panelElegirProfesional = new javax.swing.JPanel();
         jScrollPane7 = new javax.swing.JScrollPane();
         listaElegirProfesionales = new javax.swing.JList();
@@ -408,13 +412,13 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         panelConsultaConProfesional.setMaximumSize(new java.awt.Dimension(800, 800));
         panelConsultaConProfesional.setMinimumSize(new java.awt.Dimension(800, 800));
         panelConsultaConProfesional.setPreferredSize(new java.awt.Dimension(800, 800));
-        panelConsultaConProfesional.setLayout(null);
+        panelConsultaConProfesional.setLayout(new java.awt.BorderLayout());
 
         panelConversacion.setBackground(new java.awt.Color(51, 51, 51));
-        java.awt.GridBagLayout panelConversacionLayout1 = new java.awt.GridBagLayout();
-        panelConversacionLayout1.columnWidths = new int[] {0, 17, 0};
-        panelConversacionLayout1.rowHeights = new int[] {0};
-        panelConversacion.setLayout(panelConversacionLayout1);
+        java.awt.GridBagLayout panelConversacionLayout = new java.awt.GridBagLayout();
+        panelConversacionLayout.columnWidths = new int[] {0, 25, 0};
+        panelConversacionLayout.rowHeights = new int[] {0, 0, 0};
+        panelConversacion.setLayout(panelConversacionLayout);
 
         jPanel2.setBackground(new java.awt.Color(51, 51, 51));
         jPanel2.setLayout(new java.awt.GridBagLayout());
@@ -432,9 +436,8 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 105, 0, 0);
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 2;
         jPanel2.add(btnNuevaConversacion, gridBagConstraints);
 
         listaConversaciones.setBackground(new java.awt.Color(238, 238, 238));
@@ -448,37 +451,27 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 237;
-        gridBagConstraints.ipady = 273;
+        gridBagConstraints.ipadx = 226;
+        gridBagConstraints.ipady = 461;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         jPanel2.add(jScrollPane3, gridBagConstraints);
 
-        jLabel1.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Seleccione al profesional");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        jPanel2.add(jLabel1, gridBagConstraints);
-
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(6, 6, 0, 0);
         panelConversacion.add(jPanel2, gridBagConstraints);
 
         jPanel3.setBackground(new java.awt.Color(51, 51, 51));
         java.awt.GridBagLayout jPanel3Layout = new java.awt.GridBagLayout();
-        jPanel3Layout.columnWidths = new int[] {0, 17, 0};
-        jPanel3Layout.rowHeights = new int[] {0, 18, 0, 18, 0};
+        jPanel3Layout.columnWidths = new int[] {0, 15, 0};
+        jPanel3Layout.rowHeights = new int[] {0, 25, 0};
         jPanel3.setLayout(jPanel3Layout);
 
         btnEnviarMensaje.setForeground(new java.awt.Color(255, 255, 255));
@@ -494,7 +487,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridy = 2;
         jPanel3.add(btnEnviarMensaje, gridBagConstraints);
 
         txtMostrarConversacion.setEditable(false);
@@ -505,23 +498,15 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridy = 0;
         gridBagConstraints.gridwidth = 3;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.ipadx = 430;
-        gridBagConstraints.ipady = 237;
+        gridBagConstraints.ipady = 338;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         jPanel3.add(jScrollPane2, gridBagConstraints);
-
-        lblFotoProfesional.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoDeUsuarioStandard.png"))); // NOI18N
-        lblFotoProfesional.setAlignmentY(0.0F);
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        jPanel3.add(lblFotoProfesional, gridBagConstraints);
 
         txtMensajeNuevo.setBackground(new java.awt.Color(238, 238, 238));
         txtMensajeNuevo.setColumns(20);
@@ -535,33 +520,95 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridy = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 268;
-        gridBagConstraints.ipady = 240;
+        gridBagConstraints.ipadx = 353;
+        gridBagConstraints.ipady = 139;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         jPanel3.add(jScrollPane1, gridBagConstraints);
 
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        panelConversacion.add(jPanel3, gridBagConstraints);
+
         lblNombreProfesional.setFont(new java.awt.Font("Levenim MT", 0, 30)); // NOI18N
         lblNombreProfesional.setForeground(new java.awt.Color(255, 255, 255));
         lblNombreProfesional.setText("Profesional");
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 100, 0, 0);
-        jPanel3.add(lblNombreProfesional, gridBagConstraints);
+        gridBagConstraints.insets = new java.awt.Insets(0, 50, 0, 0);
+        panelConversacion.add(lblNombreProfesional, gridBagConstraints);
 
+        lblFotoProfesional.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoDeUsuarioStandardChico.png"))); // NOI18N
+        lblFotoProfesional.setAlignmentY(0.0F);
+        lblFotoProfesional.setMinimumSize(new java.awt.Dimension(50, 50));
+        lblFotoProfesional.setPreferredSize(new java.awt.Dimension(50, 50));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 0;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        panelConversacion.add(jPanel3, gridBagConstraints);
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        panelConversacion.add(lblFotoProfesional, gridBagConstraints);
 
-        panelConsultaConProfesional.add(panelConversacion);
-        panelConversacion.setBounds(30, 120, 730, 660);
+        jLabel1.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Seleccione al profesional");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LAST_LINE_START;
+        panelConversacion.add(jLabel1, gridBagConstraints);
+
+        panelConsultaConProfesional.add(panelConversacion, java.awt.BorderLayout.CENTER);
+
+        jPanel4.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel4.setLayout(new java.awt.GridBagLayout());
+
+        lblIconoInicioSesion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoConsultaConProfesionalesTitulo.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 18, 0, 0);
+        jPanel4.add(lblIconoInicioSesion, gridBagConstraints);
+
+        lblInicioSesion.setFont(new java.awt.Font("Levenim MT", 0, 65)); // NOI18N
+        lblInicioSesion.setForeground(new java.awt.Color(255, 255, 255));
+        lblInicioSesion.setText("Consulta");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(15, 120, 0, 0);
+        jPanel4.add(lblInicioSesion, gridBagConstraints);
+
+        btnCerrarSistema.setBackground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema.setForeground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
+        btnCerrarSistema.setAlignmentX(0.5F);
+        btnCerrarSistema.setBorderPainted(false);
+        btnCerrarSistema.setContentAreaFilled(false);
+        btnCerrarSistema.setFocusPainted(false);
+        btnCerrarSistema.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        btnCerrarSistema.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarSistemaActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.RELATIVE;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
+        jPanel4.add(btnCerrarSistema, gridBagConstraints);
+
+        panelConsultaConProfesional.add(jPanel4, java.awt.BorderLayout.PAGE_START);
 
         panelDerecho.add(panelConsultaConProfesional, "card3");
 
@@ -1237,7 +1284,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     }//GEN-LAST:event_btnHomeActionPerformed
 
     private void btnConsultaConProfesionalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultaConProfesionalActionPerformed
-        ocultarPaneles();
+       ocultarPaneles();
         this.btnConsultaConProfesional.setEnabled(false);
         if (sistema.getListaProfesionales().size() > 0) {
             this.listaConversaciones.setSelectedIndex(0);
@@ -1490,6 +1537,11 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         ayuda.setVisible(true);
     }//GEN-LAST:event_btnAyudaActionPerformed
 
+    private void btnCerrarSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistemaActionPerformed
+        this.sistema.guardarDatosSistema();
+        this.dispose();
+    }//GEN-LAST:event_btnCerrarSistemaActionPerformed
+
     private void ocultarPaneles() {
         this.btnConsultaConProfesional.setEnabled(true);
         this.btnIngresarAlimentoIngerido.setEnabled(true);
@@ -1529,6 +1581,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAceptarSolicitudPlanAlimentacion;
     private javax.swing.JButton btnAyuda;
+    private javax.swing.JButton btnCerrarSistema;
     private javax.swing.JButton btnConsultaConProfesional;
     private javax.swing.JButton btnEditarPreferencias;
     private javax.swing.JButton btnEditarRestricciones;
@@ -1549,6 +1602,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -1587,7 +1641,9 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     private javax.swing.JLabel lblDatosIncorrectos2;
     private javax.swing.JLabel lblFechaAlimentoIngerido;
     private javax.swing.JLabel lblFotoProfesional;
+    private javax.swing.JLabel lblIconoInicioSesion;
     private javax.swing.JLabel lblIngresarAlimentoIngerido;
+    private javax.swing.JLabel lblInicioSesion;
     private javax.swing.JLabel lblNoHayPlanes;
     private javax.swing.JLabel lblNoHayPlanes1;
     private javax.swing.JLabel lblNohayConsultas;

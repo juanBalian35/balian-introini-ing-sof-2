@@ -537,7 +537,9 @@ listaPaisGraduacion.addItemListener(new java.awt.event.ItemListener() {
     panel2.add(jPanel3, java.awt.BorderLayout.CENTER);
 
     jPanel4.setBackground(new java.awt.Color(51, 51, 51));
-    jPanel4.setLayout(new java.awt.GridBagLayout());
+    java.awt.GridBagLayout jPanel4Layout = new java.awt.GridBagLayout();
+    jPanel4Layout.columnWeights = new double[] {1.0, 1.0};
+    jPanel4.setLayout(jPanel4Layout);
 
     lblIconoNuevoProfesional.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoDeUsuarioStandard.png"))); // NOI18N
     gridBagConstraints = new java.awt.GridBagConstraints();
