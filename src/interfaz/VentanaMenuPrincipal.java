@@ -34,23 +34,27 @@ public class VentanaMenuPrincipal extends javax.swing.JDialog {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         panel1 = new javax.swing.JPanel();
         lblTituloVentana = new javax.swing.JLabel();
         icono = new javax.swing.JLabel();
         panel2 = new javax.swing.JPanel();
-        lblNuevoUsuario = new javax.swing.JLabel();
-        lblIconoNuevoUsuario = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        lblIconoInicioSesion = new javax.swing.JLabel();
+        lblInicioSesion = new javax.swing.JLabel();
+        btnCerrarSistema = new javax.swing.JButton();
+        jPanel5 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
         lblNombre = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        listaUsuariosVentana = new javax.swing.JList();
         jScrollPane1 = new javax.swing.JScrollPane();
         listaProfesionalesVentana = new javax.swing.JList();
-        btnAgregarUsuario = new javax.swing.JLabel();
-        btnAgregarProfesional = new javax.swing.JLabel();
+        btnAgregarProfesional = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
         lblNombre1 = new javax.swing.JLabel();
-        btnAgregarProfesional1 = new javax.swing.JLabel();
-        btnCerrarSistema = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        listaUsuariosVentana = new javax.swing.JList();
+        btnAgregarUsuario = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1060, 800));
@@ -62,9 +66,11 @@ public class VentanaMenuPrincipal extends javax.swing.JDialog {
                 formWindowClosing(evt);
             }
         });
-        getContentPane().setLayout(null);
+        getContentPane().setLayout(new java.awt.BorderLayout(3, 0));
 
         panel1.setBackground(new java.awt.Color(164, 211, 249));
+        panel1.setMinimumSize(new java.awt.Dimension(260, 800));
+        panel1.setPreferredSize(new java.awt.Dimension(260, 800));
 
         lblTituloVentana.setFont(new java.awt.Font("Segoe Script", 1, 50)); // NOI18N
         lblTituloVentana.setForeground(new java.awt.Color(0, 51, 153));
@@ -96,28 +102,136 @@ public class VentanaMenuPrincipal extends javax.swing.JDialog {
                 .addContainerGap(349, Short.MAX_VALUE))
         );
 
-        getContentPane().add(panel1);
-        panel1.setBounds(0, 0, 270, 800);
+        getContentPane().add(panel1, java.awt.BorderLayout.WEST);
 
         panel2.setBackground(new java.awt.Color(51, 51, 51));
         panel2.setForeground(new java.awt.Color(51, 51, 51));
-        panel2.setLayout(null);
+        panel2.setMaximumSize(new java.awt.Dimension(800, 800));
+        panel2.setMinimumSize(new java.awt.Dimension(800, 800));
+        panel2.setPreferredSize(new java.awt.Dimension(800, 800));
+        panel2.setLayout(new java.awt.BorderLayout());
 
-        lblNuevoUsuario.setFont(new java.awt.Font("Levenim MT", 0, 65)); // NOI18N
-        lblNuevoUsuario.setForeground(new java.awt.Color(255, 255, 255));
-        lblNuevoUsuario.setText("Inicio de Sesión");
-        panel2.add(lblNuevoUsuario);
-        lblNuevoUsuario.setBounds(203, 36, 530, 91);
+        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel1Layout = new java.awt.GridBagLayout();
+        jPanel1Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel1.setLayout(jPanel1Layout);
 
-        lblIconoNuevoUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoDeUsuarioStandard.png"))); // NOI18N
-        panel2.add(lblIconoNuevoUsuario);
-        lblIconoNuevoUsuario.setBounds(85, 27, 100, 100);
+        lblIconoInicioSesion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoDeUsuarioStandard.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 18, 0, 0);
+        jPanel1.add(lblIconoInicioSesion, gridBagConstraints);
+
+        lblInicioSesion.setFont(new java.awt.Font("Levenim MT", 0, 65)); // NOI18N
+        lblInicioSesion.setForeground(new java.awt.Color(255, 255, 255));
+        lblInicioSesion.setText("Inicio de Sesión");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(15, 120, 0, 0);
+        jPanel1.add(lblInicioSesion, gridBagConstraints);
+
+        btnCerrarSistema.setBackground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema.setForeground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
+        btnCerrarSistema.setAlignmentX(0.5F);
+        btnCerrarSistema.setBorderPainted(false);
+        btnCerrarSistema.setContentAreaFilled(false);
+        btnCerrarSistema.setFocusPainted(false);
+        btnCerrarSistema.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        btnCerrarSistema.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarSistemaActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.RELATIVE;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
+        jPanel1.add(btnCerrarSistema, gridBagConstraints);
+
+        panel2.add(jPanel1, java.awt.BorderLayout.PAGE_START);
+
+        jPanel5.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel5Layout = new java.awt.GridBagLayout();
+        jPanel5Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel5Layout.rowWeights = new double[] {1.0, 1.0};
+        jPanel5.setLayout(jPanel5Layout);
+
+        jPanel4.setBackground(new java.awt.Color(51, 51, 51));
 
         lblNombre.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
         lblNombre.setForeground(new java.awt.Color(255, 255, 255));
         lblNombre.setText("Profesional");
-        panel2.add(lblNombre);
-        lblNombre.setBounds(450, 200, 181, 38);
+
+        listaProfesionalesVentana.setBackground(new java.awt.Color(51, 51, 51));
+        listaProfesionalesVentana.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+        listaProfesionalesVentana.setForeground(new java.awt.Color(255, 255, 255));
+        listaProfesionalesVentana.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
+            public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
+                listaProfesionalesVentanaValueChanged(evt);
+            }
+        });
+        jScrollPane1.setViewportView(listaProfesionalesVentana);
+
+        btnAgregarProfesional.setBackground(new java.awt.Color(51, 51, 51));
+        btnAgregarProfesional.setForeground(new java.awt.Color(164, 211, 249));
+        btnAgregarProfesional.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoAgregarProfesional.png"))); // NOI18N
+        btnAgregarProfesional.setText("Agregar profesional");
+        btnAgregarProfesional.setBorderPainted(false);
+        btnAgregarProfesional.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnAgregarProfesional.setOpaque(true);
+        btnAgregarProfesional.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnAgregarProfesional.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAgregarProfesionalActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addComponent(btnAgregarProfesional, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(45, 45, 45))))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(lblNombre)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnAgregarProfesional, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 25);
+        jPanel5.add(jPanel4, gridBagConstraints);
+
+        jPanel3.setBackground(new java.awt.Color(51, 51, 51));
+
+        lblNombre1.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
+        lblNombre1.setForeground(new java.awt.Color(255, 255, 255));
+        lblNombre1.setText("Usuario");
 
         listaUsuariosVentana.setBackground(new java.awt.Color(51, 51, 51));
         listaUsuariosVentana.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
@@ -130,72 +244,57 @@ public class VentanaMenuPrincipal extends javax.swing.JDialog {
         });
         jScrollPane2.setViewportView(listaUsuariosVentana);
 
-        panel2.add(jScrollPane2);
-        jScrollPane2.setBounds(80, 250, 230, 330);
-
-        listaProfesionalesVentana.setBackground(new java.awt.Color(51, 51, 51));
-        listaProfesionalesVentana.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
-        listaProfesionalesVentana.setForeground(new java.awt.Color(255, 255, 255));
-        listaProfesionalesVentana.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
-            public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
-                listaProfesionalesVentanaValueChanged(evt);
-            }
-        });
-        jScrollPane1.setViewportView(listaProfesionalesVentana);
-
-        panel2.add(jScrollPane1);
-        jScrollPane1.setBounds(430, 250, 230, 330);
-
+        btnAgregarUsuario.setBackground(new java.awt.Color(51, 51, 51));
+        btnAgregarUsuario.setForeground(new java.awt.Color(164, 211, 249));
         btnAgregarUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoAgregarUsuario.png"))); // NOI18N
-        btnAgregarUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnAgregarUsuarioMouseClicked(evt);
-            }
-        });
-        panel2.add(btnAgregarUsuario);
-        btnAgregarUsuario.setBounds(150, 600, 110, 90);
-
-        btnAgregarProfesional.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoAgregarProf.png"))); // NOI18N
-        btnAgregarProfesional.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnAgregarProfesionalMouseClicked(evt);
-            }
-        });
-        panel2.add(btnAgregarProfesional);
-        btnAgregarProfesional.setBounds(570, 640, 50, 80);
-
-        lblNombre1.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
-        lblNombre1.setForeground(new java.awt.Color(255, 255, 255));
-        lblNombre1.setText("Usuario");
-        panel2.add(lblNombre1);
-        lblNombre1.setBounds(90, 200, 181, 38);
-
-        btnAgregarProfesional1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoAgregarProfesional.png"))); // NOI18N
-        btnAgregarProfesional1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnAgregarProfesional1MouseClicked(evt);
-            }
-        });
-        panel2.add(btnAgregarProfesional1);
-        btnAgregarProfesional1.setBounds(510, 600, 100, 90);
-
-        btnCerrarSistema.setBackground(new java.awt.Color(51, 51, 51));
-        btnCerrarSistema.setForeground(new java.awt.Color(51, 51, 51));
-        btnCerrarSistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
-        btnCerrarSistema.setBorderPainted(false);
-        btnCerrarSistema.setContentAreaFilled(false);
-        btnCerrarSistema.setFocusPainted(false);
-        btnCerrarSistema.setOpaque(false);
-        btnCerrarSistema.addActionListener(new java.awt.event.ActionListener() {
+        btnAgregarUsuario.setText("Agregar usuario");
+        btnAgregarUsuario.setBorderPainted(false);
+        btnAgregarUsuario.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnAgregarUsuario.setOpaque(true);
+        btnAgregarUsuario.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnAgregarUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCerrarSistemaActionPerformed(evt);
+                btnAgregarUsuarioActionPerformed(evt);
             }
         });
-        panel2.add(btnCerrarSistema);
-        btnCerrarSistema.setBounds(730, 10, 50, 50);
 
-        getContentPane().add(panel2);
-        panel2.setBounds(275, 0, 950, 800);
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addComponent(btnAgregarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(45, 45, 45))))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(lblNombre1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnAgregarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.insets = new java.awt.Insets(0, 25, 0, 0);
+        jPanel5.add(jPanel3, gridBagConstraints);
+
+        panel2.add(jPanel5, java.awt.BorderLayout.CENTER);
+
+        getContentPane().add(panel2, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -218,42 +317,40 @@ public class VentanaMenuPrincipal extends javax.swing.JDialog {
         ventanaPrincipalProfesionales.setVisible(true);
     }//GEN-LAST:event_listaProfesionalesVentanaValueChanged
 
-    private void btnAgregarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarUsuarioMouseClicked
-        VentanaRegistrarUsuario unA = new VentanaRegistrarUsuario(sistema);
-        this.setVisible(false);
-        unA.setVisible(true);
-    }//GEN-LAST:event_btnAgregarUsuarioMouseClicked
-
-    private void btnAgregarProfesionalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarProfesionalMouseClicked
-        VentanaRegistrarProfesional ventanaRegProfesional = new VentanaRegistrarProfesional(sistema);
-        this.setVisible(false);
-        ventanaRegProfesional.setVisible(true);
-    }//GEN-LAST:event_btnAgregarProfesionalMouseClicked
-
-    private void btnAgregarProfesional1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarProfesional1MouseClicked
-        VentanaRegistrarProfesional ventanaRegProfesional = new VentanaRegistrarProfesional(sistema);
-        this.setVisible(false);
-        ventanaRegProfesional.setVisible(true);
-    }//GEN-LAST:event_btnAgregarProfesional1MouseClicked
-
     private void btnCerrarSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistemaActionPerformed
         this.sistema.guardarDatosSistema();
         this.dispose();
     }//GEN-LAST:event_btnCerrarSistemaActionPerformed
 
+    private void btnAgregarProfesionalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarProfesionalActionPerformed
+       
+          VentanaRegistrarProfesional ventanaRegProfesional = new VentanaRegistrarProfesional(sistema);
+        this.setVisible(false);
+        ventanaRegProfesional.setVisible(true);
+    }//GEN-LAST:event_btnAgregarProfesionalActionPerformed
+
+    private void btnAgregarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarUsuarioActionPerformed
+       VentanaRegistrarUsuario unA = new VentanaRegistrarUsuario(sistema);
+        this.setVisible(false);
+        unA.setVisible(true);
+    }//GEN-LAST:event_btnAgregarUsuarioActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel btnAgregarProfesional;
-    private javax.swing.JLabel btnAgregarProfesional1;
-    private javax.swing.JLabel btnAgregarUsuario;
+    private javax.swing.JButton btnAgregarProfesional;
+    private javax.swing.JButton btnAgregarUsuario;
     private javax.swing.JButton btnCerrarSistema;
     private javax.swing.JLabel icono;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JLabel lblIconoNuevoUsuario;
+    private javax.swing.JLabel lblIconoInicioSesion;
+    private javax.swing.JLabel lblInicioSesion;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblNombre1;
-    private javax.swing.JLabel lblNuevoUsuario;
     private javax.swing.JLabel lblTituloVentana;
     private javax.swing.JList listaProfesionalesVentana;
     private javax.swing.JList listaUsuariosVentana;
