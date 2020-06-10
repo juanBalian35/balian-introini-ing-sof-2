@@ -6,6 +6,9 @@ import dominio.PlanAlimentacion;
 import dominio.Profesional;
 import dominio.Sistema;
 import dominio.Usuario;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -1465,7 +1468,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
             Profesional profesionalElegido = sistema.getProfesionalPorNombre(nombreProfesionalElegido);
             String nombreUsuarioLoguedo = this.sistema.getPersonaLogueada().getNombreCompleto();
             Usuario usuarioLogueado = this.sistema.getUsuarioPorNombre(nombreUsuarioLoguedo);
-            this.sistema.agregarPlanSolicitado(usuarioLogueado, profesionalElegido);
+            this.sistema.agregarPlanSolicitado(usuarioLogueado, profesionalElegido, LocalDateTime.now());
             this.panelSolicitarNuevoPlan.setVisible(false);
             this.panelPlanSolicitadoCorrectamente.setVisible(true);
 
@@ -1491,8 +1494,12 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
 
     private void listaPlanesDelUsuarioValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_listaPlanesDelUsuarioValueChanged
         ocultarPaneles();
-        this.nombreDelPlan = this.listaPlanesDelUsuario.getSelectedValue();
-        PlanAlimentacion planSeleccionado = this.sistema.devolverPlanDadoNombre(nombreDelPlan);
+        String[] infoPlan = this.listaPlanesDelUsuario.getSelectedValue().split("( \\| )");
+
+        this.nombreDelPlan = infoPlan[0];
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-dd-MM HH:mm:ss");
+        LocalDateTime dateTime = LocalDateTime.parse(infoPlan[1], formatter);
+        PlanAlimentacion planSeleccionado = this.sistema.devolverPlanDadoNombreYFecha(nombreDelPlan, dateTime);
         this.lblNombreDelPlan.setText(planSeleccionado.getNombreDelPlan());
         this.lblNombreDelProfesional.setText(planSeleccionado.getProfesional().getNombreCompleto());
         this.lblTituloDelProfesional.setText(planSeleccionado.getProfesional().getTituloProfesional());

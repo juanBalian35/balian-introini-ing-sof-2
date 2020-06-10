@@ -1,11 +1,11 @@
 
+f
+java:S1206V"PThis class overrides "equals()" and should therefore also override "hashCode()".(ÜÑã
 g
 java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ê¡İ‡úÿÿÿÿ8Âøü¦.
 b
 java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ï½À8´³÷ü¦.
-g
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(èõ ˜üÿÿÿÿ8´³÷ü¦.
-f
-java:S1206V"PThis class overrides "equals()" and should therefore also override "hashCode()".(ÜÑã
 s
 java:S1104"XMake fotoDePerfil a static final constant or non-public and provide accessors if needed.(ä‚ëâùÿÿÿÿ
+g
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(èõ ˜üÿÿÿÿ8´³÷ü¦.

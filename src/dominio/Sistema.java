@@ -7,12 +7,15 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
+import java.security.KeyPair;
+import java.time.LocalDateTime;
+import java.util.AbstractMap;
 import java.util.Currency;
 import java.util.ArrayList;
+import java.util.HashMap;
 import javax.swing.ImageIcon;
 
 public final class Sistema implements Serializable {
-
     private ArrayList<Usuario> listaUsuarios;
     private ArrayList<Profesional> listaProfesionales;
     private ArrayList<Alimento> listaAlimentos;
@@ -26,7 +29,6 @@ public final class Sistema implements Serializable {
             ArrayList<PlanAlimentacion> unaListaPlanesAlimentacion,
             ArrayList<Conversacion> unaListaConversaciones,
             Persona personaLogueada) {
-
         setListaUsuarios(unaListaUsuarios);
         setListaProfesionales(unaListaProfesionales);
         setListaAlimentos(unaListaAlimentos);
@@ -44,7 +46,6 @@ public final class Sistema implements Serializable {
         setPersonaLogueada(new Usuario("Nombre", "Apellido", "",
                 new ImageIcon(getClass().getResource("/Imagenes/fotoDeUsuarioStandard.png")),
                 ""));
-
     }
 
     public Persona getPersonaLogueada() {
@@ -415,10 +416,11 @@ public final class Sistema implements Serializable {
         return profesionalRetorno;
     }
 
-    public boolean agregarPlanSolicitado(Usuario usuario, Profesional profesional) {
+    public boolean agregarPlanSolicitado(Usuario usuario, Profesional profesional, LocalDateTime fecha) {
         boolean agreguePlan = false;
         if (usuario != null && profesional != null) {
-            PlanAlimentacion planNuevo = new PlanAlimentacion("", usuario, profesional, false, null);
+            AbstractMap.SimpleEntry<Usuario, Profesional> combinacion = new AbstractMap.SimpleEntry<>(usuario, profesional);
+            PlanAlimentacion planNuevo = new PlanAlimentacion("", usuario, profesional, false, null, fecha);
             if (!getListaPlanesAlimentacion().contains(planNuevo)) {
                 this.getListaPlanesAlimentacion().add(planNuevo);
                 agreguePlan = true;
@@ -429,14 +431,12 @@ public final class Sistema implements Serializable {
     }
 
     public boolean atenderSolicitudDelPlan(String[][] planAlimentacion,
-            Profesional profesional,
-            Usuario usuario,
+            PlanAlimentacion planSeleccionado,
             String nombrePlan) {
         boolean fueAtendido = false;
         for (int i = 0; i < this.listaPlanesAlimentacion.size(); i++) {
             PlanAlimentacion actual = this.listaPlanesAlimentacion.get(i);
-            if (actual.getProfesional().equals(profesional) && actual.getUsuario().equals(usuario)
-                    && actual.getFueAtendidoElPlan() == false) {
+            if (actual.equals(planSeleccionado) && actual.getFueAtendidoElPlan() == false) {
                 actual.setNombreDelPlan(nombrePlan);
                 actual.setPlanDiaADia(planAlimentacion);
                 actual.setFueAtendidoElPlan(true);
@@ -451,7 +451,7 @@ public final class Sistema implements Serializable {
         for (int i = 0; i < this.listaPlanesAlimentacion.size(); i++) {
             PlanAlimentacion actual = this.listaPlanesAlimentacion.get(i);
             if (actual.getUsuario().equals(usuario) && actual.getFueAtendidoElPlan()) {
-                listaAuxiliar.add(actual.getNombreDelPlan());
+                listaAuxiliar.add(actual.toString());
             }
         }
         String[] planesDelUsuario = new String[listaAuxiliar.size()];
@@ -461,13 +461,13 @@ public final class Sistema implements Serializable {
         return planesDelUsuario;
     }
 
-    public PlanAlimentacion devolverPlanDadoNombre(String np) {
-        PlanAlimentacion planRetorno = new PlanAlimentacion(null, null, null, false, null);
+    public PlanAlimentacion devolverPlanDadoNombreYFecha(String np, LocalDateTime fecha) {
+        PlanAlimentacion planRetorno = new PlanAlimentacion(null, null, null, false, null, null);
         if (np != null) {
             for (int i = 0; i < this.listaPlanesAlimentacion.size(); i++) {
-                String nombrePlanActual = this.listaPlanesAlimentacion.get(i).getNombreDelPlan();
-                if (nombrePlanActual.equals(np)) {
-                    planRetorno = this.listaPlanesAlimentacion.get(i);
+                PlanAlimentacion planActual = this.listaPlanesAlimentacion.get(i);
+                if (planActual.getNombreDelPlan().equals(np) && planActual.getFecha().withNano(0).equals(fecha.withNano(0))) {
+                    planRetorno = planActual;
                 }
             }
         }
@@ -475,24 +475,18 @@ public final class Sistema implements Serializable {
         return planRetorno;
     }
 
-    public String[] getListaPlanesPendientes(Profesional profesional) {
+    public ArrayList<PlanAlimentacion> getListaPlanesPendientes(Profesional profesional) {
+        ArrayList<PlanAlimentacion> planesPendientes = new ArrayList<>();
         if (profesional != null) {
-            ArrayList<String> planesPendientes = new ArrayList<>();
             for (int i = 0; i < this.listaPlanesAlimentacion.size(); i++) {
                 Profesional profesionalActual = this.listaPlanesAlimentacion.get(i).getProfesional();
                 boolean fueAtendidoPlanActual = this.listaPlanesAlimentacion.get(i).getFueAtendidoElPlan();
                 if (profesionalActual.equals(profesional) && fueAtendidoPlanActual == false) {
                     String nombreUsuario = this.listaPlanesAlimentacion.get(i).getUsuario().getNombreCompleto();
-                    planesPendientes.add(nombreUsuario);
+                    planesPendientes.add(this.listaPlanesAlimentacion.get(i));
                 }
             }
-            String[] nombreUsuarios = new String[planesPendientes.size()];
-            for (int i = 0; i < nombreUsuarios.length; i++) {
-                nombreUsuarios[i] = planesPendientes.get(i);
-            }
-            return nombreUsuarios;
-        } else {
-            return new String[0];
         }
+        return planesPendientes;
     }
 }

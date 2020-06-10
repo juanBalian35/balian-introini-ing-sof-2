@@ -3,6 +3,9 @@ package dominio;
 import javax.swing.ImageIcon;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.time.format.DateTimeFormatter;
+
 import static org.junit.Assert.*;
 
 public class PlanAlimentacionTest {
@@ -18,8 +21,9 @@ public class PlanAlimentacionTest {
         boolean fueAtendido = false;
         String[][] planDiaADia = null;
         PlanAlimentacion planATestear = new PlanAlimentacion(nombrePlan, usuario, profesional,
-                fueAtendido, planDiaADia);
-        assertEquals(planATestear.toString(), "Plan de alimentación");
+                fueAtendido, planDiaADia, null);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-dd-MM HH:mm:ss");
+        assertEquals(planATestear.toString(), "Plan de alimentación | " + planATestear.getFecha().format(formatter));
     }
 
     @Test
@@ -30,8 +34,9 @@ public class PlanAlimentacionTest {
         boolean fueAtendido = true;
         String[][] planDiaADia = new String[0][0];
         PlanAlimentacion planATestear = new PlanAlimentacion(nombrePlan, usuario, profesional,
-                fueAtendido, planDiaADia);
-        assertEquals(planATestear.getNombreDelPlan(), "Plan de alimentación");
+                fueAtendido, planDiaADia, null);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-dd-MM HH:mm:ss");
+        assertEquals(planATestear.toString(), "Plan de alimentación | " + planATestear.getFecha().format(formatter));
     }
 
     @Test
@@ -42,7 +47,7 @@ public class PlanAlimentacionTest {
         boolean fueAtendido = true;
         String[][] planDiaADia = new String[0][0];
         PlanAlimentacion planATestear = new PlanAlimentacion(nombrePlan, usuario, profesional,
-                fueAtendido, planDiaADia);
+                fueAtendido, planDiaADia, null);
         Usuario usuarioEsperado = new Usuario("", "", null, null, null);
         assertEquals(planATestear.getUsuario(), usuarioEsperado);
     }
@@ -55,7 +60,7 @@ public class PlanAlimentacionTest {
         boolean fueAtendido = true;
         String[][] planDiaADia = new String[0][0];
         PlanAlimentacion planATestear = new PlanAlimentacion(nombrePlan, usuario, profesional,
-                fueAtendido, planDiaADia);
+                fueAtendido, planDiaADia, null);
         Profesional profesionalEsperado = new Profesional("", "", null, null, null, null, null);
         assertEquals(planATestear.getProfesional(), profesionalEsperado);
     }
@@ -68,7 +73,7 @@ public class PlanAlimentacionTest {
         boolean fueAtendido = true;
         String[][] planDiaADia = new String[0][0];
         PlanAlimentacion planATestear = new PlanAlimentacion(nombrePlan, usuario, profesional,
-                fueAtendido, planDiaADia);
+                fueAtendido, planDiaADia, null);
         assertEquals(planATestear.getFueAtendidoElPlan(), fueAtendido);
     }
 
@@ -80,7 +85,7 @@ public class PlanAlimentacionTest {
         boolean fueAtendido = true;
         String[][] planDiaADia = new String[0][0];
         PlanAlimentacion planATestear = new PlanAlimentacion(nombrePlan, usuario, profesional,
-                fueAtendido, planDiaADia);
+                fueAtendido, planDiaADia, null);
         String[][] planEsperado = new String[0][0];
         Assert.assertArrayEquals(planATestear.getPlanDiaADia(), planEsperado);
     }
@@ -93,8 +98,9 @@ public class PlanAlimentacionTest {
         boolean fueAtendido = true;
         String[][] planDiaADia = new String[0][0];
         PlanAlimentacion planATestear = new PlanAlimentacion(nombrePlan, usuario, profesional,
-                fueAtendido, planDiaADia);
-        assertEquals(planATestear.toString(), "Plan de alimentación");
+                fueAtendido, planDiaADia, null);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-dd-MM HH:mm:ss");
+        assertEquals(planATestear.toString(), "Plan de alimentación | " + planATestear.getFecha().format(formatter));
     }
 
     @Test
@@ -109,7 +115,7 @@ public class PlanAlimentacionTest {
         planDiaADia[1][0] = "Manzana";
         planDiaADia[1][1] = "Manzana";
         PlanAlimentacion planATestear = new PlanAlimentacion(nombrePlan, usuario, profesional,
-                fueAtendido, planDiaADia);
+                fueAtendido, planDiaADia, null);
         assertEquals(planATestear.getNombreDelPlan(), nombrePlan);
     }
 
@@ -125,7 +131,7 @@ public class PlanAlimentacionTest {
         planDiaADia[1][0] = "Manzana";
         planDiaADia[1][1] = "Manzana";
         PlanAlimentacion planATestear = new PlanAlimentacion(nombrePlan, usuario, profesional,
-                fueAtendido, planDiaADia);
+                fueAtendido, planDiaADia, null);
         Profesional profesionalEsperado = new Profesional("Alejandro", "Fernandez", null, null, null, null, null);
         assertEquals(planATestear.getProfesional(), profesionalEsperado);
     }
@@ -142,7 +148,7 @@ public class PlanAlimentacionTest {
         planDiaADia[1][0] = "Manzana";
         planDiaADia[1][1] = "Manzana";
         PlanAlimentacion planATestear = new PlanAlimentacion(nombrePlan, usuario, profesional,
-                fueAtendido, planDiaADia);
+                fueAtendido, planDiaADia, null);
         assertEquals(planATestear.getFueAtendidoElPlan(), fueAtendido);
     }
 
@@ -158,7 +164,7 @@ public class PlanAlimentacionTest {
         planDiaADia[1][0] = "Manzana";
         planDiaADia[1][1] = "Manzana";
         PlanAlimentacion planATestear = new PlanAlimentacion(nombrePlan, usuario, profesional,
-                fueAtendido, planDiaADia);
+                fueAtendido, planDiaADia, null);
         Usuario usuarioEsperado = new Usuario("Martin", "Gómez", "11/02/98", new ImageIcon("Imagenes/fotoDeUsuarioStandard.png"), "Uruguayo");
         assertEquals(planATestear.getUsuario(), usuarioEsperado);
     }
@@ -175,7 +181,7 @@ public class PlanAlimentacionTest {
         planDiaADia[1][0] = "Manzana";
         planDiaADia[1][1] = "Manzana";
         PlanAlimentacion planATestear = new PlanAlimentacion(nombrePlan, usuario, profesional,
-                fueAtendido, planDiaADia);
+                fueAtendido, planDiaADia, null);
         Assert.assertArrayEquals(planATestear.getPlanDiaADia(), planDiaADia);
     }
 
@@ -191,8 +197,9 @@ public class PlanAlimentacionTest {
         planDiaADia[1][0] = "Manzana";
         planDiaADia[1][1] = "Manzana";
         PlanAlimentacion planATestear = new PlanAlimentacion(nombrePlan, usuario, profesional,
-                fueAtendido, planDiaADia);
-        assertEquals(planATestear.toString(), nombrePlan);
+                fueAtendido, planDiaADia, null);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-dd-MM HH:mm:ss");
+        assertEquals(planATestear.toString(), nombrePlan + " | " + planATestear.getFecha().format(formatter));
     }
 
     @Test
@@ -207,9 +214,9 @@ public class PlanAlimentacionTest {
         planDiaADia[1][0] = "Manzana";
         planDiaADia[1][1] = "Manzana";
         PlanAlimentacion planATestear = new PlanAlimentacion(nombrePlan, usuario, profesional,
-                fueAtendido, planDiaADia);
+                fueAtendido, planDiaADia, null);
         PlanAlimentacion planAComparar = new PlanAlimentacion(nombrePlan, usuario, profesional,
-                fueAtendido, planDiaADia);
+                fueAtendido, planDiaADia, null);
 
         assertEquals(planATestear, planAComparar);
     }
@@ -226,10 +233,10 @@ public class PlanAlimentacionTest {
         planDiaADia[1][0] = "Manzana";
         planDiaADia[1][1] = "Manzana";
         PlanAlimentacion planATestear = new PlanAlimentacion(nombrePlan, usuario, profesional,
-                fueAtendido, planDiaADia);
+                fueAtendido, planDiaADia, null);
         String nombrePlan2 = "Plan 2 Dias UP";
         PlanAlimentacion planAComparar = new PlanAlimentacion(nombrePlan2, usuario, profesional,
-                fueAtendido, planDiaADia);
+                fueAtendido, planDiaADia, null);
         assertNotEquals(planATestear, planAComparar);
     }
     @Test
@@ -244,7 +251,7 @@ public class PlanAlimentacionTest {
         planDiaADia[1][0] = "Manzana";
         planDiaADia[1][1] = "Manzana";
         PlanAlimentacion planATestear = new PlanAlimentacion(nombrePlan, usuario, profesional,
-                fueAtendido, planDiaADia);
+                fueAtendido, planDiaADia, null);
 
         assertNotEquals(planATestear, null);
     }

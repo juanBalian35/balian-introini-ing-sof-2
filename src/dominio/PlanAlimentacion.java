@@ -1,37 +1,40 @@
 package dominio;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 import java.util.Currency;
 
 public final class PlanAlimentacion implements Serializable {
-
     private String nombreDelPlan;
     private Usuario usuario;
     public Profesional profesional;
     public boolean fueAtendidoElPlan;
     private String[][] planDiaADia;
 
+    private LocalDateTime fecha;
+
     public PlanAlimentacion(String np,
             Usuario usu,
             Profesional pro,
             boolean fueAtendido,
-            String[][] unPlan) {
-
-        setNombreDelPlan(np);
+            String[][] unPlan,
+                            LocalDateTime fecha) {
+        setFecha(fecha);
         setUsuario(usu);
         setProfesional(pro);
         setFueAtendidoElPlan(fueAtendido);
+        setNombreDelPlan(np);
         setPlanDiaADia(unPlan);
     }
 
-    public Persona getUsuario() {
+    public Usuario getUsuario() {
         return usuario;
     }
 
     public void setUsuario(Usuario unUsuario) {
         usuario = unUsuario;
-        
     }
 
     public Profesional getProfesional() {
@@ -66,9 +69,26 @@ public final class PlanAlimentacion implements Serializable {
         return this.nombreDelPlan;
     }
 
+    public void setFecha(LocalDateTime fecha){
+        if (fecha == null) {
+            this.fecha = LocalDateTime.MIN;
+        } else {
+            this.fecha = fecha;
+        }
+    }
+
+    public LocalDateTime getFecha(){
+        return fecha;
+    }
+
     public void setNombreDelPlan(String unNombreDelPlan) {
         if(unNombreDelPlan == null || unNombreDelPlan.isEmpty()){
-            nombreDelPlan = "Plan de alimentación";
+            if(getUsuario() != null && !getUsuario().toString().equals("Nombre no ingresado")){
+                nombreDelPlan = getUsuario().toString();
+            }
+            else{
+                nombreDelPlan = "Plan de alimentación";
+            }
         } else {
             nombreDelPlan = unNombreDelPlan;
         }
@@ -76,7 +96,8 @@ public final class PlanAlimentacion implements Serializable {
 
     @Override
     public String toString() {
-        return this.getNombreDelPlan();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-dd-MM HH:mm:ss");
+        return this.getNombreDelPlan() + " | " + this.getFecha().format(formatter);
     }
 
     @Override
@@ -88,11 +109,12 @@ public final class PlanAlimentacion implements Serializable {
         PlanAlimentacion otroPlanAlimentacion = (PlanAlimentacion) obj;
         boolean mismoNombre = this.getNombreDelPlan().equals(otroPlanAlimentacion.getNombreDelPlan());
         boolean mismoUsuario = (this.getUsuario() == null && otroPlanAlimentacion.getUsuario() == null) ||
-                this.getUsuario().equals(otroPlanAlimentacion.getUsuario());
+                (this.getUsuario() != null && this.getUsuario().equals(otroPlanAlimentacion.getUsuario()));
         boolean mismoProfesional = (this.getProfesional() == null && otroPlanAlimentacion.getProfesional() == null) ||
-                this.getProfesional().equals(otroPlanAlimentacion.getProfesional());
+                (this.getProfesional() != null && this.getProfesional().equals(otroPlanAlimentacion.getProfesional()));
+        boolean mismaFecha = getFecha().equals(otroPlanAlimentacion.getFecha());
 
-        return mismoNombre && mismoUsuario && mismoProfesional;
+        return mismoNombre && mismoUsuario && mismoProfesional && mismaFecha;
     }
 
 }

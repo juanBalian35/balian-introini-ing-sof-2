@@ -1,12 +1,12 @@
 package interfaz;
 
-import dominio.Alimento;
-import dominio.ComposicionAlimento;
-import dominio.Ingesta;
-import dominio.Profesional;
-import dominio.Sistema;
-import dominio.Usuario;
+import dominio.*;
+
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.NoSuchElementException;
+import java.util.Optional;
+import java.util.stream.Collectors;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
@@ -15,12 +15,13 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
 
     private Sistema sistema;
-    private String usuarioSeleccionado;
+    private Usuario usuarioSeleccionado;
     private ImageIcon fotoDeAlimentoActual;
     private final boolean[] nutrientesSeleccionados;
     private String diaDeLaSemanaAnterior;
     private String diaDeLaSemanaActual;
     private final String[][] planAlimentacion;
+    private PlanAlimentacion planSeleccionado;
 
     public VentanaMenuPrincipalProfesional(Sistema unSistema) {
         initComponents();
@@ -1759,9 +1760,13 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
             this.listaPlanesPendientes.setSelectedIndex(0);
             String nombreProfesionalLogueado = sistema.getPersonaLogueada().getNombreCompleto();
             Profesional profesionalLogueado = sistema.getProfesionalPorNombre(nombreProfesionalLogueado);
-            String[] lista = this.sistema.getListaPlanesPendientes(profesionalLogueado);
-            if (lista.length > 0) {
-                this.listaPlanesPendientes.setListData(lista);
+            ArrayList<PlanAlimentacion> lista = this.sistema.getListaPlanesPendientes(profesionalLogueado);
+
+
+
+            String[] stringArray = Arrays.copyOf(lista.stream().map(x -> x.toString()).collect(Collectors.toList()).toArray(), lista.size(), String[].class);
+            if (lista.size() > 0) {
+                this.listaPlanesPendientes.setListData(stringArray);
             } else {
                 ocultarPaneles();
                 this.panelNoHayPlanesPendientes.setVisible(true);
@@ -1779,14 +1784,14 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         this.panelMostrarOk.setVisible(false);
         this.panelConversacion.setVisible(true);
         if (this.listaConversaciones.getSelectedValue() != null) {
-            this.usuarioSeleccionado = this.listaConversaciones.getSelectedValue();
+            this.usuarioSeleccionado = sistema.getUsuarioPorNombre(this.listaConversaciones.getSelectedValue());
         }
         actualizarConversaciones(this.usuarioSeleccionado);
     }//GEN-LAST:event_listaConversacionesValueChanged
 
     private void btnEnviarMensajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnviarMensajeActionPerformed
         String mensaje = this.txtMensajeNuevo.getText();
-        String usuario = this.usuarioSeleccionado;
+        String usuario = this.usuarioSeleccionado.toString();
         String profesional = this.sistema.getPersonaLogueada().getNombreCompleto();
         this.sistema.agregarMensajeConversacion(profesional, usuario, mensaje, true, true);
         this.txtMensajeNuevo.setText("");
@@ -1868,7 +1873,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     }//GEN-LAST:event_btnIngresarAlimentoASistemaActionPerformed
 
     private void btnVerPerfilDeUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerPerfilDeUsuarioActionPerformed
-        MostrarPerfilUsuario perfil = new MostrarPerfilUsuario(getSistema(), usuarioSeleccionado);
+        MostrarPerfilUsuario perfil = new MostrarPerfilUsuario(getSistema(), usuarioSeleccionado.toString());
         perfil.setVisible(true);
     }//GEN-LAST:event_btnVerPerfilDeUsuarioActionPerformed
 
@@ -1987,13 +1992,22 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     }//GEN-LAST:event_lblValidarNombreFocusLost
 
     private void listaPlanesPendientesValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_listaPlanesPendientesValueChanged
-        this.usuarioSeleccionado = this.listaPlanesPendientes.getSelectedValue();
-        Usuario usuarioPerfil = (Usuario) sistema.getUsuarioPorNombre(usuarioSeleccionado);
-        this.lblNombreUsuario2.setText(usuarioSeleccionado);
-        lblFechaNacimiento.setText(usuarioPerfil.getFechaNacimiento());
-        lblFotoDeUsuario.setIcon(usuarioPerfil.getFotoDePerfil());
-        if (usuarioPerfil.getArrayAlimentosIngeridos().length > 0) {
-            ArrayList<Ingesta> ingeridos = usuarioPerfil.getAlimentosIngeridos();
+        String selectedValue = this.listaPlanesPendientes.getSelectedValue();
+        Optional<PlanAlimentacion> planActual = sistema.getListaPlanesAlimentacion().
+                stream().
+                filter(x -> x.toString().equals(selectedValue)).
+                findFirst();
+
+        if(!planActual.isPresent())
+            return;
+
+        planSeleccionado = planActual.get();
+        this.usuarioSeleccionado = planSeleccionado.getUsuario();
+        this.lblNombreUsuario2.setText(usuarioSeleccionado.toString());
+        lblFechaNacimiento.setText(usuarioSeleccionado.getFechaNacimiento());
+        lblFotoDeUsuario.setIcon(usuarioSeleccionado.getFotoDePerfil());
+        if (usuarioSeleccionado.getArrayAlimentosIngeridos().length > 0) {
+            ArrayList<Ingesta> ingeridos = usuarioSeleccionado.getAlimentosIngeridos();
             ArrayList<String> listaASetear = new ArrayList<>();
             for (int i = 0; i < ingeridos.size(); i++) {
                 Ingesta ingestaActual = ingeridos.get(i);
@@ -2008,11 +2022,11 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
             }
             this.listaIngestas.setListData(arrayASetear);
         }
-        if (usuarioPerfil.getArrayPreferencias().length > 0) {
-            listaPreferencias.setListData(usuarioPerfil.getArrayPreferencias());
+        if (usuarioSeleccionado.getArrayPreferencias().length > 0) {
+            listaPreferencias.setListData(usuarioSeleccionado.getArrayPreferencias());
         }
-        if (usuarioPerfil.getArrayRestricciones().length > 0) {
-            listaRestricciones.setListData(usuarioPerfil.getArrayRestricciones());
+        if (usuarioSeleccionado.getArrayRestricciones().length > 0) {
+            listaRestricciones.setListData(usuarioSeleccionado.getArrayRestricciones());
         }
         this.panelDatosUsuario.setVisible(true);
         this.panelPerfilDeUsuario.setVisible(true);
@@ -2199,8 +2213,8 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         } else {
             String nombreProfesionalLogueado = sistema.getPersonaLogueada().getNombreCompleto();
             Profesional profesionalLogueado = sistema.getProfesionalPorNombre(nombreProfesionalLogueado);
-            Usuario usuarioPerfil = (Usuario) sistema.getUsuarioPorNombre(usuarioSeleccionado);
-            boolean fueAtendidoElPlan = this.sistema.atenderSolicitudDelPlan(planAlimentacion, profesionalLogueado, usuarioPerfil, nombreDelPlan);
+            listaPlanesPendientes.getSelectedValue();
+            boolean fueAtendidoElPlan = this.sistema.atenderSolicitudDelPlan(planAlimentacion, planSeleccionado, nombreDelPlan);
             if (fueAtendidoElPlan) {
                 ocultarPaneles();
                 this.panelMostrarPlanEnviado.setVisible(true);
@@ -2315,22 +2329,14 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         this.panelVacio.setVisible(false);
     }
 
-    private void actualizarConversaciones(String remitente) {
+    private void actualizarConversaciones(Usuario remitente) {
         if (remitente != null) {
             String destinatario = sistema.getPersonaLogueada().getNombreCompleto();
-            String conversacion = sistema.getConversacion(destinatario, remitente);
+            String conversacion = sistema.getConversacion(destinatario, remitente.getNombreCompleto());
             txtMostrarConversacion.setText(conversacion);
-            lblNombreUsuario.setText(usuarioSeleccionado);
+            lblNombreUsuario.setText(usuarioSeleccionado.getNombreCompleto());
             listaConversaciones.setListData(sistema.getListaNombresUsuariosConversacionesPendientes(destinatario));
         }
-    }
-
-    void restaurar(String nombreUsuario) {
-        panelConversacionOk.setVisible(true);
-        panelMostrarOk.setVisible(false);
-        panelConversacion.setVisible(true);
-        usuarioSeleccionado = nombreUsuario;
-        actualizarConversaciones(usuarioSeleccionado);
     }
 
     void ocultarPrincipalesNutrientes() {
