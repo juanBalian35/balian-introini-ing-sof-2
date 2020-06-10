@@ -101,56 +101,76 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         lblInicioSesion = new javax.swing.JLabel();
         btnCerrarSistema = new javax.swing.JButton();
         panelElegirProfesional = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        lblIconoInicioSesion1 = new javax.swing.JLabel();
+        lblInicioSesion1 = new javax.swing.JLabel();
+        btnCerrarSistema1 = new javax.swing.JButton();
+        jPanel6 = new javax.swing.JPanel();
         jScrollPane7 = new javax.swing.JScrollPane();
         listaElegirProfesionales = new javax.swing.JList();
         panelVerPlanAlimentacion = new javax.swing.JPanel();
-        lblPlanPropuesto1 = new javax.swing.JLabel();
-        lblPlanPropuesto2 = new javax.swing.JLabel();
-        lblNombreDelPlan = new javax.swing.JLabel();
-        lblAlimentoIngeridoSeleccionado2 = new javax.swing.JLabel();
+        jPanel15 = new javax.swing.JPanel();
+        jPanel14 = new javax.swing.JPanel();
         lblNombreDelProfesional = new javax.swing.JLabel();
-        lblAlimentoIngeridoSeleccionado4 = new javax.swing.JLabel();
+        lblNombreDelPlan = new javax.swing.JLabel();
+        lblTituloDelProfesional = new javax.swing.JLabel();
         lblAlimentoIngeridoSeleccionado5 = new javax.swing.JLabel();
-        lblAlimentoIngeridoSeleccionado6 = new javax.swing.JLabel();
-        lblAlimentoIngeridoSeleccionado7 = new javax.swing.JLabel();
+        lblAlimentoIngeridoSeleccionado11 = new javax.swing.JLabel();
+        lblAlimentoIngeridoSeleccionado2 = new javax.swing.JLabel();
+        jPanel13 = new javax.swing.JPanel();
         lblAlimentoIngeridoSeleccionado8 = new javax.swing.JLabel();
-        lblAlimentoIngeridoSeleccionado9 = new javax.swing.JLabel();
-        lblAlimentoIngeridoSeleccionado10 = new javax.swing.JLabel();
-        lblAlimentoIngeridoSeleccionado14 = new javax.swing.JLabel();
-        jScrollPane34 = new javax.swing.JScrollPane();
-        txtComidasMartes = new javax.swing.JTextArea();
-        jScrollPane35 = new javax.swing.JScrollPane();
-        txtComidasMiercoles = new javax.swing.JTextArea();
-        jScrollPane36 = new javax.swing.JScrollPane();
-        txtComidasJueves = new javax.swing.JTextArea();
         jScrollPane37 = new javax.swing.JScrollPane();
         txtComidasSabado = new javax.swing.JTextArea();
-        jScrollPane38 = new javax.swing.JScrollPane();
-        txtComidasLunes = new javax.swing.JTextArea();
-        jScrollPane39 = new javax.swing.JScrollPane();
-        txtComidasDomingo = new javax.swing.JTextArea();
+        lblAlimentoIngeridoSeleccionado9 = new javax.swing.JLabel();
         jScrollPane40 = new javax.swing.JScrollPane();
         txtComidasViernes = new javax.swing.JTextArea();
-        lblAlimentoIngeridoSeleccionado11 = new javax.swing.JLabel();
-        lblTituloDelProfesional = new javax.swing.JLabel();
+        jScrollPane39 = new javax.swing.JScrollPane();
+        txtComidasDomingo = new javax.swing.JTextArea();
+        lblAlimentoIngeridoSeleccionado10 = new javax.swing.JLabel();
+        jPanel12 = new javax.swing.JPanel();
+        jScrollPane36 = new javax.swing.JScrollPane();
+        txtComidasJueves = new javax.swing.JTextArea();
+        jScrollPane35 = new javax.swing.JScrollPane();
+        txtComidasMiercoles = new javax.swing.JTextArea();
+        jScrollPane38 = new javax.swing.JScrollPane();
+        txtComidasLunes = new javax.swing.JTextArea();
+        lblAlimentoIngeridoSeleccionado6 = new javax.swing.JLabel();
+        lblAlimentoIngeridoSeleccionado7 = new javax.swing.JLabel();
+        lblAlimentoIngeridoSeleccionado14 = new javax.swing.JLabel();
+        lblAlimentoIngeridoSeleccionado4 = new javax.swing.JLabel();
+        jScrollPane34 = new javax.swing.JScrollPane();
+        txtComidasMartes = new javax.swing.JTextArea();
+        jPanel16 = new javax.swing.JPanel();
+        lblIconoInicioSesion4 = new javax.swing.JLabel();
+        lblInicioSesion4 = new javax.swing.JLabel();
+        btnCerrarSistema4 = new javax.swing.JButton();
         panelIngestaRegistradaCorrectamente = new javax.swing.JPanel();
+        jPanel11 = new javax.swing.JPanel();
         lblNohayConsultas1 = new javax.swing.JLabel();
         lblNohayConsultasTexto1 = new javax.swing.JLabel();
         panelAlimentoIngerido = new javax.swing.JPanel();
-        fechaIngestaUsuario = new datechooser.beans.DateChooserCombo();
-        lblAlimentoIngerido = new javax.swing.JLabel();
-        lblAlimentoIngerido2 = new javax.swing.JLabel();
-        lblFechaAlimentoIngerido = new javax.swing.JLabel();
-        lblAlimentoIngeridoSeleccionado = new javax.swing.JLabel();
-        comboAlimentosEnSistema = new javax.swing.JComboBox<>();
-        lblNuevoAlimentoIngerido = new javax.swing.JLabel();
-        btnNuevaIngesta = new javax.swing.JButton();
+        jPanel7 = new javax.swing.JPanel();
         lblValidarNuevoAlimento = new javax.swing.JLabel();
+        lblAlimentoIngeridoSeleccionado = new javax.swing.JLabel();
         lblNuevoAlimentoVacio = new javax.swing.JLabel();
+        lblFechaAlimentoIngerido = new javax.swing.JLabel();
+        fechaIngestaUsuario = new datechooser.beans.DateChooserCombo();
+        comboAlimentosEnSistema = new javax.swing.JComboBox<>();
+        lblNuevoAlimentoVacio1 = new javax.swing.JLabel();
+        lblValidarNuevoAlimento1 = new javax.swing.JLabel();
+        jPanel8 = new javax.swing.JPanel();
+        lblIconoInicioSesion2 = new javax.swing.JLabel();
+        lblInicioSesion2 = new javax.swing.JLabel();
+        btnCerrarSistema2 = new javax.swing.JButton();
+        jPanel9 = new javax.swing.JPanel();
         lblDatosIncorrectos2 = new javax.swing.JLabel();
+        btnNuevaIngesta = new javax.swing.JButton();
         panelPlanDeAlimentacion = new javax.swing.JPanel();
-        lblPlanDeAlimentacion = new javax.swing.JLabel();
-        btnSolicitarNuevoPlan = new javax.swing.JButton();
+        jPanel10 = new javax.swing.JPanel();
+        lblIconoInicioSesion3 = new javax.swing.JLabel();
+        lblInicioSesion3 = new javax.swing.JLabel();
+        btnCerrarSistema3 = new javax.swing.JButton();
+        panelBotones = new javax.swing.JPanel();
         panelNoHayPlanesDisponibles = new javax.swing.JPanel();
         lblNoHayPlanes = new javax.swing.JLabel();
         lblPlanSolicitadoCorrectamente1 = new javax.swing.JLabel();
@@ -177,6 +197,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         jScrollPane4 = new javax.swing.JScrollPane();
         listaPlanesDelUsuario = new javax.swing.JList<>();
         lblSeleccioneProfesional2 = new javax.swing.JLabel();
+        btnSolicitarNuevoPlan = new javax.swing.JButton();
         btnVerPlanesExistentes = new javax.swing.JButton();
         panelVacio = new javax.swing.JPanel();
         btnAyuda = new javax.swing.JButton();
@@ -307,7 +328,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
                 .addComponent(btnIngresarAlimentoIngerido, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblIngresarAlimentoIngerido, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(148, Short.MAX_VALUE))
+                .addContainerGap(178, Short.MAX_VALUE))
         );
 
         getContentPane().add(panelMenu, java.awt.BorderLayout.WEST);
@@ -412,6 +433,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         panelConsultaConProfesional.setMaximumSize(new java.awt.Dimension(800, 800));
         panelConsultaConProfesional.setMinimumSize(new java.awt.Dimension(800, 800));
         panelConsultaConProfesional.setPreferredSize(new java.awt.Dimension(800, 800));
+        panelConsultaConProfesional.setSize(new java.awt.Dimension(800, 800));
         panelConsultaConProfesional.setLayout(new java.awt.BorderLayout());
 
         panelConversacion.setBackground(new java.awt.Color(51, 51, 51));
@@ -425,7 +447,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
 
         btnNuevaConversacion.setForeground(new java.awt.Color(255, 255, 255));
         btnNuevaConversacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoNuevoMensaje.png"))); // NOI18N
-        btnNuevaConversacion.setBorder(null);
+        btnNuevaConversacion.setText("Consultar a otro profesional");
         btnNuevaConversacion.setBorderPainted(false);
         btnNuevaConversacion.setContentAreaFilled(false);
         btnNuevaConversacion.setFocusPainted(false);
@@ -476,10 +498,13 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
 
         btnEnviarMensaje.setForeground(new java.awt.Color(255, 255, 255));
         btnEnviarMensaje.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoEnviarMensaje.png"))); // NOI18N
-        btnEnviarMensaje.setBorder(null);
+        btnEnviarMensaje.setText("Enviar");
         btnEnviarMensaje.setBorderPainted(false);
         btnEnviarMensaje.setContentAreaFilled(false);
         btnEnviarMensaje.setFocusPainted(false);
+        btnEnviarMensaje.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnEnviarMensaje.setIconTextGap(-7);
+        btnEnviarMensaje.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnEnviarMensaje.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEnviarMensajeActionPerformed(evt);
@@ -547,8 +572,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
 
         lblFotoProfesional.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoDeUsuarioStandardChico.png"))); // NOI18N
         lblFotoProfesional.setAlignmentY(0.0F);
-        lblFotoProfesional.setMinimumSize(new java.awt.Dimension(50, 50));
-        lblFotoProfesional.setPreferredSize(new java.awt.Dimension(50, 50));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 0;
@@ -567,7 +590,9 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         panelConsultaConProfesional.add(panelConversacion, java.awt.BorderLayout.CENTER);
 
         jPanel4.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel4.setLayout(new java.awt.GridBagLayout());
+        java.awt.GridBagLayout jPanel4Layout = new java.awt.GridBagLayout();
+        jPanel4Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel4.setLayout(jPanel4Layout);
 
         lblIconoInicioSesion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoConsultaConProfesionalesTitulo.png"))); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -616,6 +641,55 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         panelElegirProfesional.setMaximumSize(new java.awt.Dimension(800, 800));
         panelElegirProfesional.setMinimumSize(new java.awt.Dimension(800, 800));
         panelElegirProfesional.setPreferredSize(new java.awt.Dimension(800, 800));
+        panelElegirProfesional.setLayout(new java.awt.BorderLayout());
+
+        jPanel5.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel5Layout = new java.awt.GridBagLayout();
+        jPanel5Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel5.setLayout(jPanel5Layout);
+
+        lblIconoInicioSesion1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoConsultaConProfesionalesTitulo.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 18, 0, 0);
+        jPanel5.add(lblIconoInicioSesion1, gridBagConstraints);
+
+        lblInicioSesion1.setFont(new java.awt.Font("Levenim MT", 0, 65)); // NOI18N
+        lblInicioSesion1.setForeground(new java.awt.Color(255, 255, 255));
+        lblInicioSesion1.setText("Elija un profesional");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(15, 120, 0, 0);
+        jPanel5.add(lblInicioSesion1, gridBagConstraints);
+
+        btnCerrarSistema1.setBackground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema1.setForeground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
+        btnCerrarSistema1.setAlignmentX(0.5F);
+        btnCerrarSistema1.setBorderPainted(false);
+        btnCerrarSistema1.setContentAreaFilled(false);
+        btnCerrarSistema1.setFocusPainted(false);
+        btnCerrarSistema1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        btnCerrarSistema1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarSistema1ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.RELATIVE;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
+        jPanel5.add(btnCerrarSistema1, gridBagConstraints);
+
+        panelElegirProfesional.add(jPanel5, java.awt.BorderLayout.PAGE_START);
+
+        jPanel6.setBackground(new java.awt.Color(51, 51, 51));
 
         listaElegirProfesionales.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
         listaElegirProfesionales.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
@@ -625,132 +699,109 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         });
         jScrollPane7.setViewportView(listaElegirProfesionales);
 
-        javax.swing.GroupLayout panelElegirProfesionalLayout = new javax.swing.GroupLayout(panelElegirProfesional);
-        panelElegirProfesional.setLayout(panelElegirProfesionalLayout);
-        panelElegirProfesionalLayout.setHorizontalGroup(
-            panelElegirProfesionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelElegirProfesionalLayout.createSequentialGroup()
-                .addContainerGap(79, Short.MAX_VALUE)
-                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 624, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(97, 97, 97))
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addContainerGap(113, Short.MAX_VALUE)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 591, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(96, 96, 96))
         );
-        panelElegirProfesionalLayout.setVerticalGroup(
-            panelElegirProfesionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelElegirProfesionalLayout.createSequentialGroup()
-                .addGap(103, 103, 103)
-                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 576, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(121, Short.MAX_VALUE))
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 588, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(118, Short.MAX_VALUE))
         );
+
+        panelElegirProfesional.add(jPanel6, java.awt.BorderLayout.CENTER);
 
         panelDerecho.add(panelElegirProfesional, "card4");
 
         panelVerPlanAlimentacion.setBackground(new java.awt.Color(51, 51, 51));
         panelVerPlanAlimentacion.setMaximumSize(new java.awt.Dimension(800, 800));
         panelVerPlanAlimentacion.setMinimumSize(new java.awt.Dimension(800, 800));
-        panelVerPlanAlimentacion.setLayout(null);
+        panelVerPlanAlimentacion.setPreferredSize(new java.awt.Dimension(800, 800));
+        panelVerPlanAlimentacion.setSize(new java.awt.Dimension(800, 800));
+        panelVerPlanAlimentacion.setLayout(new java.awt.BorderLayout());
 
-        lblPlanPropuesto1.setFont(new java.awt.Font("Levenim MT", 0, 40)); // NOI18N
-        lblPlanPropuesto1.setForeground(new java.awt.Color(255, 255, 255));
-        lblPlanPropuesto1.setText("Plan de alimentación propuesto");
-        panelVerPlanAlimentacion.add(lblPlanPropuesto1);
-        lblPlanPropuesto1.setBounds(137, 28, 640, 62);
+        jPanel15.setBackground(new java.awt.Color(51, 51, 51));
 
-        lblPlanPropuesto2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoNuevoAlimento.png"))); // NOI18N
-        panelVerPlanAlimentacion.add(lblPlanPropuesto2);
-        lblPlanPropuesto2.setBounds(27, 11, 100, 100);
-
-        lblNombreDelPlan.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
-        lblNombreDelPlan.setForeground(new java.awt.Color(255, 255, 255));
-        lblNombreDelPlan.setText("nombre del plan");
-        panelVerPlanAlimentacion.add(lblNombreDelPlan);
-        lblNombreDelPlan.setBounds(260, 110, 320, 25);
-
-        lblAlimentoIngeridoSeleccionado2.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
-        lblAlimentoIngeridoSeleccionado2.setForeground(new java.awt.Color(255, 255, 255));
-        lblAlimentoIngeridoSeleccionado2.setText("Nombre:");
-        panelVerPlanAlimentacion.add(lblAlimentoIngeridoSeleccionado2);
-        lblAlimentoIngeridoSeleccionado2.setBounds(150, 110, 100, 25);
+        jPanel14.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel14Layout = new java.awt.GridBagLayout();
+        jPanel14Layout.columnWidths = new int[] {0, 14, 0};
+        jPanel14Layout.rowHeights = new int[] {0, 10, 0, 10, 0};
+        jPanel14.setLayout(jPanel14Layout);
 
         lblNombreDelProfesional.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
         lblNombreDelProfesional.setForeground(new java.awt.Color(255, 255, 255));
         lblNombreDelProfesional.setText("nombre del profesional");
-        panelVerPlanAlimentacion.add(lblNombreDelProfesional);
-        lblNombreDelProfesional.setBounds(280, 150, 280, 25);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel14.add(lblNombreDelProfesional, gridBagConstraints);
 
-        lblAlimentoIngeridoSeleccionado4.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
-        lblAlimentoIngeridoSeleccionado4.setForeground(new java.awt.Color(255, 255, 255));
-        lblAlimentoIngeridoSeleccionado4.setText("Martes");
-        panelVerPlanAlimentacion.add(lblAlimentoIngeridoSeleccionado4);
-        lblAlimentoIngeridoSeleccionado4.setBounds(250, 260, 130, 25);
+        lblNombreDelPlan.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+        lblNombreDelPlan.setForeground(new java.awt.Color(255, 255, 255));
+        lblNombreDelPlan.setText("nombre del plan");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel14.add(lblNombreDelPlan, gridBagConstraints);
+
+        lblTituloDelProfesional.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+        lblTituloDelProfesional.setForeground(new java.awt.Color(255, 255, 255));
+        lblTituloDelProfesional.setText("titulo del profesional");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel14.add(lblTituloDelProfesional, gridBagConstraints);
 
         lblAlimentoIngeridoSeleccionado5.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
         lblAlimentoIngeridoSeleccionado5.setForeground(new java.awt.Color(255, 255, 255));
         lblAlimentoIngeridoSeleccionado5.setText("Título del profesional:");
-        panelVerPlanAlimentacion.add(lblAlimentoIngeridoSeleccionado5);
-        lblAlimentoIngeridoSeleccionado5.setBounds(150, 190, 220, 25);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
+        jPanel14.add(lblAlimentoIngeridoSeleccionado5, gridBagConstraints);
 
-        lblAlimentoIngeridoSeleccionado6.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
-        lblAlimentoIngeridoSeleccionado6.setForeground(new java.awt.Color(255, 255, 255));
-        lblAlimentoIngeridoSeleccionado6.setText("Miércoles");
-        panelVerPlanAlimentacion.add(lblAlimentoIngeridoSeleccionado6);
-        lblAlimentoIngeridoSeleccionado6.setBounds(430, 260, 130, 25);
+        lblAlimentoIngeridoSeleccionado11.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+        lblAlimentoIngeridoSeleccionado11.setForeground(new java.awt.Color(255, 255, 255));
+        lblAlimentoIngeridoSeleccionado11.setText("Nombre del profesional:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
+        jPanel14.add(lblAlimentoIngeridoSeleccionado11, gridBagConstraints);
 
-        lblAlimentoIngeridoSeleccionado7.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
-        lblAlimentoIngeridoSeleccionado7.setForeground(new java.awt.Color(255, 255, 255));
-        lblAlimentoIngeridoSeleccionado7.setText("Jueves");
-        panelVerPlanAlimentacion.add(lblAlimentoIngeridoSeleccionado7);
-        lblAlimentoIngeridoSeleccionado7.setBounds(600, 260, 130, 25);
+        lblAlimentoIngeridoSeleccionado2.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+        lblAlimentoIngeridoSeleccionado2.setForeground(new java.awt.Color(255, 255, 255));
+        lblAlimentoIngeridoSeleccionado2.setText("Nombre del plan:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
+        jPanel14.add(lblAlimentoIngeridoSeleccionado2, gridBagConstraints);
+
+        jPanel13.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel13Layout = new java.awt.GridBagLayout();
+        jPanel13Layout.columnWidths = new int[] {0, 33, 0, 33, 0};
+        jPanel13Layout.rowHeights = new int[] {0, 6, 0};
+        jPanel13.setLayout(jPanel13Layout);
 
         lblAlimentoIngeridoSeleccionado8.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
         lblAlimentoIngeridoSeleccionado8.setForeground(new java.awt.Color(255, 255, 255));
         lblAlimentoIngeridoSeleccionado8.setText("Viernes");
-        panelVerPlanAlimentacion.add(lblAlimentoIngeridoSeleccionado8);
-        lblAlimentoIngeridoSeleccionado8.setBounds(160, 530, 130, 25);
-
-        lblAlimentoIngeridoSeleccionado9.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
-        lblAlimentoIngeridoSeleccionado9.setForeground(new java.awt.Color(255, 255, 255));
-        lblAlimentoIngeridoSeleccionado9.setText("Sábado");
-        panelVerPlanAlimentacion.add(lblAlimentoIngeridoSeleccionado9);
-        lblAlimentoIngeridoSeleccionado9.setBounds(360, 530, 130, 25);
-
-        lblAlimentoIngeridoSeleccionado10.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
-        lblAlimentoIngeridoSeleccionado10.setForeground(new java.awt.Color(255, 255, 255));
-        lblAlimentoIngeridoSeleccionado10.setText("Domingo");
-        panelVerPlanAlimentacion.add(lblAlimentoIngeridoSeleccionado10);
-        lblAlimentoIngeridoSeleccionado10.setBounds(520, 530, 110, 25);
-
-        lblAlimentoIngeridoSeleccionado14.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
-        lblAlimentoIngeridoSeleccionado14.setForeground(new java.awt.Color(255, 255, 255));
-        lblAlimentoIngeridoSeleccionado14.setText("Lunes");
-        panelVerPlanAlimentacion.add(lblAlimentoIngeridoSeleccionado14);
-        lblAlimentoIngeridoSeleccionado14.setBounds(50, 260, 130, 25);
-
-        txtComidasMartes.setBackground(new java.awt.Color(51, 51, 51));
-        txtComidasMartes.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-        txtComidasMartes.setForeground(new java.awt.Color(255, 255, 255));
-        txtComidasMartes.setRows(5);
-        jScrollPane34.setViewportView(txtComidasMartes);
-
-        panelVerPlanAlimentacion.add(jScrollPane34);
-        jScrollPane34.setBounds(210, 300, 160, 210);
-
-        txtComidasMiercoles.setBackground(new java.awt.Color(51, 51, 51));
-        txtComidasMiercoles.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-        txtComidasMiercoles.setForeground(new java.awt.Color(255, 255, 255));
-        txtComidasMiercoles.setRows(5);
-        jScrollPane35.setViewportView(txtComidasMiercoles);
-
-        panelVerPlanAlimentacion.add(jScrollPane35);
-        jScrollPane35.setBounds(400, 300, 160, 210);
-
-        txtComidasJueves.setBackground(new java.awt.Color(51, 51, 51));
-        txtComidasJueves.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-        txtComidasJueves.setForeground(new java.awt.Color(255, 255, 255));
-        txtComidasJueves.setRows(5);
-        jScrollPane36.setViewportView(txtComidasJueves);
-
-        panelVerPlanAlimentacion.add(jScrollPane36);
-        jScrollPane36.setBounds(580, 300, 160, 210);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        jPanel13.add(lblAlimentoIngeridoSeleccionado8, gridBagConstraints);
 
         txtComidasSabado.setBackground(new java.awt.Color(51, 51, 51));
         txtComidasSabado.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
@@ -758,26 +809,23 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         txtComidasSabado.setRows(5);
         jScrollPane37.setViewportView(txtComidasSabado);
 
-        panelVerPlanAlimentacion.add(jScrollPane37);
-        jScrollPane37.setBounds(320, 570, 160, 210);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 137;
+        gridBagConstraints.ipady = 187;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        jPanel13.add(jScrollPane37, gridBagConstraints);
 
-        txtComidasLunes.setBackground(new java.awt.Color(51, 51, 51));
-        txtComidasLunes.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-        txtComidasLunes.setForeground(new java.awt.Color(255, 255, 255));
-        txtComidasLunes.setRows(5);
-        jScrollPane38.setViewportView(txtComidasLunes);
-
-        panelVerPlanAlimentacion.add(jScrollPane38);
-        jScrollPane38.setBounds(20, 300, 160, 210);
-
-        txtComidasDomingo.setBackground(new java.awt.Color(51, 51, 51));
-        txtComidasDomingo.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-        txtComidasDomingo.setForeground(new java.awt.Color(255, 255, 255));
-        txtComidasDomingo.setRows(5);
-        jScrollPane39.setViewportView(txtComidasDomingo);
-
-        panelVerPlanAlimentacion.add(jScrollPane39);
-        jScrollPane39.setBounds(510, 570, 160, 210);
+        lblAlimentoIngeridoSeleccionado9.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
+        lblAlimentoIngeridoSeleccionado9.setForeground(new java.awt.Color(255, 255, 255));
+        lblAlimentoIngeridoSeleccionado9.setText("Sábado");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        jPanel13.add(lblAlimentoIngeridoSeleccionado9, gridBagConstraints);
 
         txtComidasViernes.setBackground(new java.awt.Color(51, 51, 51));
         txtComidasViernes.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
@@ -785,20 +833,219 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         txtComidasViernes.setRows(5);
         jScrollPane40.setViewportView(txtComidasViernes);
 
-        panelVerPlanAlimentacion.add(jScrollPane40);
-        jScrollPane40.setBounds(130, 570, 160, 210);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 137;
+        gridBagConstraints.ipady = 187;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        jPanel13.add(jScrollPane40, gridBagConstraints);
 
-        lblAlimentoIngeridoSeleccionado11.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
-        lblAlimentoIngeridoSeleccionado11.setForeground(new java.awt.Color(255, 255, 255));
-        lblAlimentoIngeridoSeleccionado11.setText("Profesional:");
-        panelVerPlanAlimentacion.add(lblAlimentoIngeridoSeleccionado11);
-        lblAlimentoIngeridoSeleccionado11.setBounds(150, 150, 130, 25);
+        txtComidasDomingo.setBackground(new java.awt.Color(51, 51, 51));
+        txtComidasDomingo.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+        txtComidasDomingo.setForeground(new java.awt.Color(255, 255, 255));
+        txtComidasDomingo.setRows(5);
+        jScrollPane39.setViewportView(txtComidasDomingo);
 
-        lblTituloDelProfesional.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
-        lblTituloDelProfesional.setForeground(new java.awt.Color(255, 255, 255));
-        lblTituloDelProfesional.setText("titulo del profesional");
-        panelVerPlanAlimentacion.add(lblTituloDelProfesional);
-        lblTituloDelProfesional.setBounds(370, 190, 410, 25);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 137;
+        gridBagConstraints.ipady = 187;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        jPanel13.add(jScrollPane39, gridBagConstraints);
+
+        lblAlimentoIngeridoSeleccionado10.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
+        lblAlimentoIngeridoSeleccionado10.setForeground(new java.awt.Color(255, 255, 255));
+        lblAlimentoIngeridoSeleccionado10.setText("Domingo");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 0;
+        jPanel13.add(lblAlimentoIngeridoSeleccionado10, gridBagConstraints);
+
+        jPanel12.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel12Layout = new java.awt.GridBagLayout();
+        jPanel12Layout.columnWidths = new int[] {0, 33, 0, 33, 0, 33, 0};
+        jPanel12Layout.rowHeights = new int[] {0, 6, 0};
+        jPanel12.setLayout(jPanel12Layout);
+
+        txtComidasJueves.setBackground(new java.awt.Color(51, 51, 51));
+        txtComidasJueves.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+        txtComidasJueves.setForeground(new java.awt.Color(255, 255, 255));
+        txtComidasJueves.setRows(5);
+        jScrollPane36.setViewportView(txtComidasJueves);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 137;
+        gridBagConstraints.ipady = 187;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 36);
+        jPanel12.add(jScrollPane36, gridBagConstraints);
+
+        txtComidasMiercoles.setBackground(new java.awt.Color(51, 51, 51));
+        txtComidasMiercoles.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+        txtComidasMiercoles.setForeground(new java.awt.Color(255, 255, 255));
+        txtComidasMiercoles.setRows(5);
+        jScrollPane35.setViewportView(txtComidasMiercoles);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 137;
+        gridBagConstraints.ipady = 187;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        jPanel12.add(jScrollPane35, gridBagConstraints);
+
+        txtComidasLunes.setBackground(new java.awt.Color(51, 51, 51));
+        txtComidasLunes.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+        txtComidasLunes.setForeground(new java.awt.Color(255, 255, 255));
+        txtComidasLunes.setRows(5);
+        jScrollPane38.setViewportView(txtComidasLunes);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 137;
+        gridBagConstraints.ipady = 187;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(0, 33, 0, 0);
+        jPanel12.add(jScrollPane38, gridBagConstraints);
+
+        lblAlimentoIngeridoSeleccionado6.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
+        lblAlimentoIngeridoSeleccionado6.setForeground(new java.awt.Color(255, 255, 255));
+        lblAlimentoIngeridoSeleccionado6.setText("Miércoles");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 0;
+        jPanel12.add(lblAlimentoIngeridoSeleccionado6, gridBagConstraints);
+
+        lblAlimentoIngeridoSeleccionado7.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
+        lblAlimentoIngeridoSeleccionado7.setForeground(new java.awt.Color(255, 255, 255));
+        lblAlimentoIngeridoSeleccionado7.setText("Jueves");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 36);
+        jPanel12.add(lblAlimentoIngeridoSeleccionado7, gridBagConstraints);
+
+        lblAlimentoIngeridoSeleccionado14.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
+        lblAlimentoIngeridoSeleccionado14.setForeground(new java.awt.Color(255, 255, 255));
+        lblAlimentoIngeridoSeleccionado14.setText("Lunes");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.insets = new java.awt.Insets(0, 33, 0, 0);
+        jPanel12.add(lblAlimentoIngeridoSeleccionado14, gridBagConstraints);
+
+        lblAlimentoIngeridoSeleccionado4.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
+        lblAlimentoIngeridoSeleccionado4.setForeground(new java.awt.Color(255, 255, 255));
+        lblAlimentoIngeridoSeleccionado4.setText("Martes");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        jPanel12.add(lblAlimentoIngeridoSeleccionado4, gridBagConstraints);
+
+        txtComidasMartes.setBackground(new java.awt.Color(51, 51, 51));
+        txtComidasMartes.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+        txtComidasMartes.setForeground(new java.awt.Color(255, 255, 255));
+        txtComidasMartes.setRows(5);
+        jScrollPane34.setViewportView(txtComidasMartes);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 137;
+        gridBagConstraints.ipady = 187;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        jPanel12.add(jScrollPane34, gridBagConstraints);
+
+        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
+        jPanel15.setLayout(jPanel15Layout);
+        jPanel15Layout.setHorizontalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, 590, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel15Layout.setVerticalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        panelVerPlanAlimentacion.add(jPanel15, java.awt.BorderLayout.CENTER);
+
+        jPanel16.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel16.setLayout(new java.awt.GridBagLayout());
+
+        lblIconoInicioSesion4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoNuevoAlimento.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 18, 0, 0);
+        jPanel16.add(lblIconoInicioSesion4, gridBagConstraints);
+
+        lblInicioSesion4.setFont(new java.awt.Font("Levenim MT", 0, 35)); // NOI18N
+        lblInicioSesion4.setForeground(new java.awt.Color(255, 255, 255));
+        lblInicioSesion4.setText("Plan de alimentación propuesto");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(15, 120, 0, 0);
+        jPanel16.add(lblInicioSesion4, gridBagConstraints);
+
+        btnCerrarSistema4.setBackground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema4.setForeground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
+        btnCerrarSistema4.setAlignmentX(0.5F);
+        btnCerrarSistema4.setBorderPainted(false);
+        btnCerrarSistema4.setContentAreaFilled(false);
+        btnCerrarSistema4.setFocusPainted(false);
+        btnCerrarSistema4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        btnCerrarSistema4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarSistema4ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.RELATIVE;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
+        jPanel16.add(btnCerrarSistema4, gridBagConstraints);
+
+        panelVerPlanAlimentacion.add(jPanel16, java.awt.BorderLayout.PAGE_START);
 
         panelDerecho.add(panelVerPlanAlimentacion, "card5");
 
@@ -806,208 +1053,349 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         panelIngestaRegistradaCorrectamente.setMaximumSize(new java.awt.Dimension(800, 800));
         panelIngestaRegistradaCorrectamente.setMinimumSize(new java.awt.Dimension(800, 800));
         panelIngestaRegistradaCorrectamente.setPreferredSize(new java.awt.Dimension(800, 800));
-        panelIngestaRegistradaCorrectamente.setLayout(null);
+        panelIngestaRegistradaCorrectamente.setLayout(new java.awt.BorderLayout());
+
+        jPanel11.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel11.setLayout(new java.awt.GridBagLayout());
 
         lblNohayConsultas1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoOK.png"))); // NOI18N
-        panelIngestaRegistradaCorrectamente.add(lblNohayConsultas1);
-        lblNohayConsultas1.setBounds(300, 200, 104, 104);
+        jPanel11.add(lblNohayConsultas1, new java.awt.GridBagConstraints());
 
         lblNohayConsultasTexto1.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
         lblNohayConsultasTexto1.setForeground(new java.awt.Color(255, 255, 255));
         lblNohayConsultasTexto1.setText("Ingesta registrada");
-        panelIngestaRegistradaCorrectamente.add(lblNohayConsultasTexto1);
-        lblNohayConsultasTexto1.setBounds(190, 340, 360, 48);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        jPanel11.add(lblNohayConsultasTexto1, gridBagConstraints);
+
+        panelIngestaRegistradaCorrectamente.add(jPanel11, java.awt.BorderLayout.CENTER);
 
         panelDerecho.add(panelIngestaRegistradaCorrectamente, "card10");
 
         panelAlimentoIngerido.setBackground(new java.awt.Color(51, 51, 51));
         panelAlimentoIngerido.setMaximumSize(new java.awt.Dimension(800, 800));
         panelAlimentoIngerido.setMinimumSize(new java.awt.Dimension(800, 800));
-        panelAlimentoIngerido.setLayout(null);
+        panelAlimentoIngerido.setLayout(new java.awt.BorderLayout());
 
-        fechaIngestaUsuario.setFieldFont(new java.awt.Font("Dialog", java.awt.Font.PLAIN, 17));
-        panelAlimentoIngerido.add(fechaIngestaUsuario);
-        fechaIngestaUsuario.setBounds(49, 477, 178, 38);
+        jPanel7.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel7Layout = new java.awt.GridBagLayout();
+        jPanel7Layout.columnWidths = new int[] {0, 0, 0, 0, 0};
+        jPanel7Layout.rowHeights = new int[] {0, 10, 0, 10, 0, 10, 0};
+        jPanel7.setLayout(jPanel7Layout);
 
-        lblAlimentoIngerido.setFont(new java.awt.Font("Levenim MT", 0, 50)); // NOI18N
-        lblAlimentoIngerido.setForeground(new java.awt.Color(255, 255, 255));
-        lblAlimentoIngerido.setText("ingerido");
-        panelAlimentoIngerido.add(lblAlimentoIngerido);
-        lblAlimentoIngerido.setBounds(320, 120, 215, 59);
-
-        lblAlimentoIngerido2.setFont(new java.awt.Font("Levenim MT", 0, 50)); // NOI18N
-        lblAlimentoIngerido2.setForeground(new java.awt.Color(255, 255, 255));
-        lblAlimentoIngerido2.setText("Datos sobre el alimento");
-        panelAlimentoIngerido.add(lblAlimentoIngerido2);
-        lblAlimentoIngerido2.setBounds(160, 40, 596, 62);
-
-        lblFechaAlimentoIngerido.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
-        lblFechaAlimentoIngerido.setForeground(new java.awt.Color(255, 255, 255));
-        lblFechaAlimentoIngerido.setText("Ingrese la fecha de ingesta");
-        panelAlimentoIngerido.add(lblFechaAlimentoIngerido);
-        lblFechaAlimentoIngerido.setBounds(49, 410, 624, 36);
+        lblValidarNuevoAlimento.setForeground(new java.awt.Color(255, 255, 255));
+        lblValidarNuevoAlimento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel7.add(lblValidarNuevoAlimento, gridBagConstraints);
 
         lblAlimentoIngeridoSeleccionado.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
         lblAlimentoIngeridoSeleccionado.setForeground(new java.awt.Color(255, 255, 255));
         lblAlimentoIngeridoSeleccionado.setText("Ingrese el nuevo alimento ");
-        panelAlimentoIngerido.add(lblAlimentoIngeridoSeleccionado);
-        lblAlimentoIngeridoSeleccionado.setBounds(49, 258, 624, 36);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 50, 0, 0);
+        jPanel7.add(lblAlimentoIngeridoSeleccionado, gridBagConstraints);
+
+        lblNuevoAlimentoVacio.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+        lblNuevoAlimentoVacio.setForeground(new java.awt.Color(240, 128, 128));
+        lblNuevoAlimentoVacio.setText("Dato vacio");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.ABOVE_BASELINE_LEADING;
+        jPanel7.add(lblNuevoAlimentoVacio, gridBagConstraints);
+
+        lblFechaAlimentoIngerido.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
+        lblFechaAlimentoIngerido.setForeground(new java.awt.Color(255, 255, 255));
+        lblFechaAlimentoIngerido.setText("Ingrese la fecha de ingesta");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 50, 0, 0);
+        jPanel7.add(lblFechaAlimentoIngerido, gridBagConstraints);
+
+        fechaIngestaUsuario.setFieldFont(new java.awt.Font("Dialog", java.awt.Font.PLAIN, 17));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 50, 0, 0);
+        jPanel7.add(fechaIngestaUsuario, gridBagConstraints);
 
         comboAlimentosEnSistema.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         comboAlimentosEnSistema.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione..." }));
+        comboAlimentosEnSistema.setMaximumSize(new java.awt.Dimension(400, 300));
+        comboAlimentosEnSistema.setPreferredSize(new java.awt.Dimension(400, 27));
+        comboAlimentosEnSistema.setSize(new java.awt.Dimension(400, 27));
         comboAlimentosEnSistema.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 comboAlimentosEnSistemaItemStateChanged(evt);
             }
         });
-        panelAlimentoIngerido.add(comboAlimentosEnSistema);
-        comboAlimentosEnSistema.setBounds(49, 314, 184, 41);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 50, 0, 0);
+        jPanel7.add(comboAlimentosEnSistema, gridBagConstraints);
 
-        lblNuevoAlimentoIngerido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoNuevoAlimento.png"))); // NOI18N
-        panelAlimentoIngerido.add(lblNuevoAlimentoIngerido);
-        lblNuevoAlimentoIngerido.setBounds(40, 60, 100, 100);
+        lblNuevoAlimentoVacio1.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+        lblNuevoAlimentoVacio1.setForeground(new java.awt.Color(240, 128, 128));
+        lblNuevoAlimentoVacio1.setText("Dato vacio");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.ABOVE_BASELINE_LEADING;
+        jPanel7.add(lblNuevoAlimentoVacio1, gridBagConstraints);
 
+        lblValidarNuevoAlimento1.setForeground(new java.awt.Color(255, 255, 255));
+        lblValidarNuevoAlimento1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel7.add(lblValidarNuevoAlimento1, gridBagConstraints);
+
+        panelAlimentoIngerido.add(jPanel7, java.awt.BorderLayout.WEST);
+
+        jPanel8.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel8Layout = new java.awt.GridBagLayout();
+        jPanel8Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel8.setLayout(jPanel8Layout);
+
+        lblIconoInicioSesion2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoNuevoAlimento.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 18, 0, 0);
+        jPanel8.add(lblIconoInicioSesion2, gridBagConstraints);
+
+        lblInicioSesion2.setFont(new java.awt.Font("Levenim MT", 0, 45)); // NOI18N
+        lblInicioSesion2.setForeground(new java.awt.Color(255, 255, 255));
+        lblInicioSesion2.setText("Datos del alimento ingerido");
+        lblInicioSesion2.setMaximumSize(new java.awt.Dimension(650, 77));
+        lblInicioSesion2.setMinimumSize(new java.awt.Dimension(650, 77));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(15, 120, 0, 0);
+        jPanel8.add(lblInicioSesion2, gridBagConstraints);
+
+        btnCerrarSistema2.setBackground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema2.setForeground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
+        btnCerrarSistema2.setAlignmentX(0.5F);
+        btnCerrarSistema2.setBorderPainted(false);
+        btnCerrarSistema2.setContentAreaFilled(false);
+        btnCerrarSistema2.setFocusPainted(false);
+        btnCerrarSistema2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        btnCerrarSistema2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarSistema2ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.RELATIVE;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
+        jPanel8.add(btnCerrarSistema2, gridBagConstraints);
+
+        panelAlimentoIngerido.add(jPanel8, java.awt.BorderLayout.PAGE_START);
+
+        jPanel9.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel9Layout = new java.awt.GridBagLayout();
+        jPanel9Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel9.setLayout(jPanel9Layout);
+
+        lblDatosIncorrectos2.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+        lblDatosIncorrectos2.setForeground(new java.awt.Color(255, 153, 153));
+        lblDatosIncorrectos2.setText("Aún quedan datos incorrectos");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 20, 0);
+        jPanel9.add(lblDatosIncorrectos2, gridBagConstraints);
+
+        btnNuevaIngesta.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        btnNuevaIngesta.setForeground(javax.swing.UIManager.getDefaults().getColor("Button.background"));
         btnNuevaIngesta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoAgregarALaLista.png"))); // NOI18N
+        btnNuevaIngesta.setText("Registrar ingesta");
         btnNuevaIngesta.setBorderPainted(false);
         btnNuevaIngesta.setContentAreaFilled(false);
+        btnNuevaIngesta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnNuevaIngesta.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnNuevaIngesta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNuevaIngestaActionPerformed(evt);
             }
         });
-        panelAlimentoIngerido.add(btnNuevaIngesta);
-        btnNuevaIngesta.setBounds(640, 628, 124, 117);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 20, 20);
+        jPanel9.add(btnNuevaIngesta, gridBagConstraints);
 
-        lblValidarNuevoAlimento.setForeground(new java.awt.Color(255, 255, 255));
-        lblValidarNuevoAlimento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
-        panelAlimentoIngerido.add(lblValidarNuevoAlimento);
-        lblValidarNuevoAlimento.setBounds(250, 310, 32, 44);
-
-        lblNuevoAlimentoVacio.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-        lblNuevoAlimentoVacio.setForeground(new java.awt.Color(240, 128, 128));
-        lblNuevoAlimentoVacio.setText("Dato vacio");
-        panelAlimentoIngerido.add(lblNuevoAlimentoVacio);
-        lblNuevoAlimentoVacio.setBounds(300, 310, 120, 38);
-
-        lblDatosIncorrectos2.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
-        lblDatosIncorrectos2.setForeground(new java.awt.Color(255, 153, 153));
-        lblDatosIncorrectos2.setText("Aún quedan datos incorrectos");
-        panelAlimentoIngerido.add(lblDatosIncorrectos2);
-        lblDatosIncorrectos2.setBounds(320, 650, 341, 40);
+        panelAlimentoIngerido.add(jPanel9, java.awt.BorderLayout.PAGE_END);
 
         panelDerecho.add(panelAlimentoIngerido, "card5");
 
         panelPlanDeAlimentacion.setBackground(new java.awt.Color(51, 51, 51));
         panelPlanDeAlimentacion.setMaximumSize(new java.awt.Dimension(800, 800));
         panelPlanDeAlimentacion.setMinimumSize(new java.awt.Dimension(800, 800));
-        panelPlanDeAlimentacion.setLayout(null);
+        panelPlanDeAlimentacion.setPreferredSize(new java.awt.Dimension(800, 800));
+        panelPlanDeAlimentacion.setSize(new java.awt.Dimension(800, 800));
 
-        lblPlanDeAlimentacion.setFont(new java.awt.Font("Levenim MT", 0, 50)); // NOI18N
-        lblPlanDeAlimentacion.setForeground(new java.awt.Color(255, 255, 255));
-        lblPlanDeAlimentacion.setText("Plan de alimentación");
-        panelPlanDeAlimentacion.add(lblPlanDeAlimentacion);
-        lblPlanDeAlimentacion.setBounds(86, 31, 596, 62);
+        jPanel10.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel10.setMaximumSize(new java.awt.Dimension(800, 2147483647));
+        jPanel10.setMinimumSize(new java.awt.Dimension(800, 119));
+        jPanel10.setPreferredSize(new java.awt.Dimension(800, 119));
+        java.awt.GridBagLayout jPanel10Layout = new java.awt.GridBagLayout();
+        jPanel10Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel10Layout.rowWeights = new double[] {1.0, 1.0};
+        jPanel10.setLayout(jPanel10Layout);
 
-        btnSolicitarNuevoPlan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoNuevoPlanAlimentacion.png"))); // NOI18N
-        btnSolicitarNuevoPlan.setBorderPainted(false);
-        btnSolicitarNuevoPlan.setContentAreaFilled(false);
-        btnSolicitarNuevoPlan.addActionListener(new java.awt.event.ActionListener() {
+        lblIconoInicioSesion3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoPlanAlimentacionTitulo.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 18, 0, 0);
+        jPanel10.add(lblIconoInicioSesion3, gridBagConstraints);
+
+        lblInicioSesion3.setFont(new java.awt.Font("Levenim MT", 0, 55)); // NOI18N
+        lblInicioSesion3.setForeground(new java.awt.Color(255, 255, 255));
+        lblInicioSesion3.setText("Plan de alimentación");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 120, 0, 0);
+        jPanel10.add(lblInicioSesion3, gridBagConstraints);
+
+        btnCerrarSistema3.setBackground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema3.setForeground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
+        btnCerrarSistema3.setAlignmentX(0.5F);
+        btnCerrarSistema3.setBorderPainted(false);
+        btnCerrarSistema3.setContentAreaFilled(false);
+        btnCerrarSistema3.setFocusPainted(false);
+        btnCerrarSistema3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        btnCerrarSistema3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSolicitarNuevoPlanActionPerformed(evt);
+                btnCerrarSistema3ActionPerformed(evt);
             }
         });
-        panelPlanDeAlimentacion.add(btnSolicitarNuevoPlan);
-        btnSolicitarNuevoPlan.setBounds(138, 111, 124, 117);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHEAST;
+        jPanel10.add(btnCerrarSistema3, gridBagConstraints);
 
-        panelNoHayPlanesDisponibles.setBackground(new java.awt.Color(51, 52, 52));
+        panelBotones.setBackground(new java.awt.Color(51, 51, 51));
+        panelBotones.setLayout(null);
+
+        panelNoHayPlanesDisponibles.setBackground(new java.awt.Color(51, 51, 51));
+        panelNoHayPlanesDisponibles.setLocation(new java.awt.Point(400, 150));
+        panelNoHayPlanesDisponibles.setMaximumSize(new java.awt.Dimension(100, 100));
+        java.awt.GridBagLayout panelNoHayPlanesDisponiblesLayout = new java.awt.GridBagLayout();
+        panelNoHayPlanesDisponiblesLayout.rowWeights = new double[] {1.0, 1.0};
+        panelNoHayPlanesDisponibles.setLayout(panelNoHayPlanesDisponiblesLayout);
 
         lblNoHayPlanes.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
         lblNoHayPlanes.setForeground(new java.awt.Color(255, 255, 255));
         lblNoHayPlanes.setText("disponibles");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 200, 0);
+        panelNoHayPlanesDisponibles.add(lblNoHayPlanes, gridBagConstraints);
 
         lblPlanSolicitadoCorrectamente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCaraTriste.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.PAGE_START;
+        gridBagConstraints.insets = new java.awt.Insets(55, 0, 0, 0);
+        panelNoHayPlanesDisponibles.add(lblPlanSolicitadoCorrectamente1, gridBagConstraints);
 
         lblNoHayPlanes1.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
         lblNoHayPlanes1.setForeground(new java.awt.Color(255, 255, 255));
         lblNoHayPlanes1.setText("No hay planes");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.ipady = 29;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 6);
+        panelNoHayPlanesDisponibles.add(lblNoHayPlanes1, gridBagConstraints);
 
-        javax.swing.GroupLayout panelNoHayPlanesDisponiblesLayout = new javax.swing.GroupLayout(panelNoHayPlanesDisponibles);
-        panelNoHayPlanesDisponibles.setLayout(panelNoHayPlanesDisponiblesLayout);
-        panelNoHayPlanesDisponiblesLayout.setHorizontalGroup(
-            panelNoHayPlanesDisponiblesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelNoHayPlanesDisponiblesLayout.createSequentialGroup()
-                .addGap(110, 110, 110)
-                .addComponent(lblPlanSolicitadoCorrectamente1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(84, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelNoHayPlanesDisponiblesLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lblNoHayPlanes)
-                .addGap(43, 43, 43))
-            .addGroup(panelNoHayPlanesDisponiblesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelNoHayPlanesDisponiblesLayout.createSequentialGroup()
-                    .addContainerGap(29, Short.MAX_VALUE)
-                    .addComponent(lblNoHayPlanes1)
-                    .addContainerGap()))
-        );
-        panelNoHayPlanesDisponiblesLayout.setVerticalGroup(
-            panelNoHayPlanesDisponiblesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelNoHayPlanesDisponiblesLayout.createSequentialGroup()
-                .addGap(79, 79, 79)
-                .addComponent(lblPlanSolicitadoCorrectamente1, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 111, Short.MAX_VALUE)
-                .addComponent(lblNoHayPlanes, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(109, 109, 109))
-            .addGroup(panelNoHayPlanesDisponiblesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelNoHayPlanesDisponiblesLayout.createSequentialGroup()
-                    .addContainerGap(244, Short.MAX_VALUE)
-                    .addComponent(lblNoHayPlanes1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(179, 179, 179)))
-        );
-
-        panelPlanDeAlimentacion.add(panelNoHayPlanesDisponibles);
-        panelNoHayPlanesDisponibles.setBounds(410, 240, 320, 500);
+        panelBotones.add(panelNoHayPlanesDisponibles);
+        panelNoHayPlanesDisponibles.setBounds(450, 150, 350, 530);
 
         panelPlanSolicitadoCorrectamente.setBackground(new java.awt.Color(51, 51, 51));
-        panelPlanSolicitadoCorrectamente.setMaximumSize(new java.awt.Dimension(390, 500));
+        panelPlanSolicitadoCorrectamente.setMaximumSize(new java.awt.Dimension(100, 100));
+        java.awt.GridBagLayout panelPlanSolicitadoCorrectamenteLayout = new java.awt.GridBagLayout();
+        panelPlanSolicitadoCorrectamenteLayout.rowWeights = new double[] {1.0, 1.0};
+        panelPlanSolicitadoCorrectamente.setLayout(panelPlanSolicitadoCorrectamenteLayout);
 
         lblPlanSolicitadoCorrectamente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoOK.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.insets = new java.awt.Insets(55, 0, 0, 0);
+        panelPlanSolicitadoCorrectamente.add(lblPlanSolicitadoCorrectamente, gridBagConstraints);
 
         lblPlanSolicitado.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
         lblPlanSolicitado.setForeground(new java.awt.Color(255, 255, 255));
         lblPlanSolicitado.setText("Plan solicitado");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.ipady = 29;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 264, 0);
+        panelPlanSolicitadoCorrectamente.add(lblPlanSolicitado, gridBagConstraints);
 
-        javax.swing.GroupLayout panelPlanSolicitadoCorrectamenteLayout = new javax.swing.GroupLayout(panelPlanSolicitadoCorrectamente);
-        panelPlanSolicitadoCorrectamente.setLayout(panelPlanSolicitadoCorrectamenteLayout);
-        panelPlanSolicitadoCorrectamenteLayout.setHorizontalGroup(
-            panelPlanSolicitadoCorrectamenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelPlanSolicitadoCorrectamenteLayout.createSequentialGroup()
-                .addGroup(panelPlanSolicitadoCorrectamenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelPlanSolicitadoCorrectamenteLayout.createSequentialGroup()
-                        .addGap(110, 110, 110)
-                        .addComponent(lblPlanSolicitadoCorrectamente, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelPlanSolicitadoCorrectamenteLayout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addComponent(lblPlanSolicitado)))
-                .addContainerGap(71, Short.MAX_VALUE))
-        );
-        panelPlanSolicitadoCorrectamenteLayout.setVerticalGroup(
-            panelPlanSolicitadoCorrectamenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelPlanSolicitadoCorrectamenteLayout.createSequentialGroup()
-                .addGap(69, 69, 69)
-                .addComponent(lblPlanSolicitadoCorrectamente, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31)
-                .addComponent(lblPlanSolicitado, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(209, Short.MAX_VALUE))
-        );
-
-        panelPlanDeAlimentacion.add(panelPlanSolicitadoCorrectamente);
-        panelPlanSolicitadoCorrectamente.setBounds(40, 250, 390, 510);
+        panelBotones.add(panelPlanSolicitadoCorrectamente);
+        panelPlanSolicitadoCorrectamente.setBounds(0, 150, 450, 530);
 
         panelSolicitarNuevoPlan.setBackground(new java.awt.Color(51, 51, 51));
+        panelSolicitarNuevoPlan.setLocation(new java.awt.Point(0, 150));
+        java.awt.GridBagLayout panelSolicitarNuevoPlanLayout = new java.awt.GridBagLayout();
+        panelSolicitarNuevoPlanLayout.columnWidths = new int[] {0, 0, 0, 0, 0};
+        panelSolicitarNuevoPlanLayout.rowHeights = new int[] {0, 11, 0, 11, 0, 11, 0, 11, 0, 11, 0, 11, 0, 11, 0, 11, 0, 11, 0};
+        panelSolicitarNuevoPlan.setLayout(panelSolicitarNuevoPlanLayout);
 
-        lblCambiarPreferencias.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+        lblCambiarPreferencias.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lblCambiarPreferencias.setForeground(new java.awt.Color(255, 255, 255));
         lblCambiarPreferencias.setText("personal?");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        panelSolicitarNuevoPlan.add(lblCambiarPreferencias, gridBagConstraints);
 
         comboProfesionalesEnSistema.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         comboProfesionalesEnSistema.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione..." }));
@@ -1016,18 +1404,46 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
                 comboProfesionalesEnSistemaActionPerformed(evt);
             }
         });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        panelSolicitarNuevoPlan.add(comboProfesionalesEnSistema, gridBagConstraints);
 
         lblSeleccioneProfesional1.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
         lblSeleccioneProfesional1.setForeground(new java.awt.Color(255, 255, 255));
         lblSeleccioneProfesional1.setText("Seleccione el Profesional");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        panelSolicitarNuevoPlan.add(lblSeleccioneProfesional1, gridBagConstraints);
 
-        lblCambiarPreferencias3.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+        lblCambiarPreferencias3.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lblCambiarPreferencias3.setForeground(new java.awt.Color(255, 255, 255));
         lblCambiarPreferencias3.setText("basará en ella para elaborar el plan");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 9;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        panelSolicitarNuevoPlan.add(lblCambiarPreferencias3, gridBagConstraints);
 
-        lblCambiarPreferencias2.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+        lblCambiarPreferencias2.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lblCambiarPreferencias2.setForeground(new java.awt.Color(255, 255, 255));
         lblCambiarPreferencias2.setText("Recuerde que el profesional se ");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        panelSolicitarNuevoPlan.add(lblCambiarPreferencias2, gridBagConstraints);
 
         btnEditarPreferencias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoEditarPreferencias.png"))); // NOI18N
         btnEditarPreferencias.setBorderPainted(false);
@@ -1037,10 +1453,21 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
                 btnEditarPreferenciasActionPerformed(evt);
             }
         });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 12;
+        panelSolicitarNuevoPlan.add(btnEditarPreferencias, gridBagConstraints);
 
-        lblCambiarPreferencias4.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+        lblCambiarPreferencias4.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lblCambiarPreferencias4.setForeground(new java.awt.Color(255, 255, 255));
         lblCambiarPreferencias4.setText("¿Desea cambiar su información");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        panelSolicitarNuevoPlan.add(lblCambiarPreferencias4, gridBagConstraints);
 
         btnEditarRestricciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoEditarRestricciones.png"))); // NOI18N
         btnEditarRestricciones.setBorderPainted(false);
@@ -1050,14 +1477,29 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
                 btnEditarRestriccionesActionPerformed(evt);
             }
         });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 12;
+        panelSolicitarNuevoPlan.add(btnEditarRestricciones, gridBagConstraints);
 
         lblCambiarPreferencias5.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
         lblCambiarPreferencias5.setForeground(new java.awt.Color(255, 255, 255));
         lblCambiarPreferencias5.setText("Restricciones");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 14;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.VERTICAL;
+        panelSolicitarNuevoPlan.add(lblCambiarPreferencias5, gridBagConstraints);
 
         lblCambiarPreferencias6.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
         lblCambiarPreferencias6.setForeground(new java.awt.Color(255, 255, 255));
         lblCambiarPreferencias6.setText("Preferencias");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 14;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.VERTICAL;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        panelSolicitarNuevoPlan.add(lblCambiarPreferencias6, gridBagConstraints);
 
         btnAceptarSolicitudPlanAlimentacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoConfirmar.png"))); // NOI18N
         btnAceptarSolicitudPlanAlimentacion.setBorderPainted(false);
@@ -1067,6 +1509,13 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
                 btnAceptarSolicitudPlanAlimentacionActionPerformed(evt);
             }
         });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 16;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.gridheight = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
+        panelSolicitarNuevoPlan.add(btnAceptarSolicitudPlanAlimentacion, gridBagConstraints);
 
         lblValidarProfesionalPlan.setForeground(new java.awt.Color(255, 255, 255));
         lblValidarProfesionalPlan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
@@ -1075,116 +1524,44 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
                 lblValidarProfesionalPlanFocusGained(evt);
             }
         });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.VERTICAL;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        panelSolicitarNuevoPlan.add(lblValidarProfesionalPlan, gridBagConstraints);
 
         lblDatosIncorrectos.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
         lblDatosIncorrectos.setForeground(new java.awt.Color(255, 153, 153));
         lblDatosIncorrectos.setText("completar");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 18;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        panelSolicitarNuevoPlan.add(lblDatosIncorrectos, gridBagConstraints);
 
         lblDatosIncorrectos1.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
         lblDatosIncorrectos1.setForeground(new java.awt.Color(255, 153, 153));
         lblDatosIncorrectos1.setText("Quedan datos sin");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 16;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        panelSolicitarNuevoPlan.add(lblDatosIncorrectos1, gridBagConstraints);
 
-        javax.swing.GroupLayout panelSolicitarNuevoPlanLayout = new javax.swing.GroupLayout(panelSolicitarNuevoPlan);
-        panelSolicitarNuevoPlan.setLayout(panelSolicitarNuevoPlanLayout);
-        panelSolicitarNuevoPlanLayout.setHorizontalGroup(
-            panelSolicitarNuevoPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelSolicitarNuevoPlanLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(panelSolicitarNuevoPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelSolicitarNuevoPlanLayout.createSequentialGroup()
-                        .addGroup(panelSolicitarNuevoPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblCambiarPreferencias2, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblCambiarPreferencias3)
-                            .addGroup(panelSolicitarNuevoPlanLayout.createSequentialGroup()
-                                .addGroup(panelSolicitarNuevoPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnEditarPreferencias, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lblCambiarPreferencias6, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(89, 89, 89)
-                                .addGroup(panelSolicitarNuevoPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblCambiarPreferencias5, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btnEditarRestricciones, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(panelSolicitarNuevoPlanLayout.createSequentialGroup()
-                                .addGap(8, 8, 8)
-                                .addGroup(panelSolicitarNuevoPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(panelSolicitarNuevoPlanLayout.createSequentialGroup()
-                                        .addComponent(comboProfesionalesEnSistema, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(30, 30, 30)
-                                        .addComponent(lblValidarProfesionalPlan))
-                                    .addComponent(lblCambiarPreferencias, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addContainerGap(20, Short.MAX_VALUE))
-                    .addGroup(panelSolicitarNuevoPlanLayout.createSequentialGroup()
-                        .addGap(9, 9, 9)
-                        .addComponent(lblDatosIncorrectos, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnAceptarSolicitudPlanAlimentacion)
-                        .addGap(18, 18, 18))))
-            .addGroup(panelSolicitarNuevoPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panelSolicitarNuevoPlanLayout.createSequentialGroup()
-                    .addGap(20, 20, 20)
-                    .addComponent(lblSeleccioneProfesional1, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(98, Short.MAX_VALUE)))
-            .addGroup(panelSolicitarNuevoPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panelSolicitarNuevoPlanLayout.createSequentialGroup()
-                    .addGap(20, 20, 20)
-                    .addComponent(lblCambiarPreferencias4, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(29, Short.MAX_VALUE)))
-            .addGroup(panelSolicitarNuevoPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panelSolicitarNuevoPlanLayout.createSequentialGroup()
-                    .addGap(20, 20, 20)
-                    .addComponent(lblDatosIncorrectos1, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(180, Short.MAX_VALUE)))
-        );
-        panelSolicitarNuevoPlanLayout.setVerticalGroup(
-            panelSolicitarNuevoPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelSolicitarNuevoPlanLayout.createSequentialGroup()
-                .addGap(55, 55, 55)
-                .addGroup(panelSolicitarNuevoPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(comboProfesionalesEnSistema, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblValidarProfesionalPlan, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(74, 74, 74)
-                .addGroup(panelSolicitarNuevoPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnEditarRestricciones)
-                    .addGroup(panelSolicitarNuevoPlanLayout.createSequentialGroup()
-                        .addComponent(lblCambiarPreferencias)
-                        .addGap(18, 18, 18)
-                        .addComponent(lblCambiarPreferencias2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(lblCambiarPreferencias3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnEditarPreferencias)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(panelSolicitarNuevoPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblCambiarPreferencias5)
-                    .addComponent(lblCambiarPreferencias6))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
-                .addGroup(panelSolicitarNuevoPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSolicitarNuevoPlanLayout.createSequentialGroup()
-                        .addComponent(btnAceptarSolicitudPlanAlimentacion, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSolicitarNuevoPlanLayout.createSequentialGroup()
-                        .addComponent(lblDatosIncorrectos)
-                        .addGap(23, 23, 23))))
-            .addGroup(panelSolicitarNuevoPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panelSolicitarNuevoPlanLayout.createSequentialGroup()
-                    .addGap(21, 21, 21)
-                    .addComponent(lblSeleccioneProfesional1)
-                    .addContainerGap(489, Short.MAX_VALUE)))
-            .addGroup(panelSolicitarNuevoPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panelSolicitarNuevoPlanLayout.createSequentialGroup()
-                    .addGap(139, 139, 139)
-                    .addComponent(lblCambiarPreferencias4)
-                    .addContainerGap(371, Short.MAX_VALUE)))
-            .addGroup(panelSolicitarNuevoPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSolicitarNuevoPlanLayout.createSequentialGroup()
-                    .addContainerGap(457, Short.MAX_VALUE)
-                    .addComponent(lblDatosIncorrectos1)
-                    .addGap(53, 53, 53)))
-        );
-
-        panelPlanDeAlimentacion.add(panelSolicitarNuevoPlan);
-        panelSolicitarNuevoPlan.setBounds(35, 246, 394, 535);
+        panelBotones.add(panelSolicitarNuevoPlan);
+        panelSolicitarNuevoPlan.setBounds(0, 150, 450, 530);
 
         panelBuscarPlan.setBackground(new java.awt.Color(51, 51, 51));
+        panelBuscarPlan.setLocation(new java.awt.Point(400, 150));
+        java.awt.GridBagLayout panelBuscarPlanLayout = new java.awt.GridBagLayout();
+        panelBuscarPlanLayout.columnWeights = new double[] {1.0, 1.0};
+        panelBuscarPlanLayout.rowWeights = new double[] {1.0, 1.0};
+        panelBuscarPlan.setLayout(panelBuscarPlanLayout);
 
         listaPlanesDelUsuario.setBackground(new java.awt.Color(51, 51, 51));
         listaPlanesDelUsuario.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
@@ -1196,33 +1573,41 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         });
         jScrollPane4.setViewportView(listaPlanesDelUsuario);
 
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(37, 37, 37, 37);
+        panelBuscarPlan.add(jScrollPane4, gridBagConstraints);
+
         lblSeleccioneProfesional2.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
         lblSeleccioneProfesional2.setForeground(new java.awt.Color(255, 255, 255));
         lblSeleccioneProfesional2.setText("Seleccione el plan");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
+        gridBagConstraints.insets = new java.awt.Insets(0, 37, 0, 0);
+        panelBuscarPlan.add(lblSeleccioneProfesional2, gridBagConstraints);
 
-        javax.swing.GroupLayout panelBuscarPlanLayout = new javax.swing.GroupLayout(panelBuscarPlan);
-        panelBuscarPlan.setLayout(panelBuscarPlanLayout);
-        panelBuscarPlanLayout.setHorizontalGroup(
-            panelBuscarPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelBuscarPlanLayout.createSequentialGroup()
-                .addGap(49, 49, 49)
-                .addGroup(panelBuscarPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblSeleccioneProfesional2, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(70, Short.MAX_VALUE))
-        );
-        panelBuscarPlanLayout.setVerticalGroup(
-            panelBuscarPlanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelBuscarPlanLayout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(lblSeleccioneProfesional2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 343, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(111, Short.MAX_VALUE))
-        );
+        panelBotones.add(panelBuscarPlan);
+        panelBuscarPlan.setBounds(450, 150, 350, 530);
 
-        panelPlanDeAlimentacion.add(panelBuscarPlan);
-        panelBuscarPlan.setBounds(435, 254, 339, 524);
+        btnSolicitarNuevoPlan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoNuevoPlanAlimentacion.png"))); // NOI18N
+        btnSolicitarNuevoPlan.setBorderPainted(false);
+        btnSolicitarNuevoPlan.setContentAreaFilled(false);
+        btnSolicitarNuevoPlan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSolicitarNuevoPlanActionPerformed(evt);
+            }
+        });
+        panelBotones.add(btnSolicitarNuevoPlan);
+        btnSolicitarNuevoPlan.setBounds(140, 10, 116, 112);
 
         btnVerPlanesExistentes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoVerPlanesAlimentacion.png"))); // NOI18N
         btnVerPlanesExistentes.setBorderPainted(false);
@@ -1232,8 +1617,23 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
                 btnVerPlanesExistentesActionPerformed(evt);
             }
         });
-        panelPlanDeAlimentacion.add(btnVerPlanesExistentes);
-        btnVerPlanesExistentes.setBounds(509, 111, 124, 117);
+        panelBotones.add(btnVerPlanesExistentes);
+        btnVerPlanesExistentes.setBounds(540, 10, 116, 112);
+
+        javax.swing.GroupLayout panelPlanDeAlimentacionLayout = new javax.swing.GroupLayout(panelPlanDeAlimentacion);
+        panelPlanDeAlimentacion.setLayout(panelPlanDeAlimentacionLayout);
+        panelPlanDeAlimentacionLayout.setHorizontalGroup(
+            panelPlanDeAlimentacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(panelBotones, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        panelPlanDeAlimentacionLayout.setVerticalGroup(
+            panelPlanDeAlimentacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelPlanDeAlimentacionLayout.createSequentialGroup()
+                .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(panelBotones, javax.swing.GroupLayout.PREFERRED_SIZE, 681, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         panelDerecho.add(panelPlanDeAlimentacion, "card6");
 
@@ -1265,7 +1665,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         panelVacioLayout.setVerticalGroup(
             panelVacioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelVacioLayout.createSequentialGroup()
-                .addContainerGap(713, Short.MAX_VALUE)
+                .addContainerGap(773, Short.MAX_VALUE)
                 .addComponent(btnAyuda, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -1290,6 +1690,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
             this.listaConversaciones.setSelectedIndex(0);
             String[] lista = sistema.getListaNombresProfesionalesConversaciones(sistema.getPersonaLogueada().getNombreCompleto());
             if (lista.length > 0) {
+                this.panelConversacion.setVisible(true);
                 this.listaConversaciones.setListData(lista);
                 this.existeConversacion = true;
                 this.panelConsultaConProfesional.setVisible(true);
@@ -1349,6 +1750,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         Profesional profesional = (Profesional) this.listaElegirProfesionales.getSelectedValue();
         this.sistema.crearConversacion(this.sistema.getPersonaLogueada(), profesional, "CONVERSACION:", true);
         ocultarPaneles();
+        this.panelConversacion.setVisible(true);
         actualizarConversaciones(profesional.getNombreCompleto());
         this.panelConsultaConProfesional.setVisible(true);
     }//GEN-LAST:event_listaElegirProfesionalesValueChanged
@@ -1436,76 +1838,9 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         this.primeraVez = false;
     }//GEN-LAST:event_btnSolicitarNuevoPlanActionPerformed
 
-    private void btnEditarPreferenciasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarPreferenciasActionPerformed
-        String nombreUsuarioLoguedo = this.sistema.getPersonaLogueada().getNombreCompleto();
-        Usuario usuarioLogueado = this.sistema.getUsuarioPorNombre(nombreUsuarioLoguedo);
-        VentanaEditarPreferencias editarPreferenciasUsuario = new VentanaEditarPreferencias(sistema, usuarioLogueado);
-        editarPreferenciasUsuario.setVisible(true);
-    }//GEN-LAST:event_btnEditarPreferenciasActionPerformed
-
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
         this.sistema.guardarDatosSistema();
     }//GEN-LAST:event_formWindowClosing
-
-    private void btnEditarRestriccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarRestriccionesActionPerformed
-        String nombreUsuarioLoguedo = this.sistema.getPersonaLogueada().getNombreCompleto();
-        Usuario usuarioLogueado = this.sistema.getUsuarioPorNombre(nombreUsuarioLoguedo);
-        VentanaEditarRestricciones editarRestriccionesUsuario = new VentanaEditarRestricciones(sistema, usuarioLogueado);
-        editarRestriccionesUsuario.setVisible(true);
-    }//GEN-LAST:event_btnEditarRestriccionesActionPerformed
-
-    private void btnAceptarSolicitudPlanAlimentacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarSolicitudPlanAlimentacionActionPerformed
-        String nombreProfesionalElegido = (String) this.comboProfesionalesEnSistema.getSelectedItem();
-        if (nombreProfesionalElegido.equals("Seleccione...")) {
-            this.lblDatosIncorrectos.setVisible(true);
-            this.lblDatosIncorrectos1.setVisible(true);
-        } else {
-            this.lblDatosIncorrectos.setVisible(false);
-            this.lblDatosIncorrectos1.setVisible(false);
-            Profesional profesionalElegido = sistema.getProfesionalPorNombre(nombreProfesionalElegido);
-            String nombreUsuarioLoguedo = this.sistema.getPersonaLogueada().getNombreCompleto();
-            Usuario usuarioLogueado = this.sistema.getUsuarioPorNombre(nombreUsuarioLoguedo);
-            this.sistema.agregarPlanSolicitado(usuarioLogueado, profesionalElegido);
-            this.panelSolicitarNuevoPlan.setVisible(false);
-            this.panelPlanSolicitadoCorrectamente.setVisible(true);
-
-        }
-    }//GEN-LAST:event_btnAceptarSolicitudPlanAlimentacionActionPerformed
-
-    private void lblValidarProfesionalPlanFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_lblValidarProfesionalPlanFocusGained
-
-    }//GEN-LAST:event_lblValidarProfesionalPlanFocusGained
-
-    private void comboProfesionalesEnSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboProfesionalesEnSistemaActionPerformed
-        if (!this.primeraVez) {
-            String profesionalElegido = (String) this.comboProfesionalesEnSistema.getSelectedItem();
-            if (profesionalElegido.equals("Seleccione...")) {
-                this.lblValidarProfesionalPlan.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png")));
-                this.lblValidarProfesionalPlan.setVisible(true);
-            } else {
-                this.lblValidarProfesionalPlan.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoCorrecto.png")));
-                this.lblValidarProfesionalPlan.setVisible(true);
-            }
-        }
-    }//GEN-LAST:event_comboProfesionalesEnSistemaActionPerformed
-
-    private void listaPlanesDelUsuarioValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_listaPlanesDelUsuarioValueChanged
-        ocultarPaneles();
-        this.nombreDelPlan = this.listaPlanesDelUsuario.getSelectedValue();
-        PlanAlimentacion planSeleccionado = this.sistema.devolverPlanDadoNombre(nombreDelPlan);
-        this.lblNombreDelPlan.setText(planSeleccionado.getNombreDelPlan());
-        this.lblNombreDelProfesional.setText(planSeleccionado.getProfesional().getNombreCompleto());
-        this.lblTituloDelProfesional.setText(planSeleccionado.getProfesional().getTituloProfesional());
-        String[][] planDiaADia = planSeleccionado.getPlanDiaADia();
-        this.txtComidasLunes.setText(cargarDatosDelPlan(planDiaADia, 0));
-        this.txtComidasMartes.setText(cargarDatosDelPlan(planDiaADia, 1));
-        this.txtComidasMiercoles.setText(cargarDatosDelPlan(planDiaADia, 2));
-        this.txtComidasJueves.setText(cargarDatosDelPlan(planDiaADia, 3));
-        this.txtComidasViernes.setText(cargarDatosDelPlan(planDiaADia, 4));
-        this.txtComidasSabado.setText(cargarDatosDelPlan(planDiaADia, 5));
-        this.txtComidasDomingo.setText(cargarDatosDelPlan(planDiaADia, 6));
-        this.panelVerPlanAlimentacion.setVisible(true);
-    }//GEN-LAST:event_listaPlanesDelUsuarioValueChanged
 
     private void comboAlimentosEnSistemaItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_comboAlimentosEnSistemaItemStateChanged
         if (!this.primeraIngesta) {
@@ -1541,6 +1876,89 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         this.sistema.guardarDatosSistema();
         this.dispose();
     }//GEN-LAST:event_btnCerrarSistemaActionPerformed
+
+    private void btnCerrarSistema1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCerrarSistema1ActionPerformed
+
+    private void btnCerrarSistema2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCerrarSistema2ActionPerformed
+
+    private void lblValidarProfesionalPlanFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_lblValidarProfesionalPlanFocusGained
+
+    }//GEN-LAST:event_lblValidarProfesionalPlanFocusGained
+
+    private void btnAceptarSolicitudPlanAlimentacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarSolicitudPlanAlimentacionActionPerformed
+        String nombreProfesionalElegido = (String) this.comboProfesionalesEnSistema.getSelectedItem();
+        if (nombreProfesionalElegido.equals("Seleccione...")) {
+            this.lblDatosIncorrectos.setVisible(true);
+            this.lblDatosIncorrectos1.setVisible(true);
+        } else {
+            this.lblDatosIncorrectos.setVisible(false);
+            this.lblDatosIncorrectos1.setVisible(false);
+            Profesional profesionalElegido = sistema.getProfesionalPorNombre(nombreProfesionalElegido);
+            String nombreUsuarioLoguedo = this.sistema.getPersonaLogueada().getNombreCompleto();
+            Usuario usuarioLogueado = this.sistema.getUsuarioPorNombre(nombreUsuarioLoguedo);
+            this.sistema.agregarPlanSolicitado(usuarioLogueado, profesionalElegido);
+            this.panelSolicitarNuevoPlan.setVisible(false);
+            this.panelPlanSolicitadoCorrectamente.setVisible(true);
+
+        }
+    }//GEN-LAST:event_btnAceptarSolicitudPlanAlimentacionActionPerformed
+
+    private void btnEditarRestriccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarRestriccionesActionPerformed
+        String nombreUsuarioLoguedo = this.sistema.getPersonaLogueada().getNombreCompleto();
+        Usuario usuarioLogueado = this.sistema.getUsuarioPorNombre(nombreUsuarioLoguedo);
+        VentanaEditarRestricciones editarRestriccionesUsuario = new VentanaEditarRestricciones(sistema, usuarioLogueado);
+        editarRestriccionesUsuario.setVisible(true);
+    }//GEN-LAST:event_btnEditarRestriccionesActionPerformed
+
+    private void btnEditarPreferenciasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarPreferenciasActionPerformed
+        String nombreUsuarioLoguedo = this.sistema.getPersonaLogueada().getNombreCompleto();
+        Usuario usuarioLogueado = this.sistema.getUsuarioPorNombre(nombreUsuarioLoguedo);
+        VentanaEditarPreferencias editarPreferenciasUsuario = new VentanaEditarPreferencias(sistema, usuarioLogueado);
+        editarPreferenciasUsuario.setVisible(true);
+    }//GEN-LAST:event_btnEditarPreferenciasActionPerformed
+
+    private void comboProfesionalesEnSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboProfesionalesEnSistemaActionPerformed
+        if (!this.primeraVez) {
+            String profesionalElegido = (String) this.comboProfesionalesEnSistema.getSelectedItem();
+            if (profesionalElegido.equals("Seleccione...")) {
+                this.lblValidarProfesionalPlan.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png")));
+                this.lblValidarProfesionalPlan.setVisible(true);
+            } else {
+                this.lblValidarProfesionalPlan.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoCorrecto.png")));
+                this.lblValidarProfesionalPlan.setVisible(true);
+            }
+        }
+    }//GEN-LAST:event_comboProfesionalesEnSistemaActionPerformed
+
+    private void listaPlanesDelUsuarioValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_listaPlanesDelUsuarioValueChanged
+        ocultarPaneles();
+        this.nombreDelPlan = this.listaPlanesDelUsuario.getSelectedValue();
+        PlanAlimentacion planSeleccionado = this.sistema.devolverPlanDadoNombre(nombreDelPlan);
+        this.lblNombreDelPlan.setText(planSeleccionado.getNombreDelPlan());
+        this.lblNombreDelProfesional.setText(planSeleccionado.getProfesional().getNombreCompleto());
+        this.lblTituloDelProfesional.setText(planSeleccionado.getProfesional().getTituloProfesional());
+        String[][] planDiaADia = planSeleccionado.getPlanDiaADia();
+        this.txtComidasLunes.setText(cargarDatosDelPlan(planDiaADia, 0));
+        this.txtComidasMartes.setText(cargarDatosDelPlan(planDiaADia, 1));
+        this.txtComidasMiercoles.setText(cargarDatosDelPlan(planDiaADia, 2));
+        this.txtComidasJueves.setText(cargarDatosDelPlan(planDiaADia, 3));
+        this.txtComidasViernes.setText(cargarDatosDelPlan(planDiaADia, 4));
+        this.txtComidasSabado.setText(cargarDatosDelPlan(planDiaADia, 5));
+        this.txtComidasDomingo.setText(cargarDatosDelPlan(planDiaADia, 6));
+        this.panelVerPlanAlimentacion.setVisible(true);
+    }//GEN-LAST:event_listaPlanesDelUsuarioValueChanged
+
+    private void btnCerrarSistema4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCerrarSistema4ActionPerformed
+
+    private void btnCerrarSistema3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCerrarSistema3ActionPerformed
 
     private void ocultarPaneles() {
         this.btnConsultaConProfesional.setEnabled(true);
@@ -1582,6 +2000,10 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     private javax.swing.JButton btnAceptarSolicitudPlanAlimentacion;
     private javax.swing.JButton btnAyuda;
     private javax.swing.JButton btnCerrarSistema;
+    private javax.swing.JButton btnCerrarSistema1;
+    private javax.swing.JButton btnCerrarSistema2;
+    private javax.swing.JButton btnCerrarSistema3;
+    private javax.swing.JButton btnCerrarSistema4;
     private javax.swing.JButton btnConsultaConProfesional;
     private javax.swing.JButton btnEditarPreferencias;
     private javax.swing.JButton btnEditarRestricciones;
@@ -1600,9 +2022,21 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -1615,8 +2049,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane40;
     private javax.swing.JScrollPane jScrollPane7;
-    private javax.swing.JLabel lblAlimentoIngerido;
-    private javax.swing.JLabel lblAlimentoIngerido2;
     private javax.swing.JLabel lblAlimentoIngeridoSeleccionado;
     private javax.swing.JLabel lblAlimentoIngeridoSeleccionado10;
     private javax.swing.JLabel lblAlimentoIngeridoSeleccionado11;
@@ -1642,8 +2074,16 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     private javax.swing.JLabel lblFechaAlimentoIngerido;
     private javax.swing.JLabel lblFotoProfesional;
     private javax.swing.JLabel lblIconoInicioSesion;
+    private javax.swing.JLabel lblIconoInicioSesion1;
+    private javax.swing.JLabel lblIconoInicioSesion2;
+    private javax.swing.JLabel lblIconoInicioSesion3;
+    private javax.swing.JLabel lblIconoInicioSesion4;
     private javax.swing.JLabel lblIngresarAlimentoIngerido;
     private javax.swing.JLabel lblInicioSesion;
+    private javax.swing.JLabel lblInicioSesion1;
+    private javax.swing.JLabel lblInicioSesion2;
+    private javax.swing.JLabel lblInicioSesion3;
+    private javax.swing.JLabel lblInicioSesion4;
     private javax.swing.JLabel lblNoHayPlanes;
     private javax.swing.JLabel lblNoHayPlanes1;
     private javax.swing.JLabel lblNohayConsultas;
@@ -1655,11 +2095,8 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     private javax.swing.JLabel lblNombreDelPlan;
     private javax.swing.JLabel lblNombreDelProfesional;
     private javax.swing.JLabel lblNombreProfesional;
-    private javax.swing.JLabel lblNuevoAlimentoIngerido;
     private javax.swing.JLabel lblNuevoAlimentoVacio;
-    private javax.swing.JLabel lblPlanDeAlimentacion;
-    private javax.swing.JLabel lblPlanPropuesto1;
-    private javax.swing.JLabel lblPlanPropuesto2;
+    private javax.swing.JLabel lblNuevoAlimentoVacio1;
     private javax.swing.JLabel lblPlanSolicitado;
     private javax.swing.JLabel lblPlanSolicitadoCorrectamente;
     private javax.swing.JLabel lblPlanSolicitadoCorrectamente1;
@@ -1668,11 +2105,13 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     private javax.swing.JLabel lblSolicitarPlanAlimentacion;
     private javax.swing.JLabel lblTituloDelProfesional;
     private javax.swing.JLabel lblValidarNuevoAlimento;
+    private javax.swing.JLabel lblValidarNuevoAlimento1;
     private javax.swing.JLabel lblValidarProfesionalPlan;
     private javax.swing.JList<String> listaConversaciones;
     private javax.swing.JList listaElegirProfesionales;
     private javax.swing.JList<String> listaPlanesDelUsuario;
     private javax.swing.JPanel panelAlimentoIngerido;
+    private javax.swing.JPanel panelBotones;
     private javax.swing.JPanel panelBuscarPlan;
     private javax.swing.JPanel panelConsultaConProfesional;
     private javax.swing.JPanel panelConversacion;

@@ -26,7 +26,7 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
         initComponents();
         this.setLocationRelativeTo(null);
         this.sistema = unSistema;
-        this.fotoDePerfilActual = new ImageIcon(getClass().getResource("/Imagenes/fotoDeUsuarioStandard.png"));
+        this.fotoDePerfilActual = new ImageIcon(getClass().getResource("/Imagenes/fotoDeUsuarioStandardChico.png"));
         ocultarEtiquetas();
         this.primeraVez = true;
         cargarListaPaisesGraduacion();

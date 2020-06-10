@@ -306,16 +306,17 @@ public class VentanaMenuPrincipal extends javax.swing.JDialog {
     private void listaUsuariosVentanaValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_listaUsuariosVentanaValueChanged
         this.sistema.setPersonaLogueada((Persona) listaUsuariosVentana.getSelectedValue());
         VentanaMenuPrincipalUsuario ventanaPrincipalUsuarios = new VentanaMenuPrincipalUsuario(sistema);
-        ventanaPrincipalUsuarios.setVisible(true);
         this.setVisible(false);
+        ventanaPrincipalUsuarios.setVisible(true);
         
     }//GEN-LAST:event_listaUsuariosVentanaValueChanged
 
     private void listaProfesionalesVentanaValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_listaProfesionalesVentanaValueChanged
         this.sistema.setPersonaLogueada((Persona) listaProfesionalesVentana.getSelectedValue());
         VentanaMenuPrincipalProfesional ventanaPrincipalProfesionales = new VentanaMenuPrincipalProfesional(sistema);
-        ventanaPrincipalProfesionales.setVisible(true);
         this.setVisible(false);
+        ventanaPrincipalProfesionales.setVisible(true);
+        
         
     }//GEN-LAST:event_listaProfesionalesVentanaValueChanged
 
