@@ -68,8 +68,10 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         icono = new javax.swing.JLabel();
         panel2 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
-        btnIngresarUsuarioASistema = new javax.swing.JButton();
-        lblDatosIncorrectos = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        lblIconoNuevoUsuario1 = new javax.swing.JLabel();
+        lblNuevoUsuario1 = new javax.swing.JLabel();
+        btnCerrarSistema = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         lblNombre = new javax.swing.JLabel();
@@ -102,10 +104,9 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         rdBtnDiabetes = new javax.swing.JRadioButton();
         rdBtnCarnesRojas = new javax.swing.JRadioButton();
         rdBtnIntoleranteLactosa = new javax.swing.JRadioButton();
-        jPanel2 = new javax.swing.JPanel();
-        lblIconoNuevoUsuario1 = new javax.swing.JLabel();
-        lblNuevoUsuario1 = new javax.swing.JLabel();
-        btnCerrarSistema = new javax.swing.JButton();
+        jPanel5 = new javax.swing.JPanel();
+        btnIngresarUsuarioASistema = new javax.swing.JButton();
+        lblDatosIncorrectos = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1060, 800));
@@ -150,11 +151,11 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
                 .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panel1Layout.createSequentialGroup()
                         .addComponent(btnHome)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(icono, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                        .addComponent(icono, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel1Layout.createSequentialGroup()
                 .addContainerGap(24, Short.MAX_VALUE)
                 .addComponent(lblTituloVentana, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -182,25 +183,66 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         panel2.setLayout(new java.awt.BorderLayout());
 
         jPanel6.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel6.setLayout(null);
 
-        btnIngresarUsuarioASistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoConfirmar.png"))); // NOI18N
-        btnIngresarUsuarioASistema.setBorderPainted(false);
-        btnIngresarUsuarioASistema.setContentAreaFilled(false);
-        btnIngresarUsuarioASistema.setNextFocusableComponent(txtNombre);
-        btnIngresarUsuarioASistema.addActionListener(new java.awt.event.ActionListener() {
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        panel2.add(jPanel6, java.awt.BorderLayout.CENTER);
+
+        jPanel2.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel2Layout1 = new java.awt.GridBagLayout();
+        jPanel2Layout1.columnWeights = new double[] {1.0, 1.0};
+        jPanel2.setLayout(jPanel2Layout1);
+
+        lblIconoNuevoUsuario1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoDeUsuarioStandard.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(15, 18, 0, 0);
+        jPanel2.add(lblIconoNuevoUsuario1, gridBagConstraints);
+
+        lblNuevoUsuario1.setFont(new java.awt.Font("Levenim MT", 0, 65)); // NOI18N
+        lblNuevoUsuario1.setForeground(new java.awt.Color(255, 255, 255));
+        lblNuevoUsuario1.setText("Nuevo Usuario");
+        lblNuevoUsuario1.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BELOW_BASELINE_LEADING;
+        gridBagConstraints.insets = new java.awt.Insets(15, 120, 0, 0);
+        jPanel2.add(lblNuevoUsuario1, gridBagConstraints);
+
+        btnCerrarSistema.setBackground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema.setForeground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
+        btnCerrarSistema.setAlignmentX(0.5F);
+        btnCerrarSistema.setBorderPainted(false);
+        btnCerrarSistema.setContentAreaFilled(false);
+        btnCerrarSistema.setFocusPainted(false);
+        btnCerrarSistema.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        btnCerrarSistema.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnIngresarUsuarioASistemaActionPerformed(evt);
+                btnCerrarSistemaActionPerformed(evt);
             }
         });
-        jPanel6.add(btnIngresarUsuarioASistema);
-        btnIngresarUsuarioASistema.setBounds(640, 590, 83, 94);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.RELATIVE;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHEAST;
+        jPanel2.add(btnCerrarSistema, gridBagConstraints);
 
-        lblDatosIncorrectos.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
-        lblDatosIncorrectos.setForeground(new java.awt.Color(255, 153, 153));
-        lblDatosIncorrectos.setText("Aún quedan datos incorrectos");
-        jPanel6.add(lblDatosIncorrectos);
-        lblDatosIncorrectos.setBounds(230, 630, 341, 25);
+        panel2.add(jPanel2, java.awt.BorderLayout.PAGE_START);
 
         jPanel3.setBackground(new java.awt.Color(51, 51, 51));
         jPanel3.setMaximumSize(new java.awt.Dimension(527, 157));
@@ -208,6 +250,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         java.awt.GridBagLayout jPanel3Layout = new java.awt.GridBagLayout();
         jPanel3Layout.columnWidths = new int[] {0};
         jPanel3Layout.rowHeights = new int[] {0, 19, 0};
+        jPanel3Layout.columnWeights = new double[] {1.0, 1.0};
         jPanel3.setLayout(jPanel3Layout);
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
@@ -316,7 +359,6 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         btnIngresarFotoPerfil.setFont(new java.awt.Font("Century Gothic", 0, 20));
         btnIngresarFotoPerfil.setForeground(new java.awt.Color(255, 255, 255));
         btnIngresarFotoPerfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/agregarFotoUsuario.png"))); // NOI18N
-        btnIngresarFotoPerfil.setText("");
         btnIngresarFotoPerfil.setBorderPainted(false);
         btnIngresarFotoPerfil.setContentAreaFilled(false);
         btnIngresarFotoPerfil.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -448,7 +490,9 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 0;
     gridBagConstraints.gridy = 0;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE_LEADING;
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.ABOVE_BASELINE;
+    gridBagConstraints.insets = new java.awt.Insets(0, 18, 0, 0);
     jPanel3.add(jPanel1, gridBagConstraints);
 
     jPanel4.setBackground(new java.awt.Color(51, 51, 51));
@@ -456,7 +500,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     jPanel4.setMinimumSize(new java.awt.Dimension(610, 260));
     java.awt.GridBagLayout jPanel4Layout = new java.awt.GridBagLayout();
     jPanel4Layout.columnWidths = new int[] {0, 65, 0, 65, 0};
-    jPanel4Layout.rowHeights = new int[] {0, 12, 0, 12, 0, 12, 0, 12, 0, 12, 0};
+    jPanel4Layout.rowHeights = new int[] {0, 5, 0, 5, 0, 5, 0, 5, 0, 5, 0};
     jPanel4.setLayout(jPanel4Layout);
 
     lblTxtPreferencias.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
@@ -594,60 +638,44 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 0;
     gridBagConstraints.gridy = 2;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE_LEADING;
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
     jPanel3.add(jPanel4, gridBagConstraints);
 
-    jPanel6.add(jPanel3);
-    jPanel3.setBounds(0, 0, 790, 600);
+    panel2.add(jPanel3, java.awt.BorderLayout.CENTER);
 
-    panel2.add(jPanel6, java.awt.BorderLayout.CENTER);
+    jPanel5.setBackground(new java.awt.Color(51, 51, 51));
+    java.awt.GridBagLayout jPanel5Layout = new java.awt.GridBagLayout();
+    jPanel5Layout.columnWeights = new double[] {1.0, 1.0};
+    jPanel5.setLayout(jPanel5Layout);
 
-    jPanel2.setBackground(new java.awt.Color(51, 51, 51));
-    java.awt.GridBagLayout jPanel2Layout1 = new java.awt.GridBagLayout();
-    jPanel2Layout1.columnWeights = new double[] {1.0, 1.0};
-    jPanel2.setLayout(jPanel2Layout1);
-
-    lblIconoNuevoUsuario1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoDeUsuarioStandard.png"))); // NOI18N
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 0;
-    gridBagConstraints.gridy = 1;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
-    gridBagConstraints.insets = new java.awt.Insets(15, 18, 0, 0);
-    jPanel2.add(lblIconoNuevoUsuario1, gridBagConstraints);
-
-    lblNuevoUsuario1.setFont(new java.awt.Font("Levenim MT", 0, 65)); // NOI18N
-    lblNuevoUsuario1.setForeground(new java.awt.Color(255, 255, 255));
-    lblNuevoUsuario1.setText("Nuevo Usuario");
-    lblNuevoUsuario1.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 0;
-    gridBagConstraints.gridy = 1;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.BELOW_BASELINE_LEADING;
-    gridBagConstraints.insets = new java.awt.Insets(15, 120, 0, 0);
-    jPanel2.add(lblNuevoUsuario1, gridBagConstraints);
-
-    btnCerrarSistema.setBackground(new java.awt.Color(51, 51, 51));
-    btnCerrarSistema.setForeground(new java.awt.Color(51, 51, 51));
-    btnCerrarSistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
-    btnCerrarSistema.setAlignmentX(0.5F);
-    btnCerrarSistema.setBorderPainted(false);
-    btnCerrarSistema.setContentAreaFilled(false);
-    btnCerrarSistema.setFocusPainted(false);
-    btnCerrarSistema.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-    btnCerrarSistema.addActionListener(new java.awt.event.ActionListener() {
+    btnIngresarUsuarioASistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoConfirmar.png"))); // NOI18N
+    btnIngresarUsuarioASistema.setBorderPainted(false);
+    btnIngresarUsuarioASistema.setContentAreaFilled(false);
+    btnIngresarUsuarioASistema.setNextFocusableComponent(txtNombre);
+    btnIngresarUsuarioASistema.addActionListener(new java.awt.event.ActionListener() {
         public void actionPerformed(java.awt.event.ActionEvent evt) {
-            btnCerrarSistemaActionPerformed(evt);
+            btnIngresarUsuarioASistemaActionPerformed(evt);
         }
     });
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 1;
     gridBagConstraints.gridy = 0;
-    gridBagConstraints.gridwidth = java.awt.GridBagConstraints.RELATIVE;
     gridBagConstraints.gridheight = 2;
     gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHEAST;
-    jPanel2.add(btnCerrarSistema, gridBagConstraints);
+    gridBagConstraints.insets = new java.awt.Insets(0, 0, 20, 20);
+    jPanel5.add(btnIngresarUsuarioASistema, gridBagConstraints);
 
-    panel2.add(jPanel2, java.awt.BorderLayout.PAGE_START);
+    lblDatosIncorrectos.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+    lblDatosIncorrectos.setForeground(new java.awt.Color(255, 153, 153));
+    lblDatosIncorrectos.setText("Aún quedan datos incorrectos");
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.gridx = 0;
+    gridBagConstraints.gridy = 1;
+    gridBagConstraints.gridwidth = 2;
+    gridBagConstraints.insets = new java.awt.Insets(0, 0, 20, 0);
+    jPanel5.add(lblDatosIncorrectos, gridBagConstraints);
+
+    panel2.add(jPanel5, java.awt.BorderLayout.PAGE_END);
 
     getContentPane().add(panel2, java.awt.BorderLayout.CENTER);
 
@@ -801,6 +829,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JLabel lblApellido;
     private javax.swing.JLabel lblApellidoVacio;

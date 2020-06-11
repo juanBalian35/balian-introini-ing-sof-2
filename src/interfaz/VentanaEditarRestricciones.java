@@ -37,15 +37,19 @@ public class VentanaEditarRestricciones extends javax.swing.JDialog {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         panelEditarRestricciones = new javax.swing.JPanel();
-        btnEditarPreferencias = new javax.swing.JButton();
-        lblEditar = new javax.swing.JLabel();
-        lblTxtRestricciones = new javax.swing.JLabel();
-        rdBtnCeliaco = new javax.swing.JRadioButton();
+        jPanel1 = new javax.swing.JPanel();
         rdBtnDiabetes = new javax.swing.JRadioButton();
-        rdBtnVegano = new javax.swing.JRadioButton();
+        rdBtnCeliaco = new javax.swing.JRadioButton();
         rdBtnIntoleranteLactosa = new javax.swing.JRadioButton();
+        lblTxtRestricciones = new javax.swing.JLabel();
+        rdBtnVegano = new javax.swing.JRadioButton();
+        jPanel2 = new javax.swing.JPanel();
+        btnEditarPreferencias = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        lblEditar = new javax.swing.JLabel();
         lblEditarRestricciones = new javax.swing.JLabel();
         panelListo = new javax.swing.JPanel();
         lblListo = new javax.swing.JLabel();
@@ -65,44 +69,58 @@ public class VentanaEditarRestricciones extends javax.swing.JDialog {
         panelEditarRestricciones.setMaximumSize(new java.awt.Dimension(508, 390));
         panelEditarRestricciones.setMinimumSize(new java.awt.Dimension(508, 390));
         panelEditarRestricciones.setName(""); // NOI18N
-        panelEditarRestricciones.setLayout(null);
+        panelEditarRestricciones.setLayout(new java.awt.BorderLayout());
 
-        btnEditarPreferencias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoOkEditar.png"))); // NOI18N
-        btnEditarPreferencias.setBorderPainted(false);
-        btnEditarPreferencias.setContentAreaFilled(false);
-        btnEditarPreferencias.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEditarPreferenciasActionPerformed(evt);
-            }
-        });
-        panelEditarRestricciones.add(btnEditarPreferencias);
-        btnEditarPreferencias.setBounds(320, 280, 93, 69);
-
-        lblEditar.setFont(new java.awt.Font("Levenim MT", 0, 50)); // NOI18N
-        lblEditar.setForeground(new java.awt.Color(255, 255, 255));
-        lblEditar.setText("Editar");
-        panelEditarRestricciones.add(lblEditar);
-        lblEditar.setBounds(110, 20, 137, 71);
-
-        lblTxtRestricciones.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
-        lblTxtRestricciones.setForeground(new java.awt.Color(255, 255, 255));
-        lblTxtRestricciones.setText("Restricciones");
-        panelEditarRestricciones.add(lblTxtRestricciones);
-        lblTxtRestricciones.setBounds(60, 100, 208, 38);
-
-        rdBtnCeliaco.setBackground(new java.awt.Color(51, 51, 51));
-        rdBtnCeliaco.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
-        rdBtnCeliaco.setForeground(new java.awt.Color(255, 255, 255));
-        rdBtnCeliaco.setText("Restriccion 4");
-        panelEditarRestricciones.add(rdBtnCeliaco);
-        rdBtnCeliaco.setBounds(80, 270, 210, 35);
+        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel1Layout = new java.awt.GridBagLayout();
+        jPanel1Layout.columnWidths = new int[] {0};
+        jPanel1Layout.rowHeights = new int[] {0, 8, 0, 8, 0, 8, 0, 8, 0};
+        jPanel1Layout.columnWeights = new double[] {1.0};
+        jPanel1.setLayout(jPanel1Layout);
 
         rdBtnDiabetes.setBackground(new java.awt.Color(51, 51, 51));
         rdBtnDiabetes.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
         rdBtnDiabetes.setForeground(new java.awt.Color(255, 255, 255));
         rdBtnDiabetes.setText("Restriccion 1");
-        panelEditarRestricciones.add(rdBtnDiabetes);
-        rdBtnDiabetes.setBounds(80, 150, 230, 35);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 80, 0, 0);
+        jPanel1.add(rdBtnDiabetes, gridBagConstraints);
+
+        rdBtnCeliaco.setBackground(new java.awt.Color(51, 51, 51));
+        rdBtnCeliaco.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+        rdBtnCeliaco.setForeground(new java.awt.Color(255, 255, 255));
+        rdBtnCeliaco.setText("Restriccion 4");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 80, 0, 0);
+        jPanel1.add(rdBtnCeliaco, gridBagConstraints);
+
+        rdBtnIntoleranteLactosa.setBackground(new java.awt.Color(51, 51, 51));
+        rdBtnIntoleranteLactosa.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+        rdBtnIntoleranteLactosa.setForeground(new java.awt.Color(255, 255, 255));
+        rdBtnIntoleranteLactosa.setText("Restriccion 3");
+        rdBtnIntoleranteLactosa.setActionCommand("");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 80, 0, 0);
+        jPanel1.add(rdBtnIntoleranteLactosa, gridBagConstraints);
+
+        lblTxtRestricciones.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
+        lblTxtRestricciones.setForeground(new java.awt.Color(255, 255, 255));
+        lblTxtRestricciones.setText("Restricciones");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 60, 0, 0);
+        jPanel1.add(lblTxtRestricciones, gridBagConstraints);
 
         rdBtnVegano.setBackground(new java.awt.Color(51, 51, 51));
         rdBtnVegano.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
@@ -113,52 +131,87 @@ public class VentanaEditarRestricciones extends javax.swing.JDialog {
                 rdBtnVeganoActionPerformed(evt);
             }
         });
-        panelEditarRestricciones.add(rdBtnVegano);
-        rdBtnVegano.setBounds(80, 190, 250, 35);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 80, 0, 0);
+        jPanel1.add(rdBtnVegano, gridBagConstraints);
 
-        rdBtnIntoleranteLactosa.setBackground(new java.awt.Color(51, 51, 51));
-        rdBtnIntoleranteLactosa.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
-        rdBtnIntoleranteLactosa.setForeground(new java.awt.Color(255, 255, 255));
-        rdBtnIntoleranteLactosa.setText("Restriccion 3");
-        rdBtnIntoleranteLactosa.setActionCommand("");
-        panelEditarRestricciones.add(rdBtnIntoleranteLactosa);
-        rdBtnIntoleranteLactosa.setBounds(80, 230, 290, 35);
+        panelEditarRestricciones.add(jPanel1, java.awt.BorderLayout.CENTER);
+
+        jPanel2.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel2.setLayout(new java.awt.BorderLayout());
+
+        btnEditarPreferencias.setBackground(new java.awt.Color(51, 51, 51));
+        btnEditarPreferencias.setFont(new java.awt.Font("Lucida Grande", 0, 12)); // NOI18N
+        btnEditarPreferencias.setForeground(javax.swing.UIManager.getDefaults().getColor("Button.background"));
+        btnEditarPreferencias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoOkEditar.png"))); // NOI18N
+        btnEditarPreferencias.setText("Confirmar cambios");
+        btnEditarPreferencias.setBorderPainted(false);
+        btnEditarPreferencias.setContentAreaFilled(false);
+        btnEditarPreferencias.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnEditarPreferencias.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        btnEditarPreferencias.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnEditarPreferencias.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEditarPreferenciasActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnEditarPreferencias, java.awt.BorderLayout.EAST);
+
+        panelEditarRestricciones.add(jPanel2, java.awt.BorderLayout.PAGE_END);
+
+        jPanel3.setBackground(new java.awt.Color(51, 51, 51));
+
+        lblEditar.setFont(new java.awt.Font("Levenim MT", 0, 50)); // NOI18N
+        lblEditar.setForeground(new java.awt.Color(255, 255, 255));
+        lblEditar.setText("Editar");
 
         lblEditarRestricciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoEditarRestricciones.png"))); // NOI18N
-        panelEditarRestricciones.add(lblEditarRestricciones);
-        lblEditarRestricciones.setBounds(40, 20, 60, 60);
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblEditarRestricciones)
+                .addGap(10, 10, 10)
+                .addComponent(lblEditar)
+                .addContainerGap())
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblEditarRestricciones)
+                    .addComponent(lblEditar))
+                .addContainerGap())
+        );
+
+        panelEditarRestricciones.add(jPanel3, java.awt.BorderLayout.PAGE_START);
 
         panelListo.setBackground(new java.awt.Color(51, 51, 51));
         panelListo.setMaximumSize(new java.awt.Dimension(508, 390));
         panelListo.setMinimumSize(new java.awt.Dimension(508, 390));
         panelListo.setPreferredSize(new java.awt.Dimension(508, 390));
+        panelListo.setLayout(new java.awt.GridBagLayout());
 
         lblListo.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
         lblListo.setForeground(new java.awt.Color(255, 255, 255));
         lblListo.setText("Listo!");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        panelListo.add(lblListo, gridBagConstraints);
 
         lblIconoListo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoOK.png"))); // NOI18N
-
-        javax.swing.GroupLayout panelListoLayout = new javax.swing.GroupLayout(panelListo);
-        panelListo.setLayout(panelListoLayout);
-        panelListoLayout.setHorizontalGroup(
-            panelListoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelListoLayout.createSequentialGroup()
-                .addGap(196, 196, 196)
-                .addGroup(panelListoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblListo, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblIconoListo))
-                .addContainerGap(172, Short.MAX_VALUE))
-        );
-        panelListoLayout.setVerticalGroup(
-            panelListoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelListoLayout.createSequentialGroup()
-                .addGap(92, 92, 92)
-                .addComponent(lblIconoListo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(lblListo)
-                .addContainerGap(133, Short.MAX_VALUE))
-        );
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        panelListo.add(lblIconoListo, gridBagConstraints);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -238,6 +291,9 @@ public class VentanaEditarRestricciones extends javax.swing.JDialog {
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnEditarPreferencias;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JLabel lblEditar;
     private javax.swing.JLabel lblEditarRestricciones;
     private javax.swing.JLabel lblIconoListo;

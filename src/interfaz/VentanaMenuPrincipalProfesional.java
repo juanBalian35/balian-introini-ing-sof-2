@@ -2,18 +2,19 @@ package interfaz;
 
 import dominio.*;
 
+import java.awt.Image;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
-
     private Sistema sistema;
     private Usuario usuarioSeleccionado;
     private ImageIcon fotoDeAlimentoActual;
@@ -37,7 +38,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         lblValidarTipoAlimento.setVisible(false);
         lblValidarNombre.setVisible(false);
         lblDatosIncorrectos.setVisible(false);
-        lblDatosIncorrectos2.setVisible(false);
         ocultarPrincipalesNutrientes();
         this.panelVacio.setVisible(true);
     }
@@ -61,6 +61,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         panelMenu = new javax.swing.JPanel();
         btnConsultasPendientes = new javax.swing.JButton();
@@ -74,73 +75,94 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         lblIngresarAlimento2 = new javax.swing.JLabel();
         panelDerecho = new javax.swing.JPanel();
         panelVacio = new javax.swing.JPanel();
+        jPanel27 = new javax.swing.JPanel();
+        btnCerrarSistema8 = new javax.swing.JButton();
+        jPanel28 = new javax.swing.JPanel();
         btnAyuda = new javax.swing.JButton();
         panelNoHayPlanesPendientes = new javax.swing.JPanel();
-        lblNohayPlanesTexto1 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
         lblNoHayAlimentosIcono = new javax.swing.JLabel();
-        lblNohayConsultasTexto2 = new javax.swing.JLabel();
         lblNoHayAlimentos = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        lblNohayPlanesTexto1 = new javax.swing.JLabel();
+        lblNohayConsultasTexto2 = new javax.swing.JLabel();
         lblNohayPlanesIcono = new javax.swing.JLabel();
+        jPanel26 = new javax.swing.JPanel();
+        btnCerrarSistema7 = new javax.swing.JButton();
         panelNoHayConsultasPendientes = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
         lblNohayConsultasTexto = new javax.swing.JLabel();
         lblNohayConsultas = new javax.swing.JLabel();
+        jPanel25 = new javax.swing.JPanel();
+        btnCerrarSistema6 = new javax.swing.JButton();
         panelConsultaConProfesional = new javax.swing.JPanel();
-        lblNombreUsuario = new javax.swing.JLabel();
-        lblFotoProfesional = new javax.swing.JLabel();
+        jPanel7 = new javax.swing.JPanel();
+        jPanel6 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
         listaConversaciones = new javax.swing.JList<>();
         jLabel1 = new javax.swing.JLabel();
+        panelConversacion = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        txtMostrarConversacion = new javax.swing.JTextPane();
+        btnEnviarMensaje = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtMensajeNuevo = new javax.swing.JTextArea();
         panelConversacionOk = new javax.swing.JPanel();
         panelMostrarOk = new javax.swing.JPanel();
         lblOK = new javax.swing.JLabel();
         lblOKTexto = new javax.swing.JLabel();
-        panelConversacion = new javax.swing.JPanel();
+        jPanel8 = new javax.swing.JPanel();
+        lblFotoProfesional = new javax.swing.JLabel();
+        lblNombreUsuario = new javax.swing.JLabel();
         btnVerPerfilDeUsuario = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        txtMensajeNuevo = new javax.swing.JTextArea();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        txtMostrarConversacion = new javax.swing.JTextPane();
-        btnEnviarMensaje = new javax.swing.JButton();
-        lblVerPerfilUsuario = new javax.swing.JLabel();
+        jPanel9 = new javax.swing.JPanel();
+        lblIconoInicioSesion = new javax.swing.JLabel();
+        lblInicioSesion = new javax.swing.JLabel();
+        btnCerrarSistema = new javax.swing.JButton();
         panelElaborarPlan = new javax.swing.JPanel();
-        lblElaborarNuevoPlan = new javax.swing.JLabel();
-        lblComida = new javax.swing.JLabel();
-        lblAlimentos = new javax.swing.JLabel();
-        listaDiasDeLaSemana = new javax.swing.JComboBox<>();
+        jPanel12 = new javax.swing.JPanel();
+        lblNombreDelDia = new javax.swing.JLabel();
+        jPanel11 = new javax.swing.JPanel();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        textCena = new javax.swing.JTextArea();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        textAlmuerzo = new javax.swing.JTextArea();
+        lblDesayuno = new javax.swing.JLabel();
+        lblAlmuerzo = new javax.swing.JLabel();
+        jScrollPane12 = new javax.swing.JScrollPane();
+        textDesayuno = new javax.swing.JTextArea();
+        lblCena = new javax.swing.JLabel();
+        jPanel10 = new javax.swing.JPanel();
+        btnAgregarAlPlan = new javax.swing.JButton();
         listaComidasPlan = new javax.swing.JComboBox<>();
+        lblNombrePlanVacio = new javax.swing.JLabel();
+        btnEliminarDelPlan = new javax.swing.JButton();
+        listaDiasDeLaSemana = new javax.swing.JComboBox<>();
+        lblComida = new javax.swing.JLabel();
+        lblNombrePlan = new javax.swing.JLabel();
+        txtNombrePlan = new javax.swing.JTextField();
         jScrollPane8 = new javax.swing.JScrollPane();
         listaAlimentosEnSistema = new javax.swing.JList();
         lblDia = new javax.swing.JLabel();
-        lblNombrePlan = new javax.swing.JLabel();
-        txtNombrePlan = new javax.swing.JTextField();
-        btnAgregarAlPlan = new javax.swing.JButton();
-        btnEliminarDelPlan = new javax.swing.JButton();
-        lblDesayuno = new javax.swing.JLabel();
-        lblAlmuerzo = new javax.swing.JLabel();
-        lblCena = new javax.swing.JLabel();
-        lblNombreDelDia = new javax.swing.JLabel();
-        btnElaborarPlan1 = new javax.swing.JButton();
-        jScrollPane10 = new javax.swing.JScrollPane();
-        textAlmuerzo = new javax.swing.JTextArea();
-        jScrollPane11 = new javax.swing.JScrollPane();
-        textCena = new javax.swing.JTextArea();
-        jScrollPane12 = new javax.swing.JScrollPane();
-        textDesayuno = new javax.swing.JTextArea();
-        btnEliminarDelPlan1 = new javax.swing.JButton();
         lblValidarNombrePlan = new javax.swing.JLabel();
-        lblCena1 = new javax.swing.JLabel();
-        lblNombrePlanVacio = new javax.swing.JLabel();
+        btnEliminarDelPlan1 = new javax.swing.JButton();
+        lblAlimentos = new javax.swing.JLabel();
+        jPanel13 = new javax.swing.JPanel();
+        btnElaborarPlan1 = new javax.swing.JButton();
+        jPanel14 = new javax.swing.JPanel();
+        lblIconoInicioSesion1 = new javax.swing.JLabel();
+        lblInicioSesion1 = new javax.swing.JLabel();
+        btnCerrarSistema1 = new javax.swing.JButton();
         panelMostrarPlanEnviado = new javax.swing.JPanel();
+        jPanel23 = new javax.swing.JPanel();
         lblOK2 = new javax.swing.JLabel();
         lblOKTexto2 = new javax.swing.JLabel();
+        jPanel24 = new javax.swing.JPanel();
+        btnCerrarSistema5 = new javax.swing.JButton();
         panelPlanAlimentacion = new javax.swing.JPanel();
-        panelIzquierdo = new javax.swing.JPanel();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        listaPlanesPendientes = new javax.swing.JList<>();
-        lblElijaUnUsuario = new javax.swing.JLabel();
-        panelDatosUsuario = new javax.swing.JPanel();
-        lblFotoUsuario = new javax.swing.JLabel();
-        lblNombreUsuario1 = new javax.swing.JLabel();
+        jPanel15 = new javax.swing.JPanel();
         panelPerfilDeUsuario = new javax.swing.JPanel();
         lblNombreUsuario2 = new javax.swing.JLabel();
         lblFotoDeUsuario = new javax.swing.JLabel();
@@ -156,51 +178,64 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         jScrollPane7 = new javax.swing.JScrollPane();
         listaIngestas = new javax.swing.JList<>();
         btnElaborarPlan = new javax.swing.JButton();
-        lblElaborarPlan = new javax.swing.JLabel();
+        panelIzquierdo = new javax.swing.JPanel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        listaPlanesPendientes = new javax.swing.JList<>();
+        lblElijaUnUsuario = new javax.swing.JLabel();
+        panelDatosUsuario = new javax.swing.JPanel();
+        lblIconoInicioSesion2 = new javax.swing.JLabel();
+        lblInicioSesion2 = new javax.swing.JLabel();
+        btnCerrarSistema2 = new javax.swing.JButton();
         panelNuevoAlimento = new javax.swing.JPanel();
         panelAlimentroRegistradoCorrectamente = new javax.swing.JPanel();
+        jPanel17 = new javax.swing.JPanel();
         lblNoPlanes2 = new javax.swing.JLabel();
         lblNohayPlanesTexto2 = new javax.swing.JLabel();
+        jPanel22 = new javax.swing.JPanel();
+        btnCerrarSistema4 = new javax.swing.JButton();
         panelIngresarAlimentoAlSistema = new javax.swing.JPanel();
-        lblNuevoAlimento = new javax.swing.JLabel();
-        lblIconoNuevoAlimento = new javax.swing.JLabel();
-        lblNombre = new javax.swing.JLabel();
-        txtNombre = new javax.swing.JTextField();
-        lblTipoAlimento = new javax.swing.JLabel();
-        btnIngresarFotoAlimento = new javax.swing.JButton();
-        listaTipoAlimentos = new javax.swing.JComboBox<>();
-        lblPrincipalesNutrientes = new javax.swing.JLabel();
-        btnIngresarAlimentoASistema = new javax.swing.JButton();
-        checkHidratos = new javax.swing.JCheckBox();
-        txtHidratos = new javax.swing.JTextField();
-        lblHidratos = new javax.swing.JLabel();
-        checkGlucidos = new javax.swing.JCheckBox();
-        checkLipidos = new javax.swing.JCheckBox();
+        jPanel19 = new javax.swing.JPanel();
+        jPanel20 = new javax.swing.JPanel();
+        jPanel16 = new javax.swing.JPanel();
         checkVitaminas = new javax.swing.JCheckBox();
+        checkHidratos = new javax.swing.JCheckBox();
+        txtMinerales = new javax.swing.JTextField();
+        txtHidratos = new javax.swing.JTextField();
+        txtVitaminas = new javax.swing.JTextField();
+        txtGlucidos = new javax.swing.JTextField();
+        txtFibra = new javax.swing.JTextField();
+        txtLipidos = new javax.swing.JTextField();
+        checkFibra = new javax.swing.JCheckBox();
+        checkLipidos = new javax.swing.JCheckBox();
+        checkGlucidos = new javax.swing.JCheckBox();
         checkProteínas = new javax.swing.JCheckBox();
         checkMinerales = new javax.swing.JCheckBox();
-        checkFibra = new javax.swing.JCheckBox();
-        txtFibra = new javax.swing.JTextField();
-        txtMinerales = new javax.swing.JTextField();
-        txtLipidos = new javax.swing.JTextField();
-        txtGlucidos = new javax.swing.JTextField();
-        txtVitaminas = new javax.swing.JTextField();
         txtProteínas = new javax.swing.JTextField();
-        lblGlucidos = new javax.swing.JLabel();
-        lblProteínas = new javax.swing.JLabel();
-        lblMinerales = new javax.swing.JLabel();
-        lblVitaminas = new javax.swing.JLabel();
-        lblFibra = new javax.swing.JLabel();
-        lblLipidos = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        lblValidarNombre = new javax.swing.JLabel();
+        lblPrincipalesNutrientes = new javax.swing.JLabel();
+        lblGramosProteinas = new javax.swing.JLabel();
+        lblGramosVitaminas = new javax.swing.JLabel();
+        lblGramosGlucidos = new javax.swing.JLabel();
+        lblGramosMinerales = new javax.swing.JLabel();
+        lblGramosFibras = new javax.swing.JLabel();
+        lblGramosLipidos = new javax.swing.JLabel();
+        lblGramosHidratos = new javax.swing.JLabel();
+        jPanel18 = new javax.swing.JPanel();
+        txtNombre = new javax.swing.JTextField();
         lblValidarTipoAlimento = new javax.swing.JLabel();
-        lblDatosIncorrectos = new javax.swing.JLabel();
-        lblDatosIncorrectos2 = new javax.swing.JLabel();
+        lblNombre = new javax.swing.JLabel();
+        lblValidarNombre = new javax.swing.JLabel();
         lblNombreVacio = new javax.swing.JLabel();
+        lblTipoAlimento = new javax.swing.JLabel();
+        listaTipoAlimentos = new javax.swing.JComboBox<>();
         lblTipoAlimentoVacio = new javax.swing.JLabel();
+        lblTxtNacionalidad1 = new javax.swing.JLabel();
+        btnIngresarFotoAlimento = new javax.swing.JButton();
+        lblDatosIncorrectos = new javax.swing.JLabel();
+        btnIngresarAlimentoASistema = new javax.swing.JButton();
+        jPanel21 = new javax.swing.JPanel();
+        lblIconoInicioSesion3 = new javax.swing.JLabel();
+        lblInicioSesion3 = new javax.swing.JLabel();
+        btnCerrarSistema3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1060, 800));
@@ -300,7 +335,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
                     .addGroup(panelMenuLayout.createSequentialGroup()
                         .addGap(48, 48, 48)
                         .addComponent(lblIngresarAlimento)))
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelMenuLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(panelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -340,8 +375,10 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
                 .addComponent(lblIngresarAlimento)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblIngresarAlimento2)
-                .addContainerGap(52, Short.MAX_VALUE))
+                .addContainerGap(61, Short.MAX_VALUE))
         );
+
+        getContentPane().add(panelMenu, java.awt.BorderLayout.WEST);
 
         panelDerecho.setBackground(new java.awt.Color(51, 51, 51));
         panelDerecho.setMaximumSize(new java.awt.Dimension(800, 800));
@@ -352,6 +389,39 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         panelVacio.setBackground(new java.awt.Color(51, 51, 51));
         panelVacio.setMaximumSize(new java.awt.Dimension(800, 800));
         panelVacio.setMinimumSize(new java.awt.Dimension(800, 800));
+        panelVacio.setLayout(new java.awt.BorderLayout());
+
+        jPanel27.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel27Layout = new java.awt.GridBagLayout();
+        jPanel27Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel27.setLayout(jPanel27Layout);
+
+        btnCerrarSistema8.setBackground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema8.setForeground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
+        btnCerrarSistema8.setAlignmentX(0.5F);
+        btnCerrarSistema8.setBorderPainted(false);
+        btnCerrarSistema8.setContentAreaFilled(false);
+        btnCerrarSistema8.setFocusPainted(false);
+        btnCerrarSistema8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        btnCerrarSistema8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarSistema8ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHEAST;
+        jPanel27.add(btnCerrarSistema8, gridBagConstraints);
+
+        panelVacio.add(jPanel27, java.awt.BorderLayout.PAGE_START);
+
+        jPanel28.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel28Layout = new java.awt.GridBagLayout();
+        jPanel28Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel28.setLayout(jPanel28Layout);
 
         btnAyuda.setForeground(new java.awt.Color(255, 255, 255));
         btnAyuda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Question_Mark_64px.png"))); // NOI18N
@@ -364,23 +434,14 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
                 btnAyudaActionPerformed(evt);
             }
         });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
+        jPanel28.add(btnAyuda, gridBagConstraints);
 
-        javax.swing.GroupLayout panelVacioLayout = new javax.swing.GroupLayout(panelVacio);
-        panelVacio.setLayout(panelVacioLayout);
-        panelVacioLayout.setHorizontalGroup(
-            panelVacioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelVacioLayout.createSequentialGroup()
-                .addContainerGap(704, Short.MAX_VALUE)
-                .addComponent(btnAyuda, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        panelVacioLayout.setVerticalGroup(
-            panelVacioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelVacioLayout.createSequentialGroup()
-                .addContainerGap(708, Short.MAX_VALUE)
-                .addComponent(btnAyuda, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
+        panelVacio.add(jPanel28, java.awt.BorderLayout.PAGE_END);
 
         panelDerecho.add(panelVacio, "card7");
 
@@ -388,33 +449,94 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         panelNoHayPlanesPendientes.setMaximumSize(new java.awt.Dimension(400, 400));
         panelNoHayPlanesPendientes.setMinimumSize(new java.awt.Dimension(400, 400));
         panelNoHayPlanesPendientes.setName(""); // NOI18N
-        panelNoHayPlanesPendientes.setLayout(null);
+        panelNoHayPlanesPendientes.setLayout(new java.awt.BorderLayout());
 
-        lblNohayPlanesTexto1.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
-        lblNohayPlanesTexto1.setForeground(new java.awt.Color(255, 255, 255));
-        lblNohayPlanesTexto1.setText("No hay planes de");
-        panelNoHayPlanesPendientes.add(lblNohayPlanesTexto1);
-        lblNohayPlanesTexto1.setBounds(200, 260, 344, 77);
+        jPanel4.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel4.setLayout(new java.awt.GridBagLayout());
+
+        jPanel2.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel2.setLayout(new java.awt.GridBagLayout());
 
         lblNoHayAlimentosIcono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCaraTriste.png"))); // NOI18N
-        panelNoHayPlanesPendientes.add(lblNoHayAlimentosIcono);
-        lblNoHayAlimentosIcono.setBounds(300, 130, 137, 124);
-
-        lblNohayConsultasTexto2.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
-        lblNohayConsultasTexto2.setForeground(new java.awt.Color(255, 255, 255));
-        lblNohayConsultasTexto2.setText("alimentación pendientes");
-        panelNoHayPlanesPendientes.add(lblNohayConsultasTexto2);
-        lblNohayConsultasTexto2.setBounds(128, 336, 487, 77);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        jPanel2.add(lblNoHayAlimentosIcono, gridBagConstraints);
 
         lblNoHayAlimentos.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
         lblNoHayAlimentos.setForeground(new java.awt.Color(255, 255, 255));
         lblNoHayAlimentos.setText("No hay alimentos registrados");
-        panelNoHayPlanesPendientes.add(lblNoHayAlimentos);
-        lblNoHayAlimentos.setBounds(90, 300, 610, 77);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        jPanel2.add(lblNoHayAlimentos, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel4.add(jPanel2, gridBagConstraints);
+
+        jPanel3.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel3.setLayout(new java.awt.GridBagLayout());
+
+        lblNohayPlanesTexto1.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
+        lblNohayPlanesTexto1.setForeground(new java.awt.Color(255, 255, 255));
+        lblNohayPlanesTexto1.setText("No hay planes de alimentación");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel3.add(lblNohayPlanesTexto1, gridBagConstraints);
+
+        lblNohayConsultasTexto2.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
+        lblNohayConsultasTexto2.setForeground(new java.awt.Color(255, 255, 255));
+        lblNohayConsultasTexto2.setText("pendientes");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        jPanel3.add(lblNohayConsultasTexto2, gridBagConstraints);
 
         lblNohayPlanesIcono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoOK.png"))); // NOI18N
-        panelNoHayPlanesPendientes.add(lblNohayPlanesIcono);
-        lblNohayPlanesIcono.setBounds(300, 110, 137, 124);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        jPanel3.add(lblNohayPlanesIcono, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel4.add(jPanel3, gridBagConstraints);
+
+        panelNoHayPlanesPendientes.add(jPanel4, java.awt.BorderLayout.CENTER);
+
+        jPanel26.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel26Layout = new java.awt.GridBagLayout();
+        jPanel26Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel26.setLayout(jPanel26Layout);
+
+        btnCerrarSistema7.setBackground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema7.setForeground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
+        btnCerrarSistema7.setAlignmentX(0.5F);
+        btnCerrarSistema7.setBorderPainted(false);
+        btnCerrarSistema7.setContentAreaFilled(false);
+        btnCerrarSistema7.setFocusPainted(false);
+        btnCerrarSistema7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        btnCerrarSistema7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarSistema7ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHEAST;
+        jPanel26.add(btnCerrarSistema7, gridBagConstraints);
+
+        panelNoHayPlanesPendientes.add(jPanel26, java.awt.BorderLayout.PAGE_START);
 
         panelDerecho.add(panelNoHayPlanesPendientes, "card3");
 
@@ -423,48 +545,69 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         panelNoHayConsultasPendientes.setMinimumSize(new java.awt.Dimension(400, 400));
         panelNoHayConsultasPendientes.setName(""); // NOI18N
         panelNoHayConsultasPendientes.setPreferredSize(new java.awt.Dimension(400, 400));
+        panelNoHayConsultasPendientes.setLayout(new java.awt.BorderLayout());
+
+        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel1.setLayout(new java.awt.GridBagLayout());
 
         lblNohayConsultasTexto.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
         lblNohayConsultasTexto.setForeground(new java.awt.Color(255, 255, 255));
         lblNohayConsultasTexto.setText("No hay consultas pendientes");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel1.add(lblNohayConsultasTexto, gridBagConstraints);
 
         lblNohayConsultas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoOK.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        jPanel1.add(lblNohayConsultas, gridBagConstraints);
 
-        javax.swing.GroupLayout panelNoHayConsultasPendientesLayout = new javax.swing.GroupLayout(panelNoHayConsultasPendientes);
-        panelNoHayConsultasPendientes.setLayout(panelNoHayConsultasPendientesLayout);
-        panelNoHayConsultasPendientesLayout.setHorizontalGroup(
-            panelNoHayConsultasPendientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelNoHayConsultasPendientesLayout.createSequentialGroup()
-                .addGroup(panelNoHayConsultasPendientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelNoHayConsultasPendientesLayout.createSequentialGroup()
-                        .addGap(93, 93, 93)
-                        .addComponent(lblNohayConsultasTexto))
-                    .addGroup(panelNoHayConsultasPendientesLayout.createSequentialGroup()
-                        .addGap(305, 305, 305)
-                        .addComponent(lblNohayConsultas, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        panelNoHayConsultasPendientesLayout.setVerticalGroup(
-            panelNoHayConsultasPendientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelNoHayConsultasPendientesLayout.createSequentialGroup()
-                .addGap(134, 134, 134)
-                .addComponent(lblNohayConsultas, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31)
-                .addComponent(lblNohayConsultasTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
-        );
+        panelNoHayConsultasPendientes.add(jPanel1, java.awt.BorderLayout.CENTER);
+
+        jPanel25.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel25Layout = new java.awt.GridBagLayout();
+        jPanel25Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel25.setLayout(jPanel25Layout);
+
+        btnCerrarSistema6.setBackground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema6.setForeground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
+        btnCerrarSistema6.setAlignmentX(0.5F);
+        btnCerrarSistema6.setBorderPainted(false);
+        btnCerrarSistema6.setContentAreaFilled(false);
+        btnCerrarSistema6.setFocusPainted(false);
+        btnCerrarSistema6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        btnCerrarSistema6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarSistema6ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHEAST;
+        jPanel25.add(btnCerrarSistema6, gridBagConstraints);
+
+        panelNoHayConsultasPendientes.add(jPanel25, java.awt.BorderLayout.PAGE_START);
 
         panelDerecho.add(panelNoHayConsultasPendientes, "card3");
 
         panelConsultaConProfesional.setBackground(new java.awt.Color(51, 51, 51));
         panelConsultaConProfesional.setMaximumSize(new java.awt.Dimension(800, 800));
         panelConsultaConProfesional.setMinimumSize(new java.awt.Dimension(800, 800));
+        panelConsultaConProfesional.setLayout(new java.awt.BorderLayout());
 
-        lblNombreUsuario.setFont(new java.awt.Font("Levenim MT", 0, 45)); // NOI18N
-        lblNombreUsuario.setForeground(new java.awt.Color(255, 255, 255));
-        lblNombreUsuario.setText("Usuario");
+        jPanel7.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel7Layout = new java.awt.GridBagLayout();
+        jPanel7Layout.columnWidths = new int[] {0, 25, 0};
+        jPanel7.setLayout(jPanel7Layout);
 
-        lblFotoProfesional.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoDeUsuarioStandard.png"))); // NOI18N
+        jPanel6.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel6.setLayout(new java.awt.GridBagLayout());
 
         listaConversaciones.setBackground(new java.awt.Color(238, 238, 238));
         listaConversaciones.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
@@ -475,9 +618,103 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         });
         jScrollPane3.setViewportView(listaConversaciones);
 
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 226;
+        gridBagConstraints.ipady = 461;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        jPanel6.add(jScrollPane3, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
+        gridBagConstraints.insets = new java.awt.Insets(0, 30, 0, 0);
+        jPanel7.add(jPanel6, gridBagConstraints);
+
         jLabel1.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Elija un usuario:");
+        jLabel1.setText("Seleccione un usuario");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LAST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 30, 0, 0);
+        jPanel7.add(jLabel1, gridBagConstraints);
+
+        panelConversacion.setBackground(new java.awt.Color(51, 51, 51));
+        panelConversacion.setOpaque(false);
+        panelConversacion.setLayout(new java.awt.GridBagLayout());
+
+        jPanel5.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel5.setPreferredSize(new java.awt.Dimension(728, 599));
+        java.awt.GridBagLayout jPanel5Layout = new java.awt.GridBagLayout();
+        jPanel5Layout.columnWidths = new int[] {0, 15, 0};
+        jPanel5Layout.rowHeights = new int[] {0, 25, 0};
+        jPanel5.setLayout(jPanel5Layout);
+
+        txtMostrarConversacion.setEditable(false);
+        txtMostrarConversacion.setBackground(new java.awt.Color(238, 238, 238));
+        txtMostrarConversacion.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        txtMostrarConversacion.setAutoscrolls(false);
+        jScrollPane2.setViewportView(txtMostrarConversacion);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 430;
+        gridBagConstraints.ipady = 338;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        jPanel5.add(jScrollPane2, gridBagConstraints);
+
+        btnEnviarMensaje.setForeground(new java.awt.Color(255, 255, 255));
+        btnEnviarMensaje.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoEnviarMensaje.png"))); // NOI18N
+        btnEnviarMensaje.setBorderPainted(false);
+        btnEnviarMensaje.setContentAreaFilled(false);
+        btnEnviarMensaje.setFocusPainted(false);
+        btnEnviarMensaje.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnEnviarMensaje.setLabel("Enviar");
+        btnEnviarMensaje.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnEnviarMensaje.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEnviarMensajeActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 2;
+        jPanel5.add(btnEnviarMensaje, gridBagConstraints);
+
+        txtMensajeNuevo.setBackground(new java.awt.Color(238, 238, 238));
+        txtMensajeNuevo.setColumns(20);
+        txtMensajeNuevo.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        txtMensajeNuevo.setRows(5);
+        jScrollPane1.setViewportView(txtMensajeNuevo);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 353;
+        gridBagConstraints.ipady = 139;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        jPanel5.add(jScrollPane1, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        panelConversacion.add(jPanel5, gridBagConstraints);
 
         panelConversacionOk.setBackground(new java.awt.Color(51, 51, 51));
 
@@ -512,193 +749,247 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
                 .addContainerGap(33, Short.MAX_VALUE))
         );
 
-        panelConversacion.setBackground(new java.awt.Color(51, 51, 51));
-        panelConversacion.setOpaque(false);
-
-        btnVerPerfilDeUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoVerPerfilUsuario.png"))); // NOI18N
-        btnVerPerfilDeUsuario.setBorderPainted(false);
-        btnVerPerfilDeUsuario.setContentAreaFilled(false);
-        btnVerPerfilDeUsuario.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnVerPerfilDeUsuarioActionPerformed(evt);
-            }
-        });
-
-        txtMensajeNuevo.setBackground(new java.awt.Color(238, 238, 238));
-        txtMensajeNuevo.setColumns(20);
-        txtMensajeNuevo.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        txtMensajeNuevo.setRows(5);
-        jScrollPane1.setViewportView(txtMensajeNuevo);
-
-        txtMostrarConversacion.setEditable(false);
-        txtMostrarConversacion.setBackground(new java.awt.Color(238, 238, 238));
-        txtMostrarConversacion.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        txtMostrarConversacion.setAutoscrolls(false);
-        jScrollPane2.setViewportView(txtMostrarConversacion);
-
-        btnEnviarMensaje.setForeground(new java.awt.Color(255, 255, 255));
-        btnEnviarMensaje.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoEnviarMensaje.png"))); // NOI18N
-        btnEnviarMensaje.setBorder(null);
-        btnEnviarMensaje.setBorderPainted(false);
-        btnEnviarMensaje.setContentAreaFilled(false);
-        btnEnviarMensaje.setFocusPainted(false);
-        btnEnviarMensaje.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEnviarMensajeActionPerformed(evt);
-            }
-        });
-
-        lblVerPerfilUsuario.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        lblVerPerfilUsuario.setForeground(new java.awt.Color(255, 255, 255));
-        lblVerPerfilUsuario.setText("Ver perfil de usuario");
-
-        javax.swing.GroupLayout panelConversacionLayout = new javax.swing.GroupLayout(panelConversacion);
-        panelConversacion.setLayout(panelConversacionLayout);
-        panelConversacionLayout.setHorizontalGroup(
-            panelConversacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelConversacionLayout.createSequentialGroup()
-                .addGroup(panelConversacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelConversacionLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30)
-                        .addComponent(btnEnviarMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelConversacionLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 372, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelConversacionLayout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addComponent(lblVerPerfilUsuario))
-                    .addGroup(panelConversacionLayout.createSequentialGroup()
-                        .addGap(45, 45, 45)
-                        .addComponent(btnVerPerfilDeUsuario)))
-                .addContainerGap(37, Short.MAX_VALUE))
-        );
-        panelConversacionLayout.setVerticalGroup(
-            panelConversacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelConversacionLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnVerPerfilDeUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblVerPerfilUsuario)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(panelConversacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelConversacionLayout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(23, 23, 23))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelConversacionLayout.createSequentialGroup()
-                        .addComponent(btnEnviarMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(59, 59, 59))))
-        );
-
         javax.swing.GroupLayout panelConversacionOkLayout = new javax.swing.GroupLayout(panelConversacionOk);
         panelConversacionOk.setLayout(panelConversacionOkLayout);
         panelConversacionOkLayout.setHorizontalGroup(
             panelConversacionOkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelConversacionOkLayout.createSequentialGroup()
-                .addGap(77, 77, 77)
-                .addComponent(panelConversacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(110, Short.MAX_VALUE))
-            .addGroup(panelConversacionOkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panelConversacionOkLayout.createSequentialGroup()
-                    .addGap(90, 90, 90)
-                    .addComponent(panelMostrarOk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(228, Short.MAX_VALUE)))
+                .addGap(90, 90, 90)
+                .addComponent(panelMostrarOk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelConversacionOkLayout.setVerticalGroup(
             panelConversacionOkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelConversacionOkLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(panelConversacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(417, Short.MAX_VALUE))
-            .addGroup(panelConversacionOkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panelConversacionOkLayout.createSequentialGroup()
-                    .addGap(163, 163, 163)
-                    .addComponent(panelMostrarOk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(585, Short.MAX_VALUE)))
-        );
-
-        javax.swing.GroupLayout panelConsultaConProfesionalLayout = new javax.swing.GroupLayout(panelConsultaConProfesional);
-        panelConsultaConProfesional.setLayout(panelConsultaConProfesionalLayout);
-        panelConsultaConProfesionalLayout.setHorizontalGroup(
-            panelConsultaConProfesionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelConsultaConProfesionalLayout.createSequentialGroup()
-                .addGap(20, 20, Short.MAX_VALUE)
-                .addGroup(panelConsultaConProfesionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelConsultaConProfesionalLayout.createSequentialGroup()
-                        .addComponent(lblFotoProfesional, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(lblNombreUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(120, 120, 120))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelConsultaConProfesionalLayout.createSequentialGroup()
-                        .addGroup(panelConsultaConProfesionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addComponent(panelConversacionOk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-        );
-        panelConsultaConProfesionalLayout.setVerticalGroup(
-            panelConsultaConProfesionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelConsultaConProfesionalLayout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addGroup(panelConsultaConProfesionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblNombreUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblFotoProfesional, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
-                .addGroup(panelConsultaConProfesionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelConsultaConProfesionalLayout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 424, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(panelConversacionOk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(163, 163, 163)
+                .addComponent(panelMostrarOk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        panelConversacion.add(panelConversacionOk, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.VERTICAL;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.weightx = 1.0;
+        jPanel7.add(panelConversacion, gridBagConstraints);
+
+        jPanel8.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel8.setLayout(new java.awt.GridBagLayout());
+
+        lblFotoProfesional.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoDeUsuarioStandardChico.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        jPanel8.add(lblFotoProfesional, gridBagConstraints);
+
+        lblNombreUsuario.setFont(new java.awt.Font("Levenim MT", 0, 30)); // NOI18N
+        lblNombreUsuario.setForeground(new java.awt.Color(255, 255, 255));
+        lblNombreUsuario.setText("Usuario");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        jPanel8.add(lblNombreUsuario, gridBagConstraints);
+
+        btnVerPerfilDeUsuario.setForeground(javax.swing.UIManager.getDefaults().getColor("Button.background"));
+        btnVerPerfilDeUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoVerPerfilUsuarioChico.png"))); // NOI18N
+        btnVerPerfilDeUsuario.setText("Verperfil de usuario");
+        btnVerPerfilDeUsuario.setBorderPainted(false);
+        btnVerPerfilDeUsuario.setContentAreaFilled(false);
+        btnVerPerfilDeUsuario.setMaximumSize(new java.awt.Dimension(190, 50));
+        btnVerPerfilDeUsuario.setMinimumSize(new java.awt.Dimension(190, 50));
+        btnVerPerfilDeUsuario.setPreferredSize(new java.awt.Dimension(160, 30));
+        btnVerPerfilDeUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerPerfilDeUsuarioActionPerformed(evt);
+            }
+        });
+        jPanel8.add(btnVerPerfilDeUsuario, new java.awt.GridBagConstraints());
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.weightx = 1.0;
+        jPanel7.add(jPanel8, gridBagConstraints);
+
+        panelConsultaConProfesional.add(jPanel7, java.awt.BorderLayout.CENTER);
+
+        jPanel9.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel9Layout = new java.awt.GridBagLayout();
+        jPanel9Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel9.setLayout(jPanel9Layout);
+
+        lblIconoInicioSesion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoConsultaConProfesionalesTitulo.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 18, 0, 0);
+        jPanel9.add(lblIconoInicioSesion, gridBagConstraints);
+
+        lblInicioSesion.setFont(new java.awt.Font("Levenim MT", 0, 65)); // NOI18N
+        lblInicioSesion.setForeground(new java.awt.Color(255, 255, 255));
+        lblInicioSesion.setText("Consulta");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(15, 120, 0, 0);
+        jPanel9.add(lblInicioSesion, gridBagConstraints);
+
+        btnCerrarSistema.setBackground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema.setForeground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
+        btnCerrarSistema.setAlignmentX(0.5F);
+        btnCerrarSistema.setBorderPainted(false);
+        btnCerrarSistema.setContentAreaFilled(false);
+        btnCerrarSistema.setFocusPainted(false);
+        btnCerrarSistema.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        btnCerrarSistema.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarSistemaActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.RELATIVE;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
+        jPanel9.add(btnCerrarSistema, gridBagConstraints);
+
+        panelConsultaConProfesional.add(jPanel9, java.awt.BorderLayout.PAGE_START);
 
         panelDerecho.add(panelConsultaConProfesional, "card4");
 
         panelElaborarPlan.setBackground(new java.awt.Color(51, 51, 51));
         panelElaborarPlan.setMaximumSize(new java.awt.Dimension(800, 800));
         panelElaborarPlan.setMinimumSize(new java.awt.Dimension(800, 800));
-        panelElaborarPlan.setLayout(null);
+        panelElaborarPlan.setPreferredSize(new java.awt.Dimension(800, 800));
+        panelElaborarPlan.setLayout(new java.awt.BorderLayout());
 
-        lblElaborarNuevoPlan.setFont(new java.awt.Font("Levenim MT", 0, 65)); // NOI18N
-        lblElaborarNuevoPlan.setForeground(new java.awt.Color(255, 255, 255));
-        lblElaborarNuevoPlan.setText("Elaborar plan ");
-        panelElaborarPlan.add(lblElaborarNuevoPlan);
-        lblElaborarNuevoPlan.setBounds(30, 11, 403, 91);
+        jPanel12.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel12.setLayout(null);
 
-        lblComida.setFont(new java.awt.Font("Century Gothic", 1, 25)); // NOI18N
-        lblComida.setForeground(new java.awt.Color(255, 255, 255));
-        lblComida.setText("Comida");
-        panelElaborarPlan.add(lblComida);
-        lblComida.setBounds(50, 230, 134, 52);
+        lblNombreDelDia.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
+        lblNombreDelDia.setForeground(new java.awt.Color(255, 255, 255));
+        lblNombreDelDia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblNombreDelDia.setText("Nombre del dia");
+        jPanel12.add(lblNombreDelDia);
+        lblNombreDelDia.setBounds(30, 350, 170, 220);
 
-        lblAlimentos.setFont(new java.awt.Font("Century Gothic", 1, 25)); // NOI18N
-        lblAlimentos.setForeground(new java.awt.Color(255, 255, 255));
-        lblAlimentos.setText("Alimentos");
-        panelElaborarPlan.add(lblAlimentos);
-        lblAlimentos.setBounds(310, 110, 167, 44);
+        jPanel11.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel11Layout = new java.awt.GridBagLayout();
+        jPanel11Layout.columnWidths = new int[] {0, 15, 0, 15, 0, 15, 0};
+        jPanel11Layout.rowHeights = new int[] {0, 0, 0};
+        jPanel11.setLayout(jPanel11Layout);
 
-        listaDiasDeLaSemana.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
-        listaDiasDeLaSemana.addItemListener(new java.awt.event.ItemListener() {
-            public void itemStateChanged(java.awt.event.ItemEvent evt) {
-                listaDiasDeLaSemanaItemStateChanged(evt);
-            }
-        });
-        listaDiasDeLaSemana.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                listaDiasDeLaSemanaFocusLost(evt);
-            }
-        });
-        listaDiasDeLaSemana.addActionListener(new java.awt.event.ActionListener() {
+        textCena.setBackground(new java.awt.Color(51, 51, 51));
+        textCena.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+        textCena.setForeground(new java.awt.Color(255, 255, 255));
+        textCena.setRows(5);
+        jScrollPane11.setViewportView(textCena);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.ipadx = 137;
+        gridBagConstraints.ipady = 217;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(1, 1, 1, 1);
+        jPanel11.add(jScrollPane11, gridBagConstraints);
+
+        textAlmuerzo.setBackground(new java.awt.Color(51, 51, 51));
+        textAlmuerzo.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+        textAlmuerzo.setForeground(new java.awt.Color(255, 255, 255));
+        textAlmuerzo.setRows(5);
+        jScrollPane10.setViewportView(textAlmuerzo);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.ipadx = 137;
+        gridBagConstraints.ipady = 217;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(1, 1, 1, 1);
+        jPanel11.add(jScrollPane10, gridBagConstraints);
+
+        lblDesayuno.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
+        lblDesayuno.setForeground(new java.awt.Color(255, 255, 255));
+        lblDesayuno.setText("Desayuno");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.insets = new java.awt.Insets(1, 1, 1, 1);
+        jPanel11.add(lblDesayuno, gridBagConstraints);
+
+        lblAlmuerzo.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
+        lblAlmuerzo.setForeground(new java.awt.Color(255, 255, 255));
+        lblAlmuerzo.setText("Almuerzo");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.insets = new java.awt.Insets(1, 1, 1, 1);
+        jPanel11.add(lblAlmuerzo, gridBagConstraints);
+
+        textDesayuno.setBackground(new java.awt.Color(51, 51, 51));
+        textDesayuno.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+        textDesayuno.setForeground(new java.awt.Color(255, 255, 255));
+        textDesayuno.setRows(5);
+        jScrollPane12.setViewportView(textDesayuno);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.ipadx = 137;
+        gridBagConstraints.ipady = 217;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(1, 1, 1, 1);
+        jPanel11.add(jScrollPane12, gridBagConstraints);
+
+        lblCena.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
+        lblCena.setForeground(new java.awt.Color(255, 255, 255));
+        lblCena.setText("Cena");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.insets = new java.awt.Insets(1, 1, 1, 1);
+        jPanel11.add(lblCena, gridBagConstraints);
+
+        jPanel12.add(jPanel11);
+        jPanel11.setBounds(190, 319, 608, 251);
+
+        jPanel10.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel10Layout = new java.awt.GridBagLayout();
+        jPanel10Layout.columnWidths = new int[] {0, 15, 0, 15, 0, 15, 0, 15, 0};
+        jPanel10Layout.rowHeights = new int[] {0, 14, 0, 14, 0, 14, 0, 14, 0, 14, 0, 14, 0};
+        jPanel10.setLayout(jPanel10Layout);
+
+        btnAgregarAlPlan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoAgregarAlPlan.png"))); // NOI18N
+        btnAgregarAlPlan.setBorderPainted(false);
+        btnAgregarAlPlan.setContentAreaFilled(false);
+        btnAgregarAlPlan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                listaDiasDeLaSemanaActionPerformed(evt);
+                btnAgregarAlPlanActionPerformed(evt);
             }
         });
-        panelElaborarPlan.add(listaDiasDeLaSemana);
-        listaDiasDeLaSemana.setBounds(50, 170, 200, 40);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridheight = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel10.add(btnAgregarAlPlan, gridBagConstraints);
 
         listaComidasPlan.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
         listaComidasPlan.addItemListener(new java.awt.event.ItemListener() {
@@ -716,37 +1007,83 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
                 listaComidasPlanActionPerformed(evt);
             }
         });
-        panelElaborarPlan.add(listaComidasPlan);
-        listaComidasPlan.setBounds(50, 290, 200, 40);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel10.add(listaComidasPlan, gridBagConstraints);
 
-        listaAlimentosEnSistema.setBackground(new java.awt.Color(238, 238, 238));
-        listaAlimentosEnSistema.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-        listaAlimentosEnSistema.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
-            public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
-                listaAlimentosEnSistemaValueChanged(evt);
+        lblNombrePlanVacio.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+        lblNombrePlanVacio.setForeground(new java.awt.Color(240, 128, 128));
+        lblNombrePlanVacio.setText("Dato vacío");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        jPanel10.add(lblNombrePlanVacio, gridBagConstraints);
+
+        btnEliminarDelPlan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoEliminarDelPlan.png"))); // NOI18N
+        btnEliminarDelPlan.setBorderPainted(false);
+        btnEliminarDelPlan.setContentAreaFilled(false);
+        btnEliminarDelPlan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarDelPlanActionPerformed(evt);
             }
         });
-        jScrollPane8.setViewportView(listaAlimentosEnSistema);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.gridheight = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel10.add(btnEliminarDelPlan, gridBagConstraints);
 
-        panelElaborarPlan.add(jScrollPane8);
-        jScrollPane8.setBounds(310, 160, 285, 166);
+        listaDiasDeLaSemana.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+        listaDiasDeLaSemana.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                listaDiasDeLaSemanaItemStateChanged(evt);
+            }
+        });
+        listaDiasDeLaSemana.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                listaDiasDeLaSemanaFocusLost(evt);
+            }
+        });
+        listaDiasDeLaSemana.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                listaDiasDeLaSemanaActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel10.add(listaDiasDeLaSemana, gridBagConstraints);
 
-        lblDia.setFont(new java.awt.Font("Century Gothic", 1, 25)); // NOI18N
-        lblDia.setForeground(new java.awt.Color(255, 255, 255));
-        lblDia.setText("Día");
-        panelElaborarPlan.add(lblDia);
-        lblDia.setBounds(50, 120, 134, 36);
+        lblComida.setFont(new java.awt.Font("Century Gothic", 1, 25)); // NOI18N
+        lblComida.setForeground(new java.awt.Color(255, 255, 255));
+        lblComida.setText("Comida");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.SOUTHWEST;
+        jPanel10.add(lblComida, gridBagConstraints);
 
         lblNombrePlan.setFont(new java.awt.Font("Century Gothic", 1, 25)); // NOI18N
         lblNombrePlan.setForeground(new java.awt.Color(255, 255, 255));
         lblNombrePlan.setText("Nombre del plan:");
-        panelElaborarPlan.add(lblNombrePlan);
-        lblNombrePlan.setBounds(30, 370, 240, 34);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel10.add(lblNombrePlan, gridBagConstraints);
 
         txtNombrePlan.setBackground(new java.awt.Color(227, 227, 227));
         txtNombrePlan.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         txtNombrePlan.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         txtNombrePlan.setMaximumSize(new java.awt.Dimension(6, 26));
+        txtNombrePlan.setSize(new java.awt.Dimension(6, 25));
         txtNombrePlan.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 txtNombrePlanFocusLost(evt);
@@ -757,120 +1094,151 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
                 txtNombrePlanActionPerformed(evt);
             }
         });
-        panelElaborarPlan.add(txtNombrePlan);
-        txtNombrePlan.setBounds(260, 370, 181, 38);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 170;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel10.add(txtNombrePlan, gridBagConstraints);
 
-        btnAgregarAlPlan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoAgregarAlPlan.png"))); // NOI18N
-        btnAgregarAlPlan.setBorderPainted(false);
-        btnAgregarAlPlan.setContentAreaFilled(false);
-        btnAgregarAlPlan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAgregarAlPlanActionPerformed(evt);
+        listaAlimentosEnSistema.setBackground(new java.awt.Color(238, 238, 238));
+        listaAlimentosEnSistema.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+        listaAlimentosEnSistema.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
+            public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
+                listaAlimentosEnSistemaValueChanged(evt);
             }
         });
-        panelElaborarPlan.add(btnAgregarAlPlan);
-        btnAgregarAlPlan.setBounds(620, 150, 90, 80);
+        jScrollPane8.setViewportView(listaAlimentosEnSistema);
 
-        btnEliminarDelPlan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoEliminarDelPlan.png"))); // NOI18N
-        btnEliminarDelPlan.setBorderPainted(false);
-        btnEliminarDelPlan.setContentAreaFilled(false);
-        btnEliminarDelPlan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEliminarDelPlanActionPerformed(evt);
-            }
-        });
-        panelElaborarPlan.add(btnEliminarDelPlan);
-        btnEliminarDelPlan.setBounds(630, 260, 70, 70);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.gridheight = 7;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        jPanel10.add(jScrollPane8, gridBagConstraints);
 
-        lblDesayuno.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
-        lblDesayuno.setForeground(new java.awt.Color(255, 255, 255));
-        lblDesayuno.setText("Desayuno");
-        panelElaborarPlan.add(lblDesayuno);
-        lblDesayuno.setBounds(170, 460, 120, 34);
+        lblDia.setFont(new java.awt.Font("Century Gothic", 1, 25)); // NOI18N
+        lblDia.setForeground(new java.awt.Color(255, 255, 255));
+        lblDia.setText("Día");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.SOUTHWEST;
+        jPanel10.add(lblDia, gridBagConstraints);
 
-        lblAlmuerzo.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
-        lblAlmuerzo.setForeground(new java.awt.Color(255, 255, 255));
-        lblAlmuerzo.setText("Almuerzo");
-        panelElaborarPlan.add(lblAlmuerzo);
-        lblAlmuerzo.setBounds(370, 460, 120, 34);
+        lblValidarNombrePlan.setForeground(new java.awt.Color(255, 255, 255));
+        lblValidarNombrePlan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel10.add(lblValidarNombrePlan, gridBagConstraints);
 
-        lblCena.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
-        lblCena.setForeground(new java.awt.Color(255, 255, 255));
-        lblCena.setText("Cena");
-        panelElaborarPlan.add(lblCena);
-        lblCena.setBounds(560, 460, 80, 34);
-
-        lblNombreDelDia.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
-        lblNombreDelDia.setForeground(new java.awt.Color(255, 255, 255));
-        lblNombreDelDia.setText("Nombre del dia");
-        panelElaborarPlan.add(lblNombreDelDia);
-        lblNombreDelDia.setBounds(20, 550, 120, 34);
-
-        btnElaborarPlan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoEnviarMensaje.png"))); // NOI18N
-        btnElaborarPlan1.setBorderPainted(false);
-        btnElaborarPlan1.setContentAreaFilled(false);
-        btnElaborarPlan1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnElaborarPlan1ActionPerformed(evt);
-            }
-        });
-        panelElaborarPlan.add(btnElaborarPlan1);
-        btnElaborarPlan1.setBounds(730, 740, 60, 50);
-
-        textAlmuerzo.setBackground(new java.awt.Color(51, 51, 51));
-        textAlmuerzo.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-        textAlmuerzo.setForeground(new java.awt.Color(255, 255, 255));
-        textAlmuerzo.setRows(5);
-        jScrollPane10.setViewportView(textAlmuerzo);
-
-        panelElaborarPlan.add(jScrollPane10);
-        jScrollPane10.setBounds(350, 520, 160, 240);
-
-        textCena.setBackground(new java.awt.Color(51, 51, 51));
-        textCena.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-        textCena.setForeground(new java.awt.Color(255, 255, 255));
-        textCena.setRows(5);
-        jScrollPane11.setViewportView(textCena);
-
-        panelElaborarPlan.add(jScrollPane11);
-        jScrollPane11.setBounds(540, 520, 160, 240);
-
-        textDesayuno.setBackground(new java.awt.Color(51, 51, 51));
-        textDesayuno.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-        textDesayuno.setForeground(new java.awt.Color(255, 255, 255));
-        textDesayuno.setRows(5);
-        jScrollPane12.setViewportView(textDesayuno);
-
-        panelElaborarPlan.add(jScrollPane12);
-        jScrollPane12.setBounds(150, 520, 160, 240);
-
+        btnEliminarDelPlan1.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        btnEliminarDelPlan1.setForeground(new java.awt.Color(255, 255, 255));
         btnEliminarDelPlan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoGuardarDia.png"))); // NOI18N
+        btnEliminarDelPlan1.setText("Guardar día");
         btnEliminarDelPlan1.setBorderPainted(false);
         btnEliminarDelPlan1.setContentAreaFilled(false);
+        btnEliminarDelPlan1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         btnEliminarDelPlan1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEliminarDelPlan1ActionPerformed(evt);
             }
         });
-        panelElaborarPlan.add(btnEliminarDelPlan1);
-        btnEliminarDelPlan1.setBounds(580, 390, 70, 70);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 11;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
+        jPanel10.add(btnEliminarDelPlan1, gridBagConstraints);
 
-        lblValidarNombrePlan.setForeground(new java.awt.Color(255, 255, 255));
-        lblValidarNombrePlan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
-        panelElaborarPlan.add(lblValidarNombrePlan);
-        lblValidarNombrePlan.setBounds(450, 370, 32, 44);
+        lblAlimentos.setFont(new java.awt.Font("Century Gothic", 1, 25)); // NOI18N
+        lblAlimentos.setForeground(new java.awt.Color(255, 255, 255));
+        lblAlimentos.setText("Alimentos");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel10.add(lblAlimentos, gridBagConstraints);
 
-        lblCena1.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        lblCena1.setForeground(new java.awt.Color(255, 255, 255));
-        lblCena1.setText("Guardar día");
-        panelElaborarPlan.add(lblCena1);
-        lblCena1.setBounds(640, 410, 150, 34);
+        jPanel12.add(jPanel10);
+        jPanel10.setBounds(25, 6, 751, 295);
 
-        lblNombrePlanVacio.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-        lblNombrePlanVacio.setForeground(new java.awt.Color(240, 128, 128));
-        lblNombrePlanVacio.setText("Dato vacío");
-        panelElaborarPlan.add(lblNombrePlanVacio);
-        lblNombrePlanVacio.setBounds(490, 370, 134, 38);
+        panelElaborarPlan.add(jPanel12, java.awt.BorderLayout.CENTER);
+
+        jPanel13.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel13.setPreferredSize(new java.awt.Dimension(800, 84));
+        jPanel13.setLayout(new java.awt.BorderLayout());
+
+        btnElaborarPlan1.setForeground(javax.swing.UIManager.getDefaults().getColor("Button.background"));
+        btnElaborarPlan1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoEnviarMensaje.png"))); // NOI18N
+        btnElaborarPlan1.setText("Enviar");
+        btnElaborarPlan1.setBorderPainted(false);
+        btnElaborarPlan1.setContentAreaFilled(false);
+        btnElaborarPlan1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnElaborarPlan1.setIconTextGap(-7);
+        btnElaborarPlan1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnElaborarPlan1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnElaborarPlan1ActionPerformed(evt);
+            }
+        });
+        jPanel13.add(btnElaborarPlan1, java.awt.BorderLayout.EAST);
+
+        panelElaborarPlan.add(jPanel13, java.awt.BorderLayout.PAGE_END);
+
+        jPanel14.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel14Layout = new java.awt.GridBagLayout();
+        jPanel14Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel14.setLayout(jPanel14Layout);
+
+        lblIconoInicioSesion1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoConsultaConProfesionalesTitulo.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 18, 0, 0);
+        jPanel14.add(lblIconoInicioSesion1, gridBagConstraints);
+
+        lblInicioSesion1.setFont(new java.awt.Font("Levenim MT", 0, 65)); // NOI18N
+        lblInicioSesion1.setForeground(new java.awt.Color(255, 255, 255));
+        lblInicioSesion1.setText("Elaborar plan");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(15, 120, 0, 0);
+        jPanel14.add(lblInicioSesion1, gridBagConstraints);
+
+        btnCerrarSistema1.setBackground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema1.setForeground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
+        btnCerrarSistema1.setAlignmentX(0.5F);
+        btnCerrarSistema1.setBorderPainted(false);
+        btnCerrarSistema1.setContentAreaFilled(false);
+        btnCerrarSistema1.setFocusPainted(false);
+        btnCerrarSistema1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        btnCerrarSistema1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarSistema1ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.RELATIVE;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
+        jPanel14.add(btnCerrarSistema1, gridBagConstraints);
+
+        panelElaborarPlan.add(jPanel14, java.awt.BorderLayout.PAGE_START);
 
         panelDerecho.add(panelElaborarPlan, "card2");
 
@@ -878,39 +1246,50 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         panelMostrarPlanEnviado.setMaximumSize(new java.awt.Dimension(800, 800));
         panelMostrarPlanEnviado.setMinimumSize(new java.awt.Dimension(800, 800));
         panelMostrarPlanEnviado.setPreferredSize(new java.awt.Dimension(800, 800));
+        panelMostrarPlanEnviado.setLayout(new java.awt.BorderLayout());
+
+        jPanel23.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel23.setLayout(new java.awt.GridBagLayout());
 
         lblOK2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoOK.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 25, 0);
+        jPanel23.add(lblOK2, gridBagConstraints);
 
         lblOKTexto2.setFont(new java.awt.Font("Century Gothic", 1, 25)); // NOI18N
         lblOKTexto2.setForeground(new java.awt.Color(255, 255, 255));
         lblOKTexto2.setText("Plan Enviado");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        jPanel23.add(lblOKTexto2, gridBagConstraints);
 
-        javax.swing.GroupLayout panelMostrarPlanEnviadoLayout = new javax.swing.GroupLayout(panelMostrarPlanEnviado);
-        panelMostrarPlanEnviado.setLayout(panelMostrarPlanEnviadoLayout);
-        panelMostrarPlanEnviadoLayout.setHorizontalGroup(
-            panelMostrarPlanEnviadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelMostrarPlanEnviadoLayout.createSequentialGroup()
-                .addGap(346, 346, 346)
-                .addComponent(lblOK2)
-                .addContainerGap(350, Short.MAX_VALUE))
-            .addGroup(panelMostrarPlanEnviadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panelMostrarPlanEnviadoLayout.createSequentialGroup()
-                    .addGap(321, 321, 321)
-                    .addComponent(lblOKTexto2)
-                    .addContainerGap(322, Short.MAX_VALUE)))
-        );
-        panelMostrarPlanEnviadoLayout.setVerticalGroup(
-            panelMostrarPlanEnviadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelMostrarPlanEnviadoLayout.createSequentialGroup()
-                .addGap(230, 230, 230)
-                .addComponent(lblOK2, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(442, Short.MAX_VALUE))
-            .addGroup(panelMostrarPlanEnviadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panelMostrarPlanEnviadoLayout.createSequentialGroup()
-                    .addGap(365, 365, 365)
-                    .addComponent(lblOKTexto2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(365, Short.MAX_VALUE)))
-        );
+        panelMostrarPlanEnviado.add(jPanel23, java.awt.BorderLayout.CENTER);
+
+        jPanel24.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel24.setLayout(new java.awt.GridBagLayout());
+
+        btnCerrarSistema5.setBackground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema5.setForeground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
+        btnCerrarSistema5.setAlignmentX(0.5F);
+        btnCerrarSistema5.setBorderPainted(false);
+        btnCerrarSistema5.setContentAreaFilled(false);
+        btnCerrarSistema5.setFocusPainted(false);
+        btnCerrarSistema5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        btnCerrarSistema5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarSistema5ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHEAST;
+        jPanel24.add(btnCerrarSistema5, gridBagConstraints);
+
+        panelMostrarPlanEnviado.add(jPanel24, java.awt.BorderLayout.PAGE_START);
 
         panelDerecho.add(panelMostrarPlanEnviado, "card2");
 
@@ -918,11 +1297,157 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         panelPlanAlimentacion.setMaximumSize(new java.awt.Dimension(800, 800));
         panelPlanAlimentacion.setMinimumSize(new java.awt.Dimension(800, 800));
         panelPlanAlimentacion.setPreferredSize(new java.awt.Dimension(800, 800));
+        panelPlanAlimentacion.setLayout(new java.awt.BorderLayout());
+
+        jPanel15.setBackground(new java.awt.Color(51, 51, 51));
+
+        panelPerfilDeUsuario.setBackground(new java.awt.Color(51, 51, 51));
+        panelPerfilDeUsuario.setMaximumSize(new java.awt.Dimension(450, 580));
+        panelPerfilDeUsuario.setMinimumSize(new java.awt.Dimension(450, 580));
+        panelPerfilDeUsuario.setPreferredSize(new java.awt.Dimension(450, 580));
+        java.awt.GridBagLayout panelPerfilDeUsuarioLayout = new java.awt.GridBagLayout();
+        panelPerfilDeUsuarioLayout.columnWidths = new int[] {0, 21, 0, 21, 0, 21, 0, 21, 0};
+        panelPerfilDeUsuarioLayout.rowHeights = new int[] {0, 21, 0, 21, 0, 21, 0, 21, 0, 21, 0};
+        panelPerfilDeUsuario.setLayout(panelPerfilDeUsuarioLayout);
+
+        lblNombreUsuario2.setFont(new java.awt.Font("Levenim MT", 0, 35)); // NOI18N
+        lblNombreUsuario2.setForeground(new java.awt.Color(255, 255, 255));
+        lblNombreUsuario2.setText("Usuario");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        panelPerfilDeUsuario.add(lblNombreUsuario2, gridBagConstraints);
+
+        lblFotoDeUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoDeUsuarioStandardChico.png"))); // NOI18N
+        lblFotoDeUsuario.setSize(new java.awt.Dimension(50, 50));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        panelPerfilDeUsuario.add(lblFotoDeUsuario, gridBagConstraints);
+
+        lblTxtFechaNacimiento.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        lblTxtFechaNacimiento.setForeground(new java.awt.Color(255, 255, 255));
+        lblTxtFechaNacimiento.setText("Fecha de nacimiento:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        panelPerfilDeUsuario.add(lblTxtFechaNacimiento, gridBagConstraints);
+
+        lblFechaNacimiento.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        lblFechaNacimiento.setForeground(new java.awt.Color(255, 255, 255));
+        lblFechaNacimiento.setText("Fecha del usuario");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        panelPerfilDeUsuario.add(lblFechaNacimiento, gridBagConstraints);
+
+        lblTxtRestricciones.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        lblTxtRestricciones.setForeground(new java.awt.Color(255, 255, 255));
+        lblTxtRestricciones.setText("Restricciones:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
+        panelPerfilDeUsuario.add(lblTxtRestricciones, gridBagConstraints);
+
+        listaRestricciones.setSelectionBackground(new java.awt.Color(255, 255, 255));
+        jScrollPane5.setViewportView(listaRestricciones);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 318;
+        gridBagConstraints.ipady = 67;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        panelPerfilDeUsuario.add(jScrollPane5, gridBagConstraints);
+
+        lblPreferencias.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        lblPreferencias.setForeground(new java.awt.Color(255, 255, 255));
+        lblPreferencias.setText("Preferencias:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
+        panelPerfilDeUsuario.add(lblPreferencias, gridBagConstraints);
+
+        listaPreferencias.setSelectionBackground(new java.awt.Color(255, 255, 255));
+        jScrollPane6.setViewportView(listaPreferencias);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 318;
+        gridBagConstraints.ipady = 67;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        panelPerfilDeUsuario.add(jScrollPane6, gridBagConstraints);
+
+        lblIngestas.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        lblIngestas.setForeground(new java.awt.Color(255, 255, 255));
+        lblIngestas.setText("Ingestas:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
+        panelPerfilDeUsuario.add(lblIngestas, gridBagConstraints);
+
+        listaIngestas.setSelectionBackground(new java.awt.Color(255, 255, 255));
+        jScrollPane7.setViewportView(listaIngestas);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 318;
+        gridBagConstraints.ipady = 67;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        panelPerfilDeUsuario.add(jScrollPane7, gridBagConstraints);
+
+        btnElaborarPlan.setForeground(javax.swing.UIManager.getDefaults().getColor("Button.background"));
+        btnElaborarPlan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoEnviarMensaje.png"))); // NOI18N
+        btnElaborarPlan.setText("Siguiente");
+        btnElaborarPlan.setBorderPainted(false);
+        btnElaborarPlan.setContentAreaFilled(false);
+        btnElaborarPlan.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnElaborarPlan.setIconTextGap(-7);
+        btnElaborarPlan.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnElaborarPlan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnElaborarPlanActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
+        panelPerfilDeUsuario.add(btnElaborarPlan, gridBagConstraints);
 
         panelIzquierdo.setBackground(new java.awt.Color(51, 51, 51));
-        panelIzquierdo.setMaximumSize(new java.awt.Dimension(320, 500));
-        panelIzquierdo.setMinimumSize(new java.awt.Dimension(320, 500));
-        panelIzquierdo.setPreferredSize(new java.awt.Dimension(320, 500));
+        panelIzquierdo.setMaximumSize(new java.awt.Dimension(250, 90));
+        panelIzquierdo.setMinimumSize(new java.awt.Dimension(250, 90));
+        panelIzquierdo.setPreferredSize(new java.awt.Dimension(250, 90));
+        java.awt.GridBagLayout panelIzquierdoLayout = new java.awt.GridBagLayout();
+        panelIzquierdoLayout.columnWidths = new int[] {0};
+        panelIzquierdoLayout.rowHeights = new int[] {0, 8, 0};
+        panelIzquierdo.setLayout(panelIzquierdoLayout);
 
         listaPlanesPendientes.setBackground(new java.awt.Color(238, 238, 238));
         listaPlanesPendientes.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
@@ -934,226 +1459,97 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         });
         jScrollPane4.setViewportView(listaPlanesPendientes);
 
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.ipadx = 160;
+        gridBagConstraints.ipady = 481;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        panelIzquierdo.add(jScrollPane4, gridBagConstraints);
+
         lblElijaUnUsuario.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
         lblElijaUnUsuario.setForeground(new java.awt.Color(255, 255, 255));
         lblElijaUnUsuario.setText("Elija un usuario:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.ipadx = 92;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        panelIzquierdo.add(lblElijaUnUsuario, gridBagConstraints);
 
-        javax.swing.GroupLayout panelIzquierdoLayout = new javax.swing.GroupLayout(panelIzquierdo);
-        panelIzquierdo.setLayout(panelIzquierdoLayout);
-        panelIzquierdoLayout.setHorizontalGroup(
-            panelIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelIzquierdoLayout.createSequentialGroup()
-                .addGroup(panelIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelIzquierdoLayout.createSequentialGroup()
-                        .addGap(45, 45, 45)
-                        .addComponent(lblElijaUnUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelIzquierdoLayout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
+        jPanel15.setLayout(jPanel15Layout);
+        jPanel15Layout.setHorizontalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(panelIzquierdo, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
+                .addComponent(panelPerfilDeUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 474, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
-        panelIzquierdoLayout.setVerticalGroup(
-            panelIzquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelIzquierdoLayout.createSequentialGroup()
-                .addGap(130, 130, 130)
-                .addComponent(lblElijaUnUsuario)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 424, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(30, Short.MAX_VALUE))
+        jPanel15Layout.setVerticalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(panelPerfilDeUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(29, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(panelIzquierdo, javax.swing.GroupLayout.PREFERRED_SIZE, 470, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(127, 127, 127))
         );
+
+        panelPlanAlimentacion.add(jPanel15, java.awt.BorderLayout.CENTER);
 
         panelDatosUsuario.setBackground(new java.awt.Color(51, 51, 51));
-        panelDatosUsuario.setMaximumSize(new java.awt.Dimension(300, 130));
-        panelDatosUsuario.setMinimumSize(new java.awt.Dimension(300, 130));
-        panelDatosUsuario.setPreferredSize(new java.awt.Dimension(300, 130));
-
-        lblFotoUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoPerfilDeUsuarioAgrandado.png"))); // NOI18N
-
-        lblNombreUsuario1.setFont(new java.awt.Font("Levenim MT", 0, 40)); // NOI18N
-        lblNombreUsuario1.setForeground(new java.awt.Color(255, 255, 255));
-        lblNombreUsuario1.setText("Perfil de Usuario");
-
-        javax.swing.GroupLayout panelDatosUsuarioLayout = new javax.swing.GroupLayout(panelDatosUsuario);
+        java.awt.GridBagLayout panelDatosUsuarioLayout = new java.awt.GridBagLayout();
+        panelDatosUsuarioLayout.columnWeights = new double[] {1.0, 1.0};
         panelDatosUsuario.setLayout(panelDatosUsuarioLayout);
-        panelDatosUsuarioLayout.setHorizontalGroup(
-            panelDatosUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelDatosUsuarioLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lblFotoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(lblNombreUsuario1, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17))
-        );
-        panelDatosUsuarioLayout.setVerticalGroup(
-            panelDatosUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelDatosUsuarioLayout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(lblFotoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(25, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelDatosUsuarioLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lblNombreUsuario1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(41, 41, 41))
-        );
 
-        panelPerfilDeUsuario.setBackground(new java.awt.Color(51, 51, 51));
-        panelPerfilDeUsuario.setMaximumSize(new java.awt.Dimension(450, 580));
-        panelPerfilDeUsuario.setMinimumSize(new java.awt.Dimension(450, 580));
-        panelPerfilDeUsuario.setPreferredSize(new java.awt.Dimension(450, 580));
+        lblIconoInicioSesion2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoPerfilDeUsuarioAgrandado.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 18, 0, 0);
+        panelDatosUsuario.add(lblIconoInicioSesion2, gridBagConstraints);
 
-        lblNombreUsuario2.setFont(new java.awt.Font("Levenim MT", 0, 35)); // NOI18N
-        lblNombreUsuario2.setForeground(new java.awt.Color(255, 255, 255));
-        lblNombreUsuario2.setText("Usuario");
+        lblInicioSesion2.setFont(new java.awt.Font("Levenim MT", 0, 65)); // NOI18N
+        lblInicioSesion2.setForeground(new java.awt.Color(255, 255, 255));
+        lblInicioSesion2.setText("Perfil de usuario");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(15, 120, 0, 0);
+        panelDatosUsuario.add(lblInicioSesion2, gridBagConstraints);
 
-        lblFotoDeUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoDeUsuarioStandard.png"))); // NOI18N
-
-        lblTxtFechaNacimiento.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
-        lblTxtFechaNacimiento.setForeground(new java.awt.Color(255, 255, 255));
-        lblTxtFechaNacimiento.setText("Fecha de nacimiento:");
-
-        lblFechaNacimiento.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
-        lblFechaNacimiento.setForeground(new java.awt.Color(255, 255, 255));
-        lblFechaNacimiento.setText("Fecha del usuario");
-
-        lblTxtRestricciones.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
-        lblTxtRestricciones.setForeground(new java.awt.Color(255, 255, 255));
-        lblTxtRestricciones.setText("Restricciones:");
-
-        listaRestricciones.setSelectionBackground(new java.awt.Color(255, 255, 255));
-        jScrollPane5.setViewportView(listaRestricciones);
-
-        lblPreferencias.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
-        lblPreferencias.setForeground(new java.awt.Color(255, 255, 255));
-        lblPreferencias.setText("Preferencias:");
-
-        listaPreferencias.setSelectionBackground(new java.awt.Color(255, 255, 255));
-        jScrollPane6.setViewportView(listaPreferencias);
-
-        lblIngestas.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
-        lblIngestas.setForeground(new java.awt.Color(255, 255, 255));
-        lblIngestas.setText("Ingestas:");
-
-        listaIngestas.setSelectionBackground(new java.awt.Color(255, 255, 255));
-        jScrollPane7.setViewportView(listaIngestas);
-
-        btnElaborarPlan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoEnviarMensaje.png"))); // NOI18N
-        btnElaborarPlan.setBorderPainted(false);
-        btnElaborarPlan.setContentAreaFilled(false);
-        btnElaborarPlan.addActionListener(new java.awt.event.ActionListener() {
+        btnCerrarSistema2.setBackground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema2.setForeground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
+        btnCerrarSistema2.setAlignmentX(0.5F);
+        btnCerrarSistema2.setBorderPainted(false);
+        btnCerrarSistema2.setContentAreaFilled(false);
+        btnCerrarSistema2.setFocusPainted(false);
+        btnCerrarSistema2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        btnCerrarSistema2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnElaborarPlanActionPerformed(evt);
+                btnCerrarSistema2ActionPerformed(evt);
             }
         });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.RELATIVE;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
+        panelDatosUsuario.add(btnCerrarSistema2, gridBagConstraints);
 
-        lblElaborarPlan.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
-        lblElaborarPlan.setForeground(new java.awt.Color(255, 255, 255));
-        lblElaborarPlan.setText("Elaborar plan");
-
-        javax.swing.GroupLayout panelPerfilDeUsuarioLayout = new javax.swing.GroupLayout(panelPerfilDeUsuario);
-        panelPerfilDeUsuario.setLayout(panelPerfilDeUsuarioLayout);
-        panelPerfilDeUsuarioLayout.setHorizontalGroup(
-            panelPerfilDeUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelPerfilDeUsuarioLayout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addGroup(panelPerfilDeUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelPerfilDeUsuarioLayout.createSequentialGroup()
-                        .addComponent(lblNombreUsuario2, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblFotoDeUsuario))
-                    .addGroup(panelPerfilDeUsuarioLayout.createSequentialGroup()
-                        .addComponent(lblTxtFechaNacimiento)
-                        .addGap(26, 26, 26)
-                        .addComponent(lblFechaNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelPerfilDeUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelPerfilDeUsuarioLayout.createSequentialGroup()
-                            .addComponent(lblIngestas)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 341, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(panelPerfilDeUsuarioLayout.createSequentialGroup()
-                            .addComponent(lblPreferencias)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 341, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(panelPerfilDeUsuarioLayout.createSequentialGroup()
-                            .addComponent(lblTxtRestricciones)
-                            .addGap(18, 18, 18)
-                            .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 341, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(48, 48, 48))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPerfilDeUsuarioLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblElaborarPlan)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnElaborarPlan, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33))
-        );
-        panelPerfilDeUsuarioLayout.setVerticalGroup(
-            panelPerfilDeUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelPerfilDeUsuarioLayout.createSequentialGroup()
-                .addGroup(panelPerfilDeUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelPerfilDeUsuarioLayout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(lblNombreUsuario2))
-                    .addGroup(panelPerfilDeUsuarioLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lblFotoDeUsuario)))
-                .addGap(24, 24, 24)
-                .addGroup(panelPerfilDeUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblTxtFechaNacimiento)
-                    .addComponent(lblFechaNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(38, 38, 38)
-                .addGroup(panelPerfilDeUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblTxtRestricciones)
-                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33)
-                .addGroup(panelPerfilDeUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblPreferencias)
-                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(panelPerfilDeUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelPerfilDeUsuarioLayout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(lblIngestas))
-                    .addGroup(panelPerfilDeUsuarioLayout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(panelPerfilDeUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelPerfilDeUsuarioLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(btnElaborarPlan))
-                    .addGroup(panelPerfilDeUsuarioLayout.createSequentialGroup()
-                        .addGap(41, 41, 41)
-                        .addComponent(lblElaborarPlan)))
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout panelPlanAlimentacionLayout = new javax.swing.GroupLayout(panelPlanAlimentacion);
-        panelPlanAlimentacion.setLayout(panelPlanAlimentacionLayout);
-        panelPlanAlimentacionLayout.setHorizontalGroup(
-            panelPlanAlimentacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelPlanAlimentacionLayout.createSequentialGroup()
-                .addGap(2, 2, 2)
-                .addComponent(panelIzquierdo, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(panelPlanAlimentacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelPlanAlimentacionLayout.createSequentialGroup()
-                        .addGap(64, 64, 64)
-                        .addComponent(panelDatosUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 487, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPlanAlimentacionLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(panelPerfilDeUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 561, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
-        );
-        panelPlanAlimentacionLayout.setVerticalGroup(
-            panelPlanAlimentacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelPlanAlimentacionLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(panelPlanAlimentacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(panelPlanAlimentacionLayout.createSequentialGroup()
-                        .addComponent(panelIzquierdo, javax.swing.GroupLayout.PREFERRED_SIZE, 616, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(panelPlanAlimentacionLayout.createSequentialGroup()
-                        .addComponent(panelDatosUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(panelPerfilDeUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 641, javax.swing.GroupLayout.PREFERRED_SIZE))))
-        );
+        panelPlanAlimentacion.add(panelDatosUsuario, java.awt.BorderLayout.PAGE_START);
 
         panelDerecho.add(panelPlanAlimentacion, "card4");
 
@@ -1167,54 +1563,402 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         panelAlimentroRegistradoCorrectamente.setMaximumSize(new java.awt.Dimension(800, 800));
         panelAlimentroRegistradoCorrectamente.setMinimumSize(new java.awt.Dimension(800, 800));
         panelAlimentroRegistradoCorrectamente.setPreferredSize(new java.awt.Dimension(800, 800));
+        panelAlimentroRegistradoCorrectamente.setLayout(new java.awt.BorderLayout());
+
+        jPanel17.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel17.setLayout(new java.awt.GridBagLayout());
 
         lblNoPlanes2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoOK.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 25, 0);
+        jPanel17.add(lblNoPlanes2, gridBagConstraints);
 
         lblNohayPlanesTexto2.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
         lblNohayPlanesTexto2.setForeground(new java.awt.Color(255, 255, 255));
         lblNohayPlanesTexto2.setText("Alimento registrado");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        jPanel17.add(lblNohayPlanesTexto2, gridBagConstraints);
 
-        javax.swing.GroupLayout panelAlimentroRegistradoCorrectamenteLayout = new javax.swing.GroupLayout(panelAlimentroRegistradoCorrectamente);
-        panelAlimentroRegistradoCorrectamente.setLayout(panelAlimentroRegistradoCorrectamenteLayout);
-        panelAlimentroRegistradoCorrectamenteLayout.setHorizontalGroup(
-            panelAlimentroRegistradoCorrectamenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelAlimentroRegistradoCorrectamenteLayout.createSequentialGroup()
-                .addGroup(panelAlimentroRegistradoCorrectamenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelAlimentroRegistradoCorrectamenteLayout.createSequentialGroup()
-                        .addGap(180, 180, 180)
-                        .addComponent(lblNohayPlanesTexto2))
-                    .addGroup(panelAlimentroRegistradoCorrectamenteLayout.createSequentialGroup()
-                        .addGap(310, 310, 310)
-                        .addComponent(lblNoPlanes2, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(237, Short.MAX_VALUE))
-        );
-        panelAlimentroRegistradoCorrectamenteLayout.setVerticalGroup(
-            panelAlimentroRegistradoCorrectamenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelAlimentroRegistradoCorrectamenteLayout.createSequentialGroup()
-                .addGap(137, 137, 137)
-                .addComponent(lblNoPlanes2, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addComponent(lblNohayPlanesTexto2, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(432, Short.MAX_VALUE))
-        );
+        panelAlimentroRegistradoCorrectamente.add(jPanel17, java.awt.BorderLayout.CENTER);
+
+        jPanel22.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel22Layout = new java.awt.GridBagLayout();
+        jPanel22Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel22.setLayout(jPanel22Layout);
+
+        btnCerrarSistema4.setBackground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema4.setForeground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
+        btnCerrarSistema4.setAlignmentX(0.5F);
+        btnCerrarSistema4.setBorderPainted(false);
+        btnCerrarSistema4.setContentAreaFilled(false);
+        btnCerrarSistema4.setFocusPainted(false);
+        btnCerrarSistema4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        btnCerrarSistema4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarSistema4ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHEAST;
+        jPanel22.add(btnCerrarSistema4, gridBagConstraints);
+
+        panelAlimentroRegistradoCorrectamente.add(jPanel22, java.awt.BorderLayout.PAGE_START);
 
         panelNuevoAlimento.add(panelAlimentroRegistradoCorrectamente);
         panelAlimentroRegistradoCorrectamente.setBounds(0, 0, 800, 800);
 
         panelIngresarAlimentoAlSistema.setBackground(new java.awt.Color(51, 51, 51));
-        panelIngresarAlimentoAlSistema.setMaximumSize(new java.awt.Dimension(700, 700));
-        panelIngresarAlimentoAlSistema.setMinimumSize(new java.awt.Dimension(700, 700));
-        panelIngresarAlimentoAlSistema.setPreferredSize(new java.awt.Dimension(700, 700));
+        panelIngresarAlimentoAlSistema.setMaximumSize(new java.awt.Dimension(800, 800));
+        panelIngresarAlimentoAlSistema.setMinimumSize(new java.awt.Dimension(800, 800));
+        panelIngresarAlimentoAlSistema.setPreferredSize(new java.awt.Dimension(800, 800));
+        panelIngresarAlimentoAlSistema.setLayout(new java.awt.BorderLayout());
 
-        lblNuevoAlimento.setFont(new java.awt.Font("Levenim MT", 0, 65)); // NOI18N
-        lblNuevoAlimento.setForeground(new java.awt.Color(255, 255, 255));
-        lblNuevoAlimento.setText("Nuevo Alimento");
+        jPanel19.setBackground(new java.awt.Color(51, 51, 51));
 
-        lblIconoNuevoAlimento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoIngresarAlimento.png"))); // NOI18N
+        jPanel20.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel20Layout = new java.awt.GridBagLayout();
+        jPanel20Layout.columnWidths = new int[] {0, 21, 0, 21, 0, 21, 0};
+        jPanel20Layout.rowHeights = new int[] {0, 32, 0, 32, 0, 32, 0};
+        jPanel20Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel20.setLayout(jPanel20Layout);
 
-        lblNombre.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
-        lblNombre.setForeground(new java.awt.Color(255, 255, 255));
-        lblNombre.setText("Nombre");
+        jPanel16.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel16Layout1 = new java.awt.GridBagLayout();
+        jPanel16Layout1.columnWidths = new int[] {0, 19, 0, 19, 0};
+        jPanel16Layout1.rowHeights = new int[] {0, 8, 0, 8, 0, 8, 0, 8, 0, 8, 0, 8, 0, 8, 0};
+        jPanel16.setLayout(jPanel16Layout1);
+
+        checkVitaminas.setBackground(new java.awt.Color(51, 51, 51));
+        checkVitaminas.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        checkVitaminas.setForeground(new java.awt.Color(255, 255, 255));
+        checkVitaminas.setText("Vitaminas");
+        checkVitaminas.setActionCommand("Hiidratos de carbono");
+        checkVitaminas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkVitaminasActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel16.add(checkVitaminas, gridBagConstraints);
+
+        checkHidratos.setBackground(new java.awt.Color(51, 51, 51));
+        checkHidratos.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        checkHidratos.setForeground(new java.awt.Color(255, 255, 255));
+        checkHidratos.setText("Hidratos de carbono ");
+        checkHidratos.setActionCommand("Hiidratos de carbono");
+        checkHidratos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkHidratosActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel16.add(checkHidratos, gridBagConstraints);
+
+        txtMinerales.setBackground(new java.awt.Color(227, 227, 227));
+        txtMinerales.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        txtMinerales.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtMinerales.setMaximumSize(new java.awt.Dimension(6, 26));
+        txtMinerales.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtMineralesKeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 150;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel16.add(txtMinerales, gridBagConstraints);
+
+        txtHidratos.setBackground(new java.awt.Color(227, 227, 227));
+        txtHidratos.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        txtHidratos.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtHidratos.setMaximumSize(new java.awt.Dimension(6, 26));
+        txtHidratos.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtHidratosKeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 150;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel16.add(txtHidratos, gridBagConstraints);
+
+        txtVitaminas.setBackground(new java.awt.Color(227, 227, 227));
+        txtVitaminas.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        txtVitaminas.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtVitaminas.setMaximumSize(new java.awt.Dimension(6, 26));
+        txtVitaminas.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtVitaminasKeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 150;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel16.add(txtVitaminas, gridBagConstraints);
+
+        txtGlucidos.setBackground(new java.awt.Color(227, 227, 227));
+        txtGlucidos.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        txtGlucidos.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtGlucidos.setMaximumSize(new java.awt.Dimension(6, 26));
+        txtGlucidos.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtGlucidosKeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 150;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel16.add(txtGlucidos, gridBagConstraints);
+
+        txtFibra.setBackground(new java.awt.Color(227, 227, 227));
+        txtFibra.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        txtFibra.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtFibra.setMaximumSize(new java.awt.Dimension(6, 26));
+        txtFibra.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtFibraKeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 12;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 150;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel16.add(txtFibra, gridBagConstraints);
+
+        txtLipidos.setBackground(new java.awt.Color(227, 227, 227));
+        txtLipidos.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        txtLipidos.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtLipidos.setMaximumSize(new java.awt.Dimension(6, 26));
+        txtLipidos.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtLipidosKeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 14;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 150;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel16.add(txtLipidos, gridBagConstraints);
+
+        checkFibra.setBackground(new java.awt.Color(51, 51, 51));
+        checkFibra.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        checkFibra.setForeground(new java.awt.Color(255, 255, 255));
+        checkFibra.setText("Fibras");
+        checkFibra.setActionCommand("Hiidratos de carbono");
+        checkFibra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkFibraActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 12;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel16.add(checkFibra, gridBagConstraints);
+
+        checkLipidos.setBackground(new java.awt.Color(51, 51, 51));
+        checkLipidos.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        checkLipidos.setForeground(new java.awt.Color(255, 255, 255));
+        checkLipidos.setText("Lípidos");
+        checkLipidos.setActionCommand("Hiidratos de carbono");
+        checkLipidos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkLipidosActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 14;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel16.add(checkLipidos, gridBagConstraints);
+
+        checkGlucidos.setBackground(new java.awt.Color(51, 51, 51));
+        checkGlucidos.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        checkGlucidos.setForeground(new java.awt.Color(255, 255, 255));
+        checkGlucidos.setText("Glúcidos");
+        checkGlucidos.setActionCommand("Hiidratos de carbono");
+        checkGlucidos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkGlucidosActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel16.add(checkGlucidos, gridBagConstraints);
+
+        checkProteínas.setBackground(new java.awt.Color(51, 51, 51));
+        checkProteínas.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        checkProteínas.setForeground(new java.awt.Color(255, 255, 255));
+        checkProteínas.setText("Proteínas");
+        checkProteínas.setActionCommand("Hiidratos de carbono");
+        checkProteínas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkProteínasActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel16.add(checkProteínas, gridBagConstraints);
+
+        checkMinerales.setBackground(new java.awt.Color(51, 51, 51));
+        checkMinerales.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        checkMinerales.setForeground(new java.awt.Color(255, 255, 255));
+        checkMinerales.setText("Minerales");
+        checkMinerales.setActionCommand("Hiidratos de carbono");
+        checkMinerales.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkMineralesActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel16.add(checkMinerales, gridBagConstraints);
+
+        txtProteínas.setBackground(new java.awt.Color(227, 227, 227));
+        txtProteínas.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        txtProteínas.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtProteínas.setMaximumSize(new java.awt.Dimension(6, 26));
+        txtProteínas.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtProteínasKeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 150;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel16.add(txtProteínas, gridBagConstraints);
+
+        lblPrincipalesNutrientes.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
+        lblPrincipalesNutrientes.setForeground(new java.awt.Color(255, 255, 255));
+        lblPrincipalesNutrientes.setText("Ingrese los principales nutrientes");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel16.add(lblPrincipalesNutrientes, gridBagConstraints);
+
+        lblGramosProteinas.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        lblGramosProteinas.setForeground(new java.awt.Color(255, 255, 255));
+        lblGramosProteinas.setText("(gramos)");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 5, 0, 0);
+        jPanel16.add(lblGramosProteinas, gridBagConstraints);
+
+        lblGramosVitaminas.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        lblGramosVitaminas.setForeground(new java.awt.Color(255, 255, 255));
+        lblGramosVitaminas.setText("(gramos)");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 5, 0, 0);
+        jPanel16.add(lblGramosVitaminas, gridBagConstraints);
+
+        lblGramosGlucidos.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        lblGramosGlucidos.setForeground(new java.awt.Color(255, 255, 255));
+        lblGramosGlucidos.setText("(gramos)");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 5, 0, 0);
+        jPanel16.add(lblGramosGlucidos, gridBagConstraints);
+
+        lblGramosMinerales.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        lblGramosMinerales.setForeground(new java.awt.Color(255, 255, 255));
+        lblGramosMinerales.setText("(gramos)");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 5, 0, 0);
+        jPanel16.add(lblGramosMinerales, gridBagConstraints);
+
+        lblGramosFibras.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        lblGramosFibras.setForeground(new java.awt.Color(255, 255, 255));
+        lblGramosFibras.setText("(gramos)");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 12;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 5, 0, 0);
+        jPanel16.add(lblGramosFibras, gridBagConstraints);
+
+        lblGramosLipidos.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        lblGramosLipidos.setForeground(new java.awt.Color(255, 255, 255));
+        lblGramosLipidos.setText("(gramos)");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 14;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 5, 0, 0);
+        jPanel16.add(lblGramosLipidos, gridBagConstraints);
+
+        lblGramosHidratos.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        lblGramosHidratos.setForeground(new java.awt.Color(255, 255, 255));
+        lblGramosHidratos.setText("(gramos)");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 5, 0, 0);
+        jPanel16.add(lblGramosHidratos, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel20.add(jPanel16, gridBagConstraints);
+
+        jPanel18.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel18Layout = new java.awt.GridBagLayout();
+        jPanel18Layout.columnWidths = new int[] {0, 21, 0, 21, 0, 21, 0, 21, 0, 21, 0};
+        jPanel18Layout.rowHeights = new int[] {0, 8, 0, 8, 0, 8, 0, 8, 0};
+        jPanel18.setLayout(jPanel18Layout);
 
         txtNombre.setBackground(new java.awt.Color(227, 227, 227));
         txtNombre.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
@@ -1230,213 +1974,33 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
                 txtNombreActionPerformed(evt);
             }
         });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        jPanel18.add(txtNombre, gridBagConstraints);
 
-        lblTipoAlimento.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
-        lblTipoAlimento.setForeground(new java.awt.Color(255, 255, 255));
-        lblTipoAlimento.setText("Tipo de alimento");
-
-        btnIngresarFotoAlimento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/agregarFotoUsuario.png"))); // NOI18N
-        btnIngresarFotoAlimento.setBorderPainted(false);
-        btnIngresarFotoAlimento.setContentAreaFilled(false);
-        btnIngresarFotoAlimento.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnIngresarFotoAlimentoActionPerformed(evt);
+        lblValidarTipoAlimento.setForeground(new java.awt.Color(255, 255, 255));
+        lblValidarTipoAlimento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
+        lblValidarTipoAlimento.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                lblValidarTipoAlimentoFocusGained(evt);
             }
         });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 8;
+        jPanel18.add(lblValidarTipoAlimento, gridBagConstraints);
 
-        listaTipoAlimentos.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
-        listaTipoAlimentos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione...", "Fruta", "Verdura", "Cereal", "Legumbre", "Carne", "Lácteo", "Bebida" }));
-        listaTipoAlimentos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                listaTipoAlimentosActionPerformed(evt);
-            }
-        });
-
-        lblPrincipalesNutrientes.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
-        lblPrincipalesNutrientes.setForeground(new java.awt.Color(255, 255, 255));
-        lblPrincipalesNutrientes.setText("Ingrese los principales nutrientes");
-
-        btnIngresarAlimentoASistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoConfirmar.png"))); // NOI18N
-        btnIngresarAlimentoASistema.setBorderPainted(false);
-        btnIngresarAlimentoASistema.setContentAreaFilled(false);
-        btnIngresarAlimentoASistema.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnIngresarAlimentoASistemaActionPerformed(evt);
-            }
-        });
-
-        checkHidratos.setBackground(new java.awt.Color(51, 51, 51));
-        checkHidratos.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        checkHidratos.setForeground(new java.awt.Color(255, 255, 255));
-        checkHidratos.setText("Hiidratos de carbono ");
-        checkHidratos.setActionCommand("Hiidratos de carbono");
-        checkHidratos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkHidratosActionPerformed(evt);
-            }
-        });
-
-        txtHidratos.setBackground(new java.awt.Color(227, 227, 227));
-        txtHidratos.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        txtHidratos.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        txtHidratos.setMaximumSize(new java.awt.Dimension(6, 26));
-        txtHidratos.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtHidratosKeyTyped(evt);
-            }
-        });
-
-        lblHidratos.setForeground(new java.awt.Color(255, 255, 255));
-
-        checkGlucidos.setBackground(new java.awt.Color(51, 51, 51));
-        checkGlucidos.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        checkGlucidos.setForeground(new java.awt.Color(255, 255, 255));
-        checkGlucidos.setText("Glúcidos");
-        checkGlucidos.setActionCommand("Hiidratos de carbono");
-        checkGlucidos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkGlucidosActionPerformed(evt);
-            }
-        });
-
-        checkLipidos.setBackground(new java.awt.Color(51, 51, 51));
-        checkLipidos.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        checkLipidos.setForeground(new java.awt.Color(255, 255, 255));
-        checkLipidos.setText("Lípidos");
-        checkLipidos.setActionCommand("Hiidratos de carbono");
-        checkLipidos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkLipidosActionPerformed(evt);
-            }
-        });
-
-        checkVitaminas.setBackground(new java.awt.Color(51, 51, 51));
-        checkVitaminas.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        checkVitaminas.setForeground(new java.awt.Color(255, 255, 255));
-        checkVitaminas.setText("Vitaminas");
-        checkVitaminas.setActionCommand("Hiidratos de carbono");
-        checkVitaminas.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkVitaminasActionPerformed(evt);
-            }
-        });
-
-        checkProteínas.setBackground(new java.awt.Color(51, 51, 51));
-        checkProteínas.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        checkProteínas.setForeground(new java.awt.Color(255, 255, 255));
-        checkProteínas.setText("Proteínas");
-        checkProteínas.setActionCommand("Hiidratos de carbono");
-        checkProteínas.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkProteínasActionPerformed(evt);
-            }
-        });
-
-        checkMinerales.setBackground(new java.awt.Color(51, 51, 51));
-        checkMinerales.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        checkMinerales.setForeground(new java.awt.Color(255, 255, 255));
-        checkMinerales.setText("Minerales");
-        checkMinerales.setActionCommand("Hiidratos de carbono");
-        checkMinerales.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkMineralesActionPerformed(evt);
-            }
-        });
-
-        checkFibra.setBackground(new java.awt.Color(51, 51, 51));
-        checkFibra.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        checkFibra.setForeground(new java.awt.Color(255, 255, 255));
-        checkFibra.setText("Fibras");
-        checkFibra.setActionCommand("Hiidratos de carbono");
-        checkFibra.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkFibraActionPerformed(evt);
-            }
-        });
-
-        txtFibra.setBackground(new java.awt.Color(227, 227, 227));
-        txtFibra.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        txtFibra.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        txtFibra.setMaximumSize(new java.awt.Dimension(6, 26));
-        txtFibra.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtFibraKeyTyped(evt);
-            }
-        });
-
-        txtMinerales.setBackground(new java.awt.Color(227, 227, 227));
-        txtMinerales.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        txtMinerales.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        txtMinerales.setMaximumSize(new java.awt.Dimension(6, 26));
-        txtMinerales.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtMineralesKeyTyped(evt);
-            }
-        });
-
-        txtLipidos.setBackground(new java.awt.Color(227, 227, 227));
-        txtLipidos.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        txtLipidos.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        txtLipidos.setMaximumSize(new java.awt.Dimension(6, 26));
-        txtLipidos.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtLipidosKeyTyped(evt);
-            }
-        });
-
-        txtGlucidos.setBackground(new java.awt.Color(227, 227, 227));
-        txtGlucidos.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        txtGlucidos.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        txtGlucidos.setMaximumSize(new java.awt.Dimension(6, 26));
-        txtGlucidos.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtGlucidosKeyTyped(evt);
-            }
-        });
-
-        txtVitaminas.setBackground(new java.awt.Color(227, 227, 227));
-        txtVitaminas.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        txtVitaminas.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        txtVitaminas.setMaximumSize(new java.awt.Dimension(6, 26));
-        txtVitaminas.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtVitaminasKeyTyped(evt);
-            }
-        });
-
-        txtProteínas.setBackground(new java.awt.Color(227, 227, 227));
-        txtProteínas.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        txtProteínas.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        txtProteínas.setMaximumSize(new java.awt.Dimension(6, 26));
-        txtProteínas.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtProteínasKeyTyped(evt);
-            }
-        });
-
-        lblGlucidos.setForeground(new java.awt.Color(255, 255, 255));
-
-        lblProteínas.setForeground(new java.awt.Color(255, 255, 255));
-
-        lblMinerales.setForeground(new java.awt.Color(255, 255, 255));
-
-        lblVitaminas.setForeground(new java.awt.Color(255, 255, 255));
-
-        lblFibra.setForeground(new java.awt.Color(255, 255, 255));
-
-        lblLipidos.setForeground(new java.awt.Color(255, 255, 255));
-
-        jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Las proporciones de");
-
-        jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("ingresarse en gramos.");
-
-        jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("los alimentos deben de");
+        lblNombre.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
+        lblNombre.setForeground(new java.awt.Color(255, 255, 255));
+        lblNombre.setText("Nombre");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        jPanel18.add(lblNombre, gridBagConstraints);
 
         lblValidarNombre.setForeground(new java.awt.Color(255, 255, 255));
         lblValidarNombre.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
@@ -1448,277 +2012,179 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
                 lblValidarNombreFocusLost(evt);
             }
         });
-
-        lblValidarTipoAlimento.setForeground(new java.awt.Color(255, 255, 255));
-        lblValidarTipoAlimento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
-        lblValidarTipoAlimento.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                lblValidarTipoAlimentoFocusGained(evt);
-            }
-        });
-
-        lblDatosIncorrectos.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
-        lblDatosIncorrectos.setForeground(new java.awt.Color(255, 153, 153));
-        lblDatosIncorrectos.setText("Aún quedan datos");
-
-        lblDatosIncorrectos2.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
-        lblDatosIncorrectos2.setForeground(new java.awt.Color(255, 153, 153));
-        lblDatosIncorrectos2.setText("incorrectos");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 2;
+        jPanel18.add(lblValidarNombre, gridBagConstraints);
 
         lblNombreVacio.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
         lblNombreVacio.setForeground(new java.awt.Color(240, 128, 128));
         lblNombreVacio.setText("Dato vacío");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 9;
+        gridBagConstraints.gridy = 2;
+        jPanel18.add(lblNombreVacio, gridBagConstraints);
+
+        lblTipoAlimento.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
+        lblTipoAlimento.setForeground(new java.awt.Color(255, 255, 255));
+        lblTipoAlimento.setText("Tipo de alimento");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        jPanel18.add(lblTipoAlimento, gridBagConstraints);
+
+        listaTipoAlimentos.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+        listaTipoAlimentos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione...", "Fruta", "Verdura", "Cereal", "Legumbre", "Carne", "Lácteo", "Bebida" }));
+        listaTipoAlimentos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                listaTipoAlimentosActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.gridwidth = 7;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        jPanel18.add(listaTipoAlimentos, gridBagConstraints);
 
         lblTipoAlimentoVacio.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
         lblTipoAlimentoVacio.setForeground(new java.awt.Color(240, 128, 128));
         lblTipoAlimentoVacio.setText("Dato vacío");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 9;
+        gridBagConstraints.gridy = 8;
+        jPanel18.add(lblTipoAlimentoVacio, gridBagConstraints);
 
-        javax.swing.GroupLayout panelIngresarAlimentoAlSistemaLayout = new javax.swing.GroupLayout(panelIngresarAlimentoAlSistema);
-        panelIngresarAlimentoAlSistema.setLayout(panelIngresarAlimentoAlSistemaLayout);
-        panelIngresarAlimentoAlSistemaLayout.setHorizontalGroup(
-            panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                        .addGap(60, 60, 60)
-                        .addComponent(lblIconoNuevoAlimento, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(lblNuevoAlimento))
-                    .addGroup(panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                        .addGap(349, 349, 349)
-                        .addComponent(lblHidratos)))
-                .addContainerGap(72, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                        .addGap(60, 60, 60)
-                        .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(checkProteínas)
-                            .addComponent(checkHidratos)
-                            .addComponent(checkVitaminas)
-                            .addComponent(checkGlucidos)
-                            .addComponent(checkMinerales)
-                            .addComponent(checkFibra)
-                            .addComponent(checkLipidos))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtLipidos, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtFibra, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtMinerales, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtGlucidos, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtVitaminas, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtHidratos, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtProteínas, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                                        .addGap(0, 0, Short.MAX_VALUE)
-                                        .addComponent(btnIngresarAlimentoASistema, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblDatosIncorrectos2)
-                                    .addComponent(lblDatosIncorrectos))
-                                .addGap(18, 18, 18))))
-                    .addGroup(panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                        .addGap(55, 55, 55)
-                        .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                                .addComponent(lblTipoAlimento, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnIngresarFotoAlimento, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(30, 30, 30))
-                            .addGroup(panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                                .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblPrincipalesNutrientes, javax.swing.GroupLayout.PREFERRED_SIZE, 509, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                                        .addComponent(lblNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(lblValidarNombre)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(lblNombreVacio, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                                        .addComponent(listaTipoAlimentos, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(lblValidarTipoAlimento)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(lblTipoAlimentoVacio, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(0, 0, Short.MAX_VALUE)))))
-                .addGap(27, 27, 27))
-            .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                    .addContainerGap(366, Short.MAX_VALUE)
-                    .addComponent(lblGlucidos)
-                    .addGap(334, 334, 334)))
-            .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                    .addContainerGap(376, Short.MAX_VALUE)
-                    .addComponent(lblProteínas)
-                    .addGap(324, 324, 324)))
-            .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                    .addContainerGap(386, Short.MAX_VALUE)
-                    .addComponent(lblMinerales)
-                    .addGap(314, 314, 314)))
-            .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                    .addContainerGap(396, Short.MAX_VALUE)
-                    .addComponent(lblVitaminas)
-                    .addGap(304, 304, 304)))
-            .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                    .addContainerGap(406, Short.MAX_VALUE)
-                    .addComponent(lblFibra)
-                    .addGap(294, 294, 294)))
-            .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                    .addContainerGap(416, Short.MAX_VALUE)
-                    .addComponent(lblLipidos)
-                    .addGap(284, 284, 284)))
+        lblTxtNacionalidad1.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
+        lblTxtNacionalidad1.setForeground(new java.awt.Color(255, 255, 255));
+        lblTxtNacionalidad1.setText("Foto del alimento");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 3;
+        jPanel18.add(lblTxtNacionalidad1, gridBagConstraints);
+
+        btnIngresarFotoAlimento.setForeground(javax.swing.UIManager.getDefaults().getColor("Button.background"));
+        btnIngresarFotoAlimento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/agregarFotoUsuario.png"))); // NOI18N
+        btnIngresarFotoAlimento.setBorderPainted(false);
+        btnIngresarFotoAlimento.setContentAreaFilled(false);
+        btnIngresarFotoAlimento.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnIngresarFotoAlimento.setSize(new java.awt.Dimension(116, 112));
+        btnIngresarFotoAlimento.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnIngresarFotoAlimento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIngresarFotoAlimentoActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 0;
+        jPanel18.add(btnIngresarFotoAlimento, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel20.add(jPanel18, gridBagConstraints);
+
+        lblDatosIncorrectos.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+        lblDatosIncorrectos.setForeground(new java.awt.Color(255, 153, 153));
+        lblDatosIncorrectos.setText("Aún quedan datos incorrectos");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridwidth = 7;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.SOUTH;
+        jPanel20.add(lblDatosIncorrectos, gridBagConstraints);
+
+        btnIngresarAlimentoASistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoConfirmar.png"))); // NOI18N
+        btnIngresarAlimentoASistema.setBorderPainted(false);
+        btnIngresarAlimentoASistema.setContentAreaFilled(false);
+        btnIngresarAlimentoASistema.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIngresarAlimentoASistemaActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.gridheight = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.SOUTHEAST;
+        jPanel20.add(btnIngresarAlimentoASistema, gridBagConstraints);
+
+        javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
+        jPanel19.setLayout(jPanel19Layout);
+        jPanel19Layout.setHorizontalGroup(
+            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel19Layout.createSequentialGroup()
+                .addContainerGap(34, Short.MAX_VALUE)
+                .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, 760, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
-        panelIngresarAlimentoAlSistemaLayout.setVerticalGroup(
-            panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblIconoNuevoAlimento, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblNuevoAlimento, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(68, 68, 68)
-                        .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(lblNombre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(lblValidarNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblNombreVacio, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addComponent(lblTipoAlimento, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                                .addGap(19, 19, 19)
-                                .addComponent(listaTipoAlimentos, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblValidarTipoAlimento, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lblTipoAlimentoVacio, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(18, 18, 18)
-                        .addComponent(lblPrincipalesNutrientes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(19, 19, 19))
-                    .addGroup(panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnIngresarFotoAlimento, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(171, 171, 171)))
-                .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                        .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                                .addGap(68, 68, 68)
-                                .addComponent(lblHidratos))
-                            .addGroup(panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                                .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(checkHidratos)
-                                    .addComponent(txtHidratos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel2))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(checkProteínas)
-                                    .addComponent(txtProteínas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel4))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(txtVitaminas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel3))
-                            .addComponent(checkVitaminas))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtGlucidos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(checkGlucidos))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                                .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                                        .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(txtMinerales, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(lblDatosIncorrectos2))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(txtFibra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                                        .addComponent(checkMinerales)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(checkFibra)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtLipidos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(checkLipidos))
-                                .addGap(28, 28, 28))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                                .addComponent(btnIngresarAlimentoASistema, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap())))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                        .addComponent(lblDatosIncorrectos)
-                        .addGap(131, 131, 131))))
-            .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                    .addContainerGap(491, Short.MAX_VALUE)
-                    .addComponent(lblGlucidos)
-                    .addGap(221, 221, 221)))
-            .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                    .addContainerGap(501, Short.MAX_VALUE)
-                    .addComponent(lblProteínas)
-                    .addGap(211, 211, 211)))
-            .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                    .addContainerGap(511, Short.MAX_VALUE)
-                    .addComponent(lblMinerales)
-                    .addGap(201, 201, 201)))
-            .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                    .addContainerGap(521, Short.MAX_VALUE)
-                    .addComponent(lblVitaminas)
-                    .addGap(191, 191, 191)))
-            .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                    .addContainerGap(531, Short.MAX_VALUE)
-                    .addComponent(lblFibra)
-                    .addGap(181, 181, 181)))
-            .addGroup(panelIngresarAlimentoAlSistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelIngresarAlimentoAlSistemaLayout.createSequentialGroup()
-                    .addContainerGap(541, Short.MAX_VALUE)
-                    .addComponent(lblLipidos)
-                    .addGap(171, 171, 171)))
+        jPanel19Layout.setVerticalGroup(
+            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel19Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
+
+        panelIngresarAlimentoAlSistema.add(jPanel19, java.awt.BorderLayout.CENTER);
+
+        jPanel21.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel21Layout = new java.awt.GridBagLayout();
+        jPanel21Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel21.setLayout(jPanel21Layout);
+
+        lblIconoInicioSesion3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoIngresarAlimento.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 18, 0, 0);
+        jPanel21.add(lblIconoInicioSesion3, gridBagConstraints);
+
+        lblInicioSesion3.setFont(new java.awt.Font("Levenim MT", 0, 65)); // NOI18N
+        lblInicioSesion3.setForeground(new java.awt.Color(255, 255, 255));
+        lblInicioSesion3.setText("Nuevo alimento");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(15, 120, 0, 0);
+        jPanel21.add(lblInicioSesion3, gridBagConstraints);
+
+        btnCerrarSistema3.setBackground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema3.setForeground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
+        btnCerrarSistema3.setAlignmentX(0.5F);
+        btnCerrarSistema3.setBorderPainted(false);
+        btnCerrarSistema3.setContentAreaFilled(false);
+        btnCerrarSistema3.setFocusPainted(false);
+        btnCerrarSistema3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        btnCerrarSistema3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarSistema3ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.RELATIVE;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
+        jPanel21.add(btnCerrarSistema3, gridBagConstraints);
+
+        panelIngresarAlimentoAlSistema.add(jPanel21, java.awt.BorderLayout.PAGE_START);
 
         panelNuevoAlimento.add(panelIngresarAlimentoAlSistema);
         panelIngresarAlimentoAlSistema.setBounds(0, 0, 800, 800);
 
         panelDerecho.add(panelNuevoAlimento, "card5");
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(panelMenu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(panelDerecho, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelDerecho, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(panelMenu, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
+        getContentPane().add(panelDerecho, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -1783,6 +2249,9 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         this.panelConversacionOk.setVisible(true);
         this.panelMostrarOk.setVisible(false);
         this.panelConversacion.setVisible(true);
+        this.jPanel8.setVisible(true);
+
+       
         if (this.listaConversaciones.getSelectedValue() != null) {
             this.usuarioSeleccionado = sistema.getUsuarioPorNombre(this.listaConversaciones.getSelectedValue());
         }
@@ -1798,7 +2267,8 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         this.txtMostrarConversacion.setText("");
         this.lblNombreUsuario.setText("Usuario");
         this.panelConversacionOk.setVisible(true);
-        this.panelConversacion.setVisible(false);
+        //this.panelConversacion.setVisible(false);
+        this.jPanel8.setVisible(false);
         this.panelMostrarOk.setVisible(true);
         String[] listaUsuariosConversacionesPendientes = sistema.getListaNombresUsuariosConversacionesPendientes(profesional);
         if (listaUsuariosConversacionesPendientes.length > 0) {
@@ -1851,11 +2321,9 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         ArrayList<ComposicionAlimento> listaNutrientesConProporcion = nutrientesSeleccionados();
         if (nombre.equals("") || tipoAlimento.equals("Seleccione...")) {
             this.lblDatosIncorrectos.setVisible(true);
-            this.lblDatosIncorrectos2.setVisible(true);
             mostrarErrores(nombre, tipoAlimento);
         } else {
             this.lblDatosIncorrectos.setVisible(false);
-            this.lblDatosIncorrectos2.setVisible(false);
             boolean seAgregoAlimento = this.getSistema().crearAlimento(nombre, tipoAlimento, listaNutrientesConProporcion, fotoDeAlimentoActual);
             if (seAgregoAlimento) {
                 this.txtNombre.setText("");
@@ -1879,12 +2347,12 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
 
     private void checkHidratosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkHidratosActionPerformed
         if (!this.nutrientesSeleccionados[0]) {
-            this.lblHidratos.setVisible(true);
             this.txtHidratos.setVisible(true);
+            this.lblGramosHidratos.setVisible(true);
             this.nutrientesSeleccionados[0] = true;
         } else {
-            this.lblHidratos.setVisible(false);
             this.txtHidratos.setVisible(false);
+            this.lblGramosHidratos.setVisible(false);
             this.nutrientesSeleccionados[0] = false;
         }
     }//GEN-LAST:event_checkHidratosActionPerformed
@@ -1892,23 +2360,23 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     private void checkGlucidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkGlucidosActionPerformed
         if (!this.nutrientesSeleccionados[1]) {
             this.txtGlucidos.setVisible(true);
-            this.lblGlucidos.setVisible(true);
+            this.lblGramosGlucidos.setVisible(true);
             this.nutrientesSeleccionados[1] = true;
         } else {
             this.txtGlucidos.setVisible(false);
-            this.lblGlucidos.setVisible(false);
             this.nutrientesSeleccionados[1] = false;
+            this.lblGramosGlucidos.setVisible(false);
         }
     }//GEN-LAST:event_checkGlucidosActionPerformed
 
     private void checkLipidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkLipidosActionPerformed
         if (!this.nutrientesSeleccionados[2]) {
             this.txtLipidos.setVisible(true);
-            this.lblLipidos.setVisible(true);
+            this.lblGramosLipidos.setVisible(true);
             this.nutrientesSeleccionados[2] = true;
         } else {
             txtLipidos.setVisible(false);
-            lblLipidos.setVisible(false);
+            this.lblGramosLipidos.setVisible(false);
             nutrientesSeleccionados[2] = false;
         }
     }//GEN-LAST:event_checkLipidosActionPerformed
@@ -1916,11 +2384,11 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     private void checkProteínasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkProteínasActionPerformed
         if (!nutrientesSeleccionados[3]) {
             txtProteínas.setVisible(true);
-            lblProteínas.setVisible(true);
+            lblGramosProteinas.setVisible(true);
             nutrientesSeleccionados[3] = true;
         } else {
             txtProteínas.setVisible(false);
-            lblProteínas.setVisible(false);
+            lblGramosProteinas.setVisible(false);
             nutrientesSeleccionados[3] = false;
         }
     }//GEN-LAST:event_checkProteínasActionPerformed
@@ -1928,11 +2396,11 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     private void checkMineralesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkMineralesActionPerformed
         if (!nutrientesSeleccionados[4]) {
             txtMinerales.setVisible(true);
-            lblMinerales.setVisible(true);
+            lblGramosMinerales.setVisible(true);
             nutrientesSeleccionados[4] = true;
         } else {
             txtMinerales.setVisible(false);
-            lblMinerales.setVisible(false);
+            lblGramosMinerales.setVisible(false);
             nutrientesSeleccionados[4] = false;
         }
     }//GEN-LAST:event_checkMineralesActionPerformed
@@ -1940,11 +2408,11 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     private void checkFibraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkFibraActionPerformed
         if (!nutrientesSeleccionados[5]) {
             txtFibra.setVisible(true);
-            lblFibra.setVisible(true);
+            lblGramosFibras.setVisible(true);
             nutrientesSeleccionados[5] = true;
         } else {
             txtFibra.setVisible(false);
-            lblFibra.setVisible(false);
+            lblGramosFibras.setVisible(false);
             nutrientesSeleccionados[5] = false;
         }
 
@@ -1953,12 +2421,13 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     private void checkVitaminasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkVitaminasActionPerformed
         if (!nutrientesSeleccionados[6]) {
             txtVitaminas.setVisible(true);
-            lblVitaminas.setVisible(true);
+            lblGramosVitaminas.setVisible(true);
             nutrientesSeleccionados[6] = true;
         } else {
             txtVitaminas.setVisible(false);
-            lblVitaminas.setVisible(false);
+            lblGramosVitaminas.setVisible(false);
             nutrientesSeleccionados[6] = false;
+            
         }
     }//GEN-LAST:event_checkVitaminasActionPerformed
 
@@ -2303,13 +2772,52 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         ayuda.setVisible(true);
     }//GEN-LAST:event_btnAyudaActionPerformed
 
+    private void btnCerrarSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistemaActionPerformed
+        this.sistema.guardarDatosSistema();
+        this.dispose();
+    }//GEN-LAST:event_btnCerrarSistemaActionPerformed
+
+    private void btnCerrarSistema1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema1ActionPerformed
+        this.sistema.guardarDatosSistema();
+        this.dispose();
+    }//GEN-LAST:event_btnCerrarSistema1ActionPerformed
+
+    private void btnCerrarSistema2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCerrarSistema2ActionPerformed
+
+    private void btnCerrarSistema3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCerrarSistema3ActionPerformed
+
+    private void btnCerrarSistema4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCerrarSistema4ActionPerformed
+
+    private void btnCerrarSistema5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCerrarSistema5ActionPerformed
+
+    private void btnCerrarSistema6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCerrarSistema6ActionPerformed
+
+    private void btnCerrarSistema7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCerrarSistema7ActionPerformed
+
+    private void btnCerrarSistema8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCerrarSistema8ActionPerformed
+
     private void ocultarPaneles() {
         this.btnConsultasPendientes.setEnabled(true);
         this.btnIngresarAlimento.setEnabled(true);
         this.btnPlanesSolicitados.setEnabled(true);
         this.panelConsultaConProfesional.setVisible(false);
         this.txtMostrarConversacion.setText("");
-        this.panelConversacion.setVisible(false);
+        //this.panelConversacion.setVisible(false);
+        this.jPanel8.setVisible(false);
         this.panelMostrarOk.setVisible(false);
         this.panelNoHayConsultasPendientes.setVisible(false);
         this.panelNuevoAlimento.setVisible(false);
@@ -2341,19 +2849,19 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
 
     void ocultarPrincipalesNutrientes() {
         txtHidratos.setVisible(false);
-        lblHidratos.setVisible(false);
         txtProteínas.setVisible(false);
-        lblProteínas.setVisible(false);
         txtVitaminas.setVisible(false);
-        lblVitaminas.setVisible(false);
         txtGlucidos.setVisible(false);
-        lblGlucidos.setVisible(false);
         txtMinerales.setVisible(false);
-        lblMinerales.setVisible(false);
         txtFibra.setVisible(false);
-        lblFibra.setVisible(false);
         txtLipidos.setVisible(false);
-        lblLipidos.setVisible(false);
+        this.lblGramosFibras.setVisible(false);
+        this.lblGramosGlucidos.setVisible(false);
+        this.lblGramosHidratos.setVisible(false);
+        this.lblGramosLipidos.setVisible(false);
+        this.lblGramosMinerales.setVisible(false);
+        this.lblGramosProteinas.setVisible(false);
+        this.lblGramosVitaminas.setVisible(false);
         for (int i = 0; i < nutrientesSeleccionados.length; i++) {
             nutrientesSeleccionados[i] = false;
         }
@@ -2422,6 +2930,15 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAgregarAlPlan;
     private javax.swing.JButton btnAyuda;
+    private javax.swing.JButton btnCerrarSistema;
+    private javax.swing.JButton btnCerrarSistema1;
+    private javax.swing.JButton btnCerrarSistema2;
+    private javax.swing.JButton btnCerrarSistema3;
+    private javax.swing.JButton btnCerrarSistema4;
+    private javax.swing.JButton btnCerrarSistema5;
+    private javax.swing.JButton btnCerrarSistema6;
+    private javax.swing.JButton btnCerrarSistema7;
+    private javax.swing.JButton btnCerrarSistema8;
     private javax.swing.JButton btnConsultasPendientes;
     private javax.swing.JButton btnElaborarPlan;
     private javax.swing.JButton btnElaborarPlan1;
@@ -2442,9 +2959,34 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     private javax.swing.JCheckBox checkProteínas;
     private javax.swing.JCheckBox checkVitaminas;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel16;
+    private javax.swing.JPanel jPanel17;
+    private javax.swing.JPanel jPanel18;
+    private javax.swing.JPanel jPanel19;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel20;
+    private javax.swing.JPanel jPanel21;
+    private javax.swing.JPanel jPanel22;
+    private javax.swing.JPanel jPanel23;
+    private javax.swing.JPanel jPanel24;
+    private javax.swing.JPanel jPanel25;
+    private javax.swing.JPanel jPanel26;
+    private javax.swing.JPanel jPanel27;
+    private javax.swing.JPanel jPanel28;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane11;
@@ -2459,29 +3001,33 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     private javax.swing.JLabel lblAlimentos;
     private javax.swing.JLabel lblAlmuerzo;
     private javax.swing.JLabel lblCena;
-    private javax.swing.JLabel lblCena1;
     private javax.swing.JLabel lblComida;
     private javax.swing.JLabel lblConsultasPendientes;
     private javax.swing.JLabel lblDatosIncorrectos;
-    private javax.swing.JLabel lblDatosIncorrectos2;
     private javax.swing.JLabel lblDesayuno;
     private javax.swing.JLabel lblDia;
-    private javax.swing.JLabel lblElaborarNuevoPlan;
-    private javax.swing.JLabel lblElaborarPlan;
     private javax.swing.JLabel lblElijaUnUsuario;
     private javax.swing.JLabel lblFechaNacimiento;
-    private javax.swing.JLabel lblFibra;
     private javax.swing.JLabel lblFotoDeUsuario;
     private javax.swing.JLabel lblFotoProfesional;
-    private javax.swing.JLabel lblFotoUsuario;
-    private javax.swing.JLabel lblGlucidos;
-    private javax.swing.JLabel lblHidratos;
-    private javax.swing.JLabel lblIconoNuevoAlimento;
+    private javax.swing.JLabel lblGramosFibras;
+    private javax.swing.JLabel lblGramosGlucidos;
+    private javax.swing.JLabel lblGramosHidratos;
+    private javax.swing.JLabel lblGramosLipidos;
+    private javax.swing.JLabel lblGramosMinerales;
+    private javax.swing.JLabel lblGramosProteinas;
+    private javax.swing.JLabel lblGramosVitaminas;
+    private javax.swing.JLabel lblIconoInicioSesion;
+    private javax.swing.JLabel lblIconoInicioSesion1;
+    private javax.swing.JLabel lblIconoInicioSesion2;
+    private javax.swing.JLabel lblIconoInicioSesion3;
     private javax.swing.JLabel lblIngestas;
     private javax.swing.JLabel lblIngresarAlimento;
     private javax.swing.JLabel lblIngresarAlimento2;
-    private javax.swing.JLabel lblLipidos;
-    private javax.swing.JLabel lblMinerales;
+    private javax.swing.JLabel lblInicioSesion;
+    private javax.swing.JLabel lblInicioSesion1;
+    private javax.swing.JLabel lblInicioSesion2;
+    private javax.swing.JLabel lblInicioSesion3;
     private javax.swing.JLabel lblNoHayAlimentos;
     private javax.swing.JLabel lblNoHayAlimentosIcono;
     private javax.swing.JLabel lblNoPlanes2;
@@ -2496,10 +3042,8 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     private javax.swing.JLabel lblNombrePlan;
     private javax.swing.JLabel lblNombrePlanVacio;
     private javax.swing.JLabel lblNombreUsuario;
-    private javax.swing.JLabel lblNombreUsuario1;
     private javax.swing.JLabel lblNombreUsuario2;
     private javax.swing.JLabel lblNombreVacio;
-    private javax.swing.JLabel lblNuevoAlimento;
     private javax.swing.JLabel lblOK;
     private javax.swing.JLabel lblOK2;
     private javax.swing.JLabel lblOKTexto;
@@ -2508,16 +3052,14 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     private javax.swing.JLabel lblPlanesSolicitados2;
     private javax.swing.JLabel lblPreferencias;
     private javax.swing.JLabel lblPrincipalesNutrientes;
-    private javax.swing.JLabel lblProteínas;
     private javax.swing.JLabel lblTipoAlimento;
     private javax.swing.JLabel lblTipoAlimentoVacio;
     private javax.swing.JLabel lblTxtFechaNacimiento;
+    private javax.swing.JLabel lblTxtNacionalidad1;
     private javax.swing.JLabel lblTxtRestricciones;
     private javax.swing.JLabel lblValidarNombre;
     private javax.swing.JLabel lblValidarNombrePlan;
     private javax.swing.JLabel lblValidarTipoAlimento;
-    private javax.swing.JLabel lblVerPerfilUsuario;
-    private javax.swing.JLabel lblVitaminas;
     private javax.swing.JList listaAlimentosEnSistema;
     private javax.swing.JComboBox<String> listaComidasPlan;
     private javax.swing.JList<String> listaConversaciones;
@@ -2660,13 +3202,20 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         this.txtProteínas.setText("");
         this.txtVitaminas.setText("");
         this.txtFibra.setVisible(false);
-        this.txtFibra.setVisible(false);
         this.txtGlucidos.setVisible(false);
         this.txtHidratos.setVisible(false);
         this.txtLipidos.setVisible(false);
         this.txtMinerales.setVisible(false);
         this.txtProteínas.setVisible(false);
         this.txtVitaminas.setVisible(false);
-        this.txtFibra.setVisible(false);
+        this.lblGramosFibras.setVisible(false);
+        this.lblGramosGlucidos.setVisible(false);
+        this.lblGramosHidratos.setVisible(false);
+        this.lblGramosLipidos.setVisible(false);
+        this.lblGramosMinerales.setVisible(false);
+        this.lblGramosProteinas.setVisible(false);
+        this.lblGramosVitaminas.setVisible(false);
+        
+        
     }
 }
