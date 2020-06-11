@@ -179,7 +179,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         lblPlanSolicitadoCorrectamente = new javax.swing.JLabel();
         lblPlanSolicitado = new javax.swing.JLabel();
         panelSolicitarNuevoPlan = new javax.swing.JPanel();
-        lblCambiarPreferencias = new javax.swing.JLabel();
         comboProfesionalesEnSistema = new javax.swing.JComboBox<>();
         lblSeleccioneProfesional1 = new javax.swing.JLabel();
         lblCambiarPreferencias3 = new javax.swing.JLabel();
@@ -1268,7 +1267,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         jPanel10.setPreferredSize(new java.awt.Dimension(800, 119));
         java.awt.GridBagLayout jPanel10Layout = new java.awt.GridBagLayout();
         jPanel10Layout.columnWeights = new double[] {1.0, 1.0};
-        jPanel10Layout.rowWeights = new double[] {1.0, 1.0};
         jPanel10.setLayout(jPanel10Layout);
 
         lblIconoInicioSesion3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoPlanAlimentacionTitulo.png"))); // NOI18N
@@ -1314,7 +1312,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         panelBotones.setLayout(null);
 
         panelNoHayPlanesDisponibles.setBackground(new java.awt.Color(51, 51, 51));
-        panelNoHayPlanesDisponibles.setLocation(new java.awt.Point(400, 150));
         panelNoHayPlanesDisponibles.setMaximumSize(new java.awt.Dimension(100, 100));
         java.awt.GridBagLayout panelNoHayPlanesDisponiblesLayout = new java.awt.GridBagLayout();
         panelNoHayPlanesDisponiblesLayout.rowWeights = new double[] {1.0, 1.0};
@@ -1382,20 +1379,9 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         panelSolicitarNuevoPlan.setBackground(new java.awt.Color(51, 51, 51));
         panelSolicitarNuevoPlan.setLocation(new java.awt.Point(0, 150));
         java.awt.GridBagLayout panelSolicitarNuevoPlanLayout = new java.awt.GridBagLayout();
-        panelSolicitarNuevoPlanLayout.columnWidths = new int[] {0, 0, 0, 0, 0};
-        panelSolicitarNuevoPlanLayout.rowHeights = new int[] {0, 11, 0, 11, 0, 11, 0, 11, 0, 11, 0, 11, 0, 11, 0, 11, 0, 11, 0};
+        panelSolicitarNuevoPlanLayout.columnWidths = new int[] {0, 0, 0, 0, 0, 0, 0};
+        panelSolicitarNuevoPlanLayout.rowHeights = new int[] {0, 21, 0, 21, 0, 21, 0, 21, 0, 21, 0, 21, 0, 21, 0, 21, 0};
         panelSolicitarNuevoPlan.setLayout(panelSolicitarNuevoPlanLayout);
-
-        lblCambiarPreferencias.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        lblCambiarPreferencias.setForeground(new java.awt.Color(255, 255, 255));
-        lblCambiarPreferencias.setText("personal?");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 5;
-        gridBagConstraints.gridwidth = 5;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        panelSolicitarNuevoPlan.add(lblCambiarPreferencias, gridBagConstraints);
 
         comboProfesionalesEnSistema.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         comboProfesionalesEnSistema.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione..." }));
@@ -1407,7 +1393,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 2;
-        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.gridwidth = 5;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         panelSolicitarNuevoPlan.add(comboProfesionalesEnSistema, gridBagConstraints);
@@ -1417,29 +1403,29 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         lblSeleccioneProfesional1.setText("Seleccione el Profesional");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 7;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         panelSolicitarNuevoPlan.add(lblSeleccioneProfesional1, gridBagConstraints);
 
         lblCambiarPreferencias3.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lblCambiarPreferencias3.setForeground(new java.awt.Color(255, 255, 255));
-        lblCambiarPreferencias3.setText("basará en ella para elaborar el plan");
+        lblCambiarPreferencias3.setText("para elaborar el plan");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 9;
-        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.gridwidth = 7;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         panelSolicitarNuevoPlan.add(lblCambiarPreferencias3, gridBagConstraints);
 
         lblCambiarPreferencias2.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lblCambiarPreferencias2.setForeground(new java.awt.Color(255, 255, 255));
-        lblCambiarPreferencias2.setText("Recuerde que el profesional se ");
+        lblCambiarPreferencias2.setText("Recuerde que el profesional se basará en ella");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 8;
+        gridBagConstraints.gridy = 6;
         gridBagConstraints.gridwidth = 5;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
@@ -1455,12 +1441,13 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 12;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 13, 0);
         panelSolicitarNuevoPlan.add(btnEditarPreferencias, gridBagConstraints);
 
         lblCambiarPreferencias4.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lblCambiarPreferencias4.setForeground(new java.awt.Color(255, 255, 255));
-        lblCambiarPreferencias4.setText("¿Desea cambiar su información");
+        lblCambiarPreferencias4.setText("¿Desea cambiar su información personal?");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 4;
@@ -1478,17 +1465,19 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 12;
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 13, 15);
         panelSolicitarNuevoPlan.add(btnEditarRestricciones, gridBagConstraints);
 
         lblCambiarPreferencias5.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
         lblCambiarPreferencias5.setForeground(new java.awt.Color(255, 255, 255));
         lblCambiarPreferencias5.setText("Restricciones");
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 14;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.VERTICAL;
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.SOUTHEAST;
         panelSolicitarNuevoPlan.add(lblCambiarPreferencias5, gridBagConstraints);
 
         lblCambiarPreferencias6.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
@@ -1496,9 +1485,8 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         lblCambiarPreferencias6.setText("Preferencias");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 14;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.VERTICAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.PAGE_END;
         panelSolicitarNuevoPlan.add(lblCambiarPreferencias6, gridBagConstraints);
 
         btnAceptarSolicitudPlanAlimentacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoConfirmar.png"))); // NOI18N
@@ -1511,10 +1499,11 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 16;
-        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.gridy = 14;
+        gridBagConstraints.gridwidth = 5;
         gridBagConstraints.gridheight = 3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 160, 0);
         panelSolicitarNuevoPlan.add(btnAceptarSolicitudPlanAlimentacion, gridBagConstraints);
 
         lblValidarProfesionalPlan.setForeground(new java.awt.Color(255, 255, 255));
@@ -1525,7 +1514,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.VERTICAL;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
@@ -1536,8 +1525,8 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         lblDatosIncorrectos.setText("completar");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 18;
-        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.gridy = 15;
+        gridBagConstraints.gridwidth = 5;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         panelSolicitarNuevoPlan.add(lblDatosIncorrectos, gridBagConstraints);
@@ -1547,8 +1536,8 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         lblDatosIncorrectos1.setText("Quedan datos sin");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 16;
-        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.gridy = 14;
+        gridBagConstraints.gridwidth = 5;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         panelSolicitarNuevoPlan.add(lblDatosIncorrectos1, gridBagConstraints);
@@ -1557,7 +1546,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         panelSolicitarNuevoPlan.setBounds(0, 150, 450, 530);
 
         panelBuscarPlan.setBackground(new java.awt.Color(51, 51, 51));
-        panelBuscarPlan.setLocation(new java.awt.Point(400, 150));
         java.awt.GridBagLayout panelBuscarPlanLayout = new java.awt.GridBagLayout();
         panelBuscarPlanLayout.columnWeights = new double[] {1.0, 1.0};
         panelBuscarPlanLayout.rowWeights = new double[] {1.0, 1.0};
@@ -2060,7 +2048,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     private javax.swing.JLabel lblAlimentoIngeridoSeleccionado7;
     private javax.swing.JLabel lblAlimentoIngeridoSeleccionado8;
     private javax.swing.JLabel lblAlimentoIngeridoSeleccionado9;
-    private javax.swing.JLabel lblCambiarPreferencias;
     private javax.swing.JLabel lblCambiarPreferencias2;
     private javax.swing.JLabel lblCambiarPreferencias3;
     private javax.swing.JLabel lblCambiarPreferencias4;

@@ -490,7 +490,8 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 0;
     gridBagConstraints.gridy = 0;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.ABOVE_BASELINE;
     gridBagConstraints.insets = new java.awt.Insets(0, 18, 0, 0);
     jPanel3.add(jPanel1, gridBagConstraints);
 
@@ -499,7 +500,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     jPanel4.setMinimumSize(new java.awt.Dimension(610, 260));
     java.awt.GridBagLayout jPanel4Layout = new java.awt.GridBagLayout();
     jPanel4Layout.columnWidths = new int[] {0, 65, 0, 65, 0};
-    jPanel4Layout.rowHeights = new int[] {0, 12, 0, 12, 0, 12, 0, 12, 0, 12, 0};
+    jPanel4Layout.rowHeights = new int[] {0, 5, 0, 5, 0, 5, 0, 5, 0, 5, 0};
     jPanel4.setLayout(jPanel4Layout);
 
     lblTxtPreferencias.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
@@ -637,6 +638,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 0;
     gridBagConstraints.gridy = 2;
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
     jPanel3.add(jPanel4, gridBagConstraints);
 
     panel2.add(jPanel3, java.awt.BorderLayout.CENTER);

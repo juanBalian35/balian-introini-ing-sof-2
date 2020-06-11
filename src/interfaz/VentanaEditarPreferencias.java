@@ -37,20 +37,24 @@ public class VentanaEditarPreferencias extends javax.swing.JDialog {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         panelListo = new javax.swing.JPanel();
         lblListo = new javax.swing.JLabel();
         lblIconoListo = new javax.swing.JLabel();
         panelEditarPreferencias = new javax.swing.JPanel();
-        lblEditar = new javax.swing.JLabel();
-        lblTxtPreferencias = new javax.swing.JLabel();
-        rdBtnVerduras = new javax.swing.JRadioButton();
-        rdBtnHarinas = new javax.swing.JRadioButton();
-        rdBtnFrutas = new javax.swing.JRadioButton();
-        rdBtnCarnesRojas = new javax.swing.JRadioButton();
-        rdBtnCarnesBlancas = new javax.swing.JRadioButton();
-        btnEditarPreferencias = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
         lblEditarPreferencias = new javax.swing.JLabel();
+        lblEditar = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        rdBtnCarnesBlancas = new javax.swing.JRadioButton();
+        rdBtnCarnesRojas = new javax.swing.JRadioButton();
+        rdBtnFrutas = new javax.swing.JRadioButton();
+        rdBtnHarinas = new javax.swing.JRadioButton();
+        rdBtnVerduras = new javax.swing.JRadioButton();
+        lblTxtPreferencias = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        btnEditarPreferencias = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(508, 450));
@@ -65,82 +69,71 @@ public class VentanaEditarPreferencias extends javax.swing.JDialog {
         panelListo.setBackground(new java.awt.Color(51, 51, 51));
         panelListo.setMaximumSize(new java.awt.Dimension(508, 450));
         panelListo.setMinimumSize(new java.awt.Dimension(508, 450));
+        panelListo.setLayout(new java.awt.GridBagLayout());
 
         lblListo.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
         lblListo.setForeground(new java.awt.Color(255, 255, 255));
         lblListo.setText("Listo!");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        panelListo.add(lblListo, gridBagConstraints);
 
         lblIconoListo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoOK.png"))); // NOI18N
-
-        javax.swing.GroupLayout panelListoLayout = new javax.swing.GroupLayout(panelListo);
-        panelListo.setLayout(panelListoLayout);
-        panelListoLayout.setHorizontalGroup(
-            panelListoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelListoLayout.createSequentialGroup()
-                .addGap(187, 187, 187)
-                .addGroup(panelListoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblListo, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblIconoListo))
-                .addContainerGap(181, Short.MAX_VALUE))
-        );
-        panelListoLayout.setVerticalGroup(
-            panelListoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelListoLayout.createSequentialGroup()
-                .addGap(104, 104, 104)
-                .addComponent(lblIconoListo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblListo)
-                .addContainerGap(186, Short.MAX_VALUE))
-        );
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        panelListo.add(lblIconoListo, gridBagConstraints);
 
         panelEditarPreferencias.setBackground(new java.awt.Color(51, 51, 51));
         panelEditarPreferencias.setMaximumSize(new java.awt.Dimension(508, 450));
         panelEditarPreferencias.setMinimumSize(new java.awt.Dimension(508, 450));
         panelEditarPreferencias.setPreferredSize(new java.awt.Dimension(508, 450));
-        panelEditarPreferencias.setLayout(null);
+        panelEditarPreferencias.setLayout(new java.awt.BorderLayout());
+
+        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel1.setPreferredSize(new java.awt.Dimension(205, 72));
+
+        lblEditarPreferencias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoEditarPreferencias.png"))); // NOI18N
 
         lblEditar.setFont(new java.awt.Font("Levenim MT", 0, 50)); // NOI18N
         lblEditar.setForeground(new java.awt.Color(255, 255, 255));
         lblEditar.setText("Editar");
-        panelEditarPreferencias.add(lblEditar);
-        lblEditar.setBounds(120, 20, 173, 62);
 
-        lblTxtPreferencias.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
-        lblTxtPreferencias.setForeground(new java.awt.Color(255, 255, 255));
-        lblTxtPreferencias.setText("Preferencias");
-        panelEditarPreferencias.add(lblTxtPreferencias);
-        lblTxtPreferencias.setBounds(70, 100, 265, 38);
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(lblEditarPreferencias)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblEditar))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblEditarPreferencias)
+            .addComponent(lblEditar)
+        );
 
-        rdBtnVerduras.setBackground(new java.awt.Color(51, 51, 51));
-        rdBtnVerduras.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
-        rdBtnVerduras.setForeground(new java.awt.Color(255, 255, 255));
-        rdBtnVerduras.setText("Preferencia 3");
-        rdBtnVerduras.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rdBtnVerdurasActionPerformed(evt);
-            }
-        });
-        panelEditarPreferencias.add(rdBtnVerduras);
-        rdBtnVerduras.setBounds(100, 230, 250, 35);
+        panelEditarPreferencias.add(jPanel1, java.awt.BorderLayout.PAGE_START);
 
-        rdBtnHarinas.setBackground(new java.awt.Color(51, 51, 51));
-        rdBtnHarinas.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
-        rdBtnHarinas.setForeground(new java.awt.Color(255, 255, 255));
-        rdBtnHarinas.setText("Preferencia 5");
-        rdBtnHarinas.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rdBtnHarinasActionPerformed(evt);
-            }
-        });
-        panelEditarPreferencias.add(rdBtnHarinas);
-        rdBtnHarinas.setBounds(100, 310, 200, 35);
+        jPanel3.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel3Layout = new java.awt.GridBagLayout();
+        jPanel3Layout.columnWidths = new int[] {0};
+        jPanel3Layout.rowHeights = new int[] {0, 8, 0, 8, 0, 8, 0, 8, 0, 8, 0};
+        jPanel3Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel3.setLayout(jPanel3Layout);
 
-        rdBtnFrutas.setBackground(new java.awt.Color(51, 51, 51));
-        rdBtnFrutas.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
-        rdBtnFrutas.setForeground(new java.awt.Color(255, 255, 255));
-        rdBtnFrutas.setText("Preferencia 4");
-        panelEditarPreferencias.add(rdBtnFrutas);
-        rdBtnFrutas.setBounds(100, 270, 240, 35);
+        rdBtnCarnesBlancas.setBackground(new java.awt.Color(51, 51, 51));
+        rdBtnCarnesBlancas.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+        rdBtnCarnesBlancas.setForeground(new java.awt.Color(255, 255, 255));
+        rdBtnCarnesBlancas.setText("Preferencia 2");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 80, 0, 0);
+        jPanel3.add(rdBtnCarnesBlancas, gridBagConstraints);
 
         rdBtnCarnesRojas.setBackground(new java.awt.Color(51, 51, 51));
         rdBtnCarnesRojas.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
@@ -151,30 +144,87 @@ public class VentanaEditarPreferencias extends javax.swing.JDialog {
                 rdBtnCarnesRojasActionPerformed(evt);
             }
         });
-        panelEditarPreferencias.add(rdBtnCarnesRojas);
-        rdBtnCarnesRojas.setBounds(100, 160, 240, 35);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 80, 0, 0);
+        jPanel3.add(rdBtnCarnesRojas, gridBagConstraints);
 
-        rdBtnCarnesBlancas.setBackground(new java.awt.Color(51, 51, 51));
-        rdBtnCarnesBlancas.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
-        rdBtnCarnesBlancas.setForeground(new java.awt.Color(255, 255, 255));
-        rdBtnCarnesBlancas.setText("Preferencia 2");
-        panelEditarPreferencias.add(rdBtnCarnesBlancas);
-        rdBtnCarnesBlancas.setBounds(100, 190, 240, 35);
+        rdBtnFrutas.setBackground(new java.awt.Color(51, 51, 51));
+        rdBtnFrutas.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+        rdBtnFrutas.setForeground(new java.awt.Color(255, 255, 255));
+        rdBtnFrutas.setText("Preferencia 4");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 80, 0, 0);
+        jPanel3.add(rdBtnFrutas, gridBagConstraints);
 
+        rdBtnHarinas.setBackground(new java.awt.Color(51, 51, 51));
+        rdBtnHarinas.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+        rdBtnHarinas.setForeground(new java.awt.Color(255, 255, 255));
+        rdBtnHarinas.setText("Preferencia 5");
+        rdBtnHarinas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rdBtnHarinasActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 80, 0, 0);
+        jPanel3.add(rdBtnHarinas, gridBagConstraints);
+
+        rdBtnVerduras.setBackground(new java.awt.Color(51, 51, 51));
+        rdBtnVerduras.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+        rdBtnVerduras.setForeground(new java.awt.Color(255, 255, 255));
+        rdBtnVerduras.setText("Preferencia 3");
+        rdBtnVerduras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rdBtnVerdurasActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 80, 0, 0);
+        jPanel3.add(rdBtnVerduras, gridBagConstraints);
+
+        lblTxtPreferencias.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
+        lblTxtPreferencias.setForeground(new java.awt.Color(255, 255, 255));
+        lblTxtPreferencias.setText("Preferencias");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 60, 0, 0);
+        jPanel3.add(lblTxtPreferencias, gridBagConstraints);
+
+        panelEditarPreferencias.add(jPanel3, java.awt.BorderLayout.CENTER);
+
+        jPanel2.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel2.setLayout(new java.awt.BorderLayout());
+
+        btnEditarPreferencias.setFont(new java.awt.Font("Lucida Grande", 0, 12)); // NOI18N
+        btnEditarPreferencias.setForeground(javax.swing.UIManager.getDefaults().getColor("Button.background"));
         btnEditarPreferencias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoOkEditar.png"))); // NOI18N
+        btnEditarPreferencias.setText("Confirmar cambios");
         btnEditarPreferencias.setBorderPainted(false);
         btnEditarPreferencias.setContentAreaFilled(false);
+        btnEditarPreferencias.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnEditarPreferencias.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnEditarPreferencias.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEditarPreferenciasActionPerformed(evt);
             }
         });
-        panelEditarPreferencias.add(btnEditarPreferencias);
-        btnEditarPreferencias.setBounds(320, 320, 63, 66);
+        jPanel2.add(btnEditarPreferencias, java.awt.BorderLayout.EAST);
 
-        lblEditarPreferencias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoEditarPreferencias.png"))); // NOI18N
-        panelEditarPreferencias.add(lblEditarPreferencias);
-        lblEditarPreferencias.setBounds(38, 11, 72, 71);
+        panelEditarPreferencias.add(jPanel2, java.awt.BorderLayout.PAGE_END);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -243,6 +293,9 @@ public class VentanaEditarPreferencias extends javax.swing.JDialog {
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnEditarPreferencias;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JLabel lblEditar;
     private javax.swing.JLabel lblEditarPreferencias;
     private javax.swing.JLabel lblIconoListo;
