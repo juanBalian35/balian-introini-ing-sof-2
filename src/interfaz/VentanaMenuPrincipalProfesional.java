@@ -248,6 +248,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
                 formWindowClosing(evt);
             }
         });
+        getContentPane().setLayout(new java.awt.BorderLayout(5, 0));
 
         panelMenu.setBackground(new java.awt.Color(164, 211, 249));
         panelMenu.setMaximumSize(new java.awt.Dimension(260, 800));

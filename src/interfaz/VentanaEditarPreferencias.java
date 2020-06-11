@@ -39,9 +39,6 @@ public class VentanaEditarPreferencias extends javax.swing.JDialog {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
-        panelListo = new javax.swing.JPanel();
-        lblListo = new javax.swing.JLabel();
-        lblIconoListo = new javax.swing.JLabel();
         panelEditarPreferencias = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         lblEditarPreferencias = new javax.swing.JLabel();
@@ -55,6 +52,9 @@ public class VentanaEditarPreferencias extends javax.swing.JDialog {
         lblTxtPreferencias = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         btnEditarPreferencias = new javax.swing.JButton();
+        panelListo = new javax.swing.JPanel();
+        lblListo = new javax.swing.JLabel();
+        lblIconoListo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(508, 450));
@@ -65,25 +65,6 @@ public class VentanaEditarPreferencias extends javax.swing.JDialog {
                 formWindowClosing(evt);
             }
         });
-
-        panelListo.setBackground(new java.awt.Color(51, 51, 51));
-        panelListo.setMaximumSize(new java.awt.Dimension(508, 450));
-        panelListo.setMinimumSize(new java.awt.Dimension(508, 450));
-        panelListo.setLayout(new java.awt.GridBagLayout());
-
-        lblListo.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
-        lblListo.setForeground(new java.awt.Color(255, 255, 255));
-        lblListo.setText("Listo!");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
-        panelListo.add(lblListo, gridBagConstraints);
-
-        lblIconoListo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoOK.png"))); // NOI18N
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        panelListo.add(lblIconoListo, gridBagConstraints);
 
         panelEditarPreferencias.setBackground(new java.awt.Color(51, 51, 51));
         panelEditarPreferencias.setMaximumSize(new java.awt.Dimension(508, 450));
@@ -225,6 +206,26 @@ public class VentanaEditarPreferencias extends javax.swing.JDialog {
         jPanel2.add(btnEditarPreferencias, java.awt.BorderLayout.EAST);
 
         panelEditarPreferencias.add(jPanel2, java.awt.BorderLayout.PAGE_END);
+
+        panelListo.setBackground(new java.awt.Color(51, 51, 51));
+        panelListo.setMaximumSize(new java.awt.Dimension(508, 450));
+        panelListo.setMinimumSize(new java.awt.Dimension(508, 450));
+        panelListo.setPreferredSize(new java.awt.Dimension(508, 450));
+        panelListo.setLayout(new java.awt.GridBagLayout());
+
+        lblListo.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
+        lblListo.setForeground(new java.awt.Color(255, 255, 255));
+        lblListo.setText("Listo!");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        panelListo.add(lblListo, gridBagConstraints);
+
+        lblIconoListo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoOK.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        panelListo.add(lblIconoListo, gridBagConstraints);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
