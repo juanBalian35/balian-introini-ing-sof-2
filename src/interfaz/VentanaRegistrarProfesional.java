@@ -759,7 +759,6 @@ dateChooserFechaGraduacion.addSelectionChangedListener(new datechooser.events.Se
 
     private void btnCerrarSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistemaActionPerformed
         this.sistema.guardarDatosSistema();
-        System.exit(1);
     }//GEN-LAST:event_btnCerrarSistemaActionPerformed
 
     private void dateChooserFechaNacimientoOnSelectionChange(datechooser.events.SelectionChangedEvent evt) {//GEN-FIRST:event_dateChooserFechaNacimientoOnSelectionChange

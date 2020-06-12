@@ -188,6 +188,7 @@ public final class Sistema implements Serializable {
         try(ObjectOutputStream objetoASerializar = new ObjectOutputStream(new FileOutputStream("Sistema.data"))) {
             objetoASerializar.writeObject(this);
             objetoASerializar.flush();
+            System.exit(1);
         } catch (Exception e) {
             e.printStackTrace();
         }

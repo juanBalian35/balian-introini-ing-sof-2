@@ -781,7 +781,6 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
 
     private void btnCerrarSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistemaActionPerformed
         this.sistema.guardarDatosSistema();
-        System.exit(1);
     }//GEN-LAST:event_btnCerrarSistemaActionPerformed
 
     private void dateChooserFechaNacimientoOnCommit(datechooser.events.CommitEvent evt) {//GEN-FIRST:event_dateChooserFechaNacimientoOnCommit

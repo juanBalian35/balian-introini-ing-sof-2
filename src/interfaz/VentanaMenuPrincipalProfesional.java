@@ -2791,40 +2791,38 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
 
     private void btnCerrarSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistemaActionPerformed
         this.sistema.guardarDatosSistema();
-        this.dispose();
     }//GEN-LAST:event_btnCerrarSistemaActionPerformed
 
     private void btnCerrarSistema1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema1ActionPerformed
         this.sistema.guardarDatosSistema();
-        this.dispose();
     }//GEN-LAST:event_btnCerrarSistema1ActionPerformed
 
     private void btnCerrarSistema2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema2ActionPerformed
-        // TODO add your handling code here:
+        this.sistema.guardarDatosSistema();
     }//GEN-LAST:event_btnCerrarSistema2ActionPerformed
 
     private void btnCerrarSistema3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema3ActionPerformed
-        // TODO add your handling code here:
+        this.sistema.guardarDatosSistema();
     }//GEN-LAST:event_btnCerrarSistema3ActionPerformed
 
     private void btnCerrarSistema4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema4ActionPerformed
-        // TODO add your handling code here:
+        this.sistema.guardarDatosSistema();
     }//GEN-LAST:event_btnCerrarSistema4ActionPerformed
 
     private void btnCerrarSistema5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema5ActionPerformed
-        // TODO add your handling code here:
+        this.sistema.guardarDatosSistema();
     }//GEN-LAST:event_btnCerrarSistema5ActionPerformed
 
     private void btnCerrarSistema6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema6ActionPerformed
-        // TODO add your handling code here:
+        this.sistema.guardarDatosSistema();
     }//GEN-LAST:event_btnCerrarSistema6ActionPerformed
 
     private void btnCerrarSistema7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema7ActionPerformed
-        // TODO add your handling code here:
+        this.sistema.guardarDatosSistema();
     }//GEN-LAST:event_btnCerrarSistema7ActionPerformed
 
     private void btnCerrarSistema8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema8ActionPerformed
-        // TODO add your handling code here:
+        this.sistema.guardarDatosSistema();
     }//GEN-LAST:event_btnCerrarSistema8ActionPerformed
 
     private void ocultarPaneles() {
