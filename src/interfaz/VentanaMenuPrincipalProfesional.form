@@ -318,9 +318,6 @@
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="33" green="33" red="33" type="rgb"/>
                     </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="33" type="rgb"/>
-                    </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/Imagenes/icons8_Close_Window_48px.png"/>
                     </Property>
@@ -798,9 +795,6 @@
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="33" green="33" red="33" type="rgb"/>
                     </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="33" type="rgb"/>
-                    </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/Imagenes/icons8_Close_Window_48px.png"/>
                     </Property>
@@ -1034,9 +1028,6 @@
                 <Component class="javax.swing.JButton" name="btnCerrarSistema6">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="33" type="rgb"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="33" green="33" red="33" type="rgb"/>
                     </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -2396,9 +2387,6 @@
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="33" green="33" red="33" type="rgb"/>
                     </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="33" type="rgb"/>
-                    </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/Imagenes/icons8_Close_Window_48px.png"/>
                     </Property>
@@ -3730,9 +3718,6 @@
                         </Property>
                         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                           <Dimension value="[6, 26]"/>
-                        </Property>
-                        <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                          <Dimension value="[6, 25]"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -5069,9 +5054,6 @@
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="33" green="33" red="33" type="rgb"/>
                     </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="33" type="rgb"/>
-                    </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/Imagenes/icons8_Close_Window_48px.png"/>
                     </Property>
@@ -5487,9 +5469,6 @@
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="33" green="33" red="33" type="rgb"/>
                     </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="33" type="rgb"/>
-                    </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/Imagenes/icons8_Close_Window_48px.png"/>
                     </Property>
@@ -5739,9 +5718,6 @@
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/Imagenes/fotoDeUsuarioStandardChico.png"/>
-                        </Property>
-                        <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                          <Dimension value="[50, 50]"/>
                         </Property>
                       </Properties>
                       <Constraints>
@@ -7435,9 +7411,6 @@
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="33" green="33" red="33" type="rgb"/>
                     </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="33" type="rgb"/>
-                    </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/Imagenes/icons8_Close_Window_48px.png"/>
                     </Property>
@@ -7876,9 +7849,6 @@
                     <Component class="javax.swing.JButton" name="btnCerrarSistema4">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="33" green="33" red="33" type="rgb"/>
-                        </Property>
-                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="33" green="33" red="33" type="rgb"/>
                         </Property>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -8422,7 +8392,7 @@
                               </Events>
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                                  <GridBagConstraints gridX="2" gridY="10" gridWidth="1" gridHeight="1" fill="1" ipadX="150" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
+                                  <GridBagConstraints gridX="8" gridY="2" gridWidth="1" gridHeight="1" fill="1" ipadX="50" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -8448,7 +8418,7 @@
                               </Events>
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                                  <GridBagConstraints gridX="2" gridY="2" gridWidth="1" gridHeight="1" fill="1" ipadX="150" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
+                                  <GridBagConstraints gridX="2" gridY="2" gridWidth="1" gridHeight="1" fill="1" ipadX="50" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -8474,7 +8444,7 @@
                               </Events>
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                                  <GridBagConstraints gridX="2" gridY="6" gridWidth="1" gridHeight="1" fill="1" ipadX="150" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
+                                  <GridBagConstraints gridX="2" gridY="6" gridWidth="1" gridHeight="1" fill="1" ipadX="50" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -8500,7 +8470,7 @@
                               </Events>
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                                  <GridBagConstraints gridX="2" gridY="8" gridWidth="1" gridHeight="1" fill="1" ipadX="150" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
+                                  <GridBagConstraints gridX="2" gridY="8" gridWidth="1" gridHeight="1" fill="1" ipadX="50" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -8526,7 +8496,7 @@
                               </Events>
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                                  <GridBagConstraints gridX="2" gridY="12" gridWidth="1" gridHeight="1" fill="1" ipadX="150" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
+                                  <GridBagConstraints gridX="8" gridY="4" gridWidth="1" gridHeight="1" fill="1" ipadX="50" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -8552,7 +8522,7 @@
                               </Events>
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                                  <GridBagConstraints gridX="2" gridY="14" gridWidth="1" gridHeight="1" fill="1" ipadX="150" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
+                                  <GridBagConstraints gridX="8" gridY="6" gridWidth="1" gridHeight="1" fill="1" ipadX="50" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -8575,7 +8545,7 @@
                               </Events>
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                                  <GridBagConstraints gridX="0" gridY="12" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
+                                  <GridBagConstraints gridX="6" gridY="4" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -8598,7 +8568,7 @@
                               </Events>
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                                  <GridBagConstraints gridX="0" gridY="14" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
+                                  <GridBagConstraints gridX="6" gridY="6" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -8667,7 +8637,7 @@
                               </Events>
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                                  <GridBagConstraints gridX="0" gridY="10" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
+                                  <GridBagConstraints gridX="6" gridY="2" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -8693,7 +8663,7 @@
                               </Events>
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                                  <GridBagConstraints gridX="2" gridY="4" gridWidth="1" gridHeight="1" fill="1" ipadX="150" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
+                                  <GridBagConstraints gridX="2" gridY="4" gridWidth="1" gridHeight="1" fill="1" ipadX="50" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -8709,7 +8679,7 @@
                               </Properties>
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                                  <GridBagConstraints gridX="0" gridY="0" gridWidth="5" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
+                                  <GridBagConstraints gridX="0" gridY="0" gridWidth="7" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="0.0" weightY="0.0"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -8773,7 +8743,7 @@
                               </Properties>
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                                  <GridBagConstraints gridX="3" gridY="10" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="5" insetsBottom="0" insetsRight="0" anchor="21" weightX="0.0" weightY="0.0"/>
+                                  <GridBagConstraints gridX="9" gridY="2" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="5" insetsBottom="0" insetsRight="0" anchor="21" weightX="0.0" weightY="0.0"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -8789,7 +8759,7 @@
                               </Properties>
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                                  <GridBagConstraints gridX="3" gridY="12" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="5" insetsBottom="0" insetsRight="0" anchor="21" weightX="0.0" weightY="0.0"/>
+                                  <GridBagConstraints gridX="9" gridY="4" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="5" insetsBottom="0" insetsRight="0" anchor="21" weightX="0.0" weightY="0.0"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -8805,7 +8775,7 @@
                               </Properties>
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                                  <GridBagConstraints gridX="3" gridY="14" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="5" insetsBottom="0" insetsRight="0" anchor="21" weightX="0.0" weightY="0.0"/>
+                                  <GridBagConstraints gridX="9" gridY="6" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="5" insetsBottom="0" insetsRight="0" anchor="21" weightX="0.0" weightY="0.0"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -8849,7 +8819,7 @@
                                 <CodeExpression id="422">
                                   <ExpressionOrigin>
                                     <Value type="[I" editor="org.netbeans.modules.form.layoutsupport.delegates.GridBagLayoutSupport$IntArrayPropertyEditor">
-                                      <PropertyValue value="[0, 19, 0, 19, 0]"/>
+                                      <PropertyValue value="[0, 19, 0, 19, 0, 19, 0, 19, 0]"/>
                                     </Value>
                                   </ExpressionOrigin>
                                 </CodeExpression>
@@ -8864,7 +8834,7 @@
                                 <CodeExpression id="423">
                                   <ExpressionOrigin>
                                     <Value type="[I" editor="org.netbeans.modules.form.layoutsupport.delegates.GridBagLayoutSupport$IntArrayPropertyEditor">
-                                      <PropertyValue value="[0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0]"/>
+                                      <PropertyValue value="[0, 6, 0, 6, 0, 6, 0, 6, 0]"/>
                                     </Value>
                                   </ExpressionOrigin>
                                 </CodeExpression>
@@ -9045,7 +9015,7 @@
                               <Parameters>
                                 <CodeExpression id="436">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="2"/>
+                                    <Value type="int" value="8"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -9058,7 +9028,7 @@
                               <Parameters>
                                 <CodeExpression id="437">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="10"/>
+                                    <Value type="int" value="2"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -9084,7 +9054,7 @@
                               <Parameters>
                                 <CodeExpression id="439">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="150"/>
+                                    <Value type="int" value="50"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -9179,7 +9149,7 @@
                               <Parameters>
                                 <CodeExpression id="446">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="150"/>
+                                    <Value type="int" value="50"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -9274,7 +9244,7 @@
                               <Parameters>
                                 <CodeExpression id="453">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="150"/>
+                                    <Value type="int" value="50"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -9369,7 +9339,7 @@
                               <Parameters>
                                 <CodeExpression id="460">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="150"/>
+                                    <Value type="int" value="50"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -9425,7 +9395,7 @@
                               <Parameters>
                                 <CodeExpression id="464">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="2"/>
+                                    <Value type="int" value="8"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -9438,7 +9408,7 @@
                               <Parameters>
                                 <CodeExpression id="465">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="12"/>
+                                    <Value type="int" value="4"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -9464,7 +9434,7 @@
                               <Parameters>
                                 <CodeExpression id="467">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="150"/>
+                                    <Value type="int" value="50"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -9520,7 +9490,7 @@
                               <Parameters>
                                 <CodeExpression id="471">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="2"/>
+                                    <Value type="int" value="8"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -9533,7 +9503,7 @@
                               <Parameters>
                                 <CodeExpression id="472">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="14"/>
+                                    <Value type="int" value="6"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -9559,7 +9529,7 @@
                               <Parameters>
                                 <CodeExpression id="474">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="150"/>
+                                    <Value type="int" value="50"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -9615,7 +9585,7 @@
                               <Parameters>
                                 <CodeExpression id="478">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="0"/>
+                                    <Value type="int" value="6"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -9628,7 +9598,7 @@
                               <Parameters>
                                 <CodeExpression id="479">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="12"/>
+                                    <Value type="int" value="4"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -9684,7 +9654,7 @@
                               <Parameters>
                                 <CodeExpression id="483">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="0"/>
+                                    <Value type="int" value="6"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -9697,7 +9667,7 @@
                               <Parameters>
                                 <CodeExpression id="484">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="14"/>
+                                    <Value type="int" value="6"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -9891,7 +9861,7 @@
                               <Parameters>
                                 <CodeExpression id="498">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="0"/>
+                                    <Value type="int" value="6"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -9904,7 +9874,7 @@
                               <Parameters>
                                 <CodeExpression id="499">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="10"/>
+                                    <Value type="int" value="2"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -9999,7 +9969,7 @@
                               <Parameters>
                                 <CodeExpression id="506">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="150"/>
+                                    <Value type="int" value="50"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -10081,7 +10051,7 @@
                               <Parameters>
                                 <CodeExpression id="512">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="5"/>
+                                    <Value type="int" value="7"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -10389,7 +10359,7 @@
                               <Parameters>
                                 <CodeExpression id="534">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="3"/>
+                                    <Value type="int" value="9"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -10402,7 +10372,7 @@
                               <Parameters>
                                 <CodeExpression id="535">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="10"/>
+                                    <Value type="int" value="2"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -10473,7 +10443,7 @@
                               <Parameters>
                                 <CodeExpression id="540">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="3"/>
+                                    <Value type="int" value="9"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -10486,7 +10456,7 @@
                               <Parameters>
                                 <CodeExpression id="541">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="12"/>
+                                    <Value type="int" value="4"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -10557,7 +10527,7 @@
                               <Parameters>
                                 <CodeExpression id="546">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="3"/>
+                                    <Value type="int" value="9"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -10570,7 +10540,7 @@
                               <Parameters>
                                 <CodeExpression id="547">
                                   <ExpressionOrigin>
-                                    <Value type="int" value="14"/>
+                                    <Value type="int" value="6"/>
                                   </ExpressionOrigin>
                                 </CodeExpression>
                               </Parameters>
@@ -10903,9 +10873,6 @@
                                 <Property name="borderPainted" type="boolean" value="false"/>
                                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                                 <Property name="horizontalTextPosition" type="int" value="0"/>
-                                <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                                  <Dimension value="[116, 112]"/>
-                                </Property>
                                 <Property name="verticalTextPosition" type="int" value="3"/>
                               </Properties>
                               <Events>
@@ -11917,9 +11884,6 @@
                     <Component class="javax.swing.JButton" name="btnCerrarSistema3">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="33" green="33" red="33" type="rgb"/>
-                        </Property>
-                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="33" green="33" red="33" type="rgb"/>
                         </Property>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">

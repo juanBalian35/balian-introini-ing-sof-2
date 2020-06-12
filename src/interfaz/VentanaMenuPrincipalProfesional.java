@@ -400,7 +400,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         jPanel27.setLayout(jPanel27Layout);
 
         btnCerrarSistema8.setBackground(new java.awt.Color(51, 51, 51));
-        btnCerrarSistema8.setForeground(new java.awt.Color(51, 51, 51));
         btnCerrarSistema8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
         btnCerrarSistema8.setAlignmentX(0.5F);
         btnCerrarSistema8.setBorderPainted(false);
@@ -521,7 +520,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         jPanel26.setLayout(jPanel26Layout);
 
         btnCerrarSistema7.setBackground(new java.awt.Color(51, 51, 51));
-        btnCerrarSistema7.setForeground(new java.awt.Color(51, 51, 51));
         btnCerrarSistema7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
         btnCerrarSistema7.setAlignmentX(0.5F);
         btnCerrarSistema7.setBorderPainted(false);
@@ -577,7 +575,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         jPanel25.setLayout(jPanel25Layout);
 
         btnCerrarSistema6.setBackground(new java.awt.Color(51, 51, 51));
-        btnCerrarSistema6.setForeground(new java.awt.Color(51, 51, 51));
         btnCerrarSistema6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
         btnCerrarSistema6.setAlignmentX(0.5F);
         btnCerrarSistema6.setBorderPainted(false);
@@ -851,7 +848,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         jPanel9.add(lblInicioSesion, gridBagConstraints);
 
         btnCerrarSistema.setBackground(new java.awt.Color(51, 51, 51));
-        btnCerrarSistema.setForeground(new java.awt.Color(51, 51, 51));
         btnCerrarSistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
         btnCerrarSistema.setAlignmentX(0.5F);
         btnCerrarSistema.setBorderPainted(false);
@@ -1088,7 +1084,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         txtNombrePlan.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         txtNombrePlan.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         txtNombrePlan.setMaximumSize(new java.awt.Dimension(6, 26));
-        txtNombrePlan.setSize(new java.awt.Dimension(6, 25));
         txtNombrePlan.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 txtNombrePlanFocusLost(evt);
@@ -1223,7 +1218,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         jPanel14.add(lblInicioSesion1, gridBagConstraints);
 
         btnCerrarSistema1.setBackground(new java.awt.Color(51, 51, 51));
-        btnCerrarSistema1.setForeground(new java.awt.Color(51, 51, 51));
         btnCerrarSistema1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
         btnCerrarSistema1.setAlignmentX(0.5F);
         btnCerrarSistema1.setBorderPainted(false);
@@ -1277,7 +1271,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         jPanel24.setLayout(jPanel24Layout);
 
         btnCerrarSistema5.setBackground(new java.awt.Color(51, 51, 51));
-        btnCerrarSistema5.setForeground(new java.awt.Color(51, 51, 51));
         btnCerrarSistema5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
         btnCerrarSistema5.setAlignmentX(0.5F);
         btnCerrarSistema5.setBorderPainted(false);
@@ -1328,7 +1321,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         panelPerfilDeUsuario.add(lblNombreUsuario2, gridBagConstraints);
 
         lblFotoDeUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoDeUsuarioStandardChico.png"))); // NOI18N
-        lblFotoDeUsuario.setSize(new java.awt.Dimension(50, 50));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -1536,7 +1528,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         panelDatosUsuario.add(lblInicioSesion2, gridBagConstraints);
 
         btnCerrarSistema2.setBackground(new java.awt.Color(51, 51, 51));
-        btnCerrarSistema2.setForeground(new java.awt.Color(51, 51, 51));
         btnCerrarSistema2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
         btnCerrarSistema2.setAlignmentX(0.5F);
         btnCerrarSistema2.setBorderPainted(false);
@@ -1598,7 +1589,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         jPanel22.setLayout(jPanel22Layout);
 
         btnCerrarSistema4.setBackground(new java.awt.Color(51, 51, 51));
-        btnCerrarSistema4.setForeground(new java.awt.Color(51, 51, 51));
         btnCerrarSistema4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
         btnCerrarSistema4.setAlignmentX(0.5F);
         btnCerrarSistema4.setBorderPainted(false);
@@ -1672,8 +1662,8 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
 
         jPanel16.setBackground(new java.awt.Color(51, 51, 51));
         java.awt.GridBagLayout jPanel16Layout1 = new java.awt.GridBagLayout();
-        jPanel16Layout1.columnWidths = new int[] {0, 19, 0, 19, 0};
-        jPanel16Layout1.rowHeights = new int[] {0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0};
+        jPanel16Layout1.columnWidths = new int[] {0, 19, 0, 19, 0, 19, 0, 19, 0};
+        jPanel16Layout1.rowHeights = new int[] {0, 6, 0, 6, 0, 6, 0, 6, 0};
         jPanel16.setLayout(jPanel16Layout1);
 
         checkVitaminas.setBackground(new java.awt.Color(51, 51, 51));
@@ -1718,10 +1708,10 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 10;
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 150;
+        gridBagConstraints.ipadx = 50;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         jPanel16.add(txtMinerales, gridBagConstraints);
 
@@ -1738,7 +1728,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 150;
+        gridBagConstraints.ipadx = 50;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         jPanel16.add(txtHidratos, gridBagConstraints);
 
@@ -1755,7 +1745,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 6;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 150;
+        gridBagConstraints.ipadx = 50;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         jPanel16.add(txtVitaminas, gridBagConstraints);
 
@@ -1772,7 +1762,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 8;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 150;
+        gridBagConstraints.ipadx = 50;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         jPanel16.add(txtGlucidos, gridBagConstraints);
 
@@ -1786,10 +1776,10 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 12;
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 4;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 150;
+        gridBagConstraints.ipadx = 50;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         jPanel16.add(txtFibra, gridBagConstraints);
 
@@ -1803,10 +1793,10 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 14;
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 6;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 150;
+        gridBagConstraints.ipadx = 50;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         jPanel16.add(txtLipidos, gridBagConstraints);
 
@@ -1821,8 +1811,8 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 12;
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 4;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         jPanel16.add(checkFibra, gridBagConstraints);
 
@@ -1837,8 +1827,8 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 14;
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 6;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         jPanel16.add(checkLipidos, gridBagConstraints);
 
@@ -1885,8 +1875,8 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 10;
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         jPanel16.add(checkMinerales, gridBagConstraints);
 
@@ -1903,7 +1893,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 4;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 150;
+        gridBagConstraints.ipadx = 50;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         jPanel16.add(txtProteínas, gridBagConstraints);
 
@@ -1913,7 +1903,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.gridwidth = 7;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         jPanel16.add(lblPrincipalesNutrientes, gridBagConstraints);
 
@@ -1951,8 +1941,8 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         lblGramosMinerales.setForeground(new java.awt.Color(255, 255, 255));
         lblGramosMinerales.setText("(gramos)");
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = 10;
+        gridBagConstraints.gridx = 9;
+        gridBagConstraints.gridy = 2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
         gridBagConstraints.insets = new java.awt.Insets(0, 5, 0, 0);
         jPanel16.add(lblGramosMinerales, gridBagConstraints);
@@ -1961,8 +1951,8 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         lblGramosFibras.setForeground(new java.awt.Color(255, 255, 255));
         lblGramosFibras.setText("(gramos)");
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = 12;
+        gridBagConstraints.gridx = 9;
+        gridBagConstraints.gridy = 4;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
         gridBagConstraints.insets = new java.awt.Insets(0, 5, 0, 0);
         jPanel16.add(lblGramosFibras, gridBagConstraints);
@@ -1971,8 +1961,8 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         lblGramosLipidos.setForeground(new java.awt.Color(255, 255, 255));
         lblGramosLipidos.setText("(gramos)");
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = 14;
+        gridBagConstraints.gridx = 9;
+        gridBagConstraints.gridy = 6;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
         gridBagConstraints.insets = new java.awt.Insets(0, 5, 0, 0);
         jPanel16.add(lblGramosLipidos, gridBagConstraints);
@@ -2111,7 +2101,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         btnIngresarFotoAlimento.setBorderPainted(false);
         btnIngresarFotoAlimento.setContentAreaFilled(false);
         btnIngresarFotoAlimento.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnIngresarFotoAlimento.setSize(new java.awt.Dimension(116, 112));
         btnIngresarFotoAlimento.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnIngresarFotoAlimento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2173,7 +2162,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         jPanel21.add(lblInicioSesion3, gridBagConstraints);
 
         btnCerrarSistema3.setBackground(new java.awt.Color(51, 51, 51));
-        btnCerrarSistema3.setForeground(new java.awt.Color(51, 51, 51));
         btnCerrarSistema3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
         btnCerrarSistema3.setAlignmentX(0.5F);
         btnCerrarSistema3.setBorderPainted(false);
