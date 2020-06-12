@@ -33,6 +33,8 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
         Calendar fecha = new GregorianCalendar();
         this.dateChooserFechaNacimiento.setMaxDate(fecha);
         this.dateChooserFechaGraduacion.setMaxDate(fecha);
+        this.dateChooserFechaNacimiento.setText("");
+        this.dateChooserFechaGraduacion.setText("");
         this.primeraVez = false;
     }
 
@@ -345,6 +347,7 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
     dateChooserFechaNacimiento.setFieldFont(new java.awt.Font("Dialog", java.awt.Font.PLAIN, 19));
     dateChooserFechaNacimiento.setMaxDate(new java.util.GregorianCalendar(2017, 10, 9));
     dateChooserFechaNacimiento.setMinDate(new java.util.GregorianCalendar(1917, 10, 1));
+    dateChooserFechaNacimiento.setBehavior(datechooser.model.multiple.MultyModelBehavior.SELECT_SINGLE);
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 2;
     gridBagConstraints.gridy = 6;
@@ -454,6 +457,7 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
 dateChooserFechaGraduacion.setFieldFont(new java.awt.Font("Dialog", java.awt.Font.PLAIN, 19));
 dateChooserFechaGraduacion.setMaxDate(new java.util.GregorianCalendar(2017, 10, 9));
 dateChooserFechaGraduacion.setMinDate(new java.util.GregorianCalendar(1917, 10, 1));
+dateChooserFechaGraduacion.setBehavior(datechooser.model.multiple.MultyModelBehavior.SELECT_SINGLE);
 gridBagConstraints = new java.awt.GridBagConstraints();
 gridBagConstraints.gridx = 2;
 gridBagConstraints.gridy = 16;

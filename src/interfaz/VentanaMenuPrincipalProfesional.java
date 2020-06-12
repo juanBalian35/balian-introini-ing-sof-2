@@ -1629,11 +1629,20 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         panelIngresarAlimentoAlSistema.setLayout(new java.awt.BorderLayout());
 
         jPanel29.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel29.setPreferredSize(new java.awt.Dimension(800, 120));
+        java.awt.GridBagLayout jPanel29Layout = new java.awt.GridBagLayout();
+        jPanel29Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel29.setLayout(jPanel29Layout);
 
         lblDatosIncorrectos.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
         lblDatosIncorrectos.setForeground(new java.awt.Color(255, 153, 153));
         lblDatosIncorrectos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblDatosIncorrectos.setText("Aún quedan datos incorrectos");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        jPanel29.add(lblDatosIncorrectos, gridBagConstraints);
 
         btnIngresarAlimentoASistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoConfirmar.png"))); // NOI18N
         btnIngresarAlimentoASistema.setBorderPainted(false);
@@ -1643,22 +1652,12 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
                 btnIngresarAlimentoASistemaActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout jPanel29Layout = new javax.swing.GroupLayout(jPanel29);
-        jPanel29.setLayout(jPanel29Layout);
-        jPanel29Layout.setHorizontalGroup(
-            jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel29Layout.createSequentialGroup()
-                .addGap(216, 216, 216)
-                .addComponent(lblDatosIncorrectos)
-                .addGap(214, 214, 214)
-                .addComponent(btnIngresarAlimentoASistema))
-        );
-        jPanel29Layout.setVerticalGroup(
-            jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblDatosIncorrectos, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(btnIngresarAlimentoASistema)
-        );
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
+        jPanel29.add(btnIngresarAlimentoASistema, gridBagConstraints);
 
         panelIngresarAlimentoAlSistema.add(jPanel29, java.awt.BorderLayout.PAGE_END);
 
@@ -1666,8 +1665,8 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
 
         jPanel20.setBackground(new java.awt.Color(51, 51, 51));
         java.awt.GridBagLayout jPanel20Layout = new java.awt.GridBagLayout();
-        jPanel20Layout.columnWidths = new int[] {0, 21, 0};
-        jPanel20Layout.rowHeights = new int[] {0, 24, 0, 24, 0, 24, 0};
+        jPanel20Layout.columnWidths = new int[] {0};
+        jPanel20Layout.rowHeights = new int[] {0, 24, 0};
         jPanel20Layout.columnWeights = new double[] {1.0, 1.0};
         jPanel20.setLayout(jPanel20Layout);
 
@@ -1991,6 +1990,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.VERTICAL;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         jPanel20.add(jPanel16, gridBagConstraints);
 
@@ -2126,7 +2126,8 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.VERTICAL;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         jPanel20.add(jPanel18, gridBagConstraints);
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
@@ -2143,7 +2144,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
             .addGroup(jPanel19Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(11, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         panelIngresarAlimentoAlSistema.add(jPanel19, java.awt.BorderLayout.CENTER);

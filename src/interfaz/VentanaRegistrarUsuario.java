@@ -30,6 +30,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         cargarListaPaises();
         Calendar fecha = new GregorianCalendar();
         this.dateChooserFechaNacimiento.setMaxDate(fecha);
+        this.dateChooserFechaNacimiento.setText("");
         this.primeraVez = false;
     }
 
@@ -250,7 +251,6 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         java.awt.GridBagLayout jPanel3Layout = new java.awt.GridBagLayout();
         jPanel3Layout.columnWidths = new int[] {0};
         jPanel3Layout.rowHeights = new int[] {0, 19, 0};
-        jPanel3Layout.columnWeights = new double[] {1.0, 1.0};
         jPanel3.setLayout(jPanel3Layout);
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
@@ -259,6 +259,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         java.awt.GridBagLayout jPanel1Layout = new java.awt.GridBagLayout();
         jPanel1Layout.columnWidths = new int[] {0, 10, 0, 10, 0, 10, 0};
         jPanel1Layout.rowHeights = new int[] {0, 11, 0, 11, 0, 11, 0, 11, 0};
+        jPanel1Layout.columnWeights = new double[] {1.0, 1.0};
         jPanel1.setLayout(jPanel1Layout);
 
         lblNombre.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
@@ -395,6 +396,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 6;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.ABOVE_BASELINE_LEADING;
         jPanel1.add(listaNacionalidad, gridBagConstraints);
 
         lblValidarNacionalidad.setForeground(new java.awt.Color(255, 255, 255));
@@ -402,6 +404,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 6;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.ABOVE_BASELINE_LEADING;
         jPanel1.add(lblValidarNacionalidad, gridBagConstraints);
 
         lblPaisVacio.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
@@ -410,6 +413,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 6;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.ABOVE_BASELINE_LEADING;
         jPanel1.add(lblPaisVacio, gridBagConstraints);
 
         lblValidarNacionalidad1.setForeground(new java.awt.Color(255, 255, 255));
@@ -417,6 +421,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 8;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.ABOVE_BASELINE_LEADING;
         jPanel1.add(lblValidarNacionalidad1, gridBagConstraints);
 
         lblTxtFechaNac.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
@@ -472,10 +477,12 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     dateChooserFechaNacimiento.setFieldFont(new java.awt.Font("Dialog", java.awt.Font.PLAIN, 19));
     dateChooserFechaNacimiento.setMaxDate(new java.util.GregorianCalendar(2017, 10, 9));
     dateChooserFechaNacimiento.setMinDate(new java.util.GregorianCalendar(1917, 10, 1));
+    dateChooserFechaNacimiento.setBehavior(datechooser.model.multiple.MultyModelBehavior.SELECT_SINGLE);
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 2;
     gridBagConstraints.gridy = 8;
     gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.ABOVE_BASELINE_LEADING;
     jPanel1.add(dateChooserFechaNacimiento, gridBagConstraints);
     dateChooserFechaNacimiento.setNextFocusableComponent(rdBtnCarnesBlancas);
 
@@ -485,14 +492,14 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 6;
     gridBagConstraints.gridy = 8;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.ABOVE_BASELINE_LEADING;
     jPanel1.add(lblPaisVacio1, gridBagConstraints);
 
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 0;
     gridBagConstraints.gridy = 0;
-    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.ABOVE_BASELINE;
-    gridBagConstraints.insets = new java.awt.Insets(0, 18, 0, 0);
+    gridBagConstraints.fill = java.awt.GridBagConstraints.VERTICAL;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE_LEADING;
     jPanel3.add(jPanel1, gridBagConstraints);
 
     jPanel4.setBackground(new java.awt.Color(51, 51, 51));
@@ -501,6 +508,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     java.awt.GridBagLayout jPanel4Layout = new java.awt.GridBagLayout();
     jPanel4Layout.columnWidths = new int[] {0, 65, 0, 65, 0};
     jPanel4Layout.rowHeights = new int[] {0, 5, 0, 5, 0, 5, 0, 5, 0, 5, 0};
+    jPanel4Layout.columnWeights = new double[] {1.0, 1.0};
     jPanel4.setLayout(jPanel4Layout);
 
     lblTxtPreferencias.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
@@ -638,7 +646,8 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 0;
     gridBagConstraints.gridy = 2;
-    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    gridBagConstraints.fill = java.awt.GridBagConstraints.VERTICAL;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
     jPanel3.add(jPanel4, gridBagConstraints);
 
     panel2.add(jPanel3, java.awt.BorderLayout.CENTER);
