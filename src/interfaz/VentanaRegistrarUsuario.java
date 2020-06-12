@@ -726,9 +726,10 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         ArrayList<Ingesta> alimentosIngeridosPorFecha = new ArrayList<>();
         String nacionalidad = (String) this.listaNacionalidad.getSelectedItem();
         String fechaNacimiento = this.dateChooserFechaNacimiento.getText();
-        if (nombre.equals("") || apellido.equals("") || nacionalidad.equals("Seleccione...")) {
+
+        if (nombre.equals("") || apellido.equals("") || nacionalidad.equals("Seleccione...") || fechaNacimiento.isEmpty()) {
             this.lblDatosIncorrectos.setVisible(true);
-            mostrarErrores(nombre, apellido, nacionalidad);
+            mostrarErrores(nombre, apellido, nacionalidad, fechaNacimiento);
         } else {
             this.lblDatosIncorrectos.setVisible(false);
             agregarPreferenciasUsuario(preferencias);
@@ -870,10 +871,12 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         this.lblValidarNombre.setVisible(false);
         this.lblValidarApellido.setVisible(false);
         this.lblValidarNacionalidad.setVisible(false);
+        this.lblValidarNacionalidad1.setVisible(false);
         this.lblDatosIncorrectos.setVisible(false);
         this.lblNombreVacio.setVisible(false);
         this.lblApellidoVacio.setVisible(false);
         this.lblPaisVacio.setVisible(false);
+        this.lblPaisVacio1.setVisible(false);
     }
 
     private void cargarListaPreferencias() {
@@ -934,7 +937,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         }
     }
 
-    private void mostrarErrores(String nombre, String apellido, String nacionalidad) {
+    private void mostrarErrores(String nombre, String apellido, String nacionalidad, String fechaNacimiento) {
         if (nombre.equals("")) {
             this.lblValidarNombre.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png")));
             this.lblValidarNombre.setVisible(true);
@@ -949,6 +952,11 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
             this.lblValidarNacionalidad.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png")));
             this.lblValidarNacionalidad.setVisible(true);
             this.lblPaisVacio.setVisible(true);
+        }
+        if(fechaNacimiento.isEmpty()){
+            this.lblValidarNacionalidad1.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png")));
+            this.lblValidarNacionalidad1.setVisible(true);
+            this.lblPaisVacio1.setVisible(true);
         }
     }
 
