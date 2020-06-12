@@ -6,6 +6,7 @@ import dominio.PlanAlimentacion;
 import dominio.Profesional;
 import dominio.Sistema;
 import dominio.Usuario;
+import java.awt.Image;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -365,7 +366,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         jPanel17.setLayout(jPanel17Layout);
 
         btnCerrarSistema5.setBackground(new java.awt.Color(51, 51, 51));
-        btnCerrarSistema5.setForeground(new java.awt.Color(51, 51, 51));
         btnCerrarSistema5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
         btnCerrarSistema5.setAlignmentX(0.5F);
         btnCerrarSistema5.setBorderPainted(false);
@@ -494,7 +494,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         jPanel20.setLayout(jPanel20Layout);
 
         btnCerrarSistema6.setBackground(new java.awt.Color(51, 51, 51));
-        btnCerrarSistema6.setForeground(new java.awt.Color(51, 51, 51));
         btnCerrarSistema6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
         btnCerrarSistema6.setAlignmentX(0.5F);
         btnCerrarSistema6.setBorderPainted(false);
@@ -522,7 +521,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         panelConsultaConProfesional.setMaximumSize(new java.awt.Dimension(800, 800));
         panelConsultaConProfesional.setMinimumSize(new java.awt.Dimension(800, 800));
         panelConsultaConProfesional.setPreferredSize(new java.awt.Dimension(800, 800));
-        panelConsultaConProfesional.setSize(new java.awt.Dimension(800, 800));
         panelConsultaConProfesional.setLayout(new java.awt.BorderLayout());
 
         panelConversacion.setBackground(new java.awt.Color(51, 51, 51));
@@ -630,7 +628,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         txtMensajeNuevo.setMaximumSize(new java.awt.Dimension(100, 100));
         txtMensajeNuevo.setMinimumSize(new java.awt.Dimension(100, 100));
         txtMensajeNuevo.setPreferredSize(new java.awt.Dimension(100, 100));
-        txtMensajeNuevo.setSize(new java.awt.Dimension(100, 100));
         jScrollPane1.setViewportView(txtMensajeNuevo);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -703,7 +700,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         jPanel4.add(lblInicioSesion, gridBagConstraints);
 
         btnCerrarSistema.setBackground(new java.awt.Color(51, 51, 51));
-        btnCerrarSistema.setForeground(new java.awt.Color(51, 51, 51));
         btnCerrarSistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
         btnCerrarSistema.setAlignmentX(0.5F);
         btnCerrarSistema.setBorderPainted(false);
@@ -757,7 +753,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         jPanel5.add(lblInicioSesion1, gridBagConstraints);
 
         btnCerrarSistema1.setBackground(new java.awt.Color(51, 51, 51));
-        btnCerrarSistema1.setForeground(new java.awt.Color(51, 51, 51));
         btnCerrarSistema1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
         btnCerrarSistema1.setAlignmentX(0.5F);
         btnCerrarSistema1.setBorderPainted(false);
@@ -814,7 +809,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         panelVerPlanAlimentacion.setMaximumSize(new java.awt.Dimension(800, 800));
         panelVerPlanAlimentacion.setMinimumSize(new java.awt.Dimension(800, 800));
         panelVerPlanAlimentacion.setPreferredSize(new java.awt.Dimension(800, 800));
-        panelVerPlanAlimentacion.setSize(new java.awt.Dimension(800, 800));
         panelVerPlanAlimentacion.setLayout(new java.awt.BorderLayout());
 
         jPanel15.setBackground(new java.awt.Color(51, 51, 51));
@@ -1117,7 +1111,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         jPanel16.add(lblInicioSesion4, gridBagConstraints);
 
         btnCerrarSistema4.setBackground(new java.awt.Color(51, 51, 51));
-        btnCerrarSistema4.setForeground(new java.awt.Color(51, 51, 51));
         btnCerrarSistema4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
         btnCerrarSistema4.setAlignmentX(0.5F);
         btnCerrarSistema4.setBorderPainted(false);
@@ -1164,10 +1157,11 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         panelIngestaRegistradaCorrectamente.add(jPanel11, java.awt.BorderLayout.CENTER);
 
         jPanel21.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel21.setLayout(new java.awt.GridBagLayout());
+        java.awt.GridBagLayout jPanel21Layout = new java.awt.GridBagLayout();
+        jPanel21Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel21.setLayout(jPanel21Layout);
 
         btnCerrarSistema7.setBackground(new java.awt.Color(51, 51, 51));
-        btnCerrarSistema7.setForeground(new java.awt.Color(51, 51, 51));
         btnCerrarSistema7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
         btnCerrarSistema7.setAlignmentX(0.5F);
         btnCerrarSistema7.setBorderPainted(false);
@@ -1254,7 +1248,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         comboAlimentosEnSistema.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione..." }));
         comboAlimentosEnSistema.setMaximumSize(new java.awt.Dimension(400, 300));
         comboAlimentosEnSistema.setPreferredSize(new java.awt.Dimension(400, 27));
-        comboAlimentosEnSistema.setSize(new java.awt.Dimension(400, 27));
         comboAlimentosEnSistema.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 comboAlimentosEnSistemaItemStateChanged(evt);
@@ -1313,7 +1306,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         jPanel8.add(lblInicioSesion2, gridBagConstraints);
 
         btnCerrarSistema2.setBackground(new java.awt.Color(51, 51, 51));
-        btnCerrarSistema2.setForeground(new java.awt.Color(51, 51, 51));
         btnCerrarSistema2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
         btnCerrarSistema2.setAlignmentX(0.5F);
         btnCerrarSistema2.setBorderPainted(false);
@@ -1378,7 +1370,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         panelPlanDeAlimentacion.setMaximumSize(new java.awt.Dimension(800, 800));
         panelPlanDeAlimentacion.setMinimumSize(new java.awt.Dimension(800, 800));
         panelPlanDeAlimentacion.setPreferredSize(new java.awt.Dimension(800, 800));
-        panelPlanDeAlimentacion.setSize(new java.awt.Dimension(800, 800));
 
         jPanel10.setBackground(new java.awt.Color(51, 51, 51));
         jPanel10.setMaximumSize(new java.awt.Dimension(800, 2147483647));
@@ -1407,7 +1398,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         jPanel10.add(lblInicioSesion3, gridBagConstraints);
 
         btnCerrarSistema3.setBackground(new java.awt.Color(51, 51, 51));
-        btnCerrarSistema3.setForeground(new java.awt.Color(51, 51, 51));
         btnCerrarSistema3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
         btnCerrarSistema3.setAlignmentX(0.5F);
         btnCerrarSistema3.setBorderPainted(false);
@@ -1496,7 +1486,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         panelPlanSolicitadoCorrectamente.setBounds(0, 150, 450, 530);
 
         panelSolicitarNuevoPlan.setBackground(new java.awt.Color(51, 51, 51));
-        panelSolicitarNuevoPlan.setLocation(new java.awt.Point(0, 150));
         java.awt.GridBagLayout panelSolicitarNuevoPlanLayout = new java.awt.GridBagLayout();
         panelSolicitarNuevoPlanLayout.columnWidths = new int[] {0, 0, 0, 0, 0, 0, 0, 0, 0};
         panelSolicitarNuevoPlanLayout.rowHeights = new int[] {0, 21, 0, 21, 0, 21, 0, 21, 0, 21, 0, 21, 0, 21, 0, 21, 0};
@@ -1714,7 +1703,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
             }
         });
         panelBotones.add(btnSolicitarNuevoPlan);
-        btnSolicitarNuevoPlan.setBounds(140, 10, 116, 112);
+        btnSolicitarNuevoPlan.setBounds(140, 10, 134, 110);
 
         btnVerPlanesExistentes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoVerPlanesAlimentacion.png"))); // NOI18N
         btnVerPlanesExistentes.setBorderPainted(false);
@@ -1725,7 +1714,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
             }
         });
         panelBotones.add(btnVerPlanesExistentes);
-        btnVerPlanesExistentes.setBounds(540, 10, 116, 112);
+        btnVerPlanesExistentes.setBounds(540, 10, 134, 110);
 
         javax.swing.GroupLayout panelPlanDeAlimentacionLayout = new javax.swing.GroupLayout(panelPlanDeAlimentacion);
         panelPlanDeAlimentacion.setLayout(panelPlanDeAlimentacionLayout);
@@ -1779,7 +1768,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         jPanel22.setLayout(jPanel22Layout);
 
         btnCerrarSistema8.setBackground(new java.awt.Color(51, 51, 51));
-        btnCerrarSistema8.setForeground(new java.awt.Color(51, 51, 51));
         btnCerrarSistema8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
         btnCerrarSistema8.setAlignmentX(0.5F);
         btnCerrarSistema8.setBorderPainted(false);
@@ -1890,6 +1878,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         if (this.existeConversacion && this.listaConversaciones.getSelectedValue() != null) {
             this.panelConversacion.setVisible(true);
             this.profesionalSeleccionado = this.listaConversaciones.getSelectedValue();
+            
             actualizarConversaciones(this.profesionalSeleccionado);
         }
     }//GEN-LAST:event_listaConversacionesValueChanged
@@ -2142,7 +2131,13 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
             this.txtMostrarConversacion.setText(conversacion);
             this.lblNombreProfesional.setText(this.profesionalSeleccionado);
             Profesional profesional = this.sistema.getProfesionalPorNombre(this.profesionalSeleccionado);
-            this.lblFotoProfesional.setIcon(profesional.getFotoDePerfil());
+            
+            Image image = profesional.getFotoDePerfil()
+                    .getImage()
+                    .getScaledInstance(50, 50, java.awt.Image.SCALE_SMOOTH);
+        
+            lblFotoProfesional.setIcon(new ImageIcon(image));
+            
             this.listaConversaciones.setListData(this.sistema.getListaNombresProfesionalesConversaciones(remitente));
         }
     }

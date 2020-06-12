@@ -1449,8 +1449,9 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         panelIzquierdoLayout.rowHeights = new int[] {0, 8, 0};
         panelIzquierdo.setLayout(panelIzquierdoLayout);
 
-        listaPlanesPendientes.setBackground(new java.awt.Color(238, 238, 238));
+        listaPlanesPendientes.setBackground(new java.awt.Color(51, 51, 51));
         listaPlanesPendientes.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+        listaPlanesPendientes.setForeground(new java.awt.Color(255, 255, 255));
         listaPlanesPendientes.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         listaPlanesPendientes.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
@@ -2255,10 +2256,15 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         this.panelMostrarOk.setVisible(false);
         this.panelConversacion.setVisible(true);
         this.jPanel8.setVisible(true);
-
        
         if (this.listaConversaciones.getSelectedValue() != null) {
             this.usuarioSeleccionado = sistema.getUsuarioPorNombre(this.listaConversaciones.getSelectedValue());
+        
+            Image image = usuarioSeleccionado.getFotoDePerfil()
+                    .getImage()
+                    .getScaledInstance(50, 50, java.awt.Image.SCALE_SMOOTH);
+        
+            lblFotoProfesional.setIcon(new ImageIcon(image));
         }
         actualizarConversaciones(this.usuarioSeleccionado);
     }//GEN-LAST:event_listaConversacionesValueChanged
@@ -2478,8 +2484,14 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         planSeleccionado = planActual.get();
         this.usuarioSeleccionado = planSeleccionado.getUsuario();
         this.lblNombreUsuario2.setText(usuarioSeleccionado.toString());
+        
         lblFechaNacimiento.setText(usuarioSeleccionado.getFechaNacimiento());
-        lblFotoDeUsuario.setIcon(usuarioSeleccionado.getFotoDePerfil());
+        Image image = usuarioSeleccionado.getFotoDePerfil()
+                .getImage()
+                .getScaledInstance(100, 100, java.awt.Image.SCALE_SMOOTH);
+        
+        lblFotoDeUsuario.setIcon(new ImageIcon(image));
+        
         if (usuarioSeleccionado.getArrayAlimentosIngeridos().length > 0) {
             ArrayList<Ingesta> ingeridos = usuarioSeleccionado.getAlimentosIngeridos();
             ArrayList<String> listaASetear = new ArrayList<>();
