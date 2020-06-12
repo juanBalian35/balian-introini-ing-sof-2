@@ -27,7 +27,6 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
         this.setLocationRelativeTo(null);
         this.sistema = unSistema;
         this.fotoDePerfilActual = new ImageIcon(getClass().getResource("/Imagenes/fotoDeUsuarioStandardChico.png"));
-        ocultarEtiquetas();
         this.primeraVez = true;
         cargarListaPaisesGraduacion();
         Calendar fecha = new GregorianCalendar();
@@ -35,6 +34,7 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
         this.dateChooserFechaGraduacion.setMaxDate(fecha);
         this.dateChooserFechaNacimiento.setText("");
         this.dateChooserFechaGraduacion.setText("");
+        ocultarEtiquetas();
         this.primeraVez = false;
     }
 
@@ -60,10 +60,10 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
         lblApellidoVacio = new javax.swing.JLabel();
         lblTxtNacionalidad1 = new javax.swing.JLabel();
         btnIngresarFotoPerfil = new javax.swing.JButton();
-        lblValidarNacionalidad1 = new javax.swing.JLabel();
+        lblValidarFechaNac = new javax.swing.JLabel();
         lblTxtFechaNac = new javax.swing.JLabel();
         dateChooserFechaNacimiento = new datechooser.beans.DateChooserCombo();
-        lblPaisVacio2 = new javax.swing.JLabel();
+        lblFechaNacVacio = new javax.swing.JLabel();
         lblTituloProfesional = new javax.swing.JLabel();
         listaTituloProfesional = new javax.swing.JComboBox<>();
         lblValidarTituloProfesional = new javax.swing.JLabel();
@@ -74,14 +74,15 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
         listaPaisGraduacion = new javax.swing.JComboBox<>();
         lblValidarPaisGraduacion = new javax.swing.JLabel();
         lblPaisVacio = new javax.swing.JLabel();
-        lblValidarNacionalidad2 = new javax.swing.JLabel();
-        lblPaisVacio3 = new javax.swing.JLabel();
-        lblDatosIncorrectos = new javax.swing.JLabel();
-        btnIngresarProfesionalASistema = new javax.swing.JButton();
+        lblValidarFechaGrad = new javax.swing.JLabel();
+        lblFechaGradVacio = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         lblIconoNuevoProfesional = new javax.swing.JLabel();
         lblNuevoProfesional = new javax.swing.JLabel();
         btnCerrarSistema = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        lblDatosIncorrectos = new javax.swing.JLabel();
+        btnIngresarProfesionalASistema = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setAlwaysOnTop(true);
@@ -164,7 +165,9 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
         panel2.setLayout(new java.awt.BorderLayout());
 
         jPanel3.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel3.setLayout(null);
+        java.awt.GridBagLayout jPanel3Layout = new java.awt.GridBagLayout();
+        jPanel3Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel3.setLayout(jPanel3Layout);
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.setMinimumSize(new java.awt.Dimension(615, 56));
@@ -287,12 +290,12 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
         jPanel1.add(btnIngresarFotoPerfil, gridBagConstraints);
 
-        lblValidarNacionalidad1.setForeground(new java.awt.Color(255, 255, 255));
-        lblValidarNacionalidad1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
+        lblValidarFechaNac.setForeground(new java.awt.Color(255, 255, 255));
+        lblValidarFechaNac.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 6;
-        jPanel1.add(lblValidarNacionalidad1, gridBagConstraints);
+        jPanel1.add(lblValidarFechaNac, gridBagConstraints);
 
         lblTxtFechaNac.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
         lblTxtFechaNac.setForeground(new java.awt.Color(255, 255, 255));
@@ -348,19 +351,29 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
     dateChooserFechaNacimiento.setMaxDate(new java.util.GregorianCalendar(2017, 10, 9));
     dateChooserFechaNacimiento.setMinDate(new java.util.GregorianCalendar(1917, 10, 1));
     dateChooserFechaNacimiento.setBehavior(datechooser.model.multiple.MultyModelBehavior.SELECT_SINGLE);
+    dateChooserFechaNacimiento.addSelectionChangedListener(new datechooser.events.SelectionChangedListener() {
+        public void onSelectionChange(datechooser.events.SelectionChangedEvent evt) {
+            dateChooserFechaNacimientoOnSelectionChange(evt);
+        }
+    });
+    dateChooserFechaNacimiento.addCommitListener(new datechooser.events.CommitListener() {
+        public void onCommit(datechooser.events.CommitEvent evt) {
+            dateChooserFechaNacimientoOnCommit(evt);
+        }
+    });
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 2;
     gridBagConstraints.gridy = 6;
     gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
     jPanel1.add(dateChooserFechaNacimiento, gridBagConstraints);
 
-    lblPaisVacio2.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-    lblPaisVacio2.setForeground(new java.awt.Color(240, 128, 128));
-    lblPaisVacio2.setText("Dato vacío");
+    lblFechaNacVacio.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+    lblFechaNacVacio.setForeground(new java.awt.Color(240, 128, 128));
+    lblFechaNacVacio.setText("Dato vacío");
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 6;
     gridBagConstraints.gridy = 6;
-    jPanel1.add(lblPaisVacio2, gridBagConstraints);
+    jPanel1.add(lblFechaNacVacio, gridBagConstraints);
 
     lblTituloProfesional.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
     lblTituloProfesional.setForeground(new java.awt.Color(255, 255, 255));
@@ -458,28 +471,38 @@ dateChooserFechaGraduacion.setFieldFont(new java.awt.Font("Dialog", java.awt.Fon
 dateChooserFechaGraduacion.setMaxDate(new java.util.GregorianCalendar(2017, 10, 9));
 dateChooserFechaGraduacion.setMinDate(new java.util.GregorianCalendar(1917, 10, 1));
 dateChooserFechaGraduacion.setBehavior(datechooser.model.multiple.MultyModelBehavior.SELECT_SINGLE);
-gridBagConstraints = new java.awt.GridBagConstraints();
-gridBagConstraints.gridx = 2;
-gridBagConstraints.gridy = 16;
-gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
-gridBagConstraints.insets = new java.awt.Insets(0, 129, 0, 0);
-jPanel1.add(dateChooserFechaGraduacion, gridBagConstraints);
-
-lblPaisGraduacion.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
-lblPaisGraduacion.setForeground(new java.awt.Color(255, 255, 255));
-lblPaisGraduacion.setText("Seleccione el pais de graduación");
-gridBagConstraints = new java.awt.GridBagConstraints();
-gridBagConstraints.gridx = 0;
-gridBagConstraints.gridy = 12;
-gridBagConstraints.gridwidth = 3;
-jPanel1.add(lblPaisGraduacion, gridBagConstraints);
-
-listaPaisGraduacion.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-listaPaisGraduacion.addItemListener(new java.awt.event.ItemListener() {
-    public void itemStateChanged(java.awt.event.ItemEvent evt) {
-        listaPaisGraduacionItemStateChanged(evt);
+dateChooserFechaGraduacion.addSelectionChangedListener(new datechooser.events.SelectionChangedListener() {
+    public void onSelectionChange(datechooser.events.SelectionChangedEvent evt) {
+        dateChooserFechaGraduacionOnSelectionChange(evt);
     }
+    });
+    dateChooserFechaGraduacion.addCommitListener(new datechooser.events.CommitListener() {
+        public void onCommit(datechooser.events.CommitEvent evt) {
+            dateChooserFechaGraduacionOnCommit(evt);
+        }
+    });
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.gridx = 2;
+    gridBagConstraints.gridy = 16;
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+    gridBagConstraints.insets = new java.awt.Insets(0, 129, 0, 0);
+    jPanel1.add(dateChooserFechaGraduacion, gridBagConstraints);
+
+    lblPaisGraduacion.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
+    lblPaisGraduacion.setForeground(new java.awt.Color(255, 255, 255));
+    lblPaisGraduacion.setText("Seleccione el pais de graduación");
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.gridx = 0;
+    gridBagConstraints.gridy = 12;
+    gridBagConstraints.gridwidth = 3;
+    jPanel1.add(lblPaisGraduacion, gridBagConstraints);
+
+    listaPaisGraduacion.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+    listaPaisGraduacion.addItemListener(new java.awt.event.ItemListener() {
+        public void itemStateChanged(java.awt.event.ItemEvent evt) {
+            listaPaisGraduacionItemStateChanged(evt);
+        }
     });
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 0;
@@ -503,40 +526,28 @@ listaPaisGraduacion.addItemListener(new java.awt.event.ItemListener() {
     gridBagConstraints.gridy = 14;
     jPanel1.add(lblPaisVacio, gridBagConstraints);
 
-    lblValidarNacionalidad2.setForeground(new java.awt.Color(255, 255, 255));
-    lblValidarNacionalidad2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
+    lblValidarFechaGrad.setForeground(new java.awt.Color(255, 255, 255));
+    lblValidarFechaGrad.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 4;
     gridBagConstraints.gridy = 16;
-    jPanel1.add(lblValidarNacionalidad2, gridBagConstraints);
+    jPanel1.add(lblValidarFechaGrad, gridBagConstraints);
 
-    lblPaisVacio3.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-    lblPaisVacio3.setForeground(new java.awt.Color(240, 128, 128));
-    lblPaisVacio3.setText("Dato vacío");
+    lblFechaGradVacio.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+    lblFechaGradVacio.setForeground(new java.awt.Color(240, 128, 128));
+    lblFechaGradVacio.setText("Dato vacío");
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 6;
     gridBagConstraints.gridy = 16;
-    jPanel1.add(lblPaisVacio3, gridBagConstraints);
+    jPanel1.add(lblFechaGradVacio, gridBagConstraints);
 
-    jPanel3.add(jPanel1);
-    jPanel1.setBounds(0, 10, 800, 540);
-
-    lblDatosIncorrectos.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
-    lblDatosIncorrectos.setForeground(new java.awt.Color(255, 153, 153));
-    lblDatosIncorrectos.setText("Aún quedan datos incorrectos");
-    jPanel3.add(lblDatosIncorrectos);
-    lblDatosIncorrectos.setBounds(220, 600, 312, 25);
-
-    btnIngresarProfesionalASistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoConfirmar.png"))); // NOI18N
-    btnIngresarProfesionalASistema.setBorderPainted(false);
-    btnIngresarProfesionalASistema.setContentAreaFilled(false);
-    btnIngresarProfesionalASistema.addActionListener(new java.awt.event.ActionListener() {
-        public void actionPerformed(java.awt.event.ActionEvent evt) {
-            btnIngresarProfesionalASistemaActionPerformed(evt);
-        }
-    });
-    jPanel3.add(btnIngresarProfesionalASistema);
-    btnIngresarProfesionalASistema.setBounds(670, 550, 115, 94);
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.gridx = 0;
+    gridBagConstraints.gridy = 0;
+    gridBagConstraints.gridwidth = 3;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+    gridBagConstraints.insets = new java.awt.Insets(0, 65, 0, 0);
+    jPanel3.add(jPanel1, gridBagConstraints);
 
     panel2.add(jPanel3, java.awt.BorderLayout.CENTER);
 
@@ -587,6 +598,35 @@ listaPaisGraduacion.addItemListener(new java.awt.event.ItemListener() {
 
     panel2.add(jPanel4, java.awt.BorderLayout.PAGE_START);
 
+    jPanel2.setBackground(new java.awt.Color(51, 51, 51));
+    java.awt.GridBagLayout jPanel2Layout = new java.awt.GridBagLayout();
+    jPanel2Layout.columnWeights = new double[] {1.0, 1.0};
+    jPanel2.setLayout(jPanel2Layout);
+
+    lblDatosIncorrectos.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+    lblDatosIncorrectos.setForeground(new java.awt.Color(255, 153, 153));
+    lblDatosIncorrectos.setText("Aún quedan datos incorrectos");
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.gridx = 0;
+    gridBagConstraints.gridy = 0;
+    jPanel2.add(lblDatosIncorrectos, gridBagConstraints);
+
+    btnIngresarProfesionalASistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoConfirmar.png"))); // NOI18N
+    btnIngresarProfesionalASistema.setBorderPainted(false);
+    btnIngresarProfesionalASistema.setContentAreaFilled(false);
+    btnIngresarProfesionalASistema.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            btnIngresarProfesionalASistemaActionPerformed(evt);
+        }
+    });
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.gridx = 0;
+    gridBagConstraints.gridy = 0;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
+    jPanel2.add(btnIngresarProfesionalASistema, gridBagConstraints);
+
+    panel2.add(jPanel2, java.awt.BorderLayout.PAGE_END);
+
     getContentPane().add(panel2, java.awt.BorderLayout.CENTER);
 
     pack();
@@ -623,9 +663,10 @@ listaPaisGraduacion.addItemListener(new java.awt.event.ItemListener() {
         String paisGraduacion = (String) this.listaPaisGraduacion.getSelectedItem();
         String fechaNacimiento = this.dateChooserFechaNacimiento.getText();
         String fechaGraduacion = this.dateChooserFechaGraduacion.getText();
-        if (nombre.equals("") || apellido.equals("") || tituloProfesional.equals("Seleccione...") || paisGraduacion.equals("Seleccione...")) {
+        if (nombre.equals("") || apellido.equals("") || tituloProfesional.equals("Seleccione...") || paisGraduacion.equals("Seleccione...")
+                || fechaNacimiento.isEmpty() || fechaGraduacion.isEmpty()) {
             this.lblDatosIncorrectos.setVisible(true);
-            mostrarErrores(nombre, apellido, tituloProfesional, paisGraduacion);
+            mostrarErrores(nombre, apellido, tituloProfesional, paisGraduacion, fechaGraduacion,fechaNacimiento);
         } else {
             this.lblDatosIncorrectos.setVisible(false);
             boolean seAgregoProfesional = this.getSistema().crearProfesional(nombre, apellido, fechaNacimiento, this.fotoDePerfilActual, tituloProfesional, fechaGraduacion, paisGraduacion);
@@ -721,6 +762,38 @@ listaPaisGraduacion.addItemListener(new java.awt.event.ItemListener() {
         System.exit(1);
     }//GEN-LAST:event_btnCerrarSistemaActionPerformed
 
+    private void dateChooserFechaNacimientoOnSelectionChange(datechooser.events.SelectionChangedEvent evt) {//GEN-FIRST:event_dateChooserFechaNacimientoOnSelectionChange
+        
+    }//GEN-LAST:event_dateChooserFechaNacimientoOnSelectionChange
+
+    private void dateChooserFechaGraduacionOnSelectionChange(datechooser.events.SelectionChangedEvent evt) {//GEN-FIRST:event_dateChooserFechaGraduacionOnSelectionChange
+    }//GEN-LAST:event_dateChooserFechaGraduacionOnSelectionChange
+
+    private void dateChooserFechaGraduacionOnCommit(datechooser.events.CommitEvent evt) {//GEN-FIRST:event_dateChooserFechaGraduacionOnCommit
+ String fecha = this.dateChooserFechaGraduacion.getText();
+        if (fecha.equals("")) {
+            this.lblValidarFechaGrad.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png")));
+            this.lblValidarFechaGrad.setVisible(true);
+            this.lblFechaGradVacio.setVisible(true);
+        } else {
+            this.lblValidarFechaGrad.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoCorrecto.png")));
+            this.lblValidarFechaGrad.setVisible(true);
+            this.lblFechaGradVacio.setVisible(false);
+        }    }//GEN-LAST:event_dateChooserFechaGraduacionOnCommit
+
+    private void dateChooserFechaNacimientoOnCommit(datechooser.events.CommitEvent evt) {//GEN-FIRST:event_dateChooserFechaNacimientoOnCommit
+        String fecha = this.dateChooserFechaNacimiento.getText();
+        if (fecha.equals("")) {
+            this.lblValidarFechaNac.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png")));
+            this.lblValidarFechaNac.setVisible(true);
+            this.lblFechaNacVacio.setVisible(true);
+        } else {
+            this.lblValidarFechaNac.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoCorrecto.png")));
+            this.lblValidarFechaNac.setVisible(true);
+            this.lblFechaNacVacio.setVisible(false);
+        }
+    }//GEN-LAST:event_dateChooserFechaNacimientoOnCommit
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCerrarSistema;
@@ -731,28 +804,29 @@ listaPaisGraduacion.addItemListener(new java.awt.event.ItemListener() {
     private datechooser.beans.DateChooserCombo dateChooserFechaNacimiento;
     private javax.swing.JLabel icono;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JLabel lblApellido;
     private javax.swing.JLabel lblApellidoVacio;
     private javax.swing.JLabel lblDatosIncorrectos;
+    private javax.swing.JLabel lblFechaGradVacio;
     private javax.swing.JLabel lblFechaGraduacion;
+    private javax.swing.JLabel lblFechaNacVacio;
     private javax.swing.JLabel lblIconoNuevoProfesional;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblNombreVacio;
     private javax.swing.JLabel lblNuevoProfesional;
     private javax.swing.JLabel lblPaisGraduacion;
     private javax.swing.JLabel lblPaisVacio;
-    private javax.swing.JLabel lblPaisVacio2;
-    private javax.swing.JLabel lblPaisVacio3;
     private javax.swing.JLabel lblTituloProfesional;
     private javax.swing.JLabel lblTituloVacio;
     private javax.swing.JLabel lblTituloVentana;
     private javax.swing.JLabel lblTxtFechaNac;
     private javax.swing.JLabel lblTxtNacionalidad1;
     private javax.swing.JLabel lblValidarApellido;
-    private javax.swing.JLabel lblValidarNacionalidad1;
-    private javax.swing.JLabel lblValidarNacionalidad2;
+    private javax.swing.JLabel lblValidarFechaGrad;
+    private javax.swing.JLabel lblValidarFechaNac;
     private javax.swing.JLabel lblValidarNombre;
     private javax.swing.JLabel lblValidarPaisGraduacion;
     private javax.swing.JLabel lblValidarTituloProfesional;
@@ -774,6 +848,10 @@ listaPaisGraduacion.addItemListener(new java.awt.event.ItemListener() {
         this.lblApellidoVacio.setVisible(false);
         this.lblTituloVacio.setVisible(false);
         this.lblPaisVacio.setVisible(false);
+        this.lblValidarFechaNac.setVisible(false);
+        this.lblFechaNacVacio.setVisible(false);
+        this.lblValidarFechaGrad.setVisible(false);
+        this.lblFechaGradVacio.setVisible(false);
     }
 
     private void cargarListaPaisesGraduacion() {
@@ -786,7 +864,7 @@ listaPaisGraduacion.addItemListener(new java.awt.event.ItemListener() {
         }
     }
 
-    private void mostrarErrores(String nombre, String apellido, String tituloProfesional, String paisGraduacion) {
+    private void mostrarErrores(String nombre, String apellido, String tituloProfesional, String paisGraduacion, String fechaGraduacion, String fechaNacimiento) {
         if (nombre.equals("")) {
             this.lblValidarNombre.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png")));
             this.lblValidarNombre.setVisible(true);
@@ -806,6 +884,16 @@ listaPaisGraduacion.addItemListener(new java.awt.event.ItemListener() {
             this.lblValidarPaisGraduacion.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png")));
             this.lblValidarPaisGraduacion.setVisible(true);
             this.lblPaisVacio.setVisible(true);
+        }
+        if (fechaGraduacion.isEmpty()) {
+            this.lblValidarFechaGrad.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png")));
+            this.lblValidarFechaGrad.setVisible(true);
+            this.lblFechaGradVacio.setVisible(true);
+        }
+        if (fechaNacimiento.isEmpty()) {
+            this.lblValidarFechaNac.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png")));
+            this.lblValidarFechaNac.setVisible(true);
+            this.lblFechaNacVacio.setVisible(true);
         }
     }
 

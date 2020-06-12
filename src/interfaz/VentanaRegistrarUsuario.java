@@ -24,7 +24,6 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         this.sistema = unSistema;
         this.fotoDePerfilActual = new ImageIcon(getClass().getResource("/Imagenes/fotoDeUsuarioStandard.png"));
         this.primeraVez = true;
-        ocultarEtiquetas();
         cargarListaPreferencias();
         cargarListaRestricciones();
         cargarListaPaises();
@@ -32,6 +31,8 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         this.dateChooserFechaNacimiento.setMaxDate(fecha);
         this.dateChooserFechaNacimiento.setText("");
         this.primeraVez = false;
+        ocultarEtiquetas();
+
     }
 
     public Sistema getSistema() {
@@ -68,7 +69,6 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         btnHome = new javax.swing.JButton();
         icono = new javax.swing.JLabel();
         panel2 = new javax.swing.JPanel();
-        jPanel6 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         lblIconoNuevoUsuario1 = new javax.swing.JLabel();
         lblNuevoUsuario1 = new javax.swing.JLabel();
@@ -89,10 +89,10 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         listaNacionalidad = new javax.swing.JComboBox<>();
         lblValidarNacionalidad = new javax.swing.JLabel();
         lblPaisVacio = new javax.swing.JLabel();
-        lblValidarNacionalidad1 = new javax.swing.JLabel();
+        lblValidarFechaNac = new javax.swing.JLabel();
         lblTxtFechaNac = new javax.swing.JLabel();
         dateChooserFechaNacimiento = new datechooser.beans.DateChooserCombo();
-        lblPaisVacio1 = new javax.swing.JLabel();
+        lblFechaNacVacio = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         lblTxtPreferencias = new javax.swing.JLabel();
         rdBtnVegano = new javax.swing.JRadioButton();
@@ -182,21 +182,6 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         panel2.setMinimumSize(new java.awt.Dimension(800, 800));
         panel2.setPreferredSize(new java.awt.Dimension(800, 800));
         panel2.setLayout(new java.awt.BorderLayout());
-
-        jPanel6.setBackground(new java.awt.Color(51, 51, 51));
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        panel2.add(jPanel6, java.awt.BorderLayout.CENTER);
 
         jPanel2.setBackground(new java.awt.Color(51, 51, 51));
         java.awt.GridBagLayout jPanel2Layout1 = new java.awt.GridBagLayout();
@@ -416,13 +401,13 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.ABOVE_BASELINE_LEADING;
         jPanel1.add(lblPaisVacio, gridBagConstraints);
 
-        lblValidarNacionalidad1.setForeground(new java.awt.Color(255, 255, 255));
-        lblValidarNacionalidad1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
+        lblValidarFechaNac.setForeground(new java.awt.Color(255, 255, 255));
+        lblValidarFechaNac.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 8;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.ABOVE_BASELINE_LEADING;
-        jPanel1.add(lblValidarNacionalidad1, gridBagConstraints);
+        jPanel1.add(lblValidarFechaNac, gridBagConstraints);
 
         lblTxtFechaNac.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
         lblTxtFechaNac.setForeground(new java.awt.Color(255, 255, 255));
@@ -478,6 +463,11 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     dateChooserFechaNacimiento.setMaxDate(new java.util.GregorianCalendar(2017, 10, 9));
     dateChooserFechaNacimiento.setMinDate(new java.util.GregorianCalendar(1917, 10, 1));
     dateChooserFechaNacimiento.setBehavior(datechooser.model.multiple.MultyModelBehavior.SELECT_SINGLE);
+    dateChooserFechaNacimiento.addCommitListener(new datechooser.events.CommitListener() {
+        public void onCommit(datechooser.events.CommitEvent evt) {
+            dateChooserFechaNacimientoOnCommit(evt);
+        }
+    });
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 2;
     gridBagConstraints.gridy = 8;
@@ -486,14 +476,14 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     jPanel1.add(dateChooserFechaNacimiento, gridBagConstraints);
     dateChooserFechaNacimiento.setNextFocusableComponent(rdBtnCarnesBlancas);
 
-    lblPaisVacio1.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-    lblPaisVacio1.setForeground(new java.awt.Color(240, 128, 128));
-    lblPaisVacio1.setText("Dato vacío");
+    lblFechaNacVacio.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+    lblFechaNacVacio.setForeground(new java.awt.Color(240, 128, 128));
+    lblFechaNacVacio.setText("Dato vacío");
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 6;
     gridBagConstraints.gridy = 8;
     gridBagConstraints.anchor = java.awt.GridBagConstraints.ABOVE_BASELINE_LEADING;
-    jPanel1.add(lblPaisVacio1, gridBagConstraints);
+    jPanel1.add(lblFechaNacVacio, gridBagConstraints);
 
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 0;
@@ -667,10 +657,10 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         }
     });
     gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 1;
+    gridBagConstraints.gridx = 0;
     gridBagConstraints.gridy = 0;
     gridBagConstraints.gridheight = 2;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHEAST;
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
     gridBagConstraints.insets = new java.awt.Insets(0, 0, 20, 20);
     jPanel5.add(btnIngresarUsuarioASistema, gridBagConstraints);
 
@@ -680,7 +670,6 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 0;
     gridBagConstraints.gridy = 1;
-    gridBagConstraints.gridwidth = 2;
     gridBagConstraints.insets = new java.awt.Insets(0, 0, 20, 0);
     jPanel5.add(lblDatosIncorrectos, gridBagConstraints);
 
@@ -795,6 +784,19 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         System.exit(1);
     }//GEN-LAST:event_btnCerrarSistemaActionPerformed
 
+    private void dateChooserFechaNacimientoOnCommit(datechooser.events.CommitEvent evt) {//GEN-FIRST:event_dateChooserFechaNacimientoOnCommit
+ String fecha = this.dateChooserFechaNacimiento.getText();
+        if (fecha.equals("")) {
+            this.lblValidarFechaNac.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png")));
+            this.lblValidarFechaNac.setVisible(true);
+            this.lblFechaNacVacio.setVisible(true);
+        } else {
+            this.lblValidarFechaNac.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoCorrecto.png")));
+            this.lblValidarFechaNac.setVisible(true);
+            this.lblFechaNacVacio.setVisible(false);
+        }
+    }//GEN-LAST:event_dateChooserFechaNacimientoOnCommit
+
     void agregarRestriccionesUsuario(ArrayList<String> restricciones) {
         if (this.rdBtnCeliaco.isSelected()) {
             restricciones.add("Celíaco");
@@ -840,16 +842,15 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
     private javax.swing.JLabel lblApellido;
     private javax.swing.JLabel lblApellidoVacio;
     private javax.swing.JLabel lblDatosIncorrectos;
+    private javax.swing.JLabel lblFechaNacVacio;
     private javax.swing.JLabel lblIconoNuevoUsuario1;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblNombreVacio;
     private javax.swing.JLabel lblNuevoUsuario1;
     private javax.swing.JLabel lblPaisVacio;
-    private javax.swing.JLabel lblPaisVacio1;
     private javax.swing.JLabel lblTituloVentana;
     private javax.swing.JLabel lblTxtFechaNac;
     private javax.swing.JLabel lblTxtNacionalidad;
@@ -857,8 +858,8 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     private javax.swing.JLabel lblTxtPreferencias;
     private javax.swing.JLabel lblTxtRestricciones;
     private javax.swing.JLabel lblValidarApellido;
+    private javax.swing.JLabel lblValidarFechaNac;
     private javax.swing.JLabel lblValidarNacionalidad;
-    private javax.swing.JLabel lblValidarNacionalidad1;
     private javax.swing.JLabel lblValidarNombre;
     private javax.swing.JComboBox<String> listaNacionalidad;
     private javax.swing.JPanel panel1;
@@ -880,12 +881,12 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         this.lblValidarNombre.setVisible(false);
         this.lblValidarApellido.setVisible(false);
         this.lblValidarNacionalidad.setVisible(false);
-        this.lblValidarNacionalidad1.setVisible(false);
+        this.lblValidarFechaNac.setVisible(false);
         this.lblDatosIncorrectos.setVisible(false);
         this.lblNombreVacio.setVisible(false);
         this.lblApellidoVacio.setVisible(false);
         this.lblPaisVacio.setVisible(false);
-        this.lblPaisVacio1.setVisible(false);
+        this.lblFechaNacVacio.setVisible(false);
     }
 
     private void cargarListaPreferencias() {
@@ -963,9 +964,9 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
             this.lblPaisVacio.setVisible(true);
         }
         if(fechaNacimiento.isEmpty()){
-            this.lblValidarNacionalidad1.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png")));
-            this.lblValidarNacionalidad1.setVisible(true);
-            this.lblPaisVacio1.setVisible(true);
+            this.lblValidarFechaNac.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png")));
+            this.lblValidarFechaNac.setVisible(true);
+            this.lblFechaNacVacio.setVisible(true);
         }
     }
 
