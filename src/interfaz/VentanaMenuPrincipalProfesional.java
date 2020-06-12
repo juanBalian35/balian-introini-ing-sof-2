@@ -194,6 +194,9 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         jPanel22 = new javax.swing.JPanel();
         btnCerrarSistema4 = new javax.swing.JButton();
         panelIngresarAlimentoAlSistema = new javax.swing.JPanel();
+        jPanel29 = new javax.swing.JPanel();
+        lblDatosIncorrectos = new javax.swing.JLabel();
+        btnIngresarAlimentoASistema = new javax.swing.JButton();
         jPanel19 = new javax.swing.JPanel();
         jPanel20 = new javax.swing.JPanel();
         jPanel16 = new javax.swing.JPanel();
@@ -230,8 +233,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         lblTipoAlimentoVacio = new javax.swing.JLabel();
         lblTxtNacionalidad1 = new javax.swing.JLabel();
         btnIngresarFotoAlimento = new javax.swing.JButton();
-        lblDatosIncorrectos = new javax.swing.JLabel();
-        btnIngresarAlimentoASistema = new javax.swing.JButton();
         jPanel21 = new javax.swing.JPanel();
         lblIconoInicioSesion3 = new javax.swing.JLabel();
         lblInicioSesion3 = new javax.swing.JLabel();
@@ -390,6 +391,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         panelVacio.setBackground(new java.awt.Color(51, 51, 51));
         panelVacio.setMaximumSize(new java.awt.Dimension(800, 800));
         panelVacio.setMinimumSize(new java.awt.Dimension(800, 800));
+        panelVacio.setPreferredSize(new java.awt.Dimension(800, 800));
         panelVacio.setLayout(new java.awt.BorderLayout());
 
         jPanel27.setBackground(new java.awt.Color(51, 51, 51));
@@ -447,9 +449,10 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         panelDerecho.add(panelVacio, "card7");
 
         panelNoHayPlanesPendientes.setBackground(new java.awt.Color(51, 51, 51));
-        panelNoHayPlanesPendientes.setMaximumSize(new java.awt.Dimension(400, 400));
-        panelNoHayPlanesPendientes.setMinimumSize(new java.awt.Dimension(400, 400));
+        panelNoHayPlanesPendientes.setMaximumSize(new java.awt.Dimension(800, 800));
+        panelNoHayPlanesPendientes.setMinimumSize(new java.awt.Dimension(800, 800));
         panelNoHayPlanesPendientes.setName(""); // NOI18N
+        panelNoHayPlanesPendientes.setPreferredSize(new java.awt.Dimension(800, 800));
         panelNoHayPlanesPendientes.setLayout(new java.awt.BorderLayout());
 
         jPanel4.setBackground(new java.awt.Color(51, 51, 51));
@@ -542,10 +545,10 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         panelDerecho.add(panelNoHayPlanesPendientes, "card3");
 
         panelNoHayConsultasPendientes.setBackground(new java.awt.Color(51, 51, 51));
-        panelNoHayConsultasPendientes.setMaximumSize(new java.awt.Dimension(400, 400));
-        panelNoHayConsultasPendientes.setMinimumSize(new java.awt.Dimension(400, 400));
+        panelNoHayConsultasPendientes.setMaximumSize(new java.awt.Dimension(800, 800));
+        panelNoHayConsultasPendientes.setMinimumSize(new java.awt.Dimension(800, 800));
         panelNoHayConsultasPendientes.setName(""); // NOI18N
-        panelNoHayConsultasPendientes.setPreferredSize(new java.awt.Dimension(400, 400));
+        panelNoHayConsultasPendientes.setPreferredSize(new java.awt.Dimension(800, 800));
         panelNoHayConsultasPendientes.setLayout(new java.awt.BorderLayout());
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
@@ -600,6 +603,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         panelConsultaConProfesional.setBackground(new java.awt.Color(51, 51, 51));
         panelConsultaConProfesional.setMaximumSize(new java.awt.Dimension(800, 800));
         panelConsultaConProfesional.setMinimumSize(new java.awt.Dimension(800, 800));
+        panelConsultaConProfesional.setPreferredSize(new java.awt.Dimension(800, 800));
         panelConsultaConProfesional.setLayout(new java.awt.BorderLayout());
 
         jPanel7.setBackground(new java.awt.Color(51, 51, 51));
@@ -1268,7 +1272,9 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         panelMostrarPlanEnviado.add(jPanel23, java.awt.BorderLayout.CENTER);
 
         jPanel24.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel24.setLayout(new java.awt.GridBagLayout());
+        java.awt.GridBagLayout jPanel24Layout = new java.awt.GridBagLayout();
+        jPanel24Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel24.setLayout(jPanel24Layout);
 
         btnCerrarSistema5.setBackground(new java.awt.Color(51, 51, 51));
         btnCerrarSistema5.setForeground(new java.awt.Color(51, 51, 51));
@@ -1622,19 +1628,53 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         panelIngresarAlimentoAlSistema.setPreferredSize(new java.awt.Dimension(800, 800));
         panelIngresarAlimentoAlSistema.setLayout(new java.awt.BorderLayout());
 
+        jPanel29.setBackground(new java.awt.Color(51, 51, 51));
+
+        lblDatosIncorrectos.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+        lblDatosIncorrectos.setForeground(new java.awt.Color(255, 153, 153));
+        lblDatosIncorrectos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblDatosIncorrectos.setText("Aún quedan datos incorrectos");
+
+        btnIngresarAlimentoASistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoConfirmar.png"))); // NOI18N
+        btnIngresarAlimentoASistema.setBorderPainted(false);
+        btnIngresarAlimentoASistema.setContentAreaFilled(false);
+        btnIngresarAlimentoASistema.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIngresarAlimentoASistemaActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel29Layout = new javax.swing.GroupLayout(jPanel29);
+        jPanel29.setLayout(jPanel29Layout);
+        jPanel29Layout.setHorizontalGroup(
+            jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel29Layout.createSequentialGroup()
+                .addGap(216, 216, 216)
+                .addComponent(lblDatosIncorrectos)
+                .addGap(214, 214, 214)
+                .addComponent(btnIngresarAlimentoASistema))
+        );
+        jPanel29Layout.setVerticalGroup(
+            jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblDatosIncorrectos, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(btnIngresarAlimentoASistema)
+        );
+
+        panelIngresarAlimentoAlSistema.add(jPanel29, java.awt.BorderLayout.PAGE_END);
+
         jPanel19.setBackground(new java.awt.Color(51, 51, 51));
 
         jPanel20.setBackground(new java.awt.Color(51, 51, 51));
         java.awt.GridBagLayout jPanel20Layout = new java.awt.GridBagLayout();
-        jPanel20Layout.columnWidths = new int[] {0, 21, 0, 21, 0, 21, 0};
-        jPanel20Layout.rowHeights = new int[] {0, 32, 0, 32, 0, 32, 0};
+        jPanel20Layout.columnWidths = new int[] {0, 21, 0};
+        jPanel20Layout.rowHeights = new int[] {0, 24, 0, 24, 0, 24, 0};
         jPanel20Layout.columnWeights = new double[] {1.0, 1.0};
         jPanel20.setLayout(jPanel20Layout);
 
         jPanel16.setBackground(new java.awt.Color(51, 51, 51));
         java.awt.GridBagLayout jPanel16Layout1 = new java.awt.GridBagLayout();
         jPanel16Layout1.columnWidths = new int[] {0, 19, 0, 19, 0};
-        jPanel16Layout1.rowHeights = new int[] {0, 8, 0, 8, 0, 8, 0, 8, 0, 8, 0, 8, 0, 8, 0};
+        jPanel16Layout1.rowHeights = new int[] {0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0};
         jPanel16.setLayout(jPanel16Layout1);
 
         checkVitaminas.setBackground(new java.awt.Color(51, 51, 51));
@@ -1951,7 +1991,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 2;
-        gridBagConstraints.gridwidth = 5;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         jPanel20.add(jPanel16, gridBagConstraints);
 
@@ -2090,46 +2129,21 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         jPanel20.add(jPanel18, gridBagConstraints);
 
-        lblDatosIncorrectos.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
-        lblDatosIncorrectos.setForeground(new java.awt.Color(255, 153, 153));
-        lblDatosIncorrectos.setText("Aún quedan datos incorrectos");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 4;
-        gridBagConstraints.gridwidth = 7;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.SOUTH;
-        jPanel20.add(lblDatosIncorrectos, gridBagConstraints);
-
-        btnIngresarAlimentoASistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoConfirmar.png"))); // NOI18N
-        btnIngresarAlimentoASistema.setBorderPainted(false);
-        btnIngresarAlimentoASistema.setContentAreaFilled(false);
-        btnIngresarAlimentoASistema.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnIngresarAlimentoASistemaActionPerformed(evt);
-            }
-        });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 4;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.gridheight = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.SOUTHEAST;
-        jPanel20.add(btnIngresarAlimentoASistema, gridBagConstraints);
-
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
         jPanel19.setLayout(jPanel19Layout);
         jPanel19Layout.setHorizontalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel19Layout.createSequentialGroup()
-                .addContainerGap(34, Short.MAX_VALUE)
-                .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, 760, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addGroup(jPanel19Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, 719, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(42, Short.MAX_VALUE))
         );
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel19Layout.createSequentialGroup()
+            .addGroup(jPanel19Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(11, Short.MAX_VALUE))
         );
 
         panelIngresarAlimentoAlSistema.add(jPanel19, java.awt.BorderLayout.CENTER);
@@ -2981,6 +2995,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     private javax.swing.JPanel jPanel26;
     private javax.swing.JPanel jPanel27;
     private javax.swing.JPanel jPanel28;
+    private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
