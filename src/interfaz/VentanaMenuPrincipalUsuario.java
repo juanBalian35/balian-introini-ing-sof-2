@@ -551,8 +551,9 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         gridBagConstraints.gridwidth = 2;
         jPanel2.add(btnNuevaConversacion, gridBagConstraints);
 
-        listaConversaciones.setBackground(new java.awt.Color(238, 238, 238));
+        listaConversaciones.setBackground(new java.awt.Color(51, 51, 51));
         listaConversaciones.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+        listaConversaciones.setForeground(new java.awt.Color(255, 255, 255));
         listaConversaciones.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 listaConversacionesValueChanged(evt);

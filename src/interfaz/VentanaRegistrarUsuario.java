@@ -496,7 +496,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     jPanel4.setMaximumSize(new java.awt.Dimension(610, 260));
     jPanel4.setMinimumSize(new java.awt.Dimension(610, 260));
     java.awt.GridBagLayout jPanel4Layout = new java.awt.GridBagLayout();
-    jPanel4Layout.columnWidths = new int[] {0, 65, 0, 65, 0};
+    jPanel4Layout.columnWidths = new int[] {0, 78, 0, 78, 0};
     jPanel4Layout.rowHeights = new int[] {0, 5, 0, 5, 0, 5, 0, 5, 0, 5, 0};
     jPanel4Layout.columnWeights = new double[] {1.0, 1.0};
     jPanel4.setLayout(jPanel4Layout);
@@ -519,7 +519,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     gridBagConstraints.gridx = 4;
     gridBagConstraints.gridy = 4;
     gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-    gridBagConstraints.insets = new java.awt.Insets(0, 17, 0, 2);
+    gridBagConstraints.insets = new java.awt.Insets(0, 23, 0, 2);
     jPanel4.add(rdBtnVegano, gridBagConstraints);
 
     rdBtnCarnesBlancas.setBackground(new java.awt.Color(51, 51, 51));
@@ -532,7 +532,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     gridBagConstraints.gridy = 4;
     gridBagConstraints.ipadx = 3;
     gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-    gridBagConstraints.insets = new java.awt.Insets(0, 17, 0, 2);
+    gridBagConstraints.insets = new java.awt.Insets(0, 23, 0, 2);
     jPanel4.add(rdBtnCarnesBlancas, gridBagConstraints);
 
     rdBtnHarinas.setBackground(new java.awt.Color(51, 51, 51));
@@ -545,7 +545,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     gridBagConstraints.gridy = 10;
     gridBagConstraints.ipadx = 3;
     gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-    gridBagConstraints.insets = new java.awt.Insets(0, 17, 0, 2);
+    gridBagConstraints.insets = new java.awt.Insets(0, 23, 0, 2);
     jPanel4.add(rdBtnHarinas, gridBagConstraints);
 
     lblTxtRestricciones.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
@@ -567,7 +567,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     gridBagConstraints.gridy = 6;
     gridBagConstraints.ipadx = 3;
     gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-    gridBagConstraints.insets = new java.awt.Insets(0, 17, 0, 2);
+    gridBagConstraints.insets = new java.awt.Insets(0, 23, 0, 2);
     jPanel4.add(rdBtnVerduras, gridBagConstraints);
 
     rdBtnFrutas.setBackground(new java.awt.Color(51, 51, 51));
@@ -580,7 +580,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     gridBagConstraints.gridy = 8;
     gridBagConstraints.ipadx = 3;
     gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-    gridBagConstraints.insets = new java.awt.Insets(0, 17, 0, 2);
+    gridBagConstraints.insets = new java.awt.Insets(0, 23, 0, 2);
     jPanel4.add(rdBtnFrutas, gridBagConstraints);
 
     rdBtnCeliaco.setBackground(new java.awt.Color(51, 51, 51));
@@ -592,7 +592,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     gridBagConstraints.gridx = 4;
     gridBagConstraints.gridy = 8;
     gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-    gridBagConstraints.insets = new java.awt.Insets(0, 17, 0, 2);
+    gridBagConstraints.insets = new java.awt.Insets(0, 23, 0, 2);
     jPanel4.add(rdBtnCeliaco, gridBagConstraints);
 
     rdBtnDiabetes.setBackground(new java.awt.Color(51, 51, 51));
@@ -604,7 +604,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     gridBagConstraints.gridx = 4;
     gridBagConstraints.gridy = 2;
     gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-    gridBagConstraints.insets = new java.awt.Insets(0, 17, 0, 2);
+    gridBagConstraints.insets = new java.awt.Insets(0, 23, 0, 2);
     jPanel4.add(rdBtnDiabetes, gridBagConstraints);
 
     rdBtnCarnesRojas.setBackground(new java.awt.Color(51, 51, 51));
@@ -617,7 +617,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     gridBagConstraints.gridy = 2;
     gridBagConstraints.ipadx = 3;
     gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-    gridBagConstraints.insets = new java.awt.Insets(0, 17, 0, 2);
+    gridBagConstraints.insets = new java.awt.Insets(0, 23, 0, 2);
     jPanel4.add(rdBtnCarnesRojas, gridBagConstraints);
 
     rdBtnIntoleranteLactosa.setBackground(new java.awt.Color(51, 51, 51));
@@ -630,7 +630,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     gridBagConstraints.gridx = 4;
     gridBagConstraints.gridy = 6;
     gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-    gridBagConstraints.insets = new java.awt.Insets(0, 17, 0, 2);
+    gridBagConstraints.insets = new java.awt.Insets(0, 23, 0, 2);
     jPanel4.add(rdBtnIntoleranteLactosa, gridBagConstraints);
 
     gridBagConstraints = new java.awt.GridBagConstraints();
