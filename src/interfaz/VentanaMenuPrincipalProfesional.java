@@ -2351,8 +2351,11 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         if (imagen == JFileChooser.APPROVE_OPTION) {
             if(fileChooser.getSelectedFile().exists()){
                 ImageIcon iconoPerfil = new ImageIcon(fileChooser.getSelectedFile().getAbsolutePath());
+                Image image = iconoPerfil.getImage().getScaledInstance(100, 100, java.awt.Image.SCALE_SMOOTH);
+                ImageIcon icono = new ImageIcon(image);
+
                 btnIngresarFotoAlimento.setIcon(iconoPerfil);
-                this.setFotoDeAlimentoActual(iconoPerfil);
+                this.setFotoDeAlimentoActual(iconoPerfil);       
             }
             else{
                 String mensajeError = "El archivo seleccionado no existe.";

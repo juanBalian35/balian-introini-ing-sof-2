@@ -663,14 +663,17 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
 
     private void btnIngresarFotoPerfilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarFotoPerfilActionPerformed
         JFileChooser fileChooser = new JFileChooser();
-        FileNameExtensionFilter file = new FileNameExtensionFilter("PNG", "png");
+        FileNameExtensionFilter file = new FileNameExtensionFilter("Imagenes(png, jpg, jpeg, bmp)", "png", "jpeg", "jpg", "bmp");
         fileChooser.setFileFilter(file);
         fileChooser.setAcceptAllFileFilterUsed(false);
         int imagen = fileChooser.showOpenDialog(this);
         if (imagen == JFileChooser.APPROVE_OPTION) {
             if(fileChooser.getSelectedFile().exists()){
                 ImageIcon iconoPerfil = new ImageIcon(fileChooser.getSelectedFile().getAbsolutePath());
-                this.btnIngresarFotoPerfil.setIcon(iconoPerfil);
+                Image image = iconoPerfil.getImage().getScaledInstance(100, 100, java.awt.Image.SCALE_SMOOTH);
+                ImageIcon icono = new ImageIcon(image);
+                
+                this.btnIngresarFotoPerfil.setIcon(icono);
                 this.fotoDePerfilActual = iconoPerfil;
             }
             else{
