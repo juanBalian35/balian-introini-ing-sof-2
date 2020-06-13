@@ -3,7 +3,12 @@ package interfaz;
 import dominio.Persona;
 import dominio.Sistema;
 import java.awt.Image;
+import java.awt.Point;
 import java.awt.Toolkit;
+import javax.swing.JDialog;
+import javax.swing.JFrame;
+import javax.swing.JList;
+import javax.swing.JOptionPane;
 
 public class VentanaMenuPrincipal extends javax.swing.JDialog {
 
@@ -105,7 +110,6 @@ public class VentanaMenuPrincipal extends javax.swing.JDialog {
         getContentPane().add(panel1, java.awt.BorderLayout.WEST);
 
         panel2.setBackground(new java.awt.Color(51, 51, 51));
-        panel2.setForeground(new java.awt.Color(51, 51, 51));
         panel2.setMaximumSize(new java.awt.Dimension(800, 800));
         panel2.setMinimumSize(new java.awt.Dimension(800, 800));
         panel2.setPreferredSize(new java.awt.Dimension(800, 800));
@@ -135,7 +139,6 @@ public class VentanaMenuPrincipal extends javax.swing.JDialog {
         jPanel1.add(lblInicioSesion, gridBagConstraints);
 
         btnCerrarSistema.setBackground(new java.awt.Color(51, 51, 51));
-        btnCerrarSistema.setForeground(new java.awt.Color(51, 51, 51));
         btnCerrarSistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
         btnCerrarSistema.setAlignmentX(0.5F);
         btnCerrarSistema.setBorderPainted(false);
@@ -177,9 +180,13 @@ public class VentanaMenuPrincipal extends javax.swing.JDialog {
         listaProfesionalesVentana.setBackground(new java.awt.Color(51, 51, 51));
         listaProfesionalesVentana.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
         listaProfesionalesVentana.setForeground(new java.awt.Color(255, 255, 255));
-        listaProfesionalesVentana.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
-            public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
-                listaProfesionalesVentanaValueChanged(evt);
+        listaProfesionalesVentana.setFocusable(false);
+        listaProfesionalesVentana.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                listaProfesionalesVentanaMouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                listaProfesionalesVentanaMousePressed(evt);
             }
         });
         jScrollPane1.setViewportView(listaProfesionalesVentana);
@@ -203,7 +210,6 @@ public class VentanaMenuPrincipal extends javax.swing.JDialog {
         btnAgregarProfesional.setText("Agregar profesional");
         btnAgregarProfesional.setBorderPainted(false);
         btnAgregarProfesional.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnAgregarProfesional.setOpaque(true);
         btnAgregarProfesional.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnAgregarProfesional.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -239,9 +245,13 @@ public class VentanaMenuPrincipal extends javax.swing.JDialog {
         listaUsuariosVentana.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
         listaUsuariosVentana.setForeground(new java.awt.Color(255, 255, 255));
         listaUsuariosVentana.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
-        listaUsuariosVentana.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
-            public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
-                listaUsuariosVentanaValueChanged(evt);
+        listaUsuariosVentana.setFocusable(false);
+        listaUsuariosVentana.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                listaUsuariosVentanaMouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                listaUsuariosVentanaMousePressed(evt);
             }
         });
         jScrollPane2.setViewportView(listaUsuariosVentana);
@@ -265,7 +275,6 @@ public class VentanaMenuPrincipal extends javax.swing.JDialog {
         btnAgregarUsuario.setText("Agregar usuario");
         btnAgregarUsuario.setBorderPainted(false);
         btnAgregarUsuario.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnAgregarUsuario.setOpaque(true);
         btnAgregarUsuario.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnAgregarUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -296,23 +305,6 @@ public class VentanaMenuPrincipal extends javax.swing.JDialog {
         this.sistema.guardarDatosSistema();
     }//GEN-LAST:event_formWindowClosing
 
-    private void listaUsuariosVentanaValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_listaUsuariosVentanaValueChanged
-        this.sistema.setPersonaLogueada((Persona) listaUsuariosVentana.getSelectedValue());
-        VentanaMenuPrincipalUsuario ventanaPrincipalUsuarios = new VentanaMenuPrincipalUsuario(sistema);
-        this.setVisible(false);
-        ventanaPrincipalUsuarios.setVisible(true);
-        
-    }//GEN-LAST:event_listaUsuariosVentanaValueChanged
-
-    private void listaProfesionalesVentanaValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_listaProfesionalesVentanaValueChanged
-        this.sistema.setPersonaLogueada((Persona) listaProfesionalesVentana.getSelectedValue());
-        VentanaMenuPrincipalProfesional ventanaPrincipalProfesionales = new VentanaMenuPrincipalProfesional(sistema);
-        this.setVisible(false);
-        ventanaPrincipalProfesionales.setVisible(true);
-        
-        
-    }//GEN-LAST:event_listaProfesionalesVentanaValueChanged
-
     private void btnCerrarSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistemaActionPerformed
         this.sistema.guardarDatosSistema();
     }//GEN-LAST:event_btnCerrarSistemaActionPerformed
@@ -329,6 +321,53 @@ public class VentanaMenuPrincipal extends javax.swing.JDialog {
         this.setVisible(false);
         unA.setVisible(true);
     }//GEN-LAST:event_btnAgregarUsuarioActionPerformed
+
+    private boolean clickEnCeldaValida(JList lista, java.awt.Point point){
+        int index = lista.locationToIndex(point);
+        return index > -1 && lista.getCellBounds(index, index).contains(point);
+    }
+    
+    private void listaUsuariosVentanaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listaUsuariosVentanaMouseClicked
+        if(clickEnCeldaValida(listaUsuariosVentana, evt.getPoint())){
+            this.sistema.setPersonaLogueada((Persona) listaUsuariosVentana.getSelectedValue());
+            VentanaMenuPrincipalUsuario ventanaPrincipalUsuarios = new VentanaMenuPrincipalUsuario(sistema);
+            this.setVisible(false);
+            ventanaPrincipalUsuarios.setVisible(true);
+        }
+        else{
+            listaUsuariosVentana.clearSelection();
+            
+            String mensajeError = "No se selecciono un usuario valido.";
+            
+            JOptionPane.showMessageDialog(null, mensajeError, "Error", 
+                    JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_listaUsuariosVentanaMouseClicked
+
+    private void listaUsuariosVentanaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listaUsuariosVentanaMousePressed
+        listaUsuariosVentana.clearSelection();
+    }//GEN-LAST:event_listaUsuariosVentanaMousePressed
+
+    private void listaProfesionalesVentanaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listaProfesionalesVentanaMousePressed
+        listaProfesionalesVentana.clearSelection();
+    }//GEN-LAST:event_listaProfesionalesVentanaMousePressed
+
+    private void listaProfesionalesVentanaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listaProfesionalesVentanaMouseClicked
+        if(clickEnCeldaValida(listaProfesionalesVentana, evt.getPoint())){
+            this.sistema.setPersonaLogueada((Persona) listaProfesionalesVentana.getSelectedValue());
+            VentanaMenuPrincipalProfesional ventanaPrincipalProfesionales = new VentanaMenuPrincipalProfesional(sistema);
+            this.setVisible(false);
+            ventanaPrincipalProfesionales.setVisible(true);
+        }
+        else{
+            listaProfesionalesVentana.clearSelection();
+            
+            String mensajeError = "No se selecciono un profesional valido.";
+            
+            JOptionPane.showMessageDialog(null, mensajeError, "Error", 
+                    JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_listaProfesionalesVentanaMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

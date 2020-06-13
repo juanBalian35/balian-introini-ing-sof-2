@@ -2,6 +2,14 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/home/juanb/Faculta/ingenieria/ing-sof-2/src/interfaz/VentanaMenuPrincipalUsuario.java</file>
+            <file>file:/home/juanb/Faculta/ingenieria/ing-sof-2/src/interfaz/VentanaMenuPrincipalProfesional.java</file>
+            <file>file:/home/juanb/Faculta/ingenieria/ing-sof-2/src/interfaz/VentanaRegistrarProfesional.java</file>
+            <file>file:/home/juanb/Faculta/ingenieria/ing-sof-2/src/dominio/Persona.java</file>
+            <file>file:/home/juanb/Faculta/ingenieria/ing-sof-2/src/dominio/Usuario.java</file>
+            <file>file:/home/juanb/Faculta/ingenieria/ing-sof-2/src/interfaz/VentanaRegistrarUsuario.java</file>
+            <file>file:/home/juanb/Faculta/ingenieria/ing-sof-2/.jacocoverage/report.html/interfaz/VentanaRegistrarUsuario.java.html</file>
+        </group>
     </open-files>
 </project-private>
