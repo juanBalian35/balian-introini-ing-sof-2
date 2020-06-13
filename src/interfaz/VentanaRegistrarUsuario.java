@@ -10,6 +10,7 @@ import java.util.GregorianCalendar;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 public class VentanaRegistrarUsuario extends javax.swing.JDialog {
@@ -773,9 +774,17 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
         fileChooser.setAcceptAllFileFilterUsed(false);
         int imagen = fileChooser.showOpenDialog(this);
         if (imagen == JFileChooser.APPROVE_OPTION) {
-            ImageIcon iconoPerfil = new ImageIcon(fileChooser.getSelectedFile().getAbsolutePath());
-            this.btnIngresarFotoPerfil.setIcon(iconoPerfil);
-            this.fotoDePerfilActual = iconoPerfil;
+            if(fileChooser.getSelectedFile().exists()){
+                ImageIcon iconoPerfil = new ImageIcon(fileChooser.getSelectedFile().getAbsolutePath());
+                this.btnIngresarFotoPerfil.setIcon(iconoPerfil);
+                this.fotoDePerfilActual = iconoPerfil;
+            }
+            else{
+                String mensajeError = "El archivo seleccionado no existe.";
+
+                JOptionPane.showMessageDialog(null, mensajeError, "Error", 
+                        JOptionPane.ERROR_MESSAGE);
+            }
         }
     }//GEN-LAST:event_btnIngresarFotoPerfilActionPerformed
 

@@ -14,6 +14,7 @@ import javax.imageio.ImageIO;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 public class VentanaRegistrarProfesional extends javax.swing.JDialog {
@@ -158,7 +159,6 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
         getContentPane().add(panel1, java.awt.BorderLayout.WEST);
 
         panel2.setBackground(new java.awt.Color(51, 51, 51));
-        panel2.setForeground(new java.awt.Color(51, 51, 51));
         panel2.setMaximumSize(new java.awt.Dimension(800, 800));
         panel2.setMinimumSize(new java.awt.Dimension(800, 800));
         panel2.setPreferredSize(new java.awt.Dimension(800, 800));
@@ -306,330 +306,247 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
         jPanel1.add(lblTxtFechaNac, gridBagConstraints);
 
-        dateChooserFechaNacimiento.setCurrentView(new datechooser.view.appearance.AppearancesList("Swing",
-            new datechooser.view.appearance.ViewAppearance("custom",
-                new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Lucida Grande", java.awt.Font.PLAIN, 13),
-                    new java.awt.Color(0, 0, 0),
-                    new java.awt.Color(0, 0, 255),
-                    false,
-                    true,
-                    new datechooser.view.appearance.swing.ButtonPainter()),
-                new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Lucida Grande", java.awt.Font.PLAIN, 13),
-                    new java.awt.Color(0, 0, 0),
-                    new java.awt.Color(0, 0, 255),
-                    true,
-                    true,
-                    new datechooser.view.appearance.swing.ButtonPainter()),
-                new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Lucida Grande", java.awt.Font.PLAIN, 13),
-                    new java.awt.Color(0, 0, 255),
-                    new java.awt.Color(0, 0, 255),
-                    false,
-                    true,
-                    new datechooser.view.appearance.swing.ButtonPainter()),
-                new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Lucida Grande", java.awt.Font.PLAIN, 13),
-                    new java.awt.Color(128, 128, 128),
-                    new java.awt.Color(0, 0, 255),
-                    false,
-                    true,
-                    new datechooser.view.appearance.swing.LabelPainter()),
-                new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Lucida Grande", java.awt.Font.PLAIN, 13),
-                    new java.awt.Color(0, 0, 0),
-                    new java.awt.Color(0, 0, 255),
-                    false,
-                    true,
-                    new datechooser.view.appearance.swing.LabelPainter()),
-                new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Lucida Grande", java.awt.Font.PLAIN, 13),
-                    new java.awt.Color(0, 0, 0),
-                    new java.awt.Color(255, 0, 0),
-                    false,
-                    false,
-                    new datechooser.view.appearance.swing.ButtonPainter()),
-                (datechooser.view.BackRenderer)null,
-                false,
-                true)));
-    dateChooserFechaNacimiento.setFieldFont(new java.awt.Font("Dialog", java.awt.Font.PLAIN, 19));
-    dateChooserFechaNacimiento.setMaxDate(new java.util.GregorianCalendar(2017, 10, 9));
-    dateChooserFechaNacimiento.setMinDate(new java.util.GregorianCalendar(1917, 10, 1));
-    dateChooserFechaNacimiento.setBehavior(datechooser.model.multiple.MultyModelBehavior.SELECT_SINGLE);
-    dateChooserFechaNacimiento.addSelectionChangedListener(new datechooser.events.SelectionChangedListener() {
-        public void onSelectionChange(datechooser.events.SelectionChangedEvent evt) {
-            dateChooserFechaNacimientoOnSelectionChange(evt);
-        }
-    });
-    dateChooserFechaNacimiento.addCommitListener(new datechooser.events.CommitListener() {
-        public void onCommit(datechooser.events.CommitEvent evt) {
-            dateChooserFechaNacimientoOnCommit(evt);
-        }
-    });
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 2;
-    gridBagConstraints.gridy = 6;
-    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-    jPanel1.add(dateChooserFechaNacimiento, gridBagConstraints);
+        dateChooserFechaNacimiento.setFieldFont(new java.awt.Font("Dialog", java.awt.Font.PLAIN, 19));
+        dateChooserFechaNacimiento.setMaxDate(new java.util.GregorianCalendar(2017, 10, 9));
+        dateChooserFechaNacimiento.setMinDate(new java.util.GregorianCalendar(1917, 10, 1));
+        dateChooserFechaNacimiento.setBehavior(datechooser.model.multiple.MultyModelBehavior.SELECT_SINGLE);
+        dateChooserFechaNacimiento.addSelectionChangedListener(new datechooser.events.SelectionChangedListener() {
+            public void onSelectionChange(datechooser.events.SelectionChangedEvent evt) {
+                dateChooserFechaNacimientoOnSelectionChange(evt);
+            }
+        });
+        dateChooserFechaNacimiento.addCommitListener(new datechooser.events.CommitListener() {
+            public void onCommit(datechooser.events.CommitEvent evt) {
+                dateChooserFechaNacimientoOnCommit(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        jPanel1.add(dateChooserFechaNacimiento, gridBagConstraints);
 
-    lblFechaNacVacio.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-    lblFechaNacVacio.setForeground(new java.awt.Color(240, 128, 128));
-    lblFechaNacVacio.setText("Dato vacío");
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 6;
-    gridBagConstraints.gridy = 6;
-    jPanel1.add(lblFechaNacVacio, gridBagConstraints);
+        lblFechaNacVacio.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+        lblFechaNacVacio.setForeground(new java.awt.Color(240, 128, 128));
+        lblFechaNacVacio.setText("Dato vacío");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 6;
+        jPanel1.add(lblFechaNacVacio, gridBagConstraints);
 
-    lblTituloProfesional.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
-    lblTituloProfesional.setForeground(new java.awt.Color(255, 255, 255));
-    lblTituloProfesional.setText("Seleccione el título profesional");
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 0;
-    gridBagConstraints.gridy = 8;
-    gridBagConstraints.gridwidth = 3;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
-    jPanel1.add(lblTituloProfesional, gridBagConstraints);
+        lblTituloProfesional.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
+        lblTituloProfesional.setForeground(new java.awt.Color(255, 255, 255));
+        lblTituloProfesional.setText("Seleccione el título profesional");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        jPanel1.add(lblTituloProfesional, gridBagConstraints);
 
-    listaTituloProfesional.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-    listaTituloProfesional.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione...", "Ciencia de los alimentos", "Entrenador físico e instructor aeróbico", "Ingeniería en alimentos", "Licenciatura en nutrición", "Maestro de salud y educación física", "Medicina", "Nutrición Humana y Dietética", "Nutricionista", "Técnicatura en Gestión Gastronómica", "Técnicatura en tecnología de alimentos", "Técnico operador de alimentos", "Otro..." }));
-    listaTituloProfesional.setMinimumSize(new java.awt.Dimension(419, 32));
-    listaTituloProfesional.setPreferredSize(new java.awt.Dimension(419, 32));
-    listaTituloProfesional.addItemListener(new java.awt.event.ItemListener() {
-        public void itemStateChanged(java.awt.event.ItemEvent evt) {
-            listaTituloProfesionalItemStateChanged(evt);
-        }
-    });
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 0;
-    gridBagConstraints.gridy = 10;
-    gridBagConstraints.gridwidth = 3;
-    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-    jPanel1.add(listaTituloProfesional, gridBagConstraints);
+        listaTituloProfesional.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+        listaTituloProfesional.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione...", "Ciencia de los alimentos", "Entrenador físico e instructor aeróbico", "Ingeniería en alimentos", "Licenciatura en nutrición", "Maestro de salud y educación física", "Medicina", "Nutrición Humana y Dietética", "Nutricionista", "Técnicatura en Gestión Gastronómica", "Técnicatura en tecnología de alimentos", "Técnico operador de alimentos", "Otro..." }));
+        listaTituloProfesional.setMinimumSize(new java.awt.Dimension(419, 32));
+        listaTituloProfesional.setPreferredSize(new java.awt.Dimension(419, 32));
+        listaTituloProfesional.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                listaTituloProfesionalItemStateChanged(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        jPanel1.add(listaTituloProfesional, gridBagConstraints);
 
-    lblValidarTituloProfesional.setForeground(new java.awt.Color(255, 255, 255));
-    lblValidarTituloProfesional.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 4;
-    gridBagConstraints.gridy = 10;
-    jPanel1.add(lblValidarTituloProfesional, gridBagConstraints);
+        lblValidarTituloProfesional.setForeground(new java.awt.Color(255, 255, 255));
+        lblValidarTituloProfesional.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 10;
+        jPanel1.add(lblValidarTituloProfesional, gridBagConstraints);
 
-    lblTituloVacio.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-    lblTituloVacio.setForeground(new java.awt.Color(240, 128, 128));
-    lblTituloVacio.setText("Dato vacío");
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 6;
-    gridBagConstraints.gridy = 10;
-    jPanel1.add(lblTituloVacio, gridBagConstraints);
+        lblTituloVacio.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+        lblTituloVacio.setForeground(new java.awt.Color(240, 128, 128));
+        lblTituloVacio.setText("Dato vacío");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 10;
+        jPanel1.add(lblTituloVacio, gridBagConstraints);
 
-    lblFechaGraduacion.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
-    lblFechaGraduacion.setForeground(new java.awt.Color(255, 255, 255));
-    lblFechaGraduacion.setText("Fecha de graduación");
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 0;
-    gridBagConstraints.gridy = 16;
-    gridBagConstraints.gridwidth = 3;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
-    jPanel1.add(lblFechaGraduacion, gridBagConstraints);
+        lblFechaGraduacion.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
+        lblFechaGraduacion.setForeground(new java.awt.Color(255, 255, 255));
+        lblFechaGraduacion.setText("Fecha de graduación");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 16;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        jPanel1.add(lblFechaGraduacion, gridBagConstraints);
 
-    dateChooserFechaGraduacion.setCurrentView(new datechooser.view.appearance.AppearancesList("Swing",
-        new datechooser.view.appearance.ViewAppearance("custom",
-            new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Lucida Grande", java.awt.Font.PLAIN, 13),
-                new java.awt.Color(0, 0, 0),
-                new java.awt.Color(0, 0, 255),
-                false,
-                true,
-                new datechooser.view.appearance.swing.ButtonPainter()),
-            new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Lucida Grande", java.awt.Font.PLAIN, 13),
-                new java.awt.Color(0, 0, 0),
-                new java.awt.Color(0, 0, 255),
-                true,
-                true,
-                new datechooser.view.appearance.swing.ButtonPainter()),
-            new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Lucida Grande", java.awt.Font.PLAIN, 13),
-                new java.awt.Color(0, 0, 255),
-                new java.awt.Color(0, 0, 255),
-                false,
-                true,
-                new datechooser.view.appearance.swing.ButtonPainter()),
-            new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Lucida Grande", java.awt.Font.PLAIN, 13),
-                new java.awt.Color(128, 128, 128),
-                new java.awt.Color(0, 0, 255),
-                false,
-                true,
-                new datechooser.view.appearance.swing.LabelPainter()),
-            new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Lucida Grande", java.awt.Font.PLAIN, 13),
-                new java.awt.Color(0, 0, 0),
-                new java.awt.Color(0, 0, 255),
-                false,
-                true,
-                new datechooser.view.appearance.swing.LabelPainter()),
-            new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Lucida Grande", java.awt.Font.PLAIN, 13),
-                new java.awt.Color(0, 0, 0),
-                new java.awt.Color(255, 0, 0),
-                false,
-                false,
-                new datechooser.view.appearance.swing.ButtonPainter()),
-            (datechooser.view.BackRenderer)null,
-            false,
-            true)));
-dateChooserFechaGraduacion.setFieldFont(new java.awt.Font("Dialog", java.awt.Font.PLAIN, 19));
-dateChooserFechaGraduacion.setMaxDate(new java.util.GregorianCalendar(2017, 10, 9));
-dateChooserFechaGraduacion.setMinDate(new java.util.GregorianCalendar(1917, 10, 1));
-dateChooserFechaGraduacion.setBehavior(datechooser.model.multiple.MultyModelBehavior.SELECT_SINGLE);
-dateChooserFechaGraduacion.addSelectionChangedListener(new datechooser.events.SelectionChangedListener() {
-    public void onSelectionChange(datechooser.events.SelectionChangedEvent evt) {
-        dateChooserFechaGraduacionOnSelectionChange(evt);
-    }
-    });
-    dateChooserFechaGraduacion.addCommitListener(new datechooser.events.CommitListener() {
-        public void onCommit(datechooser.events.CommitEvent evt) {
-            dateChooserFechaGraduacionOnCommit(evt);
-        }
-    });
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 2;
-    gridBagConstraints.gridy = 16;
-    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
-    gridBagConstraints.insets = new java.awt.Insets(0, 129, 0, 0);
-    jPanel1.add(dateChooserFechaGraduacion, gridBagConstraints);
+        dateChooserFechaGraduacion.setFieldFont(new java.awt.Font("Dialog", java.awt.Font.PLAIN, 19));
+        dateChooserFechaGraduacion.setMaxDate(new java.util.GregorianCalendar(2017, 10, 9));
+        dateChooserFechaGraduacion.setMinDate(new java.util.GregorianCalendar(1917, 10, 1));
+        dateChooserFechaGraduacion.setBehavior(datechooser.model.multiple.MultyModelBehavior.SELECT_SINGLE);
+        dateChooserFechaGraduacion.addSelectionChangedListener(new datechooser.events.SelectionChangedListener() {
+            public void onSelectionChange(datechooser.events.SelectionChangedEvent evt) {
+                dateChooserFechaGraduacionOnSelectionChange(evt);
+            }
+        });
+        dateChooserFechaGraduacion.addCommitListener(new datechooser.events.CommitListener() {
+            public void onCommit(datechooser.events.CommitEvent evt) {
+                dateChooserFechaGraduacionOnCommit(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 16;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 129, 0, 0);
+        jPanel1.add(dateChooserFechaGraduacion, gridBagConstraints);
 
-    lblPaisGraduacion.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
-    lblPaisGraduacion.setForeground(new java.awt.Color(255, 255, 255));
-    lblPaisGraduacion.setText("Seleccione el pais de graduación");
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 0;
-    gridBagConstraints.gridy = 12;
-    gridBagConstraints.gridwidth = 3;
-    jPanel1.add(lblPaisGraduacion, gridBagConstraints);
+        lblPaisGraduacion.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
+        lblPaisGraduacion.setForeground(new java.awt.Color(255, 255, 255));
+        lblPaisGraduacion.setText("Seleccione el pais de graduación");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 12;
+        gridBagConstraints.gridwidth = 3;
+        jPanel1.add(lblPaisGraduacion, gridBagConstraints);
 
-    listaPaisGraduacion.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-    listaPaisGraduacion.addItemListener(new java.awt.event.ItemListener() {
-        public void itemStateChanged(java.awt.event.ItemEvent evt) {
-            listaPaisGraduacionItemStateChanged(evt);
-        }
-    });
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 0;
-    gridBagConstraints.gridy = 14;
-    gridBagConstraints.gridwidth = 3;
-    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-    jPanel1.add(listaPaisGraduacion, gridBagConstraints);
+        listaPaisGraduacion.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+        listaPaisGraduacion.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                listaPaisGraduacionItemStateChanged(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 14;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        jPanel1.add(listaPaisGraduacion, gridBagConstraints);
 
-    lblValidarPaisGraduacion.setForeground(new java.awt.Color(255, 255, 255));
-    lblValidarPaisGraduacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 4;
-    gridBagConstraints.gridy = 14;
-    jPanel1.add(lblValidarPaisGraduacion, gridBagConstraints);
+        lblValidarPaisGraduacion.setForeground(new java.awt.Color(255, 255, 255));
+        lblValidarPaisGraduacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 14;
+        jPanel1.add(lblValidarPaisGraduacion, gridBagConstraints);
 
-    lblPaisVacio.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-    lblPaisVacio.setForeground(new java.awt.Color(240, 128, 128));
-    lblPaisVacio.setText("Dato vacío");
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 6;
-    gridBagConstraints.gridy = 14;
-    jPanel1.add(lblPaisVacio, gridBagConstraints);
+        lblPaisVacio.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+        lblPaisVacio.setForeground(new java.awt.Color(240, 128, 128));
+        lblPaisVacio.setText("Dato vacío");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 14;
+        jPanel1.add(lblPaisVacio, gridBagConstraints);
 
-    lblValidarFechaGrad.setForeground(new java.awt.Color(255, 255, 255));
-    lblValidarFechaGrad.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 4;
-    gridBagConstraints.gridy = 16;
-    jPanel1.add(lblValidarFechaGrad, gridBagConstraints);
+        lblValidarFechaGrad.setForeground(new java.awt.Color(255, 255, 255));
+        lblValidarFechaGrad.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 16;
+        jPanel1.add(lblValidarFechaGrad, gridBagConstraints);
 
-    lblFechaGradVacio.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-    lblFechaGradVacio.setForeground(new java.awt.Color(240, 128, 128));
-    lblFechaGradVacio.setText("Dato vacío");
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 6;
-    gridBagConstraints.gridy = 16;
-    jPanel1.add(lblFechaGradVacio, gridBagConstraints);
+        lblFechaGradVacio.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+        lblFechaGradVacio.setForeground(new java.awt.Color(240, 128, 128));
+        lblFechaGradVacio.setText("Dato vacío");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 16;
+        jPanel1.add(lblFechaGradVacio, gridBagConstraints);
 
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 0;
-    gridBagConstraints.gridy = 0;
-    gridBagConstraints.gridwidth = 3;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-    gridBagConstraints.insets = new java.awt.Insets(0, 65, 0, 0);
-    jPanel3.add(jPanel1, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 65, 0, 0);
+        jPanel3.add(jPanel1, gridBagConstraints);
 
-    panel2.add(jPanel3, java.awt.BorderLayout.CENTER);
+        panel2.add(jPanel3, java.awt.BorderLayout.CENTER);
 
-    jPanel4.setBackground(new java.awt.Color(51, 51, 51));
-    java.awt.GridBagLayout jPanel4Layout = new java.awt.GridBagLayout();
-    jPanel4Layout.columnWeights = new double[] {1.0, 1.0};
-    jPanel4.setLayout(jPanel4Layout);
+        jPanel4.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel4Layout = new java.awt.GridBagLayout();
+        jPanel4Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel4.setLayout(jPanel4Layout);
 
-    lblIconoNuevoProfesional.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoDeUsuarioStandard.png"))); // NOI18N
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 0;
-    gridBagConstraints.gridy = 1;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
-    gridBagConstraints.insets = new java.awt.Insets(15, 18, 0, 0);
-    jPanel4.add(lblIconoNuevoProfesional, gridBagConstraints);
+        lblIconoNuevoProfesional.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoDeUsuarioStandard.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(15, 18, 0, 0);
+        jPanel4.add(lblIconoNuevoProfesional, gridBagConstraints);
 
-    lblNuevoProfesional.setFont(new java.awt.Font("Levenim MT", 0, 65)); // NOI18N
-    lblNuevoProfesional.setForeground(new java.awt.Color(255, 255, 255));
-    lblNuevoProfesional.setText("Nuevo Profesional");
-    lblNuevoProfesional.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 0;
-    gridBagConstraints.gridy = 1;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.BELOW_BASELINE_LEADING;
-    gridBagConstraints.insets = new java.awt.Insets(15, 120, 0, 0);
-    jPanel4.add(lblNuevoProfesional, gridBagConstraints);
+        lblNuevoProfesional.setFont(new java.awt.Font("Levenim MT", 0, 65)); // NOI18N
+        lblNuevoProfesional.setForeground(new java.awt.Color(255, 255, 255));
+        lblNuevoProfesional.setText("Nuevo Profesional");
+        lblNuevoProfesional.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BELOW_BASELINE_LEADING;
+        gridBagConstraints.insets = new java.awt.Insets(15, 120, 0, 0);
+        jPanel4.add(lblNuevoProfesional, gridBagConstraints);
 
-    btnCerrarSistema.setBackground(new java.awt.Color(51, 51, 51));
-    btnCerrarSistema.setForeground(new java.awt.Color(51, 51, 51));
-    btnCerrarSistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
-    btnCerrarSistema.setAlignmentX(0.5F);
-    btnCerrarSistema.setBorderPainted(false);
-    btnCerrarSistema.setContentAreaFilled(false);
-    btnCerrarSistema.setFocusPainted(false);
-    btnCerrarSistema.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-    btnCerrarSistema.addActionListener(new java.awt.event.ActionListener() {
-        public void actionPerformed(java.awt.event.ActionEvent evt) {
-            btnCerrarSistemaActionPerformed(evt);
-        }
-    });
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 1;
-    gridBagConstraints.gridy = 0;
-    gridBagConstraints.gridwidth = java.awt.GridBagConstraints.RELATIVE;
-    gridBagConstraints.gridheight = 2;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHEAST;
-    jPanel4.add(btnCerrarSistema, gridBagConstraints);
+        btnCerrarSistema.setBackground(new java.awt.Color(51, 51, 51));
+        btnCerrarSistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Close_Window_48px.png"))); // NOI18N
+        btnCerrarSistema.setAlignmentX(0.5F);
+        btnCerrarSistema.setBorderPainted(false);
+        btnCerrarSistema.setContentAreaFilled(false);
+        btnCerrarSistema.setFocusPainted(false);
+        btnCerrarSistema.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        btnCerrarSistema.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarSistemaActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.RELATIVE;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHEAST;
+        jPanel4.add(btnCerrarSistema, gridBagConstraints);
 
-    panel2.add(jPanel4, java.awt.BorderLayout.PAGE_START);
+        panel2.add(jPanel4, java.awt.BorderLayout.PAGE_START);
 
-    jPanel2.setBackground(new java.awt.Color(51, 51, 51));
-    java.awt.GridBagLayout jPanel2Layout = new java.awt.GridBagLayout();
-    jPanel2Layout.columnWeights = new double[] {1.0, 1.0};
-    jPanel2.setLayout(jPanel2Layout);
+        jPanel2.setBackground(new java.awt.Color(51, 51, 51));
+        java.awt.GridBagLayout jPanel2Layout = new java.awt.GridBagLayout();
+        jPanel2Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel2.setLayout(jPanel2Layout);
 
-    lblDatosIncorrectos.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
-    lblDatosIncorrectos.setForeground(new java.awt.Color(255, 153, 153));
-    lblDatosIncorrectos.setText("Aún quedan datos incorrectos");
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 0;
-    gridBagConstraints.gridy = 0;
-    jPanel2.add(lblDatosIncorrectos, gridBagConstraints);
+        lblDatosIncorrectos.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
+        lblDatosIncorrectos.setForeground(new java.awt.Color(255, 153, 153));
+        lblDatosIncorrectos.setText("Aún quedan datos incorrectos");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        jPanel2.add(lblDatosIncorrectos, gridBagConstraints);
 
-    btnIngresarProfesionalASistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoConfirmar.png"))); // NOI18N
-    btnIngresarProfesionalASistema.setBorderPainted(false);
-    btnIngresarProfesionalASistema.setContentAreaFilled(false);
-    btnIngresarProfesionalASistema.addActionListener(new java.awt.event.ActionListener() {
-        public void actionPerformed(java.awt.event.ActionEvent evt) {
-            btnIngresarProfesionalASistemaActionPerformed(evt);
-        }
-    });
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 0;
-    gridBagConstraints.gridy = 0;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
-    jPanel2.add(btnIngresarProfesionalASistema, gridBagConstraints);
+        btnIngresarProfesionalASistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fotoConfirmar.png"))); // NOI18N
+        btnIngresarProfesionalASistema.setBorderPainted(false);
+        btnIngresarProfesionalASistema.setContentAreaFilled(false);
+        btnIngresarProfesionalASistema.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIngresarProfesionalASistemaActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
+        jPanel2.add(btnIngresarProfesionalASistema, gridBagConstraints);
 
-    panel2.add(jPanel2, java.awt.BorderLayout.PAGE_END);
+        panel2.add(jPanel2, java.awt.BorderLayout.PAGE_END);
 
-    getContentPane().add(panel2, java.awt.BorderLayout.CENTER);
+        getContentPane().add(panel2, java.awt.BorderLayout.CENTER);
 
-    pack();
+        pack();
     }// </editor-fold>//GEN-END:initComponents
 
     public Sistema getSistema() {
@@ -751,9 +668,17 @@ dateChooserFechaGraduacion.addSelectionChangedListener(new datechooser.events.Se
         fileChooser.setAcceptAllFileFilterUsed(false);
         int imagen = fileChooser.showOpenDialog(this);
         if (imagen == JFileChooser.APPROVE_OPTION) {
-            ImageIcon iconoPerfil = new ImageIcon(fileChooser.getSelectedFile().getAbsolutePath());
-            this.btnIngresarFotoPerfil.setIcon(iconoPerfil);
-            this.fotoDePerfilActual = iconoPerfil;
+            if(fileChooser.getSelectedFile().exists()){
+                ImageIcon iconoPerfil = new ImageIcon(fileChooser.getSelectedFile().getAbsolutePath());
+                this.btnIngresarFotoPerfil.setIcon(iconoPerfil);
+                this.fotoDePerfilActual = iconoPerfil;
+            }
+            else{
+                String mensajeError = "El archivo seleccionado no existe.";
+
+                JOptionPane.showMessageDialog(null, mensajeError, "Error", 
+                        JOptionPane.ERROR_MESSAGE);
+            }
         }
     }//GEN-LAST:event_btnIngresarFotoPerfilActionPerformed
 

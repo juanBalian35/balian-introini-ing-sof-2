@@ -12,6 +12,7 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
@@ -83,6 +84,9 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         jPanel4 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         lblNoHayAlimentosIcono = new javax.swing.JLabel();
+        lblNoHayAlimentos1 = new javax.swing.JLabel();
+        jPanel30 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
         lblNoHayAlimentos = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         lblNohayPlanesTexto1 = new javax.swing.JLabel();
@@ -466,13 +470,51 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         gridBagConstraints.gridy = 0;
         jPanel2.add(lblNoHayAlimentosIcono, gridBagConstraints);
 
-        lblNoHayAlimentos.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
-        lblNoHayAlimentos.setForeground(new java.awt.Color(255, 255, 255));
-        lblNoHayAlimentos.setText("No hay alimentos registrados");
+        lblNoHayAlimentos1.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
+        lblNoHayAlimentos1.setForeground(new java.awt.Color(255, 255, 255));
+        lblNoHayAlimentos1.setText("No hay alimentos registrados");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
-        jPanel2.add(lblNoHayAlimentos, gridBagConstraints);
+        jPanel2.add(lblNoHayAlimentos1, gridBagConstraints);
+
+        jPanel30.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel30.setLayout(new java.awt.GridBagLayout());
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/out/production/balian-introini-ing-sof-2/Imagenes/iconoNuevoMensaje.png"))); // NOI18N
+        jButton1.setBorderPainted(false);
+        jButton1.setContentAreaFilled(false);
+        jButton1.setFocusPainted(false);
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel30.add(jButton1, gridBagConstraints);
+
+        lblNoHayAlimentos.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
+        lblNoHayAlimentos.setForeground(new java.awt.Color(255, 255, 255));
+        lblNoHayAlimentos.setText("Crear");
+        lblNoHayAlimentos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel30.add(lblNoHayAlimentos, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        jPanel2.add(jPanel30, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -2307,9 +2349,17 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         fileChooser.setFileFilter(file);
         int imagen = fileChooser.showOpenDialog(this);
         if (imagen == JFileChooser.APPROVE_OPTION) {
-            ImageIcon iconoPerfil = new ImageIcon(fileChooser.getSelectedFile().getAbsolutePath());
-            btnIngresarFotoAlimento.setIcon(iconoPerfil);
-            this.setFotoDeAlimentoActual(iconoPerfil);
+            if(fileChooser.getSelectedFile().exists()){
+                ImageIcon iconoPerfil = new ImageIcon(fileChooser.getSelectedFile().getAbsolutePath());
+                btnIngresarFotoAlimento.setIcon(iconoPerfil);
+                this.setFotoDeAlimentoActual(iconoPerfil);
+            }
+            else{
+                String mensajeError = "El archivo seleccionado no existe.";
+
+                JOptionPane.showMessageDialog(null, mensajeError, "Error", 
+                        JOptionPane.ERROR_MESSAGE);
+            }
         }
     }//GEN-LAST:event_btnIngresarFotoAlimentoActionPerformed
 
@@ -2825,6 +2875,10 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         this.sistema.guardarDatosSistema();
     }//GEN-LAST:event_btnCerrarSistema8ActionPerformed
 
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        btnIngresarAlimentoActionPerformed(null);        
+    }//GEN-LAST:event_jButton1MouseClicked
+
     private void ocultarPaneles() {
         this.btnConsultasPendientes.setEnabled(true);
         this.btnIngresarAlimento.setEnabled(true);
@@ -2973,6 +3027,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     private javax.swing.JCheckBox checkMinerales;
     private javax.swing.JCheckBox checkProteínas;
     private javax.swing.JCheckBox checkVitaminas;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
@@ -2997,6 +3052,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     private javax.swing.JPanel jPanel28;
     private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel30;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
@@ -3045,6 +3101,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     private javax.swing.JLabel lblInicioSesion2;
     private javax.swing.JLabel lblInicioSesion3;
     private javax.swing.JLabel lblNoHayAlimentos;
+    private javax.swing.JLabel lblNoHayAlimentos1;
     private javax.swing.JLabel lblNoHayAlimentosIcono;
     private javax.swing.JLabel lblNoPlanes2;
     private javax.swing.JLabel lblNohayConsultas;

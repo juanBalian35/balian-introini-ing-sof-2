@@ -322,13 +322,18 @@ public class VentanaMenuPrincipal extends javax.swing.JDialog {
         unA.setVisible(true);
     }//GEN-LAST:event_btnAgregarUsuarioActionPerformed
 
-    private boolean clickEnCeldaValida(JList lista, java.awt.Point point){
+    private int clickEnCeldaValida(JList lista, java.awt.Point point){
         int index = lista.locationToIndex(point);
-        return index > -1 && lista.getCellBounds(index, index).contains(point);
+        
+        if(index > -1 && lista.getCellBounds(index, index).contains(point))
+            return index;
+        return -1;
     }
     
     private void listaUsuariosVentanaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listaUsuariosVentanaMouseClicked
-        if(clickEnCeldaValida(listaUsuariosVentana, evt.getPoint())){
+        int indice = clickEnCeldaValida(listaUsuariosVentana, evt.getPoint());
+        if(indice != -1){
+            listaUsuariosVentana.setSelectedIndex(indice);
             this.sistema.setPersonaLogueada((Persona) listaUsuariosVentana.getSelectedValue());
             VentanaMenuPrincipalUsuario ventanaPrincipalUsuarios = new VentanaMenuPrincipalUsuario(sistema);
             this.setVisible(false);
@@ -353,7 +358,9 @@ public class VentanaMenuPrincipal extends javax.swing.JDialog {
     }//GEN-LAST:event_listaProfesionalesVentanaMousePressed
 
     private void listaProfesionalesVentanaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listaProfesionalesVentanaMouseClicked
-        if(clickEnCeldaValida(listaProfesionalesVentana, evt.getPoint())){
+        int indice = clickEnCeldaValida(listaProfesionalesVentana, evt.getPoint());
+        if(indice != -1){
+            listaProfesionalesVentana.setSelectedIndex(indice);
             this.sistema.setPersonaLogueada((Persona) listaProfesionalesVentana.getSelectedValue());
             VentanaMenuPrincipalProfesional ventanaPrincipalProfesionales = new VentanaMenuPrincipalProfesional(sistema);
             this.setVisible(false);

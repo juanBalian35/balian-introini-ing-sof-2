@@ -15,6 +15,7 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 
 public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
 
@@ -30,18 +31,21 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         this.setLocationRelativeTo(null);
         ocultarPaneles();
         this.sistema = unSistema;
+        Calendar fecha = new GregorianCalendar();
+        this.fechaIngestaUsuario.setMaxDate(fecha);
+        this.fechaIngestaUsuario.setText("");
         this.existeConversacion = false;
         this.lblValidarProfesionalPlan.setVisible(false);
         this.lblDatosIncorrectos.setVisible(false);
         this.lblDatosIncorrectos1.setVisible(false);
         this.lblValidarNuevoAlimento.setVisible(false);
+        this.lblValidarNuevoAlimento1.setVisible(false);
         this.lblNuevoAlimentoVacio.setVisible(false);
+        this.lblNuevoAlimentoVacio1.setVisible(false);
         this.lblDatosIncorrectos2.setVisible(false);
         this.nombreDelPlan = "";
         this.primeraVez = true;
         this.primeraIngesta = true;
-        Calendar fecha = new GregorianCalendar();
-        this.fechaIngestaUsuario.setMaxDate(fecha);
         this.panelVacio.setVisible(true);
     }
 
@@ -81,11 +85,13 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         jPanel18 = new javax.swing.JPanel();
         lblNohayConsultasTexto = new javax.swing.JLabel();
         lblNohayConsultas = new javax.swing.JLabel();
+        lblNohayConsultasTexto2 = new javax.swing.JLabel();
         panelNoHayConversacionesCreadas = new javax.swing.JPanel();
         jPanel19 = new javax.swing.JPanel();
         lblNohayConsultasTexto3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         lblNohayProfesionales = new javax.swing.JLabel();
+        lblNohayConsultasTexto4 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         lblCrearConv = new javax.swing.JLabel();
         btnNuevaConversacion1 = new javax.swing.JButton();
@@ -184,8 +190,12 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         btnCerrarSistema3 = new javax.swing.JButton();
         panelBotones = new javax.swing.JPanel();
         panelNoHayPlanesDisponibles = new javax.swing.JPanel();
-        lblNoHayPlanes = new javax.swing.JLabel();
+        jPanel24 = new javax.swing.JPanel();
+        lblCrearConv1 = new javax.swing.JLabel();
+        btnNuevaConversacion2 = new javax.swing.JButton();
         lblPlanSolicitadoCorrectamente1 = new javax.swing.JLabel();
+        jPanel25 = new javax.swing.JPanel();
+        lblNoHayPlanes = new javax.swing.JLabel();
         lblNoHayPlanes1 = new javax.swing.JLabel();
         panelPlanSolicitadoCorrectamente = new javax.swing.JPanel();
         lblPlanSolicitadoCorrectamente = new javax.swing.JLabel();
@@ -403,6 +413,14 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         gridBagConstraints.gridy = 0;
         jPanel18.add(lblNohayConsultas, gridBagConstraints);
 
+        lblNohayConsultasTexto2.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
+        lblNohayConsultasTexto2.setForeground(new java.awt.Color(255, 255, 255));
+        lblNohayConsultasTexto2.setText("Intente en otro momento");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        jPanel18.add(lblNohayConsultasTexto2, gridBagConstraints);
+
         panelNoHayAlimentos.add(jPanel18, java.awt.BorderLayout.CENTER);
 
         panelDerecho.add(panelNoHayAlimentos, "card2");
@@ -426,6 +444,8 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(0, 6, 0, 6);
         jPanel19.add(lblNohayConsultasTexto3, gridBagConstraints);
+        lblNohayConsultasTexto3.getAccessibleContext().setAccessibleName("No hay conversaciones creadas. ");
+        lblNohayConsultasTexto3.getAccessibleContext().setAccessibleDescription("");
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCaraTriste.png"))); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -438,7 +458,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         lblNohayProfesionales.setBackground(new java.awt.Color(51, 51, 51));
         lblNohayProfesionales.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
         lblNohayProfesionales.setForeground(new java.awt.Color(255, 255, 255));
-        lblNohayProfesionales.setText("No hay profesionales creados");
+        lblNohayProfesionales.setText("Aun no hay profesionales creados");
         lblNohayProfesionales.setOpaque(true);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -447,6 +467,16 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(0, 6, 0, 0);
         jPanel19.add(lblNohayProfesionales, gridBagConstraints);
+
+        lblNohayConsultasTexto4.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
+        lblNohayConsultasTexto4.setForeground(new java.awt.Color(255, 255, 255));
+        lblNohayConsultasTexto4.setText("Intente en otro momento.");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 4;
+        gridBagConstraints.insets = new java.awt.Insets(0, 6, 0, 6);
+        jPanel19.add(lblNohayConsultasTexto4, gridBagConstraints);
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.setLayout(new java.awt.GridBagLayout());
@@ -1235,6 +1265,12 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         jPanel7.add(lblFechaAlimentoIngerido, gridBagConstraints);
 
         fechaIngestaUsuario.setFieldFont(new java.awt.Font("Dialog", java.awt.Font.PLAIN, 17));
+        fechaIngestaUsuario.setBehavior(datechooser.model.multiple.MultyModelBehavior.SELECT_SINGLE);
+        fechaIngestaUsuario.addCommitListener(new datechooser.events.CommitListener() {
+            public void onCommit(datechooser.events.CommitEvent evt) {
+                fechaIngestaUsuarioOnCommit(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 6;
@@ -1421,36 +1457,87 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
 
         panelNoHayPlanesDisponibles.setBackground(new java.awt.Color(51, 51, 51));
         panelNoHayPlanesDisponibles.setMaximumSize(new java.awt.Dimension(100, 100));
-        java.awt.GridBagLayout panelNoHayPlanesDisponiblesLayout = new java.awt.GridBagLayout();
-        panelNoHayPlanesDisponiblesLayout.rowWeights = new double[] {1.0, 1.0};
-        panelNoHayPlanesDisponibles.setLayout(panelNoHayPlanesDisponiblesLayout);
+        panelNoHayPlanesDisponibles.setLayout(new java.awt.GridBagLayout());
+
+        jPanel24.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel24.setLayout(new java.awt.GridBagLayout());
+
+        lblCrearConv1.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
+        lblCrearConv1.setForeground(new java.awt.Color(255, 255, 255));
+        lblCrearConv1.setText("Crear");
+        lblCrearConv1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel24MouseClicked(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel24.add(lblCrearConv1, gridBagConstraints);
+
+        btnNuevaConversacion2.setForeground(new java.awt.Color(255, 255, 255));
+        btnNuevaConversacion2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoNuevoMensaje.png"))); // NOI18N
+        btnNuevaConversacion2.setToolTipText("");
+        btnNuevaConversacion2.setBorder(null);
+        btnNuevaConversacion2.setBorderPainted(false);
+        btnNuevaConversacion2.setContentAreaFilled(false);
+        btnNuevaConversacion2.setFocusPainted(false);
+        btnNuevaConversacion2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel24MouseClicked(evt);
+            }
+        });
+        btnNuevaConversacion2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNuevaConversacion2ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel24.add(btnNuevaConversacion2, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 74, 0);
+        panelNoHayPlanesDisponibles.add(jPanel24, gridBagConstraints);
+
+        lblPlanSolicitadoCorrectamente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCaraTriste.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
+        panelNoHayPlanesDisponibles.add(lblPlanSolicitadoCorrectamente1, gridBagConstraints);
+
+        jPanel25.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel25.setLayout(new java.awt.GridBagLayout());
 
         lblNoHayPlanes.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
         lblNoHayPlanes.setForeground(new java.awt.Color(255, 255, 255));
         lblNoHayPlanes.setText("disponibles");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 200, 0);
-        panelNoHayPlanesDisponibles.add(lblNoHayPlanes, gridBagConstraints);
-
-        lblPlanSolicitadoCorrectamente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCaraTriste.png"))); // NOI18N
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.PAGE_START;
-        gridBagConstraints.insets = new java.awt.Insets(55, 0, 0, 0);
-        panelNoHayPlanesDisponibles.add(lblPlanSolicitadoCorrectamente1, gridBagConstraints);
+        jPanel25.add(lblNoHayPlanes, gridBagConstraints);
 
         lblNoHayPlanes1.setFont(new java.awt.Font("Century Gothic", 1, 40)); // NOI18N
         lblNoHayPlanes1.setForeground(new java.awt.Color(255, 255, 255));
         lblNoHayPlanes1.setText("No hay planes");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.ipady = 29;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 6);
-        panelNoHayPlanesDisponibles.add(lblNoHayPlanes1, gridBagConstraints);
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel25.add(lblNoHayPlanes1, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        panelNoHayPlanesDisponibles.add(jPanel25, gridBagConstraints);
 
         panelBotones.add(panelNoHayPlanesDisponibles);
         panelNoHayPlanesDisponibles.setBounds(450, 150, 350, 530);
@@ -1702,7 +1789,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
             }
         });
         panelBotones.add(btnSolicitarNuevoPlan);
-        btnSolicitarNuevoPlan.setBounds(140, 10, 116, 112);
+        btnSolicitarNuevoPlan.setBounds(140, 10, 134, 110);
 
         btnVerPlanesExistentes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoVerPlanesAlimentacion.png"))); // NOI18N
         btnVerPlanesExistentes.setBorderPainted(false);
@@ -1713,7 +1800,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
             }
         });
         panelBotones.add(btnVerPlanesExistentes);
-        btnVerPlanesExistentes.setBounds(540, 10, 116, 112);
+        btnVerPlanesExistentes.setBounds(540, 10, 134, 110);
 
         javax.swing.GroupLayout panelPlanDeAlimentacionLayout = new javax.swing.GroupLayout(panelPlanDeAlimentacion);
         panelPlanDeAlimentacion.setLayout(panelPlanDeAlimentacionLayout);
@@ -1802,7 +1889,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     }//GEN-LAST:event_btnHomeActionPerformed
 
     private void btnConsultaConProfesionalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultaConProfesionalActionPerformed
-       ocultarPaneles();
+        ocultarPaneles();
         this.btnConsultaConProfesional.setEnabled(false);
         if (sistema.getListaProfesionales().size() > 0) {
             this.listaConversaciones.setSelectedIndex(0);
@@ -1813,6 +1900,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
                 this.existeConversacion = true;
                 this.panelConsultaConProfesional.setVisible(true);
             } else {
+                this.lblNohayConsultasTexto4.setVisible(false);
                 this.panelNoHayConversacionesCreadas.setVisible(true);
                 this.lblNohayProfesionales.setVisible(false);
             }
@@ -1820,11 +1908,10 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
             this.panelNoHayConversacionesCreadas.setVisible(true);
             this.lblNohayProfesionales.setVisible(true);
             this.lblNohayConsultasTexto3.setVisible(false);
+            this.lblNohayConsultasTexto4.setVisible(false);
             this.btnNuevaConversacion1.setVisible(false);
             this.lblCrearConv.setVisible(false);
         }
-
-
     }//GEN-LAST:event_btnConsultaConProfesionalActionPerformed
 
     private void btnSolicitarPlanAlimentacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSolicitarPlanAlimentacionActionPerformed
@@ -1890,6 +1977,12 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
             this.listaElegirProfesionales.setListData(listaNombresProfesionalesSinConversacion.toArray());
             this.panelElegirProfesional.setVisible(true);
         }
+        else{
+            String mensajeError = "Ya tiene conversaciones con todos los profesionales del sistema.";
+            
+            JOptionPane.showMessageDialog(null, mensajeError, "Error", 
+                    JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_btnNuevaConversacionActionPerformed
 
     private void btnEnviarMensajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnviarMensajeActionPerformed
@@ -1907,24 +2000,37 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         ArrayList<Ingesta> listaIngestasDelUsuario = usuarioLogueado.getAlimentosIngeridos();
         String fechaIngesta = this.fechaIngestaUsuario.getText();
         String nuevoAlimento = this.comboAlimentosEnSistema.getSelectedItem().toString();
+        
+        boolean hayError = false;
         if (nuevoAlimento.equals("Seleccione...")) {
             this.lblDatosIncorrectos2.setVisible(true);
             this.lblValidarNuevoAlimento.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png")));
             this.lblValidarNuevoAlimento.setVisible(true);
             this.lblNuevoAlimentoVacio.setVisible(true);
-        } else {
+            hayError = true;
+        } 
+        
+        if(fechaIngesta.isEmpty()){
+            this.lblDatosIncorrectos2.setVisible(true);
+            this.lblValidarNuevoAlimento1.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png")));
+            this.lblValidarNuevoAlimento1.setVisible(true);
+            this.lblNuevoAlimentoVacio1.setVisible(true);
+            hayError = true;
+        }
+        
+        if(!hayError) {
             this.sistema.agregarIngestaAUsuario(listaIngestasDelUsuario, fechaIngesta, nuevoAlimento);
             this.panelIngestaRegistradaCorrectamente.setVisible(true);
             this.lblNuevoAlimentoVacio.setVisible(false);
             this.lblValidarNuevoAlimento.setVisible(false);
             this.btnIngresarAlimentoIngerido.setEnabled(true);
             this.lblDatosIncorrectos2.setVisible(false);
-            this.lblValidarNuevoAlimento.setVisible(false);
-            this.lblNuevoAlimentoVacio.setVisible(false);
+            this.lblValidarNuevoAlimento1.setVisible(false);
+            this.lblNuevoAlimentoVacio1.setVisible(false);
             this.primeraIngesta = true;
             this.comboAlimentosEnSistema.setSelectedIndex(0);
+            this.panelAlimentoIngerido.setVisible(false);
         }
-        this.panelAlimentoIngerido.setVisible(false);
     }//GEN-LAST:event_btnNuevaIngestaActionPerformed
 
     private void btnVerPlanesExistentesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerPlanesExistentesActionPerformed
@@ -2098,6 +2204,27 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         this.sistema.guardarDatosSistema();
     }//GEN-LAST:event_btnCerrarSistema8ActionPerformed
 
+    private void fechaIngestaUsuarioOnCommit(datechooser.events.CommitEvent evt) {//GEN-FIRST:event_fechaIngestaUsuarioOnCommit
+        String fecha = this.fechaIngestaUsuario.getText();
+        if (fecha.equals("")) {
+            this.lblValidarNuevoAlimento1.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png")));
+            this.lblValidarNuevoAlimento1.setVisible(true);
+            this.lblNuevoAlimentoVacio1.setVisible(true);
+        } else {
+            this.lblValidarNuevoAlimento1.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoCorrecto.png")));
+            this.lblValidarNuevoAlimento1.setVisible(true);
+            this.lblNuevoAlimentoVacio1.setVisible(false);
+        }
+    }//GEN-LAST:event_fechaIngestaUsuarioOnCommit
+
+    private void btnNuevaConversacion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevaConversacion2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnNuevaConversacion2ActionPerformed
+
+    private void jPanel24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel24MouseClicked
+        btnSolicitarNuevoPlanActionPerformed(null);
+    }//GEN-LAST:event_jPanel24MouseClicked
+
     private void ocultarPaneles() {
         this.btnConsultaConProfesional.setEnabled(true);
         this.btnIngresarAlimentoIngerido.setEnabled(true);
@@ -2160,6 +2287,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     private javax.swing.JButton btnIngresarAlimentoIngerido;
     private javax.swing.JButton btnNuevaConversacion;
     private javax.swing.JButton btnNuevaConversacion1;
+    private javax.swing.JButton btnNuevaConversacion2;
     private javax.swing.JButton btnNuevaIngesta;
     private javax.swing.JButton btnSolicitarNuevoPlan;
     private javax.swing.JButton btnSolicitarPlanAlimentacion;
@@ -2185,6 +2313,8 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     private javax.swing.JPanel jPanel21;
     private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel23;
+    private javax.swing.JPanel jPanel24;
+    private javax.swing.JPanel jPanel25;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
@@ -2222,6 +2352,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     private javax.swing.JLabel lblCambiarPreferencias6;
     private javax.swing.JLabel lblConsultaConProfesional;
     private javax.swing.JLabel lblCrearConv;
+    private javax.swing.JLabel lblCrearConv1;
     private javax.swing.JLabel lblDatosIncorrectos;
     private javax.swing.JLabel lblDatosIncorrectos1;
     private javax.swing.JLabel lblDatosIncorrectos2;
@@ -2244,7 +2375,9 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     private javax.swing.JLabel lblNohayConsultas1;
     private javax.swing.JLabel lblNohayConsultasTexto;
     private javax.swing.JLabel lblNohayConsultasTexto1;
+    private javax.swing.JLabel lblNohayConsultasTexto2;
     private javax.swing.JLabel lblNohayConsultasTexto3;
+    private javax.swing.JLabel lblNohayConsultasTexto4;
     private javax.swing.JLabel lblNohayProfesionales;
     private javax.swing.JLabel lblNombreDelPlan;
     private javax.swing.JLabel lblNombreDelProfesional;
