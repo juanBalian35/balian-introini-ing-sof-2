@@ -3,6 +3,7 @@ package interfaz;
 import dominio.Ingesta;
 import dominio.Sistema;
 import dominio.Usuario;
+import java.awt.Image;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -768,14 +769,18 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
 
     private void btnIngresarFotoPerfilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarFotoPerfilActionPerformed
         JFileChooser fileChooser = new JFileChooser();
-        FileNameExtensionFilter file = new FileNameExtensionFilter("PNG", "png");
+        FileNameExtensionFilter file = new FileNameExtensionFilter("PNG", "png", "JPG", "jpeg", "jpg", "JPEG", "bmp", "BMP");
         fileChooser.setFileFilter(file);
         fileChooser.setAcceptAllFileFilterUsed(false);
         int imagen = fileChooser.showOpenDialog(this);
         if (imagen == JFileChooser.APPROVE_OPTION) {
             ImageIcon iconoPerfil = new ImageIcon(fileChooser.getSelectedFile().getAbsolutePath());
-            this.btnIngresarFotoPerfil.setIcon(iconoPerfil);
+            Image image = iconoPerfil.getImage().getScaledInstance(100, 100, java.awt.Image.SCALE_SMOOTH);
+            ImageIcon icono = new ImageIcon(image);
+            
+            this.btnIngresarFotoPerfil.setIcon(icono);
             this.fotoDePerfilActual = iconoPerfil;
+            
         }
     }//GEN-LAST:event_btnIngresarFotoPerfilActionPerformed
 
