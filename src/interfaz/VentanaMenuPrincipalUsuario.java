@@ -1898,7 +1898,6 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
                 this.panelConversacion.setVisible(true);
                 this.listaConversaciones.setListData(lista);
                 this.listaConversaciones.setSelectedIndex(0);
-                this.existeConversacion = true;
                 this.panelConsultaConProfesional.setVisible(true);
             } else {
                 this.lblNohayConsultasTexto4.setVisible(false);

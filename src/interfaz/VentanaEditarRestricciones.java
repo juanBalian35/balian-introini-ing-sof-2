@@ -126,11 +126,6 @@ public class VentanaEditarRestricciones extends javax.swing.JDialog {
         rdBtnVegano.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
         rdBtnVegano.setForeground(new java.awt.Color(255, 255, 255));
         rdBtnVegano.setText("Restriccion 2");
-        rdBtnVegano.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rdBtnVeganoActionPerformed(evt);
-            }
-        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 4;
@@ -244,9 +239,6 @@ public class VentanaEditarRestricciones extends javax.swing.JDialog {
         this.panelEditarRestricciones.setVisible(false);
         this.panelListo.setVisible(true);
     }//GEN-LAST:event_btnEditarPreferenciasActionPerformed
-
-    private void rdBtnVeganoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdBtnVeganoActionPerformed
-    }//GEN-LAST:event_rdBtnVeganoActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
         this.sistema.guardarDatosSistema(false);

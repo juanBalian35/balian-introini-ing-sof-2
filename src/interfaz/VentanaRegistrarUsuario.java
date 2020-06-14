@@ -779,9 +779,9 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
             if(fileChooser.getSelectedFile().exists()){
                 ImageIcon iconoPerfil = new ImageIcon(fileChooser.getSelectedFile().getAbsolutePath());
                 Image image = iconoPerfil.getImage().getScaledInstance(100, 100, java.awt.Image.SCALE_SMOOTH);
-                ImageIcon icono = new ImageIcon(image);
+                ImageIcon nuevoIcono = new ImageIcon(image);
 
-                this.btnIngresarFotoPerfil.setIcon(icono);
+                this.btnIngresarFotoPerfil.setIcon(nuevoIcono);
                 this.fotoDePerfilActual = iconoPerfil;
             }
             else{
@@ -798,7 +798,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     }//GEN-LAST:event_btnCerrarSistemaActionPerformed
 
     private void dateChooserFechaNacimientoOnCommit(datechooser.events.CommitEvent evt) {//GEN-FIRST:event_dateChooserFechaNacimientoOnCommit
- String fecha = this.dateChooserFechaNacimiento.getText();
+        String fecha = this.dateChooserFechaNacimiento.getText();
         if (fecha.equals("")) {
             this.lblValidarFechaNac.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png")));
             this.lblValidarFechaNac.setVisible(true);

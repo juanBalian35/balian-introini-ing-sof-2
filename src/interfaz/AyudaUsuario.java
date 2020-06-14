@@ -73,11 +73,6 @@ public class AyudaUsuario extends javax.swing.JDialog {
         btnIngresarAlimentoIngerido.setBorderPainted(false);
         btnIngresarAlimentoIngerido.setContentAreaFilled(false);
         btnIngresarAlimentoIngerido.setFocusPainted(false);
-        btnIngresarAlimentoIngerido.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnIngresarAlimentoIngeridoActionPerformed(evt);
-            }
-        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -102,11 +97,6 @@ public class AyudaUsuario extends javax.swing.JDialog {
         btnIngresarAlimentoIngerido2.setBorderPainted(false);
         btnIngresarAlimentoIngerido2.setContentAreaFilled(false);
         btnIngresarAlimentoIngerido2.setFocusPainted(false);
-        btnIngresarAlimentoIngerido2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnIngresarAlimentoIngerido2ActionPerformed(evt);
-            }
-        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 2;
@@ -146,11 +136,6 @@ public class AyudaUsuario extends javax.swing.JDialog {
         btnIngresarAlimentoIngerido1.setBorderPainted(false);
         btnIngresarAlimentoIngerido1.setContentAreaFilled(false);
         btnIngresarAlimentoIngerido1.setFocusPainted(false);
-        btnIngresarAlimentoIngerido1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnIngresarAlimentoIngerido1ActionPerformed(evt);
-            }
-        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 4;
@@ -163,18 +148,6 @@ public class AyudaUsuario extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnIngresarAlimentoIngeridoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarAlimentoIngeridoActionPerformed
-       
-    }//GEN-LAST:event_btnIngresarAlimentoIngeridoActionPerformed
-
-    private void btnIngresarAlimentoIngerido1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarAlimentoIngerido1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnIngresarAlimentoIngerido1ActionPerformed
-
-    private void btnIngresarAlimentoIngerido2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarAlimentoIngerido2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnIngresarAlimentoIngerido2ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

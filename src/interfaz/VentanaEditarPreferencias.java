@@ -120,11 +120,6 @@ public class VentanaEditarPreferencias extends javax.swing.JDialog {
         rdBtnCarnesRojas.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
         rdBtnCarnesRojas.setForeground(new java.awt.Color(255, 255, 255));
         rdBtnCarnesRojas.setText("Preferencia 1");
-        rdBtnCarnesRojas.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rdBtnCarnesRojasActionPerformed(evt);
-            }
-        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 2;
@@ -147,11 +142,6 @@ public class VentanaEditarPreferencias extends javax.swing.JDialog {
         rdBtnHarinas.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
         rdBtnHarinas.setForeground(new java.awt.Color(255, 255, 255));
         rdBtnHarinas.setText("Preferencia 5");
-        rdBtnHarinas.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rdBtnHarinasActionPerformed(evt);
-            }
-        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 10;
@@ -163,11 +153,6 @@ public class VentanaEditarPreferencias extends javax.swing.JDialog {
         rdBtnVerduras.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
         rdBtnVerduras.setForeground(new java.awt.Color(255, 255, 255));
         rdBtnVerduras.setText("Preferencia 3");
-        rdBtnVerduras.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rdBtnVerdurasActionPerformed(evt);
-            }
-        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 6;
@@ -251,12 +236,6 @@ public class VentanaEditarPreferencias extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void rdBtnHarinasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdBtnHarinasActionPerformed
-    }//GEN-LAST:event_rdBtnHarinasActionPerformed
-
-    private void rdBtnCarnesRojasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdBtnCarnesRojasActionPerformed
-    }//GEN-LAST:event_rdBtnCarnesRojasActionPerformed
-
     private void btnEditarPreferenciasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarPreferenciasActionPerformed
         ArrayList<String> preferencias = new ArrayList<>();
         agregarPreferenciasUsuario(preferencias);
@@ -268,9 +247,6 @@ public class VentanaEditarPreferencias extends javax.swing.JDialog {
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
         this.sistema.guardarDatosSistema(false);
     }//GEN-LAST:event_formWindowClosing
-
-    private void rdBtnVerdurasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdBtnVerdurasActionPerformed
-    }//GEN-LAST:event_rdBtnVerdurasActionPerformed
 
     void agregarPreferenciasUsuario(ArrayList<String> preferencias) {
         if (this.rdBtnCarnesBlancas.isSelected()) {

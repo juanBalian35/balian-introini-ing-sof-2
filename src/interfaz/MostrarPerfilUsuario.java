@@ -20,7 +20,7 @@ public class MostrarPerfilUsuario extends javax.swing.JDialog {
         this.sistema = unSistema;
         this.nombreUsuario = usuarioAMostrar;
         this.setLocationRelativeTo(null);
-        Usuario usuarioPerfil = (Usuario) sistema.getUsuarioPorNombre(nombreUsuario);
+        Usuario usuarioPerfil = sistema.getUsuarioPorNombre(nombreUsuario);
         this.lblNombreUsuario.setText(usuarioPerfil.getNombreCompleto());
         this.lblFechaNacimientoUsuario.setText(usuarioPerfil.getFechaNacimiento());
 
@@ -58,14 +58,6 @@ public class MostrarPerfilUsuario extends javax.swing.JDialog {
 
     public void setSistema(Sistema unSistema) {
         this.sistema = unSistema;
-    }
-
-    public String getNombreUsuario() {
-        return nombreUsuario;
-    }
-
-    public void setNombreUsuario(String unNombreUsuario) {
-        this.nombreUsuario = unNombreUsuario;
     }
 
     @SuppressWarnings("unchecked")

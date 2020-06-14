@@ -441,7 +441,6 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="onSelectionChange" listener="datechooser.events.SelectionChangedListener" parameters="datechooser.events.SelectionChangedEvent" handler="dateChooserFechaNacimientoOnSelectionChange"/>
                     <EventHandler event="onCommit" listener="datechooser.events.CommitListener" parameters="datechooser.events.CommitEvent" handler="dateChooserFechaNacimientoOnCommit"/>
                   </Events>
                   <Constraints>
@@ -586,7 +585,6 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="onSelectionChange" listener="datechooser.events.SelectionChangedListener" parameters="datechooser.events.SelectionChangedEvent" handler="dateChooserFechaGraduacionOnSelectionChange"/>
                     <EventHandler event="onCommit" listener="datechooser.events.CommitListener" parameters="datechooser.events.CommitEvent" handler="dateChooserFechaGraduacionOnCommit"/>
                   </Events>
                   <Constraints>

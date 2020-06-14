@@ -1,34 +1,34 @@
 
-n
-java:S1450«"WRemove the "lblListo" field and declare it as a local variable in the relevant methods.(ô¥´“
-F
-java:S1172ø"*Remove this unused method parameter "evt".(Ò¹šÂüÿÿÿÿ
-y
-java:S1450¥"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ8¤¶’«.
-x
-java:S1450ª"\Remove the "lblIconoListo" field and declare it as a local variable in the relevant methods.(È½òúøÿÿÿÿ
-n
-java:S1450¨"XRemove the "lblEditar" field and declare it as a local variable in the relevant methods.(ñÈ¤f
-F
-java:S1172ğ"*Remove this unused method parameter "evt".(ÁİÃôúÿÿÿÿ
-
-java:S1450©"eRemove the "lblEditarRestricciones" field and declare it as a local variable in the relevant methods.(Ñó¦«ùÿÿÿÿ
-y
-java:S1450¦"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿ8¤¶’«.
-@
-java:S1172û"*Remove this unused method parameter "evt".(³à¿h
 V	java:S110"<This class has 6 parents which is greater than 5 authorized.(äû„ÿÿÿÿÿ
-€
-java:S1450¤"dRemove the "btnEditarPreferencias" field and declare it as a local variable in the relevant methods.(Òâ·Øüÿÿÿÿ
-U
-java:S1161?":Add the "@Override" annotation above this method signature(¦³±ÿÿÿÿÿ
 t
 java:S1450§"VRemove the "jPanel3" field and declare it as a local variable in the relevant methods.(Œ³èÈ8¤¶’«.
-~
-java:S1450¬"bRemove the "lblTxtRestricciones" field and declare it as a local variable in the relevant methods.(ÃœÅıÿÿÿÿÿ
+n
+java:S1450«"WRemove the "lblListo" field and declare it as a local variable in the relevant methods.(ô¥´“
 D
 java:S1604œ"(Make this anonymous inner class a lambda(·İéşÿÿÿÿ
+U
+java:S1161?":Add the "@Override" annotation above this method signature(¦³±ÿÿÿÿÿ
 l
 java:S1192R"ODefine a constant instead of duplicating this literal "Century Gothic" 6 times.(âÀ·Â8¤¶’«.
+F
+java:S1172ø"*Remove this unused method parameter "evt".(Ò¹šÂüÿÿÿÿ
+F
+java:S1172ğ"*Remove this unused method parameter "evt".(ÁİÃôúÿÿÿÿ
+y
+java:S1450¦"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿ8¤¶’«.
+
+java:S1450©"eRemove the "lblEditarRestricciones" field and declare it as a local variable in the relevant methods.(Ñó¦«ùÿÿÿÿ
+€
+java:S1450¤"dRemove the "btnEditarPreferencias" field and declare it as a local variable in the relevant methods.(Òâ·Øüÿÿÿÿ
 D
 java:S1604"(Make this anonymous inner class a lambda( Âí©ùÿÿÿÿ
+y
+java:S1450¥"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ8¤¶’«.
+n
+java:S1450¨"XRemove the "lblEditar" field and declare it as a local variable in the relevant methods.(ñÈ¤f
+~
+java:S1450¬"bRemove the "lblTxtRestricciones" field and declare it as a local variable in the relevant methods.(ÃœÅıÿÿÿÿÿ
+@
+java:S1172û"*Remove this unused method parameter "evt".(³à¿h
+x
+java:S1450ª"\Remove the "lblIconoListo" field and declare it as a local variable in the relevant methods.(È½òúøÿÿÿÿ

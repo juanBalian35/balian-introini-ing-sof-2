@@ -1,42 +1,42 @@
 
-y
-java:S1450¦"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ8›Ì’«.
-U
-java:S1161@":Add the "@Override" annotation above this method signature(¦³±ÿÿÿÿÿ
-D
-java:S1604¦"(Make this anonymous inner class a lambda(şÕşÁÿÿÿÿÿ
-F
-java:S1172"*Remove this unused method parameter "evt".(·ÜÈ¯üÿÿÿÿ
-A
-java:S1172"*Remove this unused method parameter "evt".(³İÌ
-A
-java:S1172ş"*Remove this unused method parameter "evt".(­Ïİ
-@
-java:S1172Œ"*Remove this unused method parameter "evt".(³à¿h
-‡
-java:S1450¥"dRemove the "btnEditarPreferencias" field and declare it as a local variable in the relevant methods.(Òâ·Øüÿÿÿÿ8ôĞƒ«.
 }
 java:S1450­"aRemove the "lblTxtPreferencias" field and declare it as a local variable in the relevant methods.(¨¤¡İüÿÿÿÿ
-F
-java:S1172„"*Remove this unused method parameter "evt".(ÁİÃôúÿÿÿÿ
 n
 java:S1450©"XRemove the "lblEditar" field and declare it as a local variable in the relevant methods.(ñÈ¤f
->
-java:S1604{"(Make this anonymous inner class a lambda(ôƒúÁ
 x
 java:S1450«"\Remove the "lblIconoListo" field and declare it as a local variable in the relevant methods.(È½òúøÿÿÿÿ
-V	java:S110"<This class has 6 parents which is greater than 5 authorized.(Ã»üÿÿÿÿ
-q
-java:S1192m"ODefine a constant instead of duplicating this literal "Century Gothic" 7 times.(ˆšáöÿÿÿÿÿ8›Ì’«.
-‡
-java:S1450ª"dRemove the "lblEditarPreferencias" field and declare it as a local variable in the relevant methods.(ø³³²øÿÿÿÿ8ôĞƒ«.
-t
-java:S1450¨"VRemove the "jPanel3" field and declare it as a local variable in the relevant methods.(Œ³èÈ8›Ì’«.
+A
+java:S1172ş"*Remove this unused method parameter "evt".(­Ïİ
 D
 java:S1604–"(Make this anonymous inner class a lambda(¿šŠÛúÿÿÿÿ
 D
 java:S1604É"(Make this anonymous inner class a lambda(·İéşÿÿÿÿ
+>
+java:S1604{"(Make this anonymous inner class a lambda(ôƒúÁ
+V	java:S110"<This class has 6 parents which is greater than 5 authorized.(Ã»üÿÿÿÿ
+D
+java:S1604¦"(Make this anonymous inner class a lambda(şÕşÁÿÿÿÿÿ
+‡
+java:S1450¥"dRemove the "btnEditarPreferencias" field and declare it as a local variable in the relevant methods.(Òâ·Øüÿÿÿÿ8ôĞƒ«.
 y
-java:S1450§"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿ8›Ì’«.
+java:S1450¦"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ8›Ì’«.
 n
 java:S1450¬"WRemove the "lblListo" field and declare it as a local variable in the relevant methods.(ô¥´“
+t
+java:S1450¨"VRemove the "jPanel3" field and declare it as a local variable in the relevant methods.(Œ³èÈ8›Ì’«.
+F
+java:S1172"*Remove this unused method parameter "evt".(·ÜÈ¯üÿÿÿÿ
+F
+java:S1172„"*Remove this unused method parameter "evt".(ÁİÃôúÿÿÿÿ
+@
+java:S1172Œ"*Remove this unused method parameter "evt".(³à¿h
+‡
+java:S1450ª"dRemove the "lblEditarPreferencias" field and declare it as a local variable in the relevant methods.(ø³³²øÿÿÿÿ8ôĞƒ«.
+q
+java:S1192m"ODefine a constant instead of duplicating this literal "Century Gothic" 7 times.(ˆšáöÿÿÿÿÿ8›Ì’«.
+y
+java:S1450§"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿ8›Ì’«.
+A
+java:S1172"*Remove this unused method parameter "evt".(³İÌ
+\
+java:S1161@":Add the "@Override" annotation above this method signature(¦³±ÿÿÿÿÿ8È¤ä¦«.

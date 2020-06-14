@@ -305,11 +305,6 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
         dateChooserFechaNacimiento.setMaxDate(new java.util.GregorianCalendar(2017, 10, 9));
         dateChooserFechaNacimiento.setMinDate(new java.util.GregorianCalendar(1917, 10, 1));
         dateChooserFechaNacimiento.setBehavior(datechooser.model.multiple.MultyModelBehavior.SELECT_SINGLE);
-        dateChooserFechaNacimiento.addSelectionChangedListener(new datechooser.events.SelectionChangedListener() {
-            public void onSelectionChange(datechooser.events.SelectionChangedEvent evt) {
-                dateChooserFechaNacimientoOnSelectionChange(evt);
-            }
-        });
         dateChooserFechaNacimiento.addCommitListener(new datechooser.events.CommitListener() {
             public void onCommit(datechooser.events.CommitEvent evt) {
                 dateChooserFechaNacimientoOnCommit(evt);
@@ -384,11 +379,6 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
         dateChooserFechaGraduacion.setMaxDate(new java.util.GregorianCalendar(2017, 10, 9));
         dateChooserFechaGraduacion.setMinDate(new java.util.GregorianCalendar(1917, 10, 1));
         dateChooserFechaGraduacion.setBehavior(datechooser.model.multiple.MultyModelBehavior.SELECT_SINGLE);
-        dateChooserFechaGraduacion.addSelectionChangedListener(new datechooser.events.SelectionChangedListener() {
-            public void onSelectionChange(datechooser.events.SelectionChangedEvent evt) {
-                dateChooserFechaGraduacionOnSelectionChange(evt);
-            }
-        });
         dateChooserFechaGraduacion.addCommitListener(new datechooser.events.CommitListener() {
             public void onCommit(datechooser.events.CommitEvent evt) {
                 dateChooserFechaGraduacionOnCommit(evt);
@@ -666,9 +656,9 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
             if(fileChooser.getSelectedFile().exists()){
                 ImageIcon iconoPerfil = new ImageIcon(fileChooser.getSelectedFile().getAbsolutePath());
                 Image image = iconoPerfil.getImage().getScaledInstance(100, 100, java.awt.Image.SCALE_SMOOTH);
-                ImageIcon icono = new ImageIcon(image);
+                ImageIcon iconoNuevo = new ImageIcon(image);
                 
-                this.btnIngresarFotoPerfil.setIcon(icono);
+                this.btnIngresarFotoPerfil.setIcon(iconoNuevo);
                 this.fotoDePerfilActual = iconoPerfil;
             }
             else{
@@ -684,15 +674,8 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
         this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistemaActionPerformed
 
-    private void dateChooserFechaNacimientoOnSelectionChange(datechooser.events.SelectionChangedEvent evt) {//GEN-FIRST:event_dateChooserFechaNacimientoOnSelectionChange
-        
-    }//GEN-LAST:event_dateChooserFechaNacimientoOnSelectionChange
-
-    private void dateChooserFechaGraduacionOnSelectionChange(datechooser.events.SelectionChangedEvent evt) {//GEN-FIRST:event_dateChooserFechaGraduacionOnSelectionChange
-    }//GEN-LAST:event_dateChooserFechaGraduacionOnSelectionChange
-
     private void dateChooserFechaGraduacionOnCommit(datechooser.events.CommitEvent evt) {//GEN-FIRST:event_dateChooserFechaGraduacionOnCommit
- String fecha = this.dateChooserFechaGraduacion.getText();
+        String fecha = this.dateChooserFechaGraduacion.getText();
         if (fecha.equals("")) {
             this.lblValidarFechaGrad.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png")));
             this.lblValidarFechaGrad.setVisible(true);
@@ -701,7 +684,8 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
             this.lblValidarFechaGrad.setIcon(new ImageIcon(getClass().getResource("/Imagenes/iconoCampoCorrecto.png")));
             this.lblValidarFechaGrad.setVisible(true);
             this.lblFechaGradVacio.setVisible(false);
-        }    }//GEN-LAST:event_dateChooserFechaGraduacionOnCommit
+        }
+    }//GEN-LAST:event_dateChooserFechaGraduacionOnCommit
 
     private void dateChooserFechaNacimientoOnCommit(datechooser.events.CommitEvent evt) {//GEN-FIRST:event_dateChooserFechaNacimientoOnCommit
         String fecha = this.dateChooserFechaNacimiento.getText();

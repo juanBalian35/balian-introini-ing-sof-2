@@ -479,7 +479,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         jPanel30.setBackground(new java.awt.Color(51, 51, 51));
         jPanel30.setLayout(new java.awt.GridBagLayout());
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoNuevoMensaje.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/out/production/balian-introini-ing-sof-2/Imagenes/iconoNuevoMensaje.png"))); // NOI18N
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
         jButton1.setFocusPainted(false);
@@ -2041,11 +2041,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
                 txtNombreFocusLost(evt);
             }
         });
-        txtNombre.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNombreActionPerformed(evt);
-            }
-        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 2;
@@ -2259,7 +2254,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     private void btnPlanesSolicitadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlanesSolicitadosActionPerformed
         ocultarPaneles();
         this.btnPlanesSolicitados.setEnabled(false);
-        if (sistema.getListaAlimentos().size() <= 0) {
+        if (sistema.getListaAlimentos().isEmpty()) {
             this.panelNoHayPlanesPendientes.setVisible(true);
             this.lblNohayPlanesTexto1.setVisible(false);
             this.lblNohayConsultasTexto2.setVisible(false);
@@ -2277,7 +2272,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
             List<PlanAlimentacion> lista = this.sistema.getListaPlanesPendientes(profesionalLogueado);
 
             String[] stringArray = Arrays.copyOf(lista.stream().map(x -> x.toString()).collect(Collectors.toList()).toArray(), lista.size(), String[].class);
-            if (lista.size() > 0) {
+            if (!lista.isEmpty()) {
                 this.listaPlanesPendientes.setListData(stringArray);
             } else {
                 ocultarPaneles();
@@ -2319,7 +2314,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         this.txtMostrarConversacion.setText("");
         this.lblNombreUsuario.setText("Usuario");
         this.panelConversacionOk.setVisible(true);
-        //this.panelConversacion.setVisible(false);
         this.jPanel8.setVisible(false);
         this.panelMostrarOk.setVisible(true);
         String[] listaUsuariosConversacionesPendientes = sistema.getListaNombresUsuariosConversacionesPendientes(profesional);
@@ -2337,9 +2331,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         this.panelNuevoAlimento.setVisible(true);
         this.panelIngresarAlimentoAlSistema.setVisible(true);
     }//GEN-LAST:event_btnIngresarAlimentoActionPerformed
-
-    private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
-    }//GEN-LAST:event_txtNombreActionPerformed
 
     private void btnIngresarFotoAlimentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarFotoAlimentoActionPerformed
         JFileChooser fileChooser = new JFileChooser();
