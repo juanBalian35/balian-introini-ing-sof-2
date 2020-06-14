@@ -80,6 +80,6 @@ public class InformacionMensajeTest {
         String mensaje = "unMensaje";
         InformacionMensaje info = new InformacionMensaje(remitente, destinatario, mensaje);
         info.intercambiarRemitente();
-        assertEquals(remitente, info.destinatario);
+        assertEquals(remitente, info.getDestinatario());
     }
 }

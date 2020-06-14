@@ -435,38 +435,6 @@ public class SistemaTest {
     }
 
     @Test
-    public void testAtenderSolicitudPlanProfesionalDistinto() {
-
-        /* TODO: test the test
-        Usuario user1 = new Usuario("Martin", null, null, null, null);
-        Profesional professional1 = new Profesional("Ana", null, null, null, null, null, null);
-        PlanAlimentacion plan1 = new PlanAlimentacion("Plan de alimentación", user1, professional1, false, null, null);
-        ArrayList<PlanAlimentacion> listaPlanesAlimentacion = new ArrayList<>();
-        listaPlanesAlimentacion.add(plan1);
-        Sistema sistemaATestear = new Sistema(null, null, null, listaPlanesAlimentacion, null, null);
-        Profesional professional2 = new Profesional("Lautaro", null, null, null, null, null, null);
-        plan1.setProfesional(professional2);
-        boolean fueAtendido = sistemaATestear.atenderSolicitudDelPlan(plan1.getPlanDiaADia(), plan1, plan1.getNombreDelPlan());
-        assertFalse(fueAtendido);*/
-    }
-
-    @Test
-    public void testAtenderSolicitudPlanUsuarioDistinto() {
-        /* TODO: test the test
-        Usuario user1 = new Usuario("Martin", null, null, null, null);
-        Profesional professional1 = new Profesional("Ana", null, null, null, null, null, null);
-        PlanAlimentacion plan1 = new PlanAlimentacion("Plan de alimentación", user1, professional1, false, null, null);
-        ArrayList<PlanAlimentacion> listaPlanesAlimentacion = new ArrayList<>();
-        listaPlanesAlimentacion.add(plan1);
-        Sistema sistemaATestear = new Sistema(null, null, null, listaPlanesAlimentacion, null, null);
-        Usuario user2 = new Usuario("Martina", null, null, null, null);
-        plan1.setUsuario(user2);
-        boolean fueAtendido = sistemaATestear.atenderSolicitudDelPlan(plan1.getPlanDiaADia(), plan1, plan1.getNombreDelPlan());
-        assertFalse(fueAtendido);
-         */
-    }
-
-    @Test
     public void testAtenderSolicitudPlanListaVacia() {
         Usuario user1 = new Usuario("Martin", null, null, null, null);
         Profesional professional1 = new Profesional("Ana", null, null, null, null, null, null);
@@ -605,7 +573,7 @@ public class SistemaTest {
     }
 
     @Test
-    public void test(){
+    public void guardarDatosCreaArchivo(){
         Sistema sistemaATestear = new Sistema(null, null, null, null, null, null);
 
         Usuario usuario = new Usuario("Martin", "Gómez", null, null, null);
@@ -614,7 +582,7 @@ public class SistemaTest {
         sistemaATestear.agregarUsuarioALaLista(usuario);
         sistemaATestear.agregarProfesionalALaLista(profesional1);
 
-        sistemaATestear.guardarDatosSistema();
+        sistemaATestear.guardarDatosSistema(false);
 
         File file = new File("Sistema.data");
         assertTrue(file.exists());

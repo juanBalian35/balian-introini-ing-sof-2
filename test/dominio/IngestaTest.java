@@ -79,6 +79,6 @@ public class IngestaTest {
     public void testToStringListaAlimentosPorFechaVacia(){
         String fechaDeIngesta = "11/02/17";
         Ingesta ingestaATestear = new Ingesta(fechaDeIngesta, null);
-        assertEquals(ingestaATestear.toString(), "No hay alimentos ingeridos");
+        assertEquals("No hay alimentos ingeridos", ingestaATestear.toString());
     }
 }

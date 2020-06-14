@@ -1,7 +1,6 @@
 package dominio;
 
 import java.util.ArrayList;
-import javax.swing.ImageIcon;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -16,7 +15,7 @@ public class ConversacionTest {
         ArrayList listaMensajes = null;
         Conversacion conversacionATestear = new Conversacion(usuario, profesional, listaMensajes);
         Persona usuarioEsperado = new Usuario(null, null, null, null, null);
-        assertEquals(conversacionATestear.getUsuario(), usuarioEsperado);
+        assertEquals(usuarioEsperado, conversacionATestear.getUsuario());
     }
 
     @Test
@@ -26,7 +25,7 @@ public class ConversacionTest {
         ArrayList listaMensajes = null;
         Conversacion conversacionATestear = new Conversacion(usuario, profesional, listaMensajes);
         Persona profesionalEsperado = new Profesional(null, null, null, null, null, null, null);
-        assertEquals(conversacionATestear.getProfesional(), profesionalEsperado);
+        assertEquals(profesionalEsperado, conversacionATestear.getProfesional());
     }
 
     @Test
@@ -35,7 +34,7 @@ public class ConversacionTest {
         Persona profesional = null;
         ArrayList listaMensajes = null;
         Conversacion conversacionATestear = new Conversacion(usuario, profesional, listaMensajes);
-        assertEquals(conversacionATestear.getListaMensajes().size(), 0);
+        assertEquals(0, conversacionATestear.getListaMensajes().size());
     }
 
     @Test
@@ -44,7 +43,7 @@ public class ConversacionTest {
         Persona profesional = null;
         ArrayList listaMensajes = null;
         Conversacion conversacionATestear = new Conversacion(usuario, profesional, listaMensajes);
-        assertEquals(conversacionATestear.toString(), "No hay mensajes para mostrar");
+        assertEquals("No hay mensajes para mostrar", conversacionATestear.toString());
     }
 
     @Test
@@ -54,7 +53,7 @@ public class ConversacionTest {
         ArrayList listaMensajes = new ArrayList<>();
         Conversacion conversacionATestear = new Conversacion(usuario, profesional, listaMensajes);
         Persona profesionalEsperado = new Profesional(null, null, null, null, null, null, null);
-        assertEquals(conversacionATestear.getProfesional(), profesionalEsperado);
+        assertEquals(profesionalEsperado, conversacionATestear.getProfesional());
     }
 
     @Test
@@ -63,7 +62,7 @@ public class ConversacionTest {
         Persona profesional = new Profesional(null, null, null, null, null, null, null);
         ArrayList listaMensajes = new ArrayList<>();
         Conversacion conversacionATestear = new Conversacion(usuario, profesional, listaMensajes);
-        assertEquals(conversacionATestear.getListaMensajes().size(), 0);
+        assertEquals(0, conversacionATestear.getListaMensajes().size());
     }
 
     @Test
@@ -85,7 +84,7 @@ public class ConversacionTest {
 
         conversacionATestear.agregarMensaje("Un mensaje", false);
 
-        assertEquals(conversacionATestear.toString(), "\nRodrigo Perez\nUn mensaje\n");
+        assertEquals("\nRodrigo Perez\nUn mensaje\n", conversacionATestear.toString());
     }
 
     @Test
@@ -97,7 +96,7 @@ public class ConversacionTest {
 
         conversacionATestear.agregarMensaje("Un mensaje", true);
 
-        assertEquals(conversacionATestear.toString(), "\nFederico Sanchez\nUn mensaje\n");
+        assertEquals("\nFederico Sanchez\nUn mensaje\n", conversacionATestear.toString());
     }
 
     @Test
@@ -131,5 +130,25 @@ public class ConversacionTest {
         conversacionATestear.setListaMensajes(listaMensajes);
 
         assertEquals(listaMensajes, conversacionATestear.getListaMensajes());
+    }
+
+    @Test
+    public void testHashCodeEsIgual(){
+        Persona usuario = new Usuario("Rodrigo","Perez", "03/03/2000", null, "Uruguaya");
+        Persona profesional = new Profesional("Federico", "Sanchez", "02/10/1990", null, "Licenciado en Nutrición", "03/03/2015", "Nicaragua");
+        Conversacion conversacionATestear = new Conversacion(usuario, profesional, null);
+        Conversacion conversacionIgual = new Conversacion(usuario, profesional, null);
+
+        assertEquals(conversacionATestear.hashCode(), conversacionIgual.hashCode());
+    }
+
+    @Test
+    public void testHashCodeEsDistinto(){
+        Persona usuario = new Usuario("Rodrigo","Perez", "03/03/2000", null, "Uruguaya");
+        Persona profesional = new Profesional("Federico", "Sanchez", "02/10/1990", null, "Licenciado en Nutrición", "03/03/2015", "Nicaragua");
+        Conversacion conversacionATestear = new Conversacion(usuario, profesional, null);
+        Conversacion conversacionDistinta = new Conversacion(profesional, usuario, null);
+
+        assertNotEquals(conversacionATestear.hashCode(), conversacionDistinta.hashCode());
     }
 }

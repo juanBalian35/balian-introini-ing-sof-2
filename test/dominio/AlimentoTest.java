@@ -16,13 +16,13 @@ public class AlimentoTest {
     @Test
     public void testSetsGetsNullTipo() {
         Alimento alimentoTest = new Alimento(null, null, null, null);
-        assertEquals(alimentoTest.getTipoAlimento(), "No definido");
+        assertEquals("No definido", alimentoTest.getTipoAlimento());
     }
 
     @Test
     public void testSetsGetsNullListaNutrientes() {
         Alimento alimentoTest = new Alimento(null, null, null, null);
-        assertEquals(alimentoTest.getListaNutrientesConProporcion().size(), 0);
+        assertEquals(0, alimentoTest.getListaNutrientesConProporcion().size());
     }
 
     @Test
@@ -30,7 +30,7 @@ public class AlimentoTest {
         ArrayList<ComposicionAlimento> listaComposicion = new ArrayList<>();
         listaComposicion.add(new ComposicionAlimento("Lipidos", 2));
         Alimento alimentoTest = new Alimento("Papa", "Verdura", listaComposicion, null);
-        assertEquals(alimentoTest.getNombre(), "Papa");
+        assertEquals("Papa", alimentoTest.getNombre());
     }
 
     @Test
@@ -38,7 +38,7 @@ public class AlimentoTest {
         ArrayList<ComposicionAlimento> listaComposicion = new ArrayList<>();
         listaComposicion.add(new ComposicionAlimento("Lipidos", 2));
         Alimento alimentoTest = new Alimento("Papa", "Verdura", listaComposicion, null);
-        assertEquals(alimentoTest.getTipoAlimento(), "Verdura");
+        assertEquals("Verdura", alimentoTest.getTipoAlimento());
     }
 
     @Test
@@ -52,19 +52,19 @@ public class AlimentoTest {
     @Test
     public void testSetsGetsListaNutrientesDatosVacios() {
         Alimento alimentoTest = new Alimento("", "", null, null);
-        assertEquals(alimentoTest.getListaNutrientesConProporcion().size(), 0);
+        assertEquals(0, alimentoTest.getListaNutrientesConProporcion().size());
     }
 
     @Test
     public void testSetsGetsNombreDatosVacios() {
         Alimento alimentoTest = new Alimento("", "", null, null);
-        assertEquals(alimentoTest.getNombre(), "Nombre de alimento no ingresado");
+        assertEquals("Nombre de alimento no ingresado", alimentoTest.getNombre());
     }
 
     @Test
     public void testSetsGetsTipoDatosVacios() {
         Alimento alimentoTest = new Alimento("", "", null, null);
-        assertEquals(alimentoTest.getTipoAlimento(), "No definido");
+        assertEquals("No definido", alimentoTest.getTipoAlimento());
     }
 
     @Test
@@ -80,19 +80,19 @@ public class AlimentoTest {
     @Test
     public void testToStringNullNombre() {
         Alimento alimentoTest = new Alimento("", "", null, null);
-        assertEquals(alimentoTest.getNombre(), "Nombre de alimento no ingresado");
+        assertEquals("Nombre de alimento no ingresado", alimentoTest.getNombre());
     }
 
     @Test
     public void testToStringNull() {
         Alimento alimentoTest = new Alimento("", "", null, null);
-        assertEquals(alimentoTest.toString(), "Nombre de alimento no ingresado");
+        assertEquals("Nombre de alimento no ingresado", alimentoTest.toString());
     }
 
     @Test
     public void testToStringDatosCorrectos() {
         Alimento alimentoTest = new Alimento("Papa", "", null, null);
-        assertEquals(alimentoTest.toString(), "Papa");
+        assertEquals("Papa", alimentoTest.toString());
     }
 
     @Test
@@ -109,11 +109,27 @@ public class AlimentoTest {
         boolean sonIguales = alimentoTest.equals(alimentoTest2);
         assertFalse(sonIguales);
     }
-    @Test
 
+    @Test
     public void testEqualsConNull() {
         Alimento alimentoTest = new Alimento("Rabanito", "", null, null);
 
         assertNotEquals(alimentoTest, null);
+    }
+
+    @Test
+    public void testHashCodeEsIgual(){
+        Alimento alimentoTest = new Alimento("Rabanito", "", null, null);
+        Alimento alimentoTest2 = new Alimento("Rabanito", "", null, null);
+
+        assertEquals(alimentoTest.hashCode(), alimentoTest2.hashCode());
+    }
+
+    @Test
+    public void testHashCodeEsDisttinto(){
+        Alimento alimentoTest = new Alimento("Rabanito", "", null, null);
+        Alimento alimentoTest2 = new Alimento("Papa", "", null, null);
+
+        assertNotEquals(alimentoTest.hashCode(), alimentoTest2.hashCode());
     }
 }
