@@ -2,16 +2,16 @@ package dominio;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.List;
+import java.util.Objects;
 
 public final class Conversacion implements Serializable {
-
-    private ArrayList<InformacionMensaje> listaMensajes;
-    public Persona usuario;
-    public Persona profesional;
+    private List<InformacionMensaje> listaMensajes;
+    private Persona usuario;
+    private Persona profesional;
     private boolean fueAtendidaConsulta;
 
-    public Conversacion(Persona user, Persona pr, ArrayList<InformacionMensaje> lista) {
+    public Conversacion(Persona user, Persona pr, List<InformacionMensaje> lista) {
         setUsuario(user);
         setProfesional(pr);
         setListaMensajes(lista);
@@ -26,11 +26,11 @@ public final class Conversacion implements Serializable {
         this.fueAtendidaConsulta = fueAtendida;
     }
 
-    public ArrayList<InformacionMensaje> getListaMensajes() {
+    public List<InformacionMensaje> getListaMensajes() {
         return this.listaMensajes;
     }
 
-    public void setListaMensajes(ArrayList<InformacionMensaje> lista) {
+    public void setListaMensajes(List<InformacionMensaje> lista) {
         if (lista == null || lista.isEmpty()) {
             this.listaMensajes = new ArrayList<>();
         } else {
@@ -67,9 +67,10 @@ public final class Conversacion implements Serializable {
         if (intercambioRemitente) {
             informacion.intercambiarRemitente();
         }
+
         listaMensajes.add(informacion);
-        boolean agregueMensaje = true;
-        return agregueMensaje;
+
+        return true;
     }
 
     @Override
@@ -84,6 +85,11 @@ public final class Conversacion implements Serializable {
     }
 
     @Override
+    public int hashCode(){
+        return Objects.hash(this.fueAtendidaConsulta, this.listaMensajes, this.profesional, this.usuario);
+    }
+
+    @Override
     public String toString() {
         String retorno = "No hay mensajes para mostrar";
         if (!getListaMensajes().isEmpty()) {
@@ -93,5 +99,4 @@ public final class Conversacion implements Serializable {
         }
         return retorno;
     }
-
 }

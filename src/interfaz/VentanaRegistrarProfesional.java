@@ -3,14 +3,9 @@ package interfaz;
 import dominio.Sistema;
 
 import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-import javax.imageio.ImageIO;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
@@ -604,7 +599,7 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
     }//GEN-LAST:event_btnHomeActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_formWindowClosing
 
     private void listaTituloProfesionalItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_listaTituloProfesionalItemStateChanged
@@ -686,7 +681,7 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
     }//GEN-LAST:event_btnIngresarFotoPerfilActionPerformed
 
     private void btnCerrarSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistemaActionPerformed
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistemaActionPerformed
 
     private void dateChooserFechaNacimientoOnSelectionChange(datechooser.events.SelectionChangedEvent evt) {//GEN-FIRST:event_dateChooserFechaNacimientoOnSelectionChange
@@ -783,7 +778,7 @@ public class VentanaRegistrarProfesional extends javax.swing.JDialog {
 
     private void cargarListaPaisesGraduacion() {
         DefaultComboBoxModel modelo = new DefaultComboBoxModel();
-        ArrayList<String> paisesEnSistema = sistema.devolverListaPaises();
+        List<String> paisesEnSistema = sistema.devolverListaPaises();
         this.listaPaisGraduacion.setModel(modelo);
         this.listaPaisGraduacion.addItem("Seleccione...");
         for (int i = 0; i < paisesEnSistema.size(); i++) {

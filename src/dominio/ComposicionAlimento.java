@@ -3,7 +3,6 @@ package dominio;
 import java.io.Serializable;
 
 public final class ComposicionAlimento implements Serializable {
-
     private String nutriente;
     private float proporcion;
 
@@ -36,5 +35,4 @@ public final class ComposicionAlimento implements Serializable {
             this.proporcion = unaProporcion;
         }
     }
-
 }

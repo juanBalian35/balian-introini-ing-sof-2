@@ -3,10 +3,7 @@ package interfaz;
 import dominio.Persona;
 import dominio.Sistema;
 import java.awt.Image;
-import java.awt.Point;
 import java.awt.Toolkit;
-import javax.swing.JDialog;
-import javax.swing.JFrame;
 import javax.swing.JList;
 import javax.swing.JOptionPane;
 
@@ -302,11 +299,11 @@ public class VentanaMenuPrincipal extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_formWindowClosing
 
     private void btnCerrarSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistemaActionPerformed
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistemaActionPerformed
 
     private void btnAgregarProfesionalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarProfesionalActionPerformed

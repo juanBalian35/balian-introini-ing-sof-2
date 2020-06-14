@@ -7,12 +7,12 @@ import dominio.Profesional;
 import dominio.Sistema;
 import dominio.Usuario;
 import java.awt.Image;
-
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.List;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
@@ -1892,11 +1892,12 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         ocultarPaneles();
         this.btnConsultaConProfesional.setEnabled(false);
         if (sistema.getListaProfesionales().size() > 0) {
-            this.listaConversaciones.setSelectedIndex(0);
             String[] lista = sistema.getListaNombresProfesionalesConversaciones(sistema.getPersonaLogueada().getNombreCompleto());
             if (lista.length > 0) {
+                this.existeConversacion = true;
                 this.panelConversacion.setVisible(true);
                 this.listaConversaciones.setListData(lista);
+                this.listaConversaciones.setSelectedIndex(0);
                 this.existeConversacion = true;
                 this.panelConsultaConProfesional.setVisible(true);
             } else {
@@ -1937,7 +1938,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         if (this.sistema.getListaAlimentos().size() > 0) {
             this.btnIngresarAlimentoIngerido.setEnabled(false);
             this.panelAlimentoIngerido.setVisible(true);
-            ArrayList<Alimento> lstAlimentos = this.sistema.getListaAlimentos();
+            List<Alimento> lstAlimentos = this.sistema.getListaAlimentos();
             DefaultComboBoxModel modelo = new DefaultComboBoxModel();
             this.comboAlimentosEnSistema.setModel(modelo);
             this.comboAlimentosEnSistema.addItem("Seleccione...");
@@ -1970,8 +1971,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     }//GEN-LAST:event_listaConversacionesValueChanged
 
     private void btnNuevaConversacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevaConversacionActionPerformed
-        ArrayList listaNombresProfesionalesSinConversacion;
-        listaNombresProfesionalesSinConversacion = this.sistema.getNombresProfesionalesSinConversacionConUsuario((sistema.getPersonaLogueada()));
+        List listaNombresProfesionalesSinConversacion = this.sistema.getNombresProfesionalesSinConversacionConUsuario((sistema.getPersonaLogueada()));
         if (listaNombresProfesionalesSinConversacion != null && listaNombresProfesionalesSinConversacion.size() > 0) {
             ocultarPaneles();
             this.listaElegirProfesionales.setListData(listaNombresProfesionalesSinConversacion.toArray());
@@ -1997,7 +1997,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     private void btnNuevaIngestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevaIngestaActionPerformed
         String nombreUsuarioLoguedo = this.sistema.getPersonaLogueada().getNombreCompleto();
         Usuario usuarioLogueado = this.sistema.getUsuarioPorNombre(nombreUsuarioLoguedo);
-        ArrayList<Ingesta> listaIngestasDelUsuario = usuarioLogueado.getAlimentosIngeridos();
+        List<Ingesta> listaIngestasDelUsuario = usuarioLogueado.getAlimentosIngeridos();
         String fechaIngesta = this.fechaIngestaUsuario.getText();
         String nuevoAlimento = this.comboAlimentosEnSistema.getSelectedItem().toString();
         
@@ -2053,7 +2053,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         this.lblDatosIncorrectos.setVisible(false);
         this.lblDatosIncorrectos1.setVisible(false);
         this.panelSolicitarNuevoPlan.setVisible(true);
-        ArrayList<Profesional> lstProfesionales = this.sistema.getListaProfesionales();
+        List<Profesional> lstProfesionales = this.sistema.getListaProfesionales();
         DefaultComboBoxModel modelo = new DefaultComboBoxModel();
         this.comboProfesionalesEnSistema.setModel(modelo);
         this.comboProfesionalesEnSistema.addItem("Seleccione...");
@@ -2064,7 +2064,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     }//GEN-LAST:event_btnSolicitarNuevoPlanActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_formWindowClosing
 
     private void comboAlimentosEnSistemaItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_comboAlimentosEnSistemaItemStateChanged
@@ -2088,15 +2088,15 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     }//GEN-LAST:event_btnAyudaActionPerformed
 
     private void btnCerrarSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistemaActionPerformed
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistemaActionPerformed
 
     private void btnCerrarSistema1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema1ActionPerformed
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistema1ActionPerformed
 
     private void btnCerrarSistema2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema2ActionPerformed
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistema2ActionPerformed
 
     private void lblValidarProfesionalPlanFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_lblValidarProfesionalPlanFocusGained
@@ -2171,20 +2171,19 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     }//GEN-LAST:event_listaPlanesDelUsuarioValueChanged
 
     private void btnCerrarSistema4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema4ActionPerformed
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistema4ActionPerformed
 
     private void btnCerrarSistema3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema3ActionPerformed
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistema3ActionPerformed
 
     private void btnCerrarSistema5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema5ActionPerformed
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistema5ActionPerformed
 
     private void btnNuevaConversacion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevaConversacion1ActionPerformed
-        ArrayList listaNombresProfesionalesSinConversacion;
-        listaNombresProfesionalesSinConversacion = this.sistema.getNombresProfesionalesSinConversacionConUsuario((sistema.getPersonaLogueada()));
+        List listaNombresProfesionalesSinConversacion = this.sistema.getNombresProfesionalesSinConversacionConUsuario((sistema.getPersonaLogueada()));
         if (listaNombresProfesionalesSinConversacion != null && listaNombresProfesionalesSinConversacion.size() > 0) {
             ocultarPaneles();
             this.listaElegirProfesionales.setListData(listaNombresProfesionalesSinConversacion.toArray());
@@ -2193,15 +2192,15 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     }//GEN-LAST:event_btnNuevaConversacion1ActionPerformed
 
     private void btnCerrarSistema6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema6ActionPerformed
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistema6ActionPerformed
 
     private void btnCerrarSistema7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema7ActionPerformed
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistema7ActionPerformed
 
     private void btnCerrarSistema8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema8ActionPerformed
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistema8ActionPerformed
 
     private void fechaIngestaUsuarioOnCommit(datechooser.events.CommitEvent evt) {//GEN-FIRST:event_fechaIngestaUsuarioOnCommit

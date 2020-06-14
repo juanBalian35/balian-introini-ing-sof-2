@@ -1,18 +1,18 @@
 package dominio;
 
 import java.io.Serializable;
+import java.util.Objects;
 import javax.swing.ImageIcon;
 
 public abstract class Persona implements Serializable {
-
+    private ImageIcon fotoDePerfil;
     private String nombre;
     private String apellido;
     private String fechaNacimiento;
-    public ImageIcon fotoDePerfil;
 
-    private final static String ERROR_FECHA = "Fecha no ingresada";
-    private final static String ERROR_APELLIDO = "Apellido no ingresado";
-    private final static String ERROR_NOMBRE = "Nombre no ingresado";
+    private static final String ERROR_APELLIDO = "Apellido no ingresado";
+    private static final String ERROR_FECHA = "Fecha no ingresada";
+    private static final String ERROR_NOMBRE = "Nombre no ingresado";
 
     public String getNombre() {
         return this.nombre;
@@ -90,5 +90,10 @@ public abstract class Persona implements Serializable {
 
         Persona otraPersona = (Persona) obj;
         return this.getNombreCompleto().equals(otraPersona.getNombreCompleto());
+    }
+
+    @Override
+    public int hashCode(){
+        return Objects.hash(this.apellido, this.nombre, this.fechaNacimiento, this.fotoDePerfil);
     }
 }

@@ -246,11 +246,10 @@ public class VentanaEditarRestricciones extends javax.swing.JDialog {
     }//GEN-LAST:event_btnEditarPreferenciasActionPerformed
 
     private void rdBtnVeganoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdBtnVeganoActionPerformed
-        // TODO add your handling code here:
     }//GEN-LAST:event_rdBtnVeganoActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(false);
     }//GEN-LAST:event_formWindowClosing
 
     void agregarRestriccionesUsuario(ArrayList<String> restricciones) {

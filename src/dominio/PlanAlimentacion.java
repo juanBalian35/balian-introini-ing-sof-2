@@ -4,13 +4,12 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Objects;
-import java.util.Currency;
 
 public final class PlanAlimentacion implements Serializable {
     private String nombreDelPlan;
     private Usuario usuario;
-    public Profesional profesional;
-    public boolean fueAtendidoElPlan;
+    private Profesional profesional;
+    private boolean fueAtendidoElPlan;
     private String[][] planDiaADia;
 
     private LocalDateTime fecha;
@@ -20,7 +19,7 @@ public final class PlanAlimentacion implements Serializable {
             Profesional pro,
             boolean fueAtendido,
             String[][] unPlan,
-                            LocalDateTime fecha) {
+            LocalDateTime fecha) {
         setFecha(fecha);
         setUsuario(usu);
         setProfesional(pro);
@@ -58,11 +57,16 @@ public final class PlanAlimentacion implements Serializable {
     }
 
     public String[][] getPlanDiaADia() {
-        return this.planDiaADia;
+        return this.planDiaADia.clone();
     }
 
     public void setPlanDiaADia(String[][] unPlan) {
-        this.planDiaADia = unPlan;
+        if(unPlan == null) {
+            this.planDiaADia = new String[0][0];
+        }
+        else{
+            this.planDiaADia = unPlan.clone();
+        }
     }
 
     public String getNombreDelPlan() {
@@ -117,4 +121,8 @@ public final class PlanAlimentacion implements Serializable {
         return mismoNombre && mismoUsuario && mismoProfesional && mismaFecha;
     }
 
+    @Override
+    public int hashCode(){
+        return Objects.hash(this.fecha, this.nombreDelPlan, this.profesional, this.usuario, this.fueAtendidoElPlan);
+    }
 }

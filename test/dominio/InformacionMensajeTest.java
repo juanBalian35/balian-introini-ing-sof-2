@@ -14,7 +14,7 @@ public class InformacionMensajeTest {
         String destinatario = null;
         String mensaje = null;
         InformacionMensaje info = new InformacionMensaje(remitente, destinatario, mensaje);
-        assertEquals(info.getRemitente(), "Remitente no ingresado");
+        assertEquals("Remitente no ingresado", info.getRemitente());
     }
 
     @Test
@@ -42,7 +42,7 @@ public class InformacionMensajeTest {
         String destinatario = "";
         String mensaje = "";
         InformacionMensaje info = new InformacionMensaje(remitente, destinatario, mensaje);
-        assertEquals(info.getRemitente(), "Remitente no ingresado");
+        assertEquals("Remitente no ingresado", info.getRemitente());
     }
 
     @Test
@@ -51,7 +51,7 @@ public class InformacionMensajeTest {
         String destinatario = "";
         String mensaje = "";
         InformacionMensaje info = new InformacionMensaje(remitente, destinatario, mensaje);
-        assertEquals(info.getDestinatario(), "Destinatario no ingresado");
+        assertEquals("Destinatario no ingresado", info.getDestinatario());
     }
 
     @Test

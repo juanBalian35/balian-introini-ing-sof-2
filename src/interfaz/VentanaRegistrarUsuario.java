@@ -8,6 +8,7 @@ import java.awt.Image;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.List;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
@@ -689,7 +690,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     }//GEN-LAST:event_btnHomeActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_formWindowClosing
 
     private void txtApellidoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtApellidoFocusLost
@@ -770,7 +771,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
 
     private void btnIngresarFotoPerfilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarFotoPerfilActionPerformed
         JFileChooser fileChooser = new JFileChooser();
-        FileNameExtensionFilter file = new FileNameExtensionFilter("PNG", "png", "JPG", "jpeg", "jpg", "JPEG", "bmp", "BMP");
+        FileNameExtensionFilter file = new FileNameExtensionFilter("Imagenes(png, jpg, jpeg, bmp)", "png", "jpeg", "jpg", "bmp");
         fileChooser.setFileFilter(file);
         fileChooser.setAcceptAllFileFilterUsed(false);
         int imagen = fileChooser.showOpenDialog(this);
@@ -793,7 +794,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
     }//GEN-LAST:event_btnIngresarFotoPerfilActionPerformed
 
     private void btnCerrarSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistemaActionPerformed
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistemaActionPerformed
 
     private void dateChooserFechaNacimientoOnCommit(datechooser.events.CommitEvent evt) {//GEN-FIRST:event_dateChooserFechaNacimientoOnCommit
@@ -951,7 +952,7 @@ public class VentanaRegistrarUsuario extends javax.swing.JDialog {
 
     private void cargarListaPaises() {
         DefaultComboBoxModel modelo = new DefaultComboBoxModel();
-        ArrayList<String> nacionalidaesEnSistema = sistema.devolverListaPaises();
+        List<String> nacionalidaesEnSistema = sistema.devolverListaPaises();
         this.listaNacionalidad.setModel(modelo);
         this.listaNacionalidad.addItem("Seleccione...");
         for (int i = 0; i < nacionalidaesEnSistema.size(); i++) {

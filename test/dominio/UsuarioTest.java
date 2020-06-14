@@ -1,10 +1,7 @@
 package dominio;
 
 import java.util.ArrayList;
-import java.util.List;
 import javax.swing.ImageIcon;
-
-import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -17,61 +14,61 @@ public class UsuarioTest {
     @Test
     public void testGetsSetsVaciosListaAlimentos() {
         Usuario usuario = new Usuario("", "", "", null, "");
-        assertEquals(usuario.getAlimentosIngeridos().size(), 0);
+        assertEquals(0, usuario.getAlimentosIngeridos().size());
     }
 
     @Test
     public void testGetsSetsVaciosRestricciones() {
         Usuario usuario = new Usuario("", "", "", null, "");
-        assertEquals(usuario.getRestricciones().size(), 0);
+        assertEquals(0, usuario.getRestricciones().size());
     }
 
     @Test
     public void testGetsSetsVaciosPreferencias() {
         Usuario usuario = new Usuario("", "", "", null, "");
-        assertEquals(usuario.getPreferencias().size(), 0);
+        assertEquals(0, usuario.getPreferencias().size());
     }
 
     @Test
     public void testGetsSetsNullNombre() {
         Usuario usuario = new Usuario(null, null, null, null, null);
-        assertEquals(usuario.getNombre(), "Nombre no ingresado");
+        assertEquals("Nombre no ingresado", usuario.getNombre());
     }
 
     @Test
     public void testGetsSetsNullApellido() {
         Usuario usuario = new Usuario(null, null, null, null, null);
-        assertEquals(usuario.getApellido(), "Apellido no ingresado");
+        assertEquals("Apellido no ingresado", usuario.getApellido());
     }
 
     @Test
     public void testGetsSetsNullFechaNacimiento() {
         Usuario usuario = new Usuario(null, null, null, null, null);
-        assertEquals(usuario.getFechaNacimiento(), "Fecha no ingresada");
+        assertEquals("Fecha no ingresada" ,usuario.getFechaNacimiento());
     }
 
     @Test
     public void testGetsSetsNullNacionalidad() {
         Usuario usuario = new Usuario(null, null, null, null, null);
-        assertEquals(usuario.getNacionalidad(), "Nacionalidad no ingresada");
+        assertEquals("Nacionalidad no ingresada", usuario.getNacionalidad());
     }
 
     @Test
     public void testGetsSetsNullListaAlimentos() {
         Usuario usuario = new Usuario(null, null, null, null, null);
-        assertEquals(usuario.getAlimentosIngeridos().size(), 0);
+        assertEquals(0, usuario.getAlimentosIngeridos().size());
     }
 
     @Test
     public void testGetsSetsNullRestricciones() {
         Usuario usuario = new Usuario(null, null, null, null, null);
-        assertEquals(usuario.getRestricciones().size(), 0);
+        assertEquals(0, usuario.getRestricciones().size());
     }
 
     @Test
     public void testGetsSetsNullPreferencias() {
         Usuario usuario = new Usuario(null, null, null, null, null);
-        assertEquals(usuario.getPreferencias().size(), 0);
+        assertEquals(0, usuario.getPreferencias().size());
     }
 
     @Test
@@ -88,31 +85,31 @@ public class UsuarioTest {
     @Test
     public void testGetsSetsNombre() {
         Usuario usuario = new Usuario("Rodrigo", "Perez", "03/03/2000", null, "Uruguaya");
-        assertEquals(usuario.getNombre(), "Rodrigo");
+        assertEquals("Rodrigo", usuario.getNombre());
     }
 
     @Test
     public void testGetsSetsApellido() {
         Usuario usuario = new Usuario("Rodrigo", "Perez", "03/03/2000", null, "Uruguaya");
-        assertEquals(usuario.getApellido(), "Perez");
+        assertEquals("Perez", usuario.getApellido());
     }
 
     @Test
     public void testGetsSetsFechaNacimiento() {
         Usuario usuario = new Usuario("Rodrigo", "Perez", "03/03/2000", null, "Uruguaya");
-        assertEquals(usuario.getFechaNacimiento(), "03/03/2000");
+        assertEquals("03/03/2000", usuario.getFechaNacimiento());
     }
 
     @Test
     public void testGetsSetsNacionalidad() {
         Usuario usuario = new Usuario("Rodrigo", "Perez", "03/03/2000", null, "Uruguaya");
-        assertEquals(usuario.getNacionalidad(), "Uruguaya");
+        assertEquals("Uruguaya", usuario.getNacionalidad());
     }
 
     @Test
     public void testGetsSetsListaAlimentos() {
         Usuario usuario = new Usuario("Rodrigo", "Perez", "03/03/2000", null, "Uruguaya");
-        assertEquals(usuario.getAlimentosIngeridos().size(), 0);
+        assertEquals(0, usuario.getAlimentosIngeridos().size());
     }
 
     @Test
@@ -205,6 +202,6 @@ public class UsuarioTest {
     public void testToString() {
         Usuario usuario = new Usuario("Rodrigo", "Perez", "03/03/2000", null, "Uruguaya");
 
-        Assert.assertEquals(usuario.toString(), "Rodrigo Perez");
+        Assert.assertEquals("Rodrigo Perez", usuario.toString());
     }
 }

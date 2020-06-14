@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.30">
-<file name="/home/juanb/Faculta/ingenieria/balian-introini-ing-sof-2/src/interfaz/VentanaEditarPreferencias.java">
+<file name="/home/juanb/Faculta/ingenieria/ing-sof-2/src/interfaz/VentanaEditarPreferencias.java">
 </file>
-<file name="/home/juanb/Faculta/ingenieria/balian-introini-ing-sof-2/src/dominio/Persona.java">
+<file name="/home/juanb/Faculta/ingenieria/ing-sof-2/src/dominio/Persona.java">
 </file>
-<file name="/home/juanb/Faculta/ingenieria/balian-introini-ing-sof-2/src/interfaz/VentanaMenuPrincipalProfesional.java">
+<file name="/home/juanb/Faculta/ingenieria/ing-sof-2/src/interfaz/VentanaMenuPrincipalProfesional.java">
 </file>
-<file name="/home/juanb/Faculta/ingenieria/balian-introini-ing-sof-2/src/dominio/Alimento.java">
+<file name="/home/juanb/Faculta/ingenieria/ing-sof-2/src/dominio/Alimento.java">
 </file>
-<file name="/home/juanb/Faculta/ingenieria/balian-introini-ing-sof-2/src/dominio/Sistema.java">
+<file name="/home/juanb/Faculta/ingenieria/ing-sof-2/src/dominio/Sistema.java">
 </file>
-<file name="/home/juanb/Faculta/ingenieria/balian-introini-ing-sof-2/src/interfaz/AyudaUsuario.java">
+<file name="/home/juanb/Faculta/ingenieria/ing-sof-2/src/interfaz/AyudaUsuario.java">
 </file>
-<file name="/home/juanb/Faculta/ingenieria/balian-introini-ing-sof-2/src/interfaz/VentanaMenuPrincipal.java">
+<file name="/home/juanb/Faculta/ingenieria/ing-sof-2/src/interfaz/VentanaMenuPrincipal.java">
 </file>
-<file name="/home/juanb/Faculta/ingenieria/balian-introini-ing-sof-2/src/interfaz/VentanaRegistrarProfesional.java">
+<file name="/home/juanb/Faculta/ingenieria/ing-sof-2/src/interfaz/VentanaRegistrarProfesional.java">
 </file>
-<file name="/home/juanb/Faculta/ingenieria/balian-introini-ing-sof-2/src/interfaz/VentanaEditarRestricciones.java">
+<file name="/home/juanb/Faculta/ingenieria/ing-sof-2/src/interfaz/VentanaEditarRestricciones.java">
 </file>
-<file name="/home/juanb/Faculta/ingenieria/balian-introini-ing-sof-2/src/dominio/ComposicionAlimento.java">
+<file name="/home/juanb/Faculta/ingenieria/ing-sof-2/src/dominio/ComposicionAlimento.java">
 </file>
-<file name="/home/juanb/Faculta/ingenieria/balian-introini-ing-sof-2/src/dominio/Conversacion.java">
+<file name="/home/juanb/Faculta/ingenieria/ing-sof-2/src/dominio/Conversacion.java">
 </file>
-<file name="/home/juanb/Faculta/ingenieria/balian-introini-ing-sof-2/src/interfaz/MostrarPerfilUsuario.java">
+<file name="/home/juanb/Faculta/ingenieria/ing-sof-2/src/interfaz/MostrarPerfilUsuario.java">
 </file>
-<file name="/home/juanb/Faculta/ingenieria/balian-introini-ing-sof-2/src/interfaz/VentanaMenuPrincipalUsuario.java">
+<file name="/home/juanb/Faculta/ingenieria/ing-sof-2/src/interfaz/VentanaMenuPrincipalUsuario.java">
 </file>
-<file name="/home/juanb/Faculta/ingenieria/balian-introini-ing-sof-2/src/interfaz/VentanaRegistrarUsuario.java">
+<file name="/home/juanb/Faculta/ingenieria/ing-sof-2/src/interfaz/VentanaRegistrarUsuario.java">
 </file>
-<file name="/home/juanb/Faculta/ingenieria/balian-introini-ing-sof-2/src/dominio/InformacionMensaje.java">
+<file name="/home/juanb/Faculta/ingenieria/ing-sof-2/src/dominio/InformacionMensaje.java">
 </file>
-<file name="/home/juanb/Faculta/ingenieria/balian-introini-ing-sof-2/src/dominio/Ingesta.java">
+<file name="/home/juanb/Faculta/ingenieria/ing-sof-2/src/dominio/Ingesta.java">
 </file>
-<file name="/home/juanb/Faculta/ingenieria/balian-introini-ing-sof-2/src/interfaz/AyudaProfesional.java">
+<file name="/home/juanb/Faculta/ingenieria/ing-sof-2/src/interfaz/AyudaProfesional.java">
 </file>
-<file name="/home/juanb/Faculta/ingenieria/balian-introini-ing-sof-2/src/dominio/Usuario.java">
+<file name="/home/juanb/Faculta/ingenieria/ing-sof-2/src/dominio/Usuario.java">
 </file>
-<file name="/home/juanb/Faculta/ingenieria/balian-introini-ing-sof-2/src/dominio/Profesional.java">
+<file name="/home/juanb/Faculta/ingenieria/ing-sof-2/src/dominio/Profesional.java">
 </file>
-<file name="/home/juanb/Faculta/ingenieria/balian-introini-ing-sof-2/src/inicioSistema/Main.java">
+<file name="/home/juanb/Faculta/ingenieria/ing-sof-2/src/inicioSistema/Main.java">
 </file>
-<file name="/home/juanb/Faculta/ingenieria/balian-introini-ing-sof-2/src/dominio/PlanAlimentacion.java">
+<file name="/home/juanb/Faculta/ingenieria/ing-sof-2/src/dominio/PlanAlimentacion.java">
 </file>
 </checkstyle>

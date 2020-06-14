@@ -81,4 +81,32 @@ public class IngestaTest {
         Ingesta ingestaATestear = new Ingesta(fechaDeIngesta, null);
         assertEquals("No hay alimentos ingeridos", ingestaATestear.toString());
     }
+
+    @Test
+    public void testHashCodeEsIgual(){
+        String fechaDeIngesta = "11/02/17";
+        ArrayList<ComposicionAlimento> listaComposicion = new ArrayList<>();
+        listaComposicion.add(new ComposicionAlimento("Lipidos", 2));
+        Alimento alimento1 = new Alimento("Papa", "Verdura", listaComposicion, null);
+        ArrayList<Alimento> listaAlimentosPorFecha = new ArrayList<>();
+        listaAlimentosPorFecha.add(alimento1);
+        Ingesta ingestaATestear = new Ingesta(fechaDeIngesta, listaAlimentosPorFecha);
+        Ingesta ingestaAComparar = new Ingesta(fechaDeIngesta, listaAlimentosPorFecha);
+
+        assertEquals(ingestaATestear.hashCode(), ingestaAComparar.hashCode());
+    }
+
+    @Test
+    public void testHashCodeEsDistinto(){
+        String fechaDeIngesta = "11/02/17";
+        ArrayList<ComposicionAlimento> listaComposicion = new ArrayList<>();
+        listaComposicion.add(new ComposicionAlimento("Lipidos", 2));
+        Alimento alimento1 = new Alimento("Papa", "Verdura", listaComposicion, null);
+        ArrayList<Alimento> listaAlimentosPorFecha = new ArrayList<>();
+        listaAlimentosPorFecha.add(alimento1);
+        Ingesta ingestaATestear = new Ingesta(fechaDeIngesta, listaAlimentosPorFecha);
+        Ingesta ingestaAComparar = new Ingesta(fechaDeIngesta, new ArrayList<>());
+
+        assertNotEquals(ingestaATestear.hashCode(), ingestaAComparar.hashCode());
+    }
 }

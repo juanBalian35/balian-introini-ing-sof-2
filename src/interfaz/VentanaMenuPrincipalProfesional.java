@@ -1,15 +1,13 @@
 package interfaz;
 
 import dominio.*;
-
 import java.awt.Image;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.NoSuchElementException;
+import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import javax.swing.DefaultComboBoxModel;
-import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
@@ -481,7 +479,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         jPanel30.setBackground(new java.awt.Color(51, 51, 51));
         jPanel30.setLayout(new java.awt.GridBagLayout());
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/out/production/balian-introini-ing-sof-2/Imagenes/iconoNuevoMensaje.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoNuevoMensaje.png"))); // NOI18N
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
         jButton1.setFocusPainted(false);
@@ -2244,6 +2242,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         String[] lista = this.sistema.getListaNombresUsuariosConversacionesPendientes(sistema.getPersonaLogueada().getNombreCompleto());
         if (lista.length > 0) {
             this.listaConversaciones.setListData(lista);
+            this.listaConversaciones.setSelectedIndex(0);
         } else {
             ocultarPaneles();
             this.panelNoHayConsultasPendientes.setVisible(true);
@@ -2274,9 +2273,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
             this.listaPlanesPendientes.setSelectedIndex(0);
             String nombreProfesionalLogueado = sistema.getPersonaLogueada().getNombreCompleto();
             Profesional profesionalLogueado = sistema.getProfesionalPorNombre(nombreProfesionalLogueado);
-            ArrayList<PlanAlimentacion> lista = this.sistema.getListaPlanesPendientes(profesionalLogueado);
-
-
+            List<PlanAlimentacion> lista = this.sistema.getListaPlanesPendientes(profesionalLogueado);
 
             String[] stringArray = Arrays.copyOf(lista.stream().map(x -> x.toString()).collect(Collectors.toList()).toArray(), lista.size(), String[].class);
             if (lista.size() > 0) {
@@ -2340,12 +2337,11 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     }//GEN-LAST:event_btnIngresarAlimentoActionPerformed
 
     private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
-        // TODO add your handling code here:
     }//GEN-LAST:event_txtNombreActionPerformed
 
     private void btnIngresarFotoAlimentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarFotoAlimentoActionPerformed
         JFileChooser fileChooser = new JFileChooser();
-        FileNameExtensionFilter file = new FileNameExtensionFilter("PNG", "png");
+        FileNameExtensionFilter file = new FileNameExtensionFilter("Imagenes(png, jpg, jpeg, bmp)", "png", "jpeg", "jpg", "bmp");
         fileChooser.setFileFilter(file);
         int imagen = fileChooser.showOpenDialog(this);
         if (imagen == JFileChooser.APPROVE_OPTION) {
@@ -2354,8 +2350,8 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
                 Image image = iconoPerfil.getImage().getScaledInstance(100, 100, java.awt.Image.SCALE_SMOOTH);
                 ImageIcon icono = new ImageIcon(image);
 
-                btnIngresarFotoAlimento.setIcon(iconoPerfil);
-                this.setFotoDeAlimentoActual(iconoPerfil);       
+                btnIngresarFotoAlimento.setIcon(icono);
+                this.setFotoDeAlimentoActual(icono);
             }
             else{
                 String mensajeError = "El archivo seleccionado no existe.";
@@ -2517,11 +2513,10 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     }//GEN-LAST:event_lblValidarTipoAlimentoFocusGained
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        sistema.guardarDatosSistema();
+        sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_formWindowClosing
 
     private void lblValidarNombreFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_lblValidarNombreFocusLost
-        // TODO add your handling code here:
     }//GEN-LAST:event_lblValidarNombreFocusLost
 
     private void listaPlanesPendientesValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_listaPlanesPendientesValueChanged
@@ -2546,11 +2541,11 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         lblFotoDeUsuario.setIcon(new ImageIcon(image));
         
         if (usuarioSeleccionado.getArrayAlimentosIngeridos().length > 0) {
-            ArrayList<Ingesta> ingeridos = usuarioSeleccionado.getAlimentosIngeridos();
+            List<Ingesta> ingeridos = usuarioSeleccionado.getAlimentosIngeridos();
             ArrayList<String> listaASetear = new ArrayList<>();
             for (int i = 0; i < ingeridos.size(); i++) {
                 Ingesta ingestaActual = ingeridos.get(i);
-                ArrayList<Alimento> alimentosActuales = ingestaActual.getListaAlimentosPorFecha();
+                List<Alimento> alimentosActuales = ingestaActual.getListaAlimentosPorFecha();
                 for (int j = 0; j < alimentosActuales.size(); j++) {
                     listaASetear.add(alimentosActuales.get(i).toString());
                 }
@@ -2628,7 +2623,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     }//GEN-LAST:event_listaDiasDeLaSemanaItemStateChanged
 
     private void listaDiasDeLaSemanaFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_listaDiasDeLaSemanaFocusLost
-        // TODO add your handling code here:
     }//GEN-LAST:event_listaDiasDeLaSemanaFocusLost
 
     private void listaDiasDeLaSemanaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listaDiasDeLaSemanaActionPerformed
@@ -2640,7 +2634,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     }//GEN-LAST:event_listaComidasPlanItemStateChanged
 
     private void listaComidasPlanFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_listaComidasPlanFocusLost
-        // TODO add your handling code here:
     }//GEN-LAST:event_listaComidasPlanFocusLost
 
     private void listaComidasPlanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listaComidasPlanActionPerformed
@@ -2648,7 +2641,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     }//GEN-LAST:event_listaComidasPlanActionPerformed
 
     private void listaAlimentosEnSistemaValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_listaAlimentosEnSistemaValueChanged
-        // TODO add your handling code here:
     }//GEN-LAST:event_listaAlimentosEnSistemaValueChanged
 
     private void txtNombrePlanFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtNombrePlanFocusLost
@@ -2665,7 +2657,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     }//GEN-LAST:event_txtNombrePlanFocusLost
 
     private void txtNombrePlanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombrePlanActionPerformed
-        // TODO add your handling code here:
     }//GEN-LAST:event_txtNombrePlanActionPerformed
 
     private void btnAgregarAlPlanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarAlPlanActionPerformed
@@ -2708,7 +2699,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     }//GEN-LAST:event_btnAgregarAlPlanActionPerformed
 
     private void btnEliminarDelPlanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarDelPlanActionPerformed
-        String diaSeleccionado = (String) this.listaDiasDeLaSemana.getSelectedItem();
         String ingestaSeleccionada = (String) this.listaComidasPlan.getSelectedItem();
         String alimentoEliminado = this.listaAlimentosEnSistema.getSelectedValue().toString();
         String aRemplazar = "";
@@ -2750,8 +2740,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
             this.lblNombrePlanVacio.setVisible(true);
             this.lblValidarNombrePlan.setVisible(true);
         } else {
-            String nombreProfesionalLogueado = sistema.getPersonaLogueada().getNombreCompleto();
-            Profesional profesionalLogueado = sistema.getProfesionalPorNombre(nombreProfesionalLogueado);
             listaPlanesPendientes.getSelectedValue();
             boolean fueAtendidoElPlan = this.sistema.atenderSolicitudDelPlan(planAlimentacion, planSeleccionado, nombreDelPlan);
             if (fueAtendidoElPlan) {
@@ -2843,39 +2831,39 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
     }//GEN-LAST:event_btnAyudaActionPerformed
 
     private void btnCerrarSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistemaActionPerformed
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistemaActionPerformed
 
     private void btnCerrarSistema1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema1ActionPerformed
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistema1ActionPerformed
 
     private void btnCerrarSistema2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema2ActionPerformed
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistema2ActionPerformed
 
     private void btnCerrarSistema3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema3ActionPerformed
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistema3ActionPerformed
 
     private void btnCerrarSistema4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema4ActionPerformed
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistema4ActionPerformed
 
     private void btnCerrarSistema5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema5ActionPerformed
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistema5ActionPerformed
 
     private void btnCerrarSistema6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema6ActionPerformed
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistema6ActionPerformed
 
     private void btnCerrarSistema7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema7ActionPerformed
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistema7ActionPerformed
 
     private void btnCerrarSistema8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSistema8ActionPerformed
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_btnCerrarSistema8ActionPerformed
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
@@ -3181,7 +3169,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
 
     private void cargarListaDiasDeLaSemana() {
         DefaultComboBoxModel modelo = new DefaultComboBoxModel();
-        ArrayList<String> diasEnSistema = sistema.devolverListaDiasDeLaSemana();
+        List<String> diasEnSistema = sistema.devolverListaDiasDeLaSemana();
         this.listaDiasDeLaSemana.setModel(modelo);
         for (int i = 0; i < diasEnSistema.size(); i++) {
             this.listaDiasDeLaSemana.addItem(diasEnSistema.get(i));
@@ -3190,7 +3178,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
 
     private void cargarListaIngestasPorDia() {
         DefaultComboBoxModel modelo = new DefaultComboBoxModel();
-        ArrayList<String> ingestasEnSistema = sistema.devolverListaIngestasDeLaSemana();
+        List<String> ingestasEnSistema = sistema.devolverListaIngestasDeLaSemana();
         this.listaComidasPlan.setModel(modelo);
         for (int i = 0; i < ingestasEnSistema.size(); i++) {
             this.listaComidasPlan.addItem(ingestasEnSistema.get(i));

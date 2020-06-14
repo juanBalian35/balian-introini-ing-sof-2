@@ -2,17 +2,16 @@ package dominio;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
-import java.util.Arrays;
 
 public final class Ingesta implements Serializable {
+    private String fechaDeIngesta;
+    private List<Alimento> listaAlimentosPorFecha;
 
-    public String fechaDeIngesta;
-    private ArrayList<Alimento> listaAlimentosPorFecha;
-
-    public Ingesta(String f, ArrayList<Alimento> LA) {
+    public Ingesta(String f, List<Alimento> listaAlimentos) {
         setFechaDeIngesta(f);
-        setLAPF(LA);
+        setLAPF(listaAlimentos);
     }
 
     public String getFechaDeIngesta() {
@@ -27,7 +26,7 @@ public final class Ingesta implements Serializable {
         }
     }
 
-    public ArrayList<Alimento> getListaAlimentosPorFecha() {
+    public List<Alimento> getListaAlimentosPorFecha() {
         if (this.listaAlimentosPorFecha.isEmpty()) {
             return new ArrayList<>();
         } else {
@@ -35,7 +34,7 @@ public final class Ingesta implements Serializable {
         }
     }
 
-    public void setLAPF(ArrayList<Alimento> list) {
+    public void setLAPF(List<Alimento> list) {
         if (list == null || list.isEmpty()) {
             this.listaAlimentosPorFecha = new ArrayList<>();
         } else {
@@ -64,4 +63,8 @@ public final class Ingesta implements Serializable {
         return sonIguales;
     }
 
+    @Override
+    public int hashCode(){
+        return Objects.hash(this.fechaDeIngesta, this.listaAlimentosPorFecha);
+    }
 }

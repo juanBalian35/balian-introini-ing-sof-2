@@ -14,7 +14,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class SistemaTest {
-
     public SistemaTest() {
 
     }
@@ -29,7 +28,7 @@ public class SistemaTest {
         ArrayList<Conversacion> listaConversaciones = null;
         Persona personaLogueada = null;
         Sistema sistemaATestear = new Sistema(listaUsuarios, listaProfesionales, listaAlimentos, listaPlanesAlimentacion, listaConversaciones, personaLogueada);
-        assertEquals(sistemaATestear.getListaAlimentos().size(), 0);
+        assertEquals(0, sistemaATestear.getListaAlimentos().size());
     }
 
     @Test
@@ -41,7 +40,7 @@ public class SistemaTest {
         ArrayList<Conversacion> listaConversaciones = null;
         Persona personaLogueada = null;
         Sistema sistemaATestear = new Sistema(listaUsuarios, listaProfesionales, listaAlimentos, listaPlanesAlimentacion, listaConversaciones, personaLogueada);
-        assertEquals(sistemaATestear.getListaPlanesAlimentacion().size(), 0);
+        assertEquals(0, sistemaATestear.getListaPlanesAlimentacion().size());
     }
 
     @Test
@@ -53,7 +52,7 @@ public class SistemaTest {
         ArrayList<Conversacion> listaConversaciones = null;
         Persona personaLogueada = null;
         Sistema sistemaATestear = new Sistema(listaUsuarios, listaProfesionales, listaAlimentos, listaPlanesAlimentacion, listaConversaciones, personaLogueada);
-        assertEquals(sistemaATestear.getListaConversaciones().size(), 0);
+        assertEquals(0, sistemaATestear.getListaConversaciones().size());
     }
 
     @Test
@@ -66,13 +65,13 @@ public class SistemaTest {
         Persona personaLogueada = null;
         Sistema sistemaATestear = new Sistema(listaUsuarios, listaProfesionales, listaAlimentos, listaPlanesAlimentacion, listaConversaciones, personaLogueada);
         Persona personaLogueadaEsperada = new Usuario(null, null, null, null, null);
-        assertEquals(sistemaATestear.getPersonaLogueada(), null);
+        assertEquals(null, sistemaATestear.getPersonaLogueada());
     }
 
     @Test
     public void testGetsSetsDatosVaciosListaUsuarios() {
         Sistema sistemaATestear = new Sistema();
-        assertEquals(sistemaATestear.getListaUsuarios().size(), 0);
+        assertEquals(0, sistemaATestear.getListaUsuarios().size());
     }
 
     @Test
@@ -84,7 +83,7 @@ public class SistemaTest {
         ArrayList<Conversacion> listaConversaciones = new ArrayList<>();
         Persona personaLogueada = new Usuario(null, null, null, null, null);
         Sistema sistemaATestear = new Sistema(listaUsuarios, listaProfesionales, listaAlimentos, listaPlanesAlimentacion, listaConversaciones, personaLogueada);
-        assertEquals(sistemaATestear.getListaAlimentos().size(), 0);
+        assertEquals(0, sistemaATestear.getListaAlimentos().size());
     }
 
     @Test
@@ -274,7 +273,7 @@ public class SistemaTest {
         Usuario usuario1 = new Usuario("Martin", "Gómez", null, null, null);
         Profesional profesional1 = new Profesional("Sandra", "Pazos", null, null, null, null, null);
         sistemaATestear.agregarPlanSolicitado(usuario1, profesional1, fecha);
-        assertEquals(sistemaATestear.getListaPlanesPendientes(profesional1).size(), 1);
+        assertEquals(1, sistemaATestear.getListaPlanesPendientes(profesional1).size());
     }
 
     @Test
@@ -285,7 +284,7 @@ public class SistemaTest {
         Profesional profesional1 = new Profesional("Sandra", "Pazos", null, null, null, null, null);
         Profesional profesional2 = new Profesional("Joaquin", "Bardanca", null, null, null, null, null);
         sistemaATestear.agregarPlanSolicitado(usuario1, profesional1, fecha);
-        assertEquals(sistemaATestear.getListaPlanesPendientes(profesional2).size(), 0);
+        assertEquals(0, sistemaATestear.getListaPlanesPendientes(profesional2).size());
     }
 
     @Test
@@ -295,7 +294,7 @@ public class SistemaTest {
         Usuario usuario1 = new Usuario("Martin", "Gómez", null, null, null);
         Profesional profesional1 = new Profesional("Sandra", "Pazos", null, null, null, null, null);
         sistemaATestear.agregarPlanSolicitado(usuario1, profesional1, fecha);
-        assertEquals(sistemaATestear.getListaPlanesPendientes(null).size(), 0);
+        assertEquals(0, sistemaATestear.getListaPlanesPendientes(null).size());
     }
 
     @Test
@@ -463,7 +462,7 @@ public class SistemaTest {
         Usuario user1 = new Usuario("Martin", null, null, null, null);
         ArrayList<PlanAlimentacion> listaPlanesAlimentacion = new ArrayList<>();
         Sistema sistemaATestear = new Sistema(null, null, null, listaPlanesAlimentacion, null, null);
-        assertEquals(sistemaATestear.planesAtendidosDelUsuario(user1).length, 0);
+        assertEquals(0, sistemaATestear.planesAtendidosDelUsuario(user1).length);
     }
 
     @Test
@@ -541,7 +540,7 @@ public class SistemaTest {
         sistemaATestear.agregarUsuarioALaLista(usuario);
         sistemaATestear.agregarProfesionalALaLista(profesional1);
 
-        assertEquals(sistemaATestear.getConversacion(profesional1.toString(), usuario.toString()), "No hay conversación disponible.");
+        assertEquals("No hay conversación disponible.", sistemaATestear.getConversacion(profesional1.toString(), usuario.toString()));
     }
 
     @Test

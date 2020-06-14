@@ -3,8 +3,7 @@ package dominio;
 import javax.swing.ImageIcon;
 
 public final class Profesional extends Persona {
-
-    public String tituloProfesional;
+    private String tituloProfesional;
     private String fechaGraduacion;
     private String paisGraduacion;
 
@@ -15,7 +14,6 @@ public final class Profesional extends Persona {
             String unTitulo,
             String unaFechaGraduacion,
             String unPaisGraduacion) {
-
         setNombre(unNombre);
         setApellido(unApellido);
         setFechaNacimiento(unaFechaNacimiento);
@@ -61,5 +59,15 @@ public final class Profesional extends Persona {
     @Override
     public String toString() {
         return super.toString();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
+    @Override
+    public int hashCode(){
+        return super.hashCode();
     }
 }

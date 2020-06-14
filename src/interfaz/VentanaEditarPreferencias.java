@@ -252,11 +252,9 @@ public class VentanaEditarPreferencias extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void rdBtnHarinasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdBtnHarinasActionPerformed
-        // TODO add your handling code here:
     }//GEN-LAST:event_rdBtnHarinasActionPerformed
 
     private void rdBtnCarnesRojasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdBtnCarnesRojasActionPerformed
-        // TODO add your handling code here:
     }//GEN-LAST:event_rdBtnCarnesRojasActionPerformed
 
     private void btnEditarPreferenciasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarPreferenciasActionPerformed
@@ -268,11 +266,10 @@ public class VentanaEditarPreferencias extends javax.swing.JDialog {
     }//GEN-LAST:event_btnEditarPreferenciasActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        this.sistema.guardarDatosSistema();
+        this.sistema.guardarDatosSistema(true);
     }//GEN-LAST:event_formWindowClosing
 
     private void rdBtnVerdurasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdBtnVerdurasActionPerformed
-        // TODO add your handling code here:
     }//GEN-LAST:event_rdBtnVerdurasActionPerformed
 
     void agregarPreferenciasUsuario(ArrayList<String> preferencias) {
