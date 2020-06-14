@@ -1,11 +1,0 @@
-
-D
-java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›
-m
-java:S1104"WMake profesional a static final constant or non-public and provide accessors if needed.(Û°ü
-Q
-java:S1128"/Remove this unused import 'java.util.Currency'.(·®õãÿÿÿÿÿ8¯™İË©.
-y
-java:S1104"]Make fueAtendidoElPlan a static final constant or non-public and provide accessors if needed.(´‡ƒX8¯™İË©.
-m
-java:S1206`"PThis class overrides "equals()" and should therefore also override "hashCode()".(ÜÑã8ë¬üË©.

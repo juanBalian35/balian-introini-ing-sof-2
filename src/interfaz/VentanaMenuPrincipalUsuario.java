@@ -9,7 +9,6 @@ import dominio.Usuario;
 import java.awt.Image;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.List;
@@ -18,11 +17,11 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
-
     private Sistema sistema;
     private String profesionalSeleccionado;
     private boolean existeConversacion;
     private boolean primeraVez;
+    private boolean solicitarNuevoPlanAccionado;
     private boolean primeraIngesta;
     private String nombreDelPlan;
 
@@ -43,6 +42,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         this.lblNuevoAlimentoVacio.setVisible(false);
         this.lblNuevoAlimentoVacio1.setVisible(false);
         this.lblDatosIncorrectos2.setVisible(false);
+        this.solicitarNuevoPlanAccionado = false;
         this.nombreDelPlan = "";
         this.primeraVez = true;
         this.primeraIngesta = true;
@@ -1917,6 +1917,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
 
     private void btnSolicitarPlanAlimentacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSolicitarPlanAlimentacionActionPerformed
         ocultarPaneles();
+        this.solicitarNuevoPlanAccionado = false;
         this.btnSolicitarPlanAlimentacion.setEnabled(false);
         if (sistema.getListaProfesionales().size() > 0) {
             this.lblValidarProfesionalPlan.setVisible(false);
@@ -2051,10 +2052,14 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         } else {
             this.panelBuscarPlan.setVisible(true);
             this.panelNoHayPlanesDisponibles.setVisible(true);
+
+            this.jPanel24.setVisible(!this.solicitarNuevoPlanAccionado);
         }
     }//GEN-LAST:event_btnVerPlanesExistentesActionPerformed
 
     private void btnSolicitarNuevoPlanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSolicitarNuevoPlanActionPerformed
+        this.solicitarNuevoPlanAccionado = !this.solicitarNuevoPlanAccionado;
+        this.jPanel24.setVisible(!this.solicitarNuevoPlanAccionado);
         this.btnSolicitarNuevoPlan.setEnabled(false);
         this.lblValidarProfesionalPlan.setVisible(false);
         this.lblDatosIncorrectos.setVisible(false);

@@ -2266,6 +2266,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
             this.lblNoHayAlimentos.setVisible(true);
             this.lblNoHayAlimentosIcono.setVisible(true);
             this.lblNohayPlanesIcono.setVisible(false);
+            this.jPanel2.setVisible((true));
         } else {
             this.panelPlanAlimentacion.setVisible(true);
             this.panelPerfilDeUsuario.setVisible(false);
@@ -2286,6 +2287,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
                 this.lblNoHayAlimentos.setVisible(false);
                 this.lblNoHayAlimentosIcono.setVisible(false);
                 this.lblNohayPlanesIcono.setVisible(true);
+                this.jPanel3.setVisible(true);
             }
         }
     }//GEN-LAST:event_btnPlanesSolicitadosActionPerformed
@@ -2882,6 +2884,8 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         this.panelNoHayConsultasPendientes.setVisible(false);
         this.panelNuevoAlimento.setVisible(false);
         this.panelIngresarAlimentoAlSistema.setVisible(false);
+        this.jPanel2.setVisible(false);
+        this.jPanel3.setVisible(false);
         this.panelPlanAlimentacion.setVisible(false);
         this.panelNoHayPlanesPendientes.setVisible(false);
         this.panelMostrarPlanEnviado.setVisible(false);
@@ -2895,6 +2899,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         this.lblNombrePlanVacio.setVisible(false);
         this.panelAlimentroRegistradoCorrectamente.setVisible(false);
         this.panelVacio.setVisible(false);
+        
     }
 
     private void actualizarConversaciones(Usuario remitente) {

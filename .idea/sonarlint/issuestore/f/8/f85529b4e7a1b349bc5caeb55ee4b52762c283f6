@@ -1,64 +1,69 @@
 
-q
-java:S1450ç"URemove the "panel1" field and declare it as a local variable in the relevant methods.(ÃÜ¡¡üÿÿÿÿ
-w
-java:S1450Ş"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ
-V	java:S110"<This class has 6 parents which is greater than 5 authorized.(‹©‰ùÿÿÿÿ
-v
-java:S1450ä"_Remove the "lblTituloVentana" field and declare it as a local variable in the relevant methods.(ÓïÙ‹
-k
-java:S1192¨"ODefine a constant instead of duplicating this literal "Century Gothic" 4 times.(ÄÈñĞûÿÿÿÿ
+K
+java:S1604”"(Make this anonymous inner class a lambda(œ±ŠØÿÿÿÿÿ8ãšÈ²©.
+X
+java:S1161¶":Add the "@Override" annotation above this method signature(†ŒË³8êæÍ€«.
 p
-java:S1450Ù"TRemove the "icono" field and declare it as a local variable in the relevant methods.(»ÇÁÃüÿÿÿÿ
-l
-java:S1450è"URemove the "panel2" field and declare it as a local variable in the relevant methods.(ó˜ã¯
+java:S1450‡"YRemove the "lblNombre1" field and declare it as a local variable in the relevant methods.(’‚’ô
 @
-java:S1172®"*Remove this unused method parameter "evt".(³à¿h
-p
-java:S1450ã"YRemove the "lblNombre1" field and declare it as a local variable in the relevant methods.(’‚’ô
-F
-java:S1172²"*Remove this unused method parameter "evt".(Ò”Ÿşÿÿÿÿ
-A
-java:S1172º"*Remove this unused method parameter "evt".(İ„£‘
-F
-java:S1172Â"*Remove this unused method parameter "evt".(´¿ûÿÿÿÿ
-t
-java:S1450â"XRemove the "lblNombre" field and declare it as a local variable in the relevant methods.(±ÍÇùÿÿÿÿ
-u
-java:S1488"`Immediately return this expression instead of assigning it to the temporary variable "retValue".(Ê§H
+java:S1172­"*Remove this unused method parameter "evt".(³à¿h
+H
+java:S1172¼"*Remove this unused method parameter "evt".(—£åÿ8ãšÈ²©.
 >
 java:S1604‘"(Make this anonymous inner class a lambda(Çå÷!
-{
-java:S1450Ø"_Remove the "btnCerrarSistema" field and declare it as a local variable in the relevant methods.(®Ì«›ûÿÿÿÿ
-w
-java:S1450ß"[Remove the "jScrollPane2" field and declare it as a local variable in the relevant methods.(ŠÌ«·şÿÿÿÿ
+X
+java:S1161¹":Add the "@Override" annotation above this method signature(ö¦óş8êæÍ€«.
 U
-java:S1161A":Add the "@Override" annotation above this method signature(¦³±ÿÿÿÿÿ
-D
-java:S1604¯"(Make this anonymous inner class a lambda(‘ïå©øÿÿÿÿ
-?
-java:S1604ğ"(Make this anonymous inner class a lambda(•Ü¦Í
-K
-java:S1604¾"(Make this anonymous inner class a lambda(š‹ìÿÿÿÿÿÿ8ãšÈ²©.
-K
-java:S1604ÿ"(Make this anonymous inner class a lambda(œ±ŠØÿÿÿÿÿ8ãšÈ²©.
-‚
-java:S1450Ö"dRemove the "btnAgregarProfesional" field and declare it as a local variable in the relevant methods.(ê¯Ÿ¶8ãšÈ²©.
-~
-java:S1450×"`Remove the "btnAgregarUsuario" field and declare it as a local variable in the relevant methods.(¶òé–8ãšÈ²©.
-y
-java:S1450Ú"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ8ãšÈ²©.
-t
-java:S1450Û"VRemove the "jPanel3" field and declare it as a local variable in the relevant methods.(Œ³èÈ8ãšÈ²©.
-y
-java:S1450Ü"VRemove the "jPanel4" field and declare it as a local variable in the relevant methods.(§É†¬şÿÿÿÿ8ãšÈ²©.
-t
-java:S1450İ"VRemove the "jPanel5" field and declare it as a local variable in the relevant methods.(³¡©ú8ãšÈ²©.
-
-java:S1450à"cRemove the "lblIconoInicioSesion" field and declare it as a local variable in the relevant methods.(†Ÿüœ8ãšÈ²©.
-
-java:S1450á"^Remove the "lblInicioSesion" field and declare it as a local variable in the relevant methods.(ÈäÛëúÿÿÿÿ8ãšÈ²©.
-M
-java:S1172Ç"*Remove this unused method parameter "evt".(£òšÖûÿÿÿÿ8ãšÈ²©.
+java:S1161C":Add the "@Override" annotation above this method signature(¦³±ÿÿÿÿÿ
+p
+java:S1450ı"TRemove the "icono" field and declare it as a local variable in the relevant methods.(»ÇÁÃüÿÿÿÿ
+l
+java:S1450Œ"URemove the "panel2" field and declare it as a local variable in the relevant methods.(ó˜ã¯
 H
-java:S1172Î"*Remove this unused method parameter "evt".(—£åÿ8ãšÈ²©.
+java:S1172İ"*Remove this unused method parameter "evt".(šö§„8êæÍ€«.
+w
+java:S1450ƒ"[Remove the "jScrollPane2" field and declare it as a local variable in the relevant methods.(ŠÌ«·şÿÿÿÿ
+
+java:S1450…"^Remove the "lblInicioSesion" field and declare it as a local variable in the relevant methods.(ÈäÛëúÿÿÿÿ8ãšÈ²©.
+v
+java:S1450ˆ"_Remove the "lblTituloVentana" field and declare it as a local variable in the relevant methods.(ÓïÙ‹
+‚
+java:S1450ú"dRemove the "btnAgregarProfesional" field and declare it as a local variable in the relevant methods.(ê¯Ÿ¶8ãšÈ²©.
+q
+java:S1450‹"URemove the "panel1" field and declare it as a local variable in the relevant methods.(ÃÜ¡¡üÿÿÿÿ
+
+java:S1450„"cRemove the "lblIconoInicioSesion" field and declare it as a local variable in the relevant methods.(†Ÿüœ8ãšÈ²©.
+k
+java:S1192©"ODefine a constant instead of duplicating this literal "Century Gothic" 4 times.(ÄÈñĞûÿÿÿÿ
+y
+java:S1450ş"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ8ãšÈ²©.
+{
+java:S1450ü"_Remove the "btnCerrarSistema" field and declare it as a local variable in the relevant methods.(®Ì«›ûÿÿÿÿ
+~
+java:S1450û"`Remove the "btnAgregarUsuario" field and declare it as a local variable in the relevant methods.(¶òé–8ãšÈ²©.
+y
+java:S1450€"VRemove the "jPanel4" field and declare it as a local variable in the relevant methods.(§É†¬şÿÿÿÿ8ãšÈ²©.
+t
+java:S1450†"XRemove the "lblNombre" field and declare it as a local variable in the relevant methods.(±ÍÇùÿÿÿÿ
+X
+java:S1161÷":Add the "@Override" annotation above this method signature(†ŒË³8êæÍ€«.
+w
+java:S1450‚"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ
+M
+java:S1172±"*Remove this unused method parameter "evt".(´¿ûÿÿÿÿ8°…Å«.
+u
+java:S1488"`Immediately return this expression instead of assigning it to the temporary variable "retValue".(Ê§H
+M
+java:S1172µ"*Remove this unused method parameter "evt".(£òšÖûÿÿÿÿ8ãšÈ²©.
+M
+java:S1172á"*Remove this unused method parameter "evt".(£ù‚ÿùÿÿÿÿ8êæÍ€«.
+X
+java:S1161ú":Add the "@Override" annotation above this method signature(ö¦óş8êæÍ€«.
+t
+java:S1450ÿ"VRemove the "jPanel3" field and declare it as a local variable in the relevant methods.(Œ³èÈ8ãšÈ²©.
+t
+java:S1450"VRemove the "jPanel5" field and declare it as a local variable in the relevant methods.(³¡©ú8ãšÈ²©.
+V	java:S110
+"<This class has 6 parents which is greater than 5 authorized.(‹©‰ùÿÿÿÿ
+K
+java:S1604Ó"(Make this anonymous inner class a lambda(š‹ìÿÿÿÿÿÿ8ãšÈ²©.
