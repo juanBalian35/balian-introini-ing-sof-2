@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="jbrbc-xps" name="dominio.ProfesionalTest" skipped="0" tests="7" time="0.485" timestamp="2020-06-13T23:50:59">
+<testsuite errors="0" failures="0" hostname="jbrbc-xps" name="dominio.ProfesionalTest" skipped="0" tests="7" time="0.216" timestamp="2020-06-14T23:29:10">
   <properties>
     <property name="ant.file.type.AlimentacionSaludable" value="file" />
     <property name="libs.spring-framework300.classpath" value="/usr/lib/netbeans/platform/modules/org-apache-commons-logging.jar:/usr/lib/netbeans/java/modules/ext/cglib-2.2.jar:/usr/lib/netbeans/java/modules/ext/spring-3.0/spring-aop-3.2.7.RELEASE.jar:/usr/lib/netbeans/java/modules/ext/spring-3.0/spring-aspects-3.2.7.RELEASE.jar:/usr/lib/netbeans/java/modules/ext/spring-3.0/spring-beans-3.2.7.RELEASE.jar:/usr/lib/netbeans/java/modules/ext/spring-3.0/spring-build-src-3.2.7.RELEASE.jar:/usr/lib/netbeans/java/modules/ext/spring-3.0/spring-context-3.2.7.RELEASE.jar:/usr/lib/netbeans/java/modules/ext/spring-3.0/spring-context-support-3.2.7.RELEASE.jar:/usr/lib/netbeans/java/modules/ext/spring-3.0/spring-core-3.2.7.RELEASE.jar:/usr/lib/netbeans/java/modules/ext/spring-3.0/spring-expression-3.2.7.RELEASE.jar:/usr/lib/netbeans/java/modules/ext/spring-3.0/spring-framework-bom-3.2.7.RELEASE.jar:/usr/lib/netbeans/java/modules/ext/spring-3.0/spring-instrument-3.2.7.RELEASE.jar:/usr/lib/netbeans/java/modules/ext/spring-3.0/spring-instrument-tomcat-3.2.7.RELEASE.jar:/usr/lib/netbeans/java/modules/ext/spring-3.0/spring-jdbc-3.2.7.RELEASE.jar:/usr/lib/netbeans/java/modules/ext/spring-3.0/spring-jms-3.2.7.RELEASE.jar:/usr/lib/netbeans/java/modules/ext/spring-3.0/spring-orm-3.2.7.RELEASE.jar:/usr/lib/netbeans/java/modules/ext/spring-3.0/spring-oxm-3.2.7.RELEASE.jar:/usr/lib/netbeans/java/modules/ext/spring-3.0/spring-struts-3.2.7.RELEASE.jar:/usr/lib/netbeans/java/modules/ext/spring-3.0/spring-test-3.2.7.RELEASE.jar:/usr/lib/netbeans/java/modules/ext/spring-3.0/spring-tx-3.2.7.RELEASE.jar:/usr/lib/netbeans/java/modules/ext/spring-3.0/spring-web-3.2.7.RELEASE.jar:/usr/lib/netbeans/java/modules/ext/spring-3.0/spring-webmvc-3.2.7.RELEASE.jar:/usr/lib/netbeans/java/modules/ext/spring-3.0/spring-webmvc-portlet-3.2.7.RELEASE.jar" />
@@ -19,7 +19,7 @@
     <property name="libs.jsp-compilation.src" value="" />
     <property name="libs.JWSAntTasks.javadoc" value="" />
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk/lib" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner dominio.ProfesionalTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/juanb/Faculta/ingenieria/ing-sof-2/build/test/results/TEST-dominio.ProfesionalTest.xml crashfile=/home/juanb/Faculta/ingenieria/ing-sof-2/build/junitvmwatcher14161915436571354209.properties propsfile=/home/juanb/Faculta/ingenieria/ing-sof-2/build/junit9995429795034404795.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner dominio.ProfesionalTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/juanb/Faculta/ingenieria/ing-sof-2/build/test/results/TEST-dominio.ProfesionalTest.xml crashfile=/home/juanb/Faculta/ingenieria/ing-sof-2/build/junitvmwatcher17345794725336771330.properties propsfile=/home/juanb/Faculta/ingenieria/ing-sof-2/build/junit4945437542009728710.properties" />
     <property name="jdk.debug" value="release" />
     <property name="libs.spring-framework300.src" value="" />
     <property name="javadoc.use" value="true" />
@@ -44,7 +44,7 @@
     <property name="sun.java2d.noddraw" value="true" />
     <property name="sun.zip.disableMemoryMapping" value="true" />
     <property name="libs.maven-dependencies.maven-pom" value="" />
-    <property name="jnidispatch.path" value="/home/juanb/.cache/JNA/temp/jna14459060156911023176.tmp" />
+    <property name="jnidispatch.path" value="/home/juanb/.cache/JNA/temp/jna12266350565187293335.tmp" />
     <property name="libs.primefaces.javadoc" value="" />
     <property name="libs.jsf12.src" value="" />
     <property name="libs.jsp-compilation.javadoc" value="" />
@@ -169,7 +169,7 @@
     <property name="endorsed.classpath" value="" />
     <property name="javac.test.sourcepath" value="/home/juanb/Faculta/ingenieria/ing-sof-2/build/empty" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
-    <property name="includes" value="dominio/**/*Test.java" />
+    <property name="includes" value="**" />
     <property name="libs.jsf12.javadoc" value="/usr/lib/netbeans/enterprise/docs/javaee-doc-api.jar" />
     <property name="libs.hamcrest.classpath" value="/usr/lib/netbeans/platform/modules/ext/hamcrest-core-1.3.jar" />
     <property name="javadoc.splitindex" value="true" />
@@ -324,7 +324,7 @@
     <property name="build.classes.dir" value="build/classes" />
     <property name="javadoc.windowtitle" value="" />
     <property name="nb.junit.single" value="false" />
-    <property name="nb.internal.action.name" value="test.single" />
+    <property name="nb.internal.action.name" value="test" />
     <property name="libs.javaee-api-8.0.maven-pom" value="" />
     <property name="libs.jaxws21.src" value="" />
     <property name="libs.maven-dependencies.classpath" value="/usr/lib/netbeans/enterprise/modules/ext/javaee6-endorsed/javax.annotation.jar:/usr/lib/netbeans/enterprise/modules/ext/javaee6-endorsed/jaxb-api-osgi.jar:/usr/lib/netbeans/enterprise/modules/ext/javaee6-endorsed/webservices-api-osgi.jar" />
@@ -396,13 +396,13 @@
     <property name="junit.forkmode" value="perTest" />
     <property name="libs.javaee-web-api-7.0.src" value="" />
   </properties>
-  <testcase classname="dominio.ProfesionalTest" name="testToStringDatosCorrectos" time="0.159" />
+  <testcase classname="dominio.ProfesionalTest" name="testToStringDatosCorrectos" time="0.113" />
   <testcase classname="dominio.ProfesionalTest" name="testGetsSetsDatosCorrectosTitulo" time="0.001" />
-  <testcase classname="dominio.ProfesionalTest" name="testGetsDatosCorrectossVaciosPais" time="0.001" />
-  <testcase classname="dominio.ProfesionalTest" name="testToStringNombreVacio" time="0.001" />
+  <testcase classname="dominio.ProfesionalTest" name="testGetsDatosCorrectossVaciosPais" time="0.0" />
+  <testcase classname="dominio.ProfesionalTest" name="testToStringNombreVacio" time="0.0" />
   <testcase classname="dominio.ProfesionalTest" name="testGetsSetsDatosCorrectosGraduacion" time="0.0" />
   <testcase classname="dominio.ProfesionalTest" name="testToStringDatosVacios" time="0.0" />
-  <testcase classname="dominio.ProfesionalTest" name="testToStringDatosNull" time="0.0" />
+  <testcase classname="dominio.ProfesionalTest" name="testToStringDatosNull" time="0.001" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
