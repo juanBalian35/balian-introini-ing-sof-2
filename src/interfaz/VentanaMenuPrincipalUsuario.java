@@ -1954,10 +1954,16 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     private void listaElegirProfesionalesValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_listaElegirProfesionalesValueChanged
         this.existeConversacion = true;
         Profesional profesional = (Profesional) this.listaElegirProfesionales.getSelectedValue();
+
+        if(profesional == null){
+            return;
+        }
+
         this.sistema.crearConversacion(this.sistema.getPersonaLogueada(), profesional, "CONVERSACION:", true);
         ocultarPaneles();
         this.panelConversacion.setVisible(true);
         actualizarConversaciones(profesional.getNombreCompleto());
+        this.listaConversaciones.setSelectedValue(profesional.getNombreCompleto(), true);
         this.panelConsultaConProfesional.setVisible(true);
     }//GEN-LAST:event_listaElegirProfesionalesValueChanged
 
@@ -1992,6 +1998,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         this.sistema.agregarMensajeConversacion(usuario, profesional, mensaje, false, false);
         this.txtMensajeNuevo.setText("");
         actualizarConversaciones(profesional);
+        this.listaConversaciones.setSelectedValue(profesional, true);
     }//GEN-LAST:event_btnEnviarMensajeActionPerformed
 
     private void btnNuevaIngestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevaIngestaActionPerformed
@@ -2261,7 +2268,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
                     .getScaledInstance(50, 50, java.awt.Image.SCALE_SMOOTH);
         
             lblFotoProfesional.setIcon(new ImageIcon(image));
-            
+
             this.listaConversaciones.setListData(this.sistema.getListaNombresProfesionalesConversaciones(remitente));
         }
     }

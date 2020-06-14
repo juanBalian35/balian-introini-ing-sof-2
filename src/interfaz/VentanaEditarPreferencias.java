@@ -266,7 +266,7 @@ public class VentanaEditarPreferencias extends javax.swing.JDialog {
     }//GEN-LAST:event_btnEditarPreferenciasActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        this.sistema.guardarDatosSistema(true);
+        this.sistema.guardarDatosSistema(false);
     }//GEN-LAST:event_formWindowClosing
 
     private void rdBtnVerdurasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdBtnVerdurasActionPerformed
