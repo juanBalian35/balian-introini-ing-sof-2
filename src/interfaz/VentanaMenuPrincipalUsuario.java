@@ -168,14 +168,16 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         btnCerrarSistema7 = new javax.swing.JButton();
         panelAlimentoIngerido = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
-        lblValidarNuevoAlimento = new javax.swing.JLabel();
         lblAlimentoIngeridoSeleccionado = new javax.swing.JLabel();
-        lblNuevoAlimentoVacio = new javax.swing.JLabel();
         lblFechaAlimentoIngerido = new javax.swing.JLabel();
         fechaIngestaUsuario = new datechooser.beans.DateChooserCombo();
         comboAlimentosEnSistema = new javax.swing.JComboBox<>();
-        lblNuevoAlimentoVacio1 = new javax.swing.JLabel();
+        jPanel26 = new javax.swing.JPanel();
+        lblValidarNuevoAlimento = new javax.swing.JLabel();
+        lblNuevoAlimentoVacio = new javax.swing.JLabel();
+        jPanel27 = new javax.swing.JPanel();
         lblValidarNuevoAlimento1 = new javax.swing.JLabel();
+        lblNuevoAlimentoVacio1 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         lblIconoInicioSesion2 = new javax.swing.JLabel();
         lblInicioSesion2 = new javax.swing.JLabel();
@@ -1220,18 +1222,10 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         panelAlimentoIngerido.setLayout(new java.awt.BorderLayout());
 
         jPanel7.setBackground(new java.awt.Color(51, 51, 51));
-        java.awt.GridBagLayout jPanel7Layout = new java.awt.GridBagLayout();
-        jPanel7Layout.columnWidths = new int[] {0, 0, 0, 0, 0};
-        jPanel7Layout.rowHeights = new int[] {0, 10, 0, 10, 0, 10, 0};
-        jPanel7.setLayout(jPanel7Layout);
-
-        lblValidarNuevoAlimento.setForeground(new java.awt.Color(255, 255, 255));
-        lblValidarNuevoAlimento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        jPanel7.add(lblValidarNuevoAlimento, gridBagConstraints);
+        java.awt.GridBagLayout jPanel7Layout1 = new java.awt.GridBagLayout();
+        jPanel7Layout1.columnWidths = new int[] {0, 5, 0};
+        jPanel7Layout1.rowHeights = new int[] {0, 5, 0, 5, 0, 5, 0};
+        jPanel7.setLayout(jPanel7Layout1);
 
         lblAlimentoIngeridoSeleccionado.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
         lblAlimentoIngeridoSeleccionado.setForeground(new java.awt.Color(255, 255, 255));
@@ -1239,19 +1233,9 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 5;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 50, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 49, 0, 0);
         jPanel7.add(lblAlimentoIngeridoSeleccionado, gridBagConstraints);
-
-        lblNuevoAlimentoVacio.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
-        lblNuevoAlimentoVacio.setForeground(new java.awt.Color(240, 128, 128));
-        lblNuevoAlimentoVacio.setText("Dato vacio");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 4;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.ABOVE_BASELINE_LEADING;
-        jPanel7.add(lblNuevoAlimentoVacio, gridBagConstraints);
 
         lblFechaAlimentoIngerido.setFont(new java.awt.Font("Century Gothic", 0, 30)); // NOI18N
         lblFechaAlimentoIngerido.setForeground(new java.awt.Color(255, 255, 255));
@@ -1259,9 +1243,8 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 4;
-        gridBagConstraints.gridwidth = 5;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 50, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 49, 0, 0);
         jPanel7.add(lblFechaAlimentoIngerido, gridBagConstraints);
 
         fechaIngestaUsuario.setFieldFont(new java.awt.Font("Dialog", java.awt.Font.PLAIN, 17));
@@ -1276,7 +1259,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         gridBagConstraints.gridy = 6;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 50, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 49, 0, 0);
         jPanel7.add(fechaIngestaUsuario, gridBagConstraints);
 
         comboAlimentosEnSistema.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
@@ -1293,25 +1276,76 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
         gridBagConstraints.gridy = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 50, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 49, 0, 0);
         jPanel7.add(comboAlimentosEnSistema, gridBagConstraints);
+
+        jPanel26.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel26.setMaximumSize(new java.awt.Dimension(140, 32));
+        jPanel26.setMinimumSize(new java.awt.Dimension(140, 32));
+        jPanel26.setPreferredSize(new java.awt.Dimension(140, 32));
+        jPanel26.setSize(new java.awt.Dimension(140, 32));
+        java.awt.GridBagLayout jPanel26Layout = new java.awt.GridBagLayout();
+        jPanel26Layout.columnWidths = new int[] {0, 5, 0};
+        jPanel26Layout.rowHeights = new int[] {0};
+        jPanel26Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel26.setLayout(jPanel26Layout);
+
+        lblValidarNuevoAlimento.setForeground(new java.awt.Color(255, 255, 255));
+        lblValidarNuevoAlimento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        jPanel26.add(lblValidarNuevoAlimento, gridBagConstraints);
+
+        lblNuevoAlimentoVacio.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
+        lblNuevoAlimentoVacio.setForeground(new java.awt.Color(240, 128, 128));
+        lblNuevoAlimentoVacio.setText("Dato vacio");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        jPanel26.add(lblNuevoAlimentoVacio, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel7.add(jPanel26, gridBagConstraints);
+
+        jPanel27.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel27.setMaximumSize(new java.awt.Dimension(140, 32));
+        jPanel27.setMinimumSize(new java.awt.Dimension(140, 32));
+        jPanel27.setPreferredSize(new java.awt.Dimension(140, 32));
+        jPanel27.setSize(new java.awt.Dimension(140, 32));
+        java.awt.GridBagLayout jPanel27Layout = new java.awt.GridBagLayout();
+        jPanel27Layout.columnWidths = new int[] {0, 5, 0};
+        jPanel27Layout.rowHeights = new int[] {0};
+        jPanel27Layout.columnWeights = new double[] {1.0, 1.0};
+        jPanel27.setLayout(jPanel27Layout);
+
+        lblValidarNuevoAlimento1.setForeground(new java.awt.Color(255, 255, 255));
+        lblValidarNuevoAlimento1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        jPanel27.add(lblValidarNuevoAlimento1, gridBagConstraints);
 
         lblNuevoAlimentoVacio1.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
         lblNuevoAlimentoVacio1.setForeground(new java.awt.Color(240, 128, 128));
         lblNuevoAlimentoVacio1.setText("Dato vacio");
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 4;
-        gridBagConstraints.gridy = 6;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.ABOVE_BASELINE_LEADING;
-        jPanel7.add(lblNuevoAlimentoVacio1, gridBagConstraints);
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        jPanel27.add(lblNuevoAlimentoVacio1, gridBagConstraints);
 
-        lblValidarNuevoAlimento1.setForeground(new java.awt.Color(255, 255, 255));
-        lblValidarNuevoAlimento1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoCampoIncorrecto.png"))); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 6;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        jPanel7.add(lblValidarNuevoAlimento1, gridBagConstraints);
+        jPanel7.add(jPanel27, gridBagConstraints);
 
         panelAlimentoIngerido.add(jPanel7, java.awt.BorderLayout.WEST);
 
@@ -1789,7 +1823,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
             }
         });
         panelBotones.add(btnSolicitarNuevoPlan);
-        btnSolicitarNuevoPlan.setBounds(140, 10, 134, 110);
+        btnSolicitarNuevoPlan.setBounds(140, 10, 116, 112);
 
         btnVerPlanesExistentes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoVerPlanesAlimentacion.png"))); // NOI18N
         btnVerPlanesExistentes.setBorderPainted(false);
@@ -1800,7 +1834,7 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
             }
         });
         panelBotones.add(btnVerPlanesExistentes);
-        btnVerPlanesExistentes.setBounds(540, 10, 134, 110);
+        btnVerPlanesExistentes.setBounds(540, 10, 116, 112);
 
         javax.swing.GroupLayout panelPlanDeAlimentacionLayout = new javax.swing.GroupLayout(panelPlanDeAlimentacion);
         panelPlanDeAlimentacion.setLayout(panelPlanDeAlimentacionLayout);
@@ -2326,6 +2360,8 @@ public class VentanaMenuPrincipalUsuario extends javax.swing.JDialog {
     private javax.swing.JPanel jPanel23;
     private javax.swing.JPanel jPanel24;
     private javax.swing.JPanel jPanel25;
+    private javax.swing.JPanel jPanel26;
+    private javax.swing.JPanel jPanel27;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;

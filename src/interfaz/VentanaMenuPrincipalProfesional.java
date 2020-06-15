@@ -479,7 +479,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         jPanel30.setBackground(new java.awt.Color(51, 51, 51));
         jPanel30.setLayout(new java.awt.GridBagLayout());
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoNuevoMensaje.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/out/production/balian-introini-ing-sof-2/Imagenes/iconoNuevoMensaje.png"))); // NOI18N
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
         jButton1.setFocusPainted(false);
@@ -1343,9 +1343,10 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         jPanel15.setBackground(new java.awt.Color(51, 51, 51));
 
         panelPerfilDeUsuario.setBackground(new java.awt.Color(51, 51, 51));
-        panelPerfilDeUsuario.setMaximumSize(new java.awt.Dimension(450, 580));
-        panelPerfilDeUsuario.setMinimumSize(new java.awt.Dimension(450, 580));
-        panelPerfilDeUsuario.setPreferredSize(new java.awt.Dimension(450, 580));
+        panelPerfilDeUsuario.setMaximumSize(new java.awt.Dimension(474, 650));
+        panelPerfilDeUsuario.setMinimumSize(new java.awt.Dimension(474, 650));
+        panelPerfilDeUsuario.setPreferredSize(new java.awt.Dimension(474, 650));
+        panelPerfilDeUsuario.setSize(new java.awt.Dimension(474, 650));
         java.awt.GridBagLayout panelPerfilDeUsuarioLayout = new java.awt.GridBagLayout();
         panelPerfilDeUsuarioLayout.columnWidths = new int[] {0, 21, 0, 21, 0, 21, 0, 21, 0};
         panelPerfilDeUsuarioLayout.rowHeights = new int[] {0, 21, 0, 21, 0, 21, 0, 21, 0, 21, 0};
@@ -1354,10 +1355,12 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         lblNombreUsuario2.setFont(new java.awt.Font("Levenim MT", 0, 35)); // NOI18N
         lblNombreUsuario2.setForeground(new java.awt.Color(255, 255, 255));
         lblNombreUsuario2.setText("Usuario");
+        lblNombreUsuario2.setMaximumSize(new java.awt.Dimension(100, 42));
+        lblNombreUsuario2.setMinimumSize(new java.awt.Dimension(338, 42));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.gridwidth = 7;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         panelPerfilDeUsuario.add(lblNombreUsuario2, gridBagConstraints);
 
