@@ -479,7 +479,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         jPanel30.setBackground(new java.awt.Color(51, 51, 51));
         jPanel30.setLayout(new java.awt.GridBagLayout());
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/out/production/balian-introini-ing-sof-2/Imagenes/iconoNuevoMensaje.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoNuevoMensaje.png"))); // NOI18N
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
         jButton1.setFocusPainted(false);
@@ -2386,8 +2386,10 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
                 this.lblValidarNombre.setVisible(false);
                 this.lblValidarTipoAlimento.setVisible(false);
                 this.lblTipoAlimentoVacio.setVisible(false);
+                this.btnIngresarFotoAlimento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/agregarFotoUsuario.png")));
                 this.lblNombreVacio.setVisible(false);
                 ocultarCheckbox();
+                ocultarPrincipalesNutrientes();
                 this.panelIngresarAlimentoAlSistema.setVisible(false);
             }
         }
@@ -2869,7 +2871,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         this.btnPlanesSolicitados.setEnabled(true);
         this.panelConsultaConProfesional.setVisible(false);
         this.txtMostrarConversacion.setText("");
-        //this.panelConversacion.setVisible(false);
         this.jPanel8.setVisible(false);
         this.panelMostrarOk.setVisible(false);
         this.panelNoHayConsultasPendientes.setVisible(false);
@@ -2890,7 +2891,6 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         this.lblNombrePlanVacio.setVisible(false);
         this.panelAlimentroRegistradoCorrectamente.setVisible(false);
         this.panelVacio.setVisible(false);
-        
     }
 
     private void actualizarConversaciones(Usuario remitente) {
