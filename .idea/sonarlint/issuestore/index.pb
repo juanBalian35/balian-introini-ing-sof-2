@@ -1207,14 +1207,6 @@ d
 4.jacocoverage/report.html/interfaz/AyudaUsuario.html,a/b/ab5b52cc3d7c14af473cfcac68c1c81fbb9c0d8a
 d
 4.jacocoverage/report.html/interfaz/index.source.html,b/f/bf6583029547e4e1f17b6edb3f0831c1a2ea1ef5
-f
-6.jacocoverage/report.html/interfaz/AyudaUsuario$1.html,b/0/b0cd0f6ccf59957c7eb57800659311eead8dce6c
-f
-6.jacocoverage/report.html/interfaz/AyudaUsuario$2.html,8/2/82abd96123eb3c608ce1d674ba59f108a07cff50
-f
-6.jacocoverage/report.html/interfaz/AyudaUsuario$3.html,a/3/a3548ef328cac3eb7a1a3ebfa77427312be59982
-f
-6.jacocoverage/report.html/interfaz/AyudaUsuario$4.html,0/5/05b75365c18af1869a79691926c8994a3147d8e7
 h
 8.jacocoverage/report.html/interfaz/AyudaProfesional.html,6/7/6749b8b2c0b67ad9b4a69e9afe8e8c1a7d3edb89
 i
@@ -1225,8 +1217,6 @@ j
 :.jacocoverage/report.html/interfaz/AyudaProfesional$2.html,d/3/d3dd73fce1247a8c4ad077e7b5edc409cb7a44d0
 j
 :.jacocoverage/report.html/interfaz/AyudaProfesional$3.html,c/a/caf5492fa0e8c9fa9ea585fec391ac5c8775b1aa
-j
-:.jacocoverage/report.html/interfaz/AyudaProfesional$4.html,f/5/f57195c0231491fa8d45e5507cb12131e0a41bf1
 l
 <.jacocoverage/report.html/interfaz/MostrarPerfilUsuario.html,4/b/4ba7d4a18bc5446ba952273b9733ff776423401d
 l
@@ -1245,8 +1235,6 @@ n
 >.jacocoverage/report.html/interfaz/VentanaMenuPrincipal$5.html,6/e/6eb2510a6540fffbdc071c907d0972c4761a73ae
 n
 >.jacocoverage/report.html/interfaz/VentanaMenuPrincipal$6.html,c/9/c97f39e4f577e4b95ebbb766f1a14c2828b5a93b
-n
->.jacocoverage/report.html/interfaz/VentanaMenuPrincipal$7.html,8/1/81823e48c0535b380ecfb06b1728974456a263de
 o
 ?.jacocoverage/report.html/interfaz/VentanaRegistrarUsuario.html,8/d/8d3b77926092532fe99e4c2fe5789fa6b8dad02b
 q
@@ -1276,12 +1264,6 @@ C.jacocoverage/report.html/interfaz/VentanaEditarPreferencias$1.html,0/e/0ee4f5
 s
 C.jacocoverage/report.html/interfaz/VentanaEditarPreferencias$2.html,9/3/9399dea55930a1e43fde7c797e06c860a806e376
 s
-C.jacocoverage/report.html/interfaz/VentanaEditarPreferencias$3.html,3/5/35d1820ca31fcc8771b65477bd22784ef7ad83c6
-s
-C.jacocoverage/report.html/interfaz/VentanaEditarPreferencias$4.html,4/f/4f15f07c2e783c224a0ec6474851a1b672b2a0c7
-s
-C.jacocoverage/report.html/interfaz/VentanaEditarPreferencias$5.html,b/e/be98074e706e25d33668847a0cec85dcdfde9375
-s
 C.jacocoverage/report.html/interfaz/VentanaMenuPrincipalUsuario.html,b/7/b7d496639c8ddd0ba5956fa9901f4bdb4311232b
 s
 C.jacocoverage/report.html/interfaz/VentanaRegistrarProfesional.html,e/4/e41e51dcb7001f9589809c66eb98ef8f4a8f8d4d
@@ -1289,8 +1271,6 @@ t
 D.jacocoverage/report.html/interfaz/VentanaEditarRestricciones$1.html,6/f/6f5806682fd498322ffdbf247f1a2c43aaa606ea
 t
 D.jacocoverage/report.html/interfaz/VentanaEditarRestricciones$2.html,3/9/39c35462a89d9437a221919ba6e040f398eeaeee
-t
-D.jacocoverage/report.html/interfaz/VentanaEditarRestricciones$3.html,b/0/b0110484316469a08e04d78e6713c28275d1a453
 t
 D.jacocoverage/report.html/interfaz/VentanaRegistrarUsuario.java.html,5/c/5c03ec54819f7d69f150a75e57e72adb10a0cdaf
 u

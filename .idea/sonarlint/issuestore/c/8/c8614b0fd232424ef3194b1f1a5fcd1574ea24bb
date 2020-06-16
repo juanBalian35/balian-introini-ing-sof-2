@@ -1,116 +1,116 @@
 
-q
-java:S1192ª"NDefine a constant instead of duplicating this literal "Lucida Grande" 6 times.(ôØÒıÿÿÿÿ8÷âŞ‚«.
-^
-java:S1874Ä"ARemove this use of "setNextFocusableComponent"; it is deprecated.(Æ¬Æ<8÷âŞ‚«.
-s
-java:S1450Ğ"VRemove the "btnHome" field and declare it as a local variable in the relevant methods.(†¹ª?8÷âŞ‚«.
-K
-java:S1604Õ"(Make this anonymous inner class a lambda(°‰Êºøÿÿÿÿ8÷âŞ‚«.
-^
-java:S1874"ARemove this use of "setNextFocusableComponent"; it is deprecated.(İ÷“p8÷âŞ‚«.
-‚
-java:S1192—"dDefine a constant instead of duplicating this literal "/Imagenes/iconoCampoIncorrecto.png" 12 times.(®ƒßÃ8÷âŞ‚«.
-_
-java:S1874İ"ARemove this use of "setNextFocusableComponent"; it is deprecated.(óÜøÚ8÷âŞ‚«.
-M
-java:S1172„"*Remove this unused method parameter "evt".(Å¥Ÿ¹ıÿÿÿÿ8÷âŞ‚«.
-s
-java:S1450ï"URemove the "panel2" field and declare it as a local variable in the relevant methods.(ó˜ã¯8÷âŞ‚«.
-t
-java:S1450×"VRemove the "jPanel3" field and declare it as a local variable in the relevant methods.(Œ³èÈ8âºÉ€«.
-x
-java:S1450å"aRemove the "lblTxtNacionalidad" field and declare it as a local variable in the relevant methods.(ñƒ¿×
-d
-java:S1874·"ARemove this use of "setNextFocusableComponent"; it is deprecated.(„îµÒúÿÿÿÿ8÷âŞ‚«.
-]	java:S110"<This class has 6 parents which is greater than 5 authorized.(¥ØìÃüÿÿÿÿ8÷âŞ‚«.
-E
-java:S1604İ"(Make this anonymous inner class a lambda(Çå÷!8÷âŞ‚«.
-}
-java:S1450á"_Remove the "lblNuevoUsuario1" field and declare it as a local variable in the relevant methods.(Çòİü8÷âŞ‚«.
-X
-java:S1161‹":Add the "@Override" annotation above this method signature(±“‚Æ8÷âŞ‚«.
-d
-java:S1874÷"ARemove this use of "setNextFocusableComponent"; it is deprecated.(íàÈ™ùÿÿÿÿ8÷âŞ‚«.
-l
-java:S1192Û"NDefine a constant instead of duplicating this literal "Seleccione..." 4 times.(££µ8÷âŞ‚«.
-…
-java:S1450è"bRemove the "lblTxtRestricciones" field and declare it as a local variable in the relevant methods.(ÃœÅıÿÿÿÿÿ8÷âŞ‚«.
-M
-java:S1172 "*Remove this unused method parameter "evt".(ŒÛë‘ÿÿÿÿÿ8÷âŞ‚«.
-M
-java:S1172Å"*Remove this unused method parameter "evt".(éÆÜ÷üÿÿÿÿ8÷âŞ‚«.
-d
-java:S1874à"ARemove this use of "setNextFocusableComponent"; it is deprecated.(á²ìşÿÿÿÿ8÷âŞ‚«.
-}
-java:S1450ç"aRemove the "lblTxtPreferencias" field and declare it as a local variable in the relevant methods.(¨¤¡İüÿÿÿÿ
-s
-java:S1450ä"]Remove the "lblTxtFechaNac" field and declare it as a local variable in the relevant methods.(É…¸=
-\
-java:S1161y":Add the "@Override" annotation above this method signature(¦³±ÿÿÿÿÿ8÷âŞ‚«.
-v
-java:S1450ã"_Remove the "lblTituloVentana" field and declare it as a local variable in the relevant methods.(ÓïÙ‹
-x
-java:S1450Ú"ZRemove the "lblApellido" field and declare it as a local variable in the relevant methods.(ß¡ëÉ8÷âŞ‚«.
-y
-java:S1450Ö"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿ8âºÉ€«.
-w
-java:S1450Ô"TRemove the "icono" field and declare it as a local variable in the relevant methods.(»ÇÁÃüÿÿÿÿ8İ¹ê¦«.
-y
-java:S1450Õ"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ8âºÉ€«.
-d
-java:S1874é"ARemove this use of "setNextFocusableComponent"; it is deprecated.(ÃºÍúÿÿÿÿ8÷âŞ‚«.
-F
-java:S1604‘"(Make this anonymous inner class a lambda(­ãï”8÷âŞ‚«.
-M
-java:S1172Ò"*Remove this unused method parameter "evt".(•Àğıÿÿÿÿ8÷âŞ‚«.
-„
-java:S1192¿"aDefine a constant instead of duplicating this literal "/Imagenes/iconoCampoCorrecto.png" 4 times.(ÓÚ—ıÿÿÿÿ8÷âŞ‚«.
-d
-java:S1874”"ARemove this use of "setNextFocusableComponent"; it is deprecated.(Ú¶¾œúÿÿÿÿ8÷âŞ‚«.
-H
-java:S1172®"*Remove this unused method parameter "evt".(™öáá8÷âŞ‚«.
-{
-java:S1450ß"XRemove the "lblNombre" field and declare it as a local variable in the relevant methods.(±ÍÇùÿÿÿÿ8÷âŞ‚«.
-H
-java:S1172õ"*Remove this unused method parameter "evt".(‡äÀº8÷âŞ‚«.
-o
-java:S1192 "LDefine a constant instead of duplicating this literal "Dato vacÃ­o" 4 times.(ÀÇş¥úÿÿÿÿ8÷âŞ‚«.
-F
-java:S1604æ"(Make this anonymous inner class a lambda(Æ¢íÂ8÷âŞ‚«.
-X
-java:S1161·":Add the "@Override" annotation above this method signature(±“‚Æ8÷âŞ‚«.
-K
-java:S1604"(Make this anonymous inner class a lambda(¸Ú—úÿÿÿÿ8÷âŞ‚«.
-_
-java:S1874Ñ"ARemove this use of "setNextFocusableComponent"; it is deprecated.(„Ëë¹8÷âŞ‚«.
-M
-java:S1172œ"*Remove this unused method parameter "evt".(´¿ûÿÿÿÿ8÷âŞ‚«.
-d
-java:S1874ˆ"ARemove this use of "setNextFocusableComponent"; it is deprecated.(£íÒÀüÿÿÿÿ8÷âŞ‚«.
-t
-java:S1450Ù"VRemove the "jPanel5" field and declare it as a local variable in the relevant methods.(³¡©ú8âºÉ€«.
-†
-java:S1450Ò"iRemove the "btnIngresarUsuarioASistema" field and declare it as a local variable in the relevant methods.(âëĞ48÷âŞ‚«.
-q
-java:S1450î"URemove the "panel1" field and declare it as a local variable in the relevant methods.(ÃÜ¡¡üÿÿÿÿ
-…
-java:S1450æ"bRemove the "lblTxtNacionalidad1" field and declare it as a local variable in the relevant methods.(³È‰Áÿÿÿÿÿ8÷âŞ‚«.
-y
-java:S1450Ø"VRemove the "jPanel4" field and declare it as a local variable in the relevant methods.(§É†¬şÿÿÿÿ8âºÉ€«.
-d
-java:S1874¡"ARemove this use of "setNextFocusableComponent"; it is deprecated.(·¿¢äüÿÿÿÿ8÷âŞ‚«.
-‡
-java:S1450Ş"dRemove the "lblIconoNuevoUsuario1" field and declare it as a local variable in the relevant methods.(¸‰”—ÿÿÿÿÿ8âºÉ€«.
-F
-java:S1604û"(Make this anonymous inner class a lambda(Äù®¹8÷âŞ‚«.
 s
 java:S1192ı"PDefine a constant instead of duplicating this literal "Century Gothic" 25 times.(ÄÈñĞûÿÿÿÿ8÷âŞ‚«.
-‚
-java:S1450Ï"_Remove the "btnCerrarSistema" field and declare it as a local variable in the relevant methods.(®Ì«›ûÿÿÿÿ8âºÉ€«.
-M
-java:S1172¸"*Remove this unused method parameter "evt".(ÌøÀøÿÿÿÿ8÷âŞ‚«.
+s
+java:S1450ï"URemove the "panel2" field and declare it as a local variable in the relevant methods.(ó˜ã¯8÷âŞ‚«.
+l
+java:S1192Û"NDefine a constant instead of duplicating this literal "Seleccione..." 4 times.(££µ8÷âŞ‚«.
+„
+java:S1192¿"aDefine a constant instead of duplicating this literal "/Imagenes/iconoCampoCorrecto.png" 4 times.(ÓÚ—ıÿÿÿÿ8÷âŞ‚«.
+t
+java:S1450Ù"VRemove the "jPanel5" field and declare it as a local variable in the relevant methods.(³¡©ú8âºÉ€«.
+…
+java:S1450è"bRemove the "lblTxtRestricciones" field and declare it as a local variable in the relevant methods.(ÃœÅıÿÿÿÿÿ8÷âŞ‚«.
+K
+java:S1604Õ"(Make this anonymous inner class a lambda(°‰Êºøÿÿÿÿ8÷âŞ‚«.
+}
+java:S1450ç"aRemove the "lblTxtPreferencias" field and declare it as a local variable in the relevant methods.(¨¤¡İüÿÿÿÿ
 _
 java:S1874‰"ARemove this use of "setNextFocusableComponent"; it is deprecated.(˜·»Ş8÷âŞ‚«.
+]	java:S110"<This class has 6 parents which is greater than 5 authorized.(¥ØìÃüÿÿÿÿ8÷âŞ‚«.
+}
+java:S1450á"_Remove the "lblNuevoUsuario1" field and declare it as a local variable in the relevant methods.(Çòİü8÷âŞ‚«.
+v
+java:S1450ã"_Remove the "lblTituloVentana" field and declare it as a local variable in the relevant methods.(ÓïÙ‹
+…
+java:S1450æ"bRemove the "lblTxtNacionalidad1" field and declare it as a local variable in the relevant methods.(³È‰Áÿÿÿÿÿ8÷âŞ‚«.
+d
+java:S1874”"ARemove this use of "setNextFocusableComponent"; it is deprecated.(Ú¶¾œúÿÿÿÿ8÷âŞ‚«.
+d
+java:S1874ˆ"ARemove this use of "setNextFocusableComponent"; it is deprecated.(£íÒÀüÿÿÿÿ8÷âŞ‚«.
+F
+java:S1604‘"(Make this anonymous inner class a lambda(­ãï”8÷âŞ‚«.
+{
+java:S1450ß"XRemove the "lblNombre" field and declare it as a local variable in the relevant methods.(±ÍÇùÿÿÿÿ8÷âŞ‚«.
+_
+java:S1874İ"ARemove this use of "setNextFocusableComponent"; it is deprecated.(óÜøÚ8÷âŞ‚«.
+d
+java:S1874·"ARemove this use of "setNextFocusableComponent"; it is deprecated.(„îµÒúÿÿÿÿ8÷âŞ‚«.
+‚
+java:S1450Ï"_Remove the "btnCerrarSistema" field and declare it as a local variable in the relevant methods.(®Ì«›ûÿÿÿÿ8âºÉ€«.
+s
+java:S1450Ğ"VRemove the "btnHome" field and declare it as a local variable in the relevant methods.(†¹ª?8÷âŞ‚«.
+^
+java:S1874"ARemove this use of "setNextFocusableComponent"; it is deprecated.(İ÷“p8÷âŞ‚«.
 G
 java:S1172´"*Remove this unused method parameter "evt".(³à¿h8÷âŞ‚«.
+M
+java:S1172Å"*Remove this unused method parameter "evt".(éÆÜ÷üÿÿÿÿ8÷âŞ‚«.
+F
+java:S1604æ"(Make this anonymous inner class a lambda(Æ¢íÂ8÷âŞ‚«.
+E
+java:S1604İ"(Make this anonymous inner class a lambda(Çå÷!8÷âŞ‚«.
+H
+java:S1172®"*Remove this unused method parameter "evt".(™öáá8÷âŞ‚«.
+q
+java:S1192ª"NDefine a constant instead of duplicating this literal "Lucida Grande" 6 times.(ôØÒıÿÿÿÿ8÷âŞ‚«.
+o
+java:S1192 "LDefine a constant instead of duplicating this literal "Dato vacÃ­o" 4 times.(ÀÇş¥úÿÿÿÿ8÷âŞ‚«.
+X
+java:S1161·":Add the "@Override" annotation above this method signature(±“‚Æ8÷âŞ‚«.
+s
+java:S1450ä"]Remove the "lblTxtFechaNac" field and declare it as a local variable in the relevant methods.(É…¸=
+_
+java:S1874Ñ"ARemove this use of "setNextFocusableComponent"; it is deprecated.(„Ëë¹8÷âŞ‚«.
+d
+java:S1874÷"ARemove this use of "setNextFocusableComponent"; it is deprecated.(íàÈ™ùÿÿÿÿ8÷âŞ‚«.
+^
+java:S1874Ä"ARemove this use of "setNextFocusableComponent"; it is deprecated.(Æ¬Æ<8÷âŞ‚«.
+t
+java:S1450×"VRemove the "jPanel3" field and declare it as a local variable in the relevant methods.(Œ³èÈ8âºÉ€«.
+M
+java:S1172œ"*Remove this unused method parameter "evt".(´¿ûÿÿÿÿ8÷âŞ‚«.
+y
+java:S1450Õ"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ8âºÉ€«.
+X
+java:S1161‹":Add the "@Override" annotation above this method signature(±“‚Æ8÷âŞ‚«.
+H
+java:S1172õ"*Remove this unused method parameter "evt".(‡äÀº8÷âŞ‚«.
+q
+java:S1450î"URemove the "panel1" field and declare it as a local variable in the relevant methods.(ÃÜ¡¡üÿÿÿÿ
+M
+java:S1172Ò"*Remove this unused method parameter "evt".(•Àğıÿÿÿÿ8÷âŞ‚«.
+d
+java:S1874é"ARemove this use of "setNextFocusableComponent"; it is deprecated.(ÃºÍúÿÿÿÿ8÷âŞ‚«.
+‚
+java:S1192—"dDefine a constant instead of duplicating this literal "/Imagenes/iconoCampoIncorrecto.png" 12 times.(®ƒßÃ8÷âŞ‚«.
+w
+java:S1450Ô"TRemove the "icono" field and declare it as a local variable in the relevant methods.(»ÇÁÃüÿÿÿÿ8İ¹ê¦«.
+‡
+java:S1450Ş"dRemove the "lblIconoNuevoUsuario1" field and declare it as a local variable in the relevant methods.(¸‰”—ÿÿÿÿÿ8âºÉ€«.
+x
+java:S1450Ú"ZRemove the "lblApellido" field and declare it as a local variable in the relevant methods.(ß¡ëÉ8÷âŞ‚«.
+d
+java:S1874à"ARemove this use of "setNextFocusableComponent"; it is deprecated.(á²ìşÿÿÿÿ8÷âŞ‚«.
+M
+java:S1172„"*Remove this unused method parameter "evt".(Å¥Ÿ¹ıÿÿÿÿ8÷âŞ‚«.
+K
+java:S1604"(Make this anonymous inner class a lambda(¸Ú—úÿÿÿÿ8÷âŞ‚«.
+x
+java:S1450å"aRemove the "lblTxtNacionalidad" field and declare it as a local variable in the relevant methods.(ñƒ¿×
+\
+java:S1161y":Add the "@Override" annotation above this method signature(¦³±ÿÿÿÿÿ8÷âŞ‚«.
+M
+java:S1172¸"*Remove this unused method parameter "evt".(ÌøÀøÿÿÿÿ8÷âŞ‚«.
+†
+java:S1450Ò"iRemove the "btnIngresarUsuarioASistema" field and declare it as a local variable in the relevant methods.(âëĞ48÷âŞ‚«.
+y
+java:S1450Ø"VRemove the "jPanel4" field and declare it as a local variable in the relevant methods.(§É†¬şÿÿÿÿ8âºÉ€«.
+F
+java:S1604û"(Make this anonymous inner class a lambda(Äù®¹8÷âŞ‚«.
+d
+java:S1874¡"ARemove this use of "setNextFocusableComponent"; it is deprecated.(·¿¢äüÿÿÿÿ8÷âŞ‚«.
+y
+java:S1450Ö"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿ8âºÉ€«.
+M
+java:S1172 "*Remove this unused method parameter "evt".(ŒÛë‘ÿÿÿÿÿ8÷âŞ‚«.

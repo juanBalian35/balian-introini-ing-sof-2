@@ -1,44 +1,44 @@
 
-s
-java:S1450Â"\Remove the "textDesayuno5" field and declare it as a local variable in the relevant methods.(¿ ›å
-x
-java:S1450À"\Remove the "textDesayuno3" field and declare it as a local variable in the relevant methods.(Ôêûÿÿÿÿ
-N
-java:S1135®"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
-=
-java:S1604y"(Make this anonymous inner class a lambda(»ÉÍJ
-F
-java:S1172©"*Remove this unused method parameter "evt".(½ì³Èşÿÿÿÿ
-A
-java:S1172±"*Remove this unused method parameter "evt".(×ıßÊ
-?
-java:S1604‰"(Make this anonymous inner class a lambda(şŸ ü
-C
-java:S1604["(Make this anonymous inner class a lambda(Ûõ•şÿÿÿÿ
-‚
-java:S1450¹"kRemove the "btnIngresarAlimentoIngerido2" field and declare it as a local variable in the relevant methods.(Ñ¸¸¶
-A
-java:S1172­"*Remove this unused method parameter "evt".(ÂÂØª
-†
-java:S1450·"jRemove the "btnIngresarAlimentoIngerido" field and declare it as a local variable in the relevant methods.(øÌÒÜúÿÿÿÿ
-x
-java:S1450¾"\Remove the "jScrollPane17" field and declare it as a local variable in the relevant methods.(×±½«ıÿÿÿÿ
-q
-java:S1192I"ODefine a constant instead of duplicating this literal "Century Gothic" 3 times.(‚ºÉ•üÿÿÿÿ8ë†“«.
+v
+java:S1450¿"_Remove the "lblNombreUsuario" field and declare it as a local variable in the relevant methods.(öÿòú
 ‡
 java:S1450¸"kRemove the "btnIngresarAlimentoIngerido1" field and declare it as a local variable in the relevant methods.(è¡Ú„ûÿÿÿÿ
 s
-java:S1450½"\Remove the "jScrollPane16" field and declare it as a local variable in the relevant methods.(…¡®±
-r
-java:S1450º"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ
+java:S1450Â"\Remove the "textDesayuno5" field and declare it as a local variable in the relevant methods.(¿ ›å
+V	java:S110"<This class has 6 parents which is greater than 5 authorized.(Òâ»ùÿÿÿÿ
+=
+java:S1604y"(Make this anonymous inner class a lambda(»ÉÍJ
 s
 java:S1450¼"\Remove the "jScrollPane15" field and declare it as a local variable in the relevant methods.(«ÿ„ï
+r
+java:S1450º"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ
 N
 java:S1135²"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
 y
 java:S1450»"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿ8ë†“«.
-V	java:S110"<This class has 6 parents which is greater than 5 authorized.(Òâ»ùÿÿÿÿ
+s
+java:S1450½"\Remove the "jScrollPane16" field and declare it as a local variable in the relevant methods.(…¡®±
+x
+java:S1450À"\Remove the "textDesayuno3" field and declare it as a local variable in the relevant methods.(Ôêûÿÿÿÿ
+N
+java:S1135®"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+†
+java:S1450·"jRemove the "btnIngresarAlimentoIngerido" field and declare it as a local variable in the relevant methods.(øÌÒÜúÿÿÿÿ
+x
+java:S1450¾"\Remove the "jScrollPane17" field and declare it as a local variable in the relevant methods.(×±½«ıÿÿÿÿ
+C
+java:S1604["(Make this anonymous inner class a lambda(Ûõ•şÿÿÿÿ
+A
+java:S1172­"*Remove this unused method parameter "evt".(ÂÂØª
+q
+java:S1192I"ODefine a constant instead of duplicating this literal "Century Gothic" 3 times.(‚ºÉ•üÿÿÿÿ8ë†“«.
+‚
+java:S1450¹"kRemove the "btnIngresarAlimentoIngerido2" field and declare it as a local variable in the relevant methods.(Ñ¸¸¶
+?
+java:S1604‰"(Make this anonymous inner class a lambda(şŸ ü
+F
+java:S1172©"*Remove this unused method parameter "evt".(½ì³Èşÿÿÿÿ
 x
 java:S1450Á"\Remove the "textDesayuno4" field and declare it as a local variable in the relevant methods.(›¨Î‰şÿÿÿÿ
-v
-java:S1450¿"_Remove the "lblNombreUsuario" field and declare it as a local variable in the relevant methods.(öÿòú
+A
+java:S1172±"*Remove this unused method parameter "evt".(×ıßÊ

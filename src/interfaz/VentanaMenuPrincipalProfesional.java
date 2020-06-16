@@ -479,7 +479,7 @@ public final class VentanaMenuPrincipalProfesional extends javax.swing.JDialog {
         jPanel30.setBackground(new java.awt.Color(51, 51, 51));
         jPanel30.setLayout(new java.awt.GridBagLayout());
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/out/production/balian-introini-ing-sof-2/Imagenes/iconoNuevoMensaje.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoNuevoMensaje.png"))); // NOI18N
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
         jButton1.setFocusPainted(false);
